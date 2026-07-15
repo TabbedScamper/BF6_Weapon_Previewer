@@ -26,14 +26,26 @@ function skinLabel(id) {
   return (SKIN_RARITY[p] || p.toUpperCase()) + ' ' + id.replace(/^[a-z]+/, '');
 }
 function skinSpec(id) {
-  if (!id || !cur.skins || !cur.skins[id]) return null;
+  if (!id || !cur.skins || !cur.skins[id] || !cur.skins[id].tex) return null;
   const spec = {};
-  for (const [part, roles] of Object.entries(cur.skins[id])) {
+  for (const [part, roles] of Object.entries(cur.skins[id].tex)) {
     spec[part] = {};
     for (const role of roles.split(','))
       spec[part][role] = CONFIG.skinsBase + cur.name + '/' + id + '/' + part + '_' + role + '.webp';
   }
   return spec;
+}
+// legendary wraps replace part geometry: map a standard mesh to its skin twin
+function skinMesh(stem) {
+  const rep = skin && cur.skins && cur.skins[skin] && cur.skins[skin].mesh;
+  if (!rep || !stem) return stem;
+  const m = /^ob_wep_[a-z0-9]+_[a-z0-9]+_(.+)_1p$/.exec(stem);
+  if (!m) return stem;
+  const pt = m[1];
+  if (rep[pt]) return rep[pt];
+  for (const k of Object.keys(rep))
+    if (pt.startsWith(k) || k.startsWith(pt)) return rep[k];
+  return stem;
 }
 
 const CLS_LABEL = {
@@ -154,8 +166,8 @@ function currentParts() {
     parts.set('g', url(cur.mesh));
     return parts;
   }
-  if (cur.base) parts.set('base', url(cur.base));
-  (cur.fixed || []).forEach((m, i) => parts.set('fx' + i, url(m)));
+  if (cur.base) parts.set('base', url(skinMesh(cur.base)));
+  (cur.fixed || []).forEach((m, i) => parts.set('fx' + i, url(skinMesh(m))));
   for (const [code, tok] of Object.entries(build)) {
     let mesh = null, dt = null;
     if (tok) {
@@ -163,6 +175,7 @@ function currentParts() {
       if (e) { mesh = e.mesh; dt = e.dt || null; }
     }
     if (!mesh) { mesh = (cur.defaults || {})[code] || null; dt = null; }  // default own part
+    if (mesh) mesh = skinMesh(mesh);
     if (mesh) parts.set('s_' + code, dt ? { url: url(mesh), dt } : url(mesh));
   }
   return parts;
@@ -217,6 +230,7 @@ function openDrawer(code) {
         renderSlots();
         openDrawer('__skin');
         stage.applySkin(skinSpec(id));
+        apply(false);              // legendary wraps swap part meshes too
       };
       list.appendChild(b);
     };

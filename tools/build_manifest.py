@@ -171,11 +171,36 @@ def main():
             if tok and any(e["t"] == tok for e in slots.get(code, [])):
                 factory[code] = tok
 
+        # skins: texture recolors + REPLACEMENT meshes (legendary wraps ship
+        # their own geometry/UVs in the skin folder — retexturing the standard
+        # mesh scrambles; swap the mesh instead, drop its tex entry)
+        rep_re = re.compile(
+            r"^ob_wep_[a-z0-9]+_%s_(?P<sid>[a-z]+\d{4})_(?P<part>.+)_1p_mesh\.MeshSet$"
+            % re.escape(name))
+        w_skins = {}
+        for sid in w["skins"]:
+            tex = dict(skins.get(name, {}).get(sid, {}))
+            rep = {}
+            try:
+                for f in os.listdir(os.path.join(w["path"], "art", "skins", sid)):
+                    m = rep_re.match(f)
+                    if m and m.group("sid") == sid:
+                        rep[m.group("part")] = f[: -len(".MeshSet")][:-5]
+            except FileNotFoundError:
+                pass
+            tex = {p: r for p, r in tex.items() if p not in rep}
+            if tex or rep:
+                w_skins[sid] = {}
+                if tex:
+                    w_skins[sid]["tex"] = tex
+                if rep:
+                    w_skins[sid]["mesh"] = rep
+
         weapons.append({
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
-            "skins": skins.get(name, {}),
+            "skins": w_skins,
         })
 
     gadgets = []
