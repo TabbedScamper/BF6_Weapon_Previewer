@@ -66,6 +66,54 @@ def main():
     if os.path.exists(PLACEMENTS):
         placements = json.load(open(PLACEMENTS, encoding="utf-8"))
         print("using placements.json (%d weapons)" % len(placements))
+
+    # geometric mount anchors: shared attachments are authored at the shared
+    # skeleton bind pose (weapons are sight-line aligned, so optics/rails are
+    # correct as-authored) — but MUZZLE positions vary per weapon and MAGAZINE
+    # positions come from the md bone table. Anchor muzzle devices to the
+    # weapon's own muzzle/barrel geometry; both sources are game data.
+    BIND_MZL = [0.0, 0.0675, 0.5510]   # Wep_Muzzle_ATT bind (skeleton_bind.json)
+    BIND_MAG = [0.0, 0.0671, 0.1476]   # Wep_MGZ_ATT bind
+    own_muzzles = set()
+    for w0 in db["weapons"].values():
+        for stem in w0["meshes"]:
+            if re.search(r"_muzzle[a-z0-9]*_1p_mesh$", stem):
+                own_muzzles.add(stem[:-5])
+    import build_placements as bp
+    aabbs = bp.mesh_aabbs(sorted(own_muzzles))   # extends + returns full cache
+    bindmeta = {}
+    bmp = os.path.join(HERE, "data", "attachment_bindings.json")
+    if os.path.exists(bmp):
+        bindmeta = json.load(open(bmp, encoding="utf-8")).get("weapons", {})
+
+    BIND_BRL = [0.0, 0.0675, 0.5510]   # Wep_Barrel_ATT bind pose
+
+    def barrel_dt(wid):
+        """Barrel parts are authored at the shared bind pose; the weapon's
+        true barrel anchor is md bone_defaults idx4 (validated across pistol/
+        bullpup/sniper/LMG: all physically correct)."""
+        wbm = bindmeta.get(wid) or {}
+        for bd in wbm.get("bone_defaults", []):
+            if bd["idx"] == 4:
+                t = bd["rot"][:3]          # label swap: rot = translation
+                if any(abs(x) > 1e-4 for x in t):
+                    return [round(t[i] - BIND_BRL[i], 4) for i in range(3)]
+        return None
+
+    def barrel_write_z(wid, tok):
+        """Equipped barrel's bone_write z (muzzle offset per barrel length —
+        inch-exact deltas, e.g. extended = +0.0762)."""
+        wbm = bindmeta.get(wid) or {}
+        att = (wbm.get("attachments") or {}).get("brl/%s" % tok)
+        if not att or att.get("record_inst") is None:
+            return 0.0
+        rec = next((r for r in wbm.get("records", [])
+                    if r["inst"] == att["record_inst"]), None)
+        for bw in (rec or {}).get("bone_writes") or []:
+            for e in (bw if isinstance(bw, list) else [bw]):
+                if isinstance(e, dict) and e.get("rot"):
+                    return float(e["rot"][2])
+        return 0.0
     skins = {}
     if os.path.exists(SKINS):
         # {weapon: {skinid: {part: {cs: rel, nmt: rel}}}} -> compact
@@ -173,6 +221,18 @@ def main():
             if tok and any(e["t"] == tok for e in slots.get(code, [])):
                 factory[code] = tok
 
+        # EBX mount deltas: barrels + muzzle devices are authored at the shared
+        # skeleton bind pose; the weapon's true anchors come from its md table.
+        bdt = barrel_dt(wid)
+        wz = barrel_write_z(wid, factory.get("brl")) if bdt else 0.0
+        mdt = [bdt[0], bdt[1], round(bdt[2] + wz, 4)] if bdt else None
+        for e in slots.get("brl", []):
+            if bdt and e.get("mesh"):
+                e["dt"] = bdt
+        for e in slots.get("mzl", []):
+            if mdt and e.get("mesh"):
+                e["dt"] = mdt
+
         # skins: texture recolors + REPLACEMENT meshes (legendary wraps ship
         # their own geometry/UVs in the skin folder — retexturing the standard
         # mesh scrambles; swap the mesh instead, drop its tex entry)
@@ -202,6 +262,7 @@ def main():
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
+            "partDt": {k: v for k, v in (("brl", bdt), ("mzl", mdt)) if v},
             "skins": w_skins,
         })
 

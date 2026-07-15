@@ -175,6 +175,7 @@ function currentParts() {
       if (e) { mesh = e.mesh; dt = e.dt || null; }
     }
     if (!mesh) { mesh = (cur.defaults || {})[code] || null; dt = null; }  // default own part
+    if (mesh && !dt) dt = (cur.partDt || {})[code] || null;  // bind-authored part families
     if (mesh) mesh = skinMesh(mesh);
     if (mesh) parts.set('s_' + code, dt ? { url: url(mesh), dt } : url(mesh));
   }
