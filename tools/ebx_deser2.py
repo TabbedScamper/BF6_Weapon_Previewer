@@ -55,6 +55,10 @@ class Deser2:
             tr = struct.unpack_from("<H", self.d, self.payload + off)[0]
             self.inst_type[i] = (self.f.type_guids[tr]
                                  if tr < len(self.f.type_guids) else None)
+        # pointer-fixup positions (file offsets): used to decode fields whose
+        # reflection typeVA is 0/unresolvable but which are provably pointers
+        self.ptr_fixups = set(self.payload + po for po in self.f.pointer_offsets)
+        self.ptr_fixups.update(self.payload + po for po in self.f.import_offsets)
         # EBXX array table: payload offset of first element -> entry
         self.arrays = {}
         if b"EBXX" in chunks:
@@ -92,6 +96,11 @@ class Deser2:
     def _decode(self, pos, rt, depth):
         d = self.d
         if not rt:
+            # reflection gave nothing (typeVA == 0, e.g. the unlock-ref field
+            # of the md_* part record). If the runtime relocates this cell it
+            # IS a pointer -- decode it as one.
+            if pos in self.ptr_fixups:
+                return self._pointer_ref(pos)
             return None
         te = rt["te"]
         if te == 0x04:

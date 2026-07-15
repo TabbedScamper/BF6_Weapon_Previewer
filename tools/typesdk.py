@@ -5,7 +5,11 @@ touches the running game). Layout per FrostyToolsuite FrostbiteVersion 7
 """
 import struct, sys
 
-EXE = r"C:\Program Files (x86)\Steam\steamapps\common\Battlefield 6\SP\bf6.exe"
+# IMPORTANT: use the MP/retail exe, NOT SP\bf6.exe. The SP exe carries
+# DIFFERENT (stale) layouts for the weapon-customization types (the md_* part
+# record type is 456 bytes in SP reflection vs 200 bytes in the MP data);
+# decoding the MP dump with SP layouts silently misreads every field.
+EXE = r"C:\Program Files (x86)\Steam\steamapps\common\Battlefield 6\bf6.exe"
 
 class PE:
     def __init__(self, path):

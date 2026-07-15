@@ -20,6 +20,55 @@ import trimesh
 from assemble_portal import Assembler
 from rebuild_one_noshadow import OUT as CACHE_OUT
 
+
+def _patch_fullres_decode():
+    """Weapon-grade texture decode, two pipeline limits lifted (project-scoped
+    so map/prop builds elsewhere are untouched, and universal across every
+    weapon/attachment/gadget — no per-object cases):
+
+    1. rebuild_one_noshadow.decode() only reads the embedded chunk, whose top
+       mip is a low tail for streamed textures (weapons embed 1024 below a
+       4096 declared size). Whenever the embedded decode lands below the
+       texture's own declared header dims, decode the streamed HRES mip0
+       instead (member_mesh._decode_hres_mip0, chunk GUID at header +164).
+    2. member_mesh.TEX_MAX caps GLB textures at 1024 — raise to 4096.
+    """
+    import struct
+
+    import member_mesh as mm
+    import rebuild_one_noshadow as rb
+
+    mm.TEX_MAX = 4096
+    orig_decode = rb.decode
+
+    def decode(tex, out_png):
+        ok = orig_decode(tex, out_png)
+        if not ok:
+            return ok
+        try:
+            d = open(tex, "rb").read(28)
+            declared = max(
+                struct.unpack_from("<H", d, 22)[0],
+                struct.unpack_from("<H", d, 24)[0],
+            )
+            from PIL import Image
+
+            got = Image.open(out_png)
+            if max(got.size) < declared:
+                hi = mm._decode_hres_mip0(tex, "RGBA")
+                if hi is not None and max(hi.size) > max(got.size):
+                    got.close()
+                    hi.save(out_png)
+        except Exception:
+            pass
+        return ok
+
+    rb.decode = decode
+    mm.decode = decode   # member_mesh imported it by value
+
+
+_patch_fullres_decode()
+
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(HERE, "data", "armory_db.json")
 MODELS = r"A:\bf6weapons\models"

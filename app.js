@@ -3,10 +3,13 @@ import { CONFIG } from './config.js';
 import { initStage } from './stage.js';
 
 const $ = s => document.querySelector(s);
+// theme: dark by default (BF6). URL ?theme= wins, then the saved choice.
 const qtheme = new URLSearchParams(location.search).get('theme');
-if (qtheme) document.documentElement.dataset.theme = qtheme;
+const theme = qtheme || localStorage.getItem('wpn-theme');
+if (theme) document.documentElement.dataset.theme = theme;
 const statusEl = $('#status');
 const stage = initStage($('#stage'), t => { statusEl.textContent = t || ''; });
+const narrow = () => matchMedia('(max-width: 920px)').matches;
 
 let M = null;                 // manifest
 let mode = 'weapons';
@@ -25,10 +28,23 @@ const CLS_LABEL = {
 // ---------- theme ----------
 $('#themebtn').onclick = () => {
   const r = document.documentElement;
-  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
-  const now = r.dataset.theme || (dark ? 'dark' : 'light');
-  r.dataset.theme = now === 'dark' ? 'light' : 'dark';
+  const next = (r.dataset.theme || 'dark') === 'dark' ? 'light' : 'dark';
+  r.dataset.theme = next;
+  localStorage.setItem('wpn-theme', next);
 };
+
+// ---------- mobile bottom sheets ----------
+function showSheet(which) {          // 'catalog' | 'build' | null
+  $('#catalog').classList.toggle('show', which === 'catalog');
+  $('#buildpanel').classList.toggle('show', which === 'build');
+  $('#btn-arsenal').classList.toggle('on', which === 'catalog');
+  $('#btn-build').classList.toggle('on', which === 'build');
+  if (which !== 'build') { openSlot = null; $('#drawer').hidden = true; }
+}
+$('#btn-arsenal').onclick = () =>
+  showSheet($('#catalog').classList.contains('show') ? null : 'catalog');
+$('#btn-build').onclick = () =>
+  showSheet($('#buildpanel').classList.contains('show') ? null : 'build');
 
 // ---------- data ----------
 fetch(CONFIG.manifest).then(r => r.json()).then(m => {
@@ -108,6 +124,7 @@ function select(it) {
   $('#nameplate').hidden = false;
   $('#np-name').textContent = it.display;
   $('#np-class').textContent = (CLS_LABEL[it.cls] || it.cat || '').toUpperCase();
+  if (narrow()) showSheet(null);   // reveal the gun after picking on mobile
   apply(true);
 }
 

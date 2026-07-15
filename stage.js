@@ -13,8 +13,9 @@ const loader = new GLTFLoader();
 loader.setDRACOLoader(draco);
 
 export function initStage(view, status) {
+  const touch = matchMedia('(pointer: coarse)').matches;
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setPixelRatio(devicePixelRatio);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.06;
@@ -28,7 +29,10 @@ export function initStage(view, status) {
   const cam = new THREE.PerspectiveCamera(45, 1, 0.005, 200);
   const controls = new OrbitControls(cam, renderer.domElement);
   controls.enableDamping = true;
-  controls.enableZoom = false;               // manual dolly below (smooth-scroll safe)
+  // touch: OrbitControls pinch-dolly + two-finger pan. mouse: manual wheel
+  // dolly below (per-notch stepping breaks smooth-scroll mice).
+  controls.enableZoom = touch;
+  controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
   controls.mouseButtons = { LEFT: THREE.MOUSE.ROTATE, MIDDLE: THREE.MOUSE.PAN, RIGHT: null };
 
   scene.add(new THREE.HemisphereLight(0xffffff, 0x50555e, 0.55));
@@ -60,8 +64,10 @@ export function initStage(view, status) {
     const c = box.getCenter(new THREE.Vector3());
     frameSize = Math.max(box.getSize(new THREE.Vector3()).length(), 0.1);
     controls.target.copy(c);
-    // cinematic 3/4: right of muzzle, slightly above bore
-    cam.position.set(c.x + frameSize * 0.72, c.y + frameSize * 0.28, c.z + frameSize * 0.85);
+    // cinematic 3/4: right of muzzle, slightly above bore. Portrait screens
+    // need extra distance or the weapon crops at the edges.
+    const k = Math.max(1, Math.sqrt(1.5 / Math.max(cam.aspect, 0.01)));
+    cam.position.set(c.x + frameSize * 0.72 * k, c.y + frameSize * 0.28 * k, c.z + frameSize * 0.85 * k);
     cam.near = Math.max(frameSize / 500, 0.003);
     cam.far = frameSize * 40 + 20;
     cam.updateProjectionMatrix();
@@ -137,7 +143,7 @@ export function initStage(view, status) {
       controls.enabled = true;
     }
   });
-  renderer.domElement.addEventListener('wheel', e => {
+  if (!touch) renderer.domElement.addEventListener('wheel', e => {
     e.preventDefault();
     if (flying) {
       flySpeedMult = Math.max(0.05, Math.min(30, flySpeedMult * (e.deltaY < 0 ? 1.15 : 1 / 1.15)));
