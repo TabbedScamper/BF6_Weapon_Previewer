@@ -24,6 +24,10 @@ def main():
                 if f.endswith("_1p_mesh.MeshSet") and f.startswith("ob_wep_"):
                     stems.append(f[: -len(".MeshSet")])
     stems = sorted(set(stems))
+    shard = next((a for a in sys.argv if a.startswith("--shard")), None)
+    if shard:
+        i, n = map(int, shard.split("=", 1)[1].split(":"))
+        stems = stems[i::n]
     print("skin replacement meshes: %d" % len(stems))
     a = Assembler()
     ok = skip = fail = 0

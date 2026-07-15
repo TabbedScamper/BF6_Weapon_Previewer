@@ -100,6 +100,8 @@ def main():
     for wid, w in sorted(db["weapons"].items()):
         cls, name = wid.split("/")
         parts1p = {p: v for p, v in w["parts"].items() if v.get("1p")}
+        if not w["meshes"]:
+            continue   # stub weapons (ksg, machete) ship no art in the dump
 
         def own_mesh(part):
             for stem in w["meshes"]:
