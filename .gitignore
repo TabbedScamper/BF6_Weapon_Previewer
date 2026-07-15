@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+data/attachment_bindings.json
+data/mesh_aabbs.json
