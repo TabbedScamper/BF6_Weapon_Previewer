@@ -5,4 +5,5 @@ const LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.
 export const CONFIG = {
   manifest: './data/manifest.json',
   modelsBase: LOCAL ? '/models/' : 'https://pub-45114dae448e4a059f488662e3d47b19.r2.dev/weapons/models/',
+  skinsBase: LOCAL ? '/skins/' : 'https://pub-45114dae448e4a059f488662e3d47b19.r2.dev/weapons/skins/',
 };

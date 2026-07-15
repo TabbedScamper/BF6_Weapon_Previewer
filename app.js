@@ -17,7 +17,24 @@ let klass = 'all';
 let query = '';
 let cur = null;               // selected weapon/gadget object
 let build = {};               // slotCode -> token|null
+let skin = null;              // selected skin id|null
 let openSlot = null;
+
+const SKIN_RARITY = { wsd: 'Standard', wse: 'Epic', wser: 'Epic', wsr: 'Rare', wsrr: 'Rare', wsl: 'Legendary' };
+function skinLabel(id) {
+  const p = (id.match(/^[a-z]+/) || [''])[0];
+  return (SKIN_RARITY[p] || p.toUpperCase()) + ' ' + id.replace(/^[a-z]+/, '');
+}
+function skinSpec(id) {
+  if (!id || !cur.skins || !cur.skins[id]) return null;
+  const spec = {};
+  for (const [part, roles] of Object.entries(cur.skins[id])) {
+    spec[part] = {};
+    for (const role of roles.split(','))
+      spec[part][role] = CONFIG.skinsBase + cur.name + '/' + id + '/' + part + '_' + role + '.webp';
+  }
+  return spec;
+}
 
 const CLS_LABEL = {
   assaultrifle: 'Assault Rifles', carbine: 'Carbines', dmr: 'DMR',
@@ -115,12 +132,15 @@ function select(it) {
 
   if (mode === 'weapons' || it.slots) {
     build = {};
-    for (const code of Object.keys(it.slots || {})) build[code] = null;
+    skin = null;
+    // factory/stock loadout equipped out of the box (EBX equipment grants)
+    for (const code of Object.keys(it.slots || {})) build[code] = (it.factory || {})[code] || null;
     $('#buildpanel').hidden = false;
     renderSlots();
   } else {
     $('#buildpanel').hidden = true;
   }
+  stage.applySkin(null);
   $('#nameplate').hidden = false;
   $('#np-name').textContent = it.display;
   $('#np-class').textContent = (CLS_LABEL[it.cls] || it.cat || '').toUpperCase();
@@ -137,13 +157,13 @@ function currentParts() {
   if (cur.base) parts.set('base', url(cur.base));
   (cur.fixed || []).forEach((m, i) => parts.set('fx' + i, url(m)));
   for (const [code, tok] of Object.entries(build)) {
-    let mesh = null;
+    let mesh = null, dt = null;
     if (tok) {
       const e = (cur.slots[code] || []).find(x => x.t === tok);
-      mesh = e && e.mesh;
+      if (e) { mesh = e.mesh; dt = e.dt || null; }
     }
-    if (!mesh) mesh = (cur.defaults || {})[code] || null;   // default own part
-    if (mesh) parts.set('s_' + code, url(mesh));
+    if (!mesh) { mesh = (cur.defaults || {})[code] || null; dt = null; }  // default own part
+    if (mesh) parts.set('s_' + code, dt ? { url: url(mesh), dt } : url(mesh));
   }
   return parts;
 }
@@ -154,6 +174,15 @@ function apply(refit) { stage.setParts(currentParts(), refit); }
 function renderSlots() {
   const el = $('#slots');
   el.innerHTML = '';
+  if (cur.skins && Object.keys(cur.skins).length) {
+    const d = document.createElement('div');
+    d.className = 'slot' + (openSlot === '__skin' ? ' open' : '');
+    d.innerHTML = `
+      <div class="s-label">Skin<span class="s-count">${Object.keys(cur.skins).length}</span></div>
+      <div class="s-value ${skin ? '' : 'none'}"><span class="dot"></span>${skin ? skinLabel(skin) : 'Default'}</div>`;
+    d.onclick = () => openDrawer('__skin');
+    el.appendChild(d);
+  }
   for (const code of M.slotOrder) {
     const opts = cur.slots[code];
     if (!opts) continue;
@@ -174,15 +203,36 @@ function openDrawer(code) {
   renderSlots();
   const dr = $('#drawer');
   dr.hidden = false;
-  $('#drawer-title').textContent = M.slotLabel[code] || code;
   const list = $('#drawer-list');
   list.innerHTML = '';
-  const mk = (tok, label, mesh, src) => {
+
+  if (code === '__skin') {
+    $('#drawer-title').textContent = 'Skin';
+    const mkSkin = (id, label) => {
+      const b = document.createElement('button');
+      b.className = 'att' + (skin === id ? ' on' : '');
+      b.innerHTML = `<span>${label}</span>`;
+      b.onclick = () => {
+        skin = id;
+        renderSlots();
+        openDrawer('__skin');
+        stage.applySkin(skinSpec(id));
+      };
+      list.appendChild(b);
+    };
+    mkSkin(null, 'Default');
+    for (const id of Object.keys(cur.skins)) mkSkin(id, skinLabel(id));
+    return;
+  }
+
+  $('#drawer-title').textContent = M.slotLabel[code] || code;
+  const mk = (tok, label, mesh) => {
     const b = document.createElement('button');
     const on = build[code] === tok;
-    b.className = 'att' + (on ? ' on' : '') + (tok && !mesh ? ' nomodel' : '');
-    b.innerHTML = `<span>${label}</span>` + (tok && !mesh ? '<span class="tag">no model yet</span>'
-      : src === 'shared' ? '' : '');
+    const statOnly = tok && !mesh && code === 'amo';
+    b.className = 'att' + (on ? ' on' : '') + (tok && !mesh && !statOnly ? ' nomodel' : '');
+    b.innerHTML = `<span>${label}</span>` + (statOnly ? '<span class="tag">stat only</span>'
+      : tok && !mesh ? '<span class="tag">no model yet</span>' : '');
     b.onclick = () => {
       build[code] = tok;
       renderSlots();
@@ -192,7 +242,7 @@ function openDrawer(code) {
     list.appendChild(b);
   };
   mk(null, 'Default / none', true);
-  for (const o of cur.slots[code]) mk(o.t, o.label, o.mesh, o.src);
+  for (const o of cur.slots[code]) mk(o.t, o.label, o.mesh);
 }
 $('#drawer-close').onclick = () => { openSlot = null; $('#drawer').hidden = true; renderSlots(); };
 addEventListener('keydown', e => {

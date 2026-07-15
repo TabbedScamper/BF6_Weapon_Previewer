@@ -77,26 +77,32 @@ export function initStage(view, status) {
   // ---------- part management ----------
   const parts = new Map();   // id -> {url, group}
   let gen = 0;
+  let curSkin = null;        // {partToken: {cs: url, nmt: url}} | null
   function setParts(want, refit) {
     // want: Map/obj id -> url
     const wantMap = want instanceof Map ? want : new Map(Object.entries(want));
     const my = ++gen;
+    const norm = v => (typeof v === 'string' ? { url: v, dt: null } : v);
     for (const [id, p] of [...parts]) {
-      if (!wantMap.has(id) || wantMap.get(id) !== p.url) {
+      const w = wantMap.has(id) ? norm(wantMap.get(id)) : null;
+      if (!w || w.url !== p.url || String(w.dt) !== String(p.dt)) {
         if (p.group) root.remove(p.group);
         parts.delete(id);
       }
     }
     let pending = 0;
-    for (const [id, url] of wantMap) {
-      if (!url || parts.has(id)) continue;
-      const rec = { url, group: null };
+    for (const [id, v] of wantMap) {
+      if (!v || parts.has(id)) continue;
+      const { url, dt } = norm(v);
+      const rec = { url, dt, group: null };
       parts.set(id, rec);
       pending++;
       loader.load(url, g => {
         if (gen !== my || parts.get(id) !== rec) return;   // superseded
         rec.group = g.scene;
+        if (dt) g.scene.position.set(dt[0], dt[1], dt[2]);  // EBX mount delta
         root.add(g.scene);
+        if (curSkin) skinRec(rec);
         if (--pending === 0 && refit) frame();
         status('');
       }, undefined, () => {
@@ -106,6 +112,54 @@ export function initStage(view, status) {
     }
     if (pending === 0 && refit) frame();
     else if (pending > 0) status('loading…');
+  }
+
+  // ---------- skins: swap part textures in place ----------
+  const texLoader = new THREE.TextureLoader();
+  const texCache = new Map();
+  function skinTex(url, srgb) {
+    if (!texCache.has(url)) {
+      const t = texLoader.load(url);
+      t.flipY = false;                                // GLTF UV convention
+      if (srgb) t.colorSpace = THREE.SRGBColorSpace;
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      texCache.set(url, t);
+    }
+    return texCache.get(url);
+  }
+  function partToken(url) {
+    const m = /ob_(?:wep|gad)_[a-z0-9]+_[a-z0-9]+_(.+?)_(?:1p|3p)\.glb$/i.exec(url);
+    return m ? m[1].toLowerCase() : null;
+  }
+  function skinRec(rec) {
+    if (!rec.group) return;
+    let entry = null;
+    if (curSkin) {
+      const pt = partToken(rec.url) || '';
+      // skin sheets use generic part names (barrel), meshes specific (barrel12inch)
+      entry = curSkin[pt] || null;
+      if (!entry) {
+        for (const k of Object.keys(curSkin))
+          if (pt.startsWith(k) || k.startsWith(pt)) { entry = curSkin[k]; break; }
+      }
+    }
+    rec.group.traverse(o => {
+      if (!o.isMesh || !o.material) return;
+      if (!o.userData._orig)
+        o.userData._orig = { map: o.material.map, normalMap: o.material.normalMap };
+      if (entry) {
+        if (entry.cs) o.material.map = skinTex(entry.cs, true);
+        if (entry.nmt) o.material.normalMap = skinTex(entry.nmt, false);
+      } else {
+        o.material.map = o.userData._orig.map;
+        o.material.normalMap = o.userData._orig.normalMap;
+      }
+      o.material.needsUpdate = true;
+    });
+  }
+  function applySkin(spec) {
+    curSkin = spec;
+    for (const rec of parts.values()) skinRec(rec);
   }
 
   // ---------- camera rig: freelook + dolly (Model Library scheme) ----------
@@ -181,5 +235,5 @@ export function initStage(view, status) {
     renderer.render(scene, cam);
   })();
 
-  return { setParts, frame };
+  return { setParts, frame, applySkin };
 }

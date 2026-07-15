@@ -16,6 +16,8 @@ import re
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(HERE, "data", "armory_db.json")
 BINDINGS = os.path.join(HERE, "data", "attachment_bindings.json")
+SKINS = os.path.join(HERE, "data", "skins.json")
+PLACEMENTS = os.path.join(HERE, "data", "placements.json")
 OUT = os.path.join(HERE, "data", "manifest.json")
 
 SLOT_ORDER = ["scp", "sca", "brl", "mzl", "mag", "amo", "btm", "top", "lft", "rgt", "erg"]
@@ -42,8 +44,40 @@ def main():
     db = json.load(open(DB, encoding="utf-8"))
     bindings = {}
     if os.path.exists(BINDINGS):
-        bindings = json.load(open(BINDINGS, encoding="utf-8"))
+        bindings = json.load(open(BINDINGS, encoding="utf-8")).get("weapons", {})
         print("using EBX bindings (%d weapons)" % len(bindings))
+
+    def bind_mesh(wb, code, tok):
+        """EBX-decoded mesh for slot/token: prefer 1p, skip skin-variant meshes."""
+        e = (wb.get("attachments") or {}).get("%s/%s" % (code, tok))
+        if not e:
+            return None
+        m = e.get("meshes") or {}
+        cands = [
+            s[:-5] if s.endswith("_mesh") else s
+            for s in (m.get("meshes_1p") or []) + (m.get("meshes_3p") or [])
+            if not re.search(r"_(ws[a-z]*|wae|msl|gsl)\d{4}_", s)
+        ]
+        if not cands:
+            return None
+        # base part first, then shortest name
+        return min(cands, key=lambda s: (0 if "_base_" in s else 1, len(s), s))
+    placements = {}
+    if os.path.exists(PLACEMENTS):
+        placements = json.load(open(PLACEMENTS, encoding="utf-8"))
+        print("using placements.json (%d weapons)" % len(placements))
+    skins = {}
+    if os.path.exists(SKINS):
+        # {weapon: {skinid: {part: {cs: rel, nmt: rel}}}} -> compact
+        # {skinid: {part: "cs" | "cs,nmt"}}; client rebuilds paths by convention
+        raw = json.load(open(SKINS, encoding="utf-8"))
+        for wname, sk in raw.items():
+            skins[wname] = {
+                sid: {part: ",".join(sorted(roles)) for part, roles in parts.items()
+                      if not part.endswith("_3p")}   # viewer uses 1p meshes only
+                for sid, parts in sk.items()
+            }
+        print("using skins.json (%d weapons)" % len(skins))
 
     # shared attachment model index: norm(model) -> (type/model, base 1p mesh)
     shared_idx = {}
@@ -87,9 +121,9 @@ def main():
             for t in sorted(set(toks)):
                 mesh = None
                 src = None
-                bent = (wb.get("slots", {}).get(code, {}) or {}).get(t)
-                if bent and bent.get("mesh"):
-                    mesh, src = bent["mesh"], "ebx"
+                bm = bind_mesh(wb, code, t)
+                if bm:
+                    mesh, src = bm, "ebx"
                 if mesh is None:
                     nt = norm(t)
                     # own-part join (barrels, mags, own muzzles...)
@@ -109,7 +143,11 @@ def main():
                     join_hit += 1
                 else:
                     join_miss += 1
-                entries.append({"t": t, "label": title(t), "mesh": mesh, "src": src})
+                e = {"t": t, "label": title(t), "mesh": mesh, "src": src}
+                dt = placements.get(wid, {}).get("%s/%s" % (code, t))
+                if dt:
+                    e["dt"] = dt
+                entries.append(e)
             if entries:
                 slots[code] = entries
 
@@ -127,11 +165,17 @@ def main():
             else:
                 fixed.append(mesh)
 
+        # factory/stock config (EBX equipment grants) — only tokens the slot lists
+        factory = {}
+        for code, tok in (wb.get("factory") or {}).items():
+            if tok and any(e["t"] == tok for e in slots.get(code, [])):
+                factory[code] = tok
+
         weapons.append({
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
-            "defaults": defaults, "slots": slots,
-            "skins": w["skins"],
+            "defaults": defaults, "factory": factory, "slots": slots,
+            "skins": skins.get(name, {}),
         })
 
     gadgets = []

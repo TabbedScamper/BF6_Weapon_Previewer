@@ -9,22 +9,23 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 SITE = os.path.dirname(os.path.abspath(__file__))
 MODELS = os.environ.get("BF6WPN_MODELS", r"A:\bf6weapons\models")
+SKINS = os.environ.get("BF6WPN_SKINS", r"A:\bf6weapons\skins")
 
 
 class H(SimpleHTTPRequestHandler):
     def translate_path(self, path):
         p = path.split("?", 1)[0].split("#", 1)[0]
-        if p.startswith("/models/"):
-            rel = os.path.normpath(p[len("/models/"):]).lstrip("\\/")
-            full = os.path.join(MODELS, rel)
-            # stay inside the models dir
-            if os.path.commonpath([os.path.abspath(full), MODELS]) == MODELS:
-                return full
-            return MODELS
+        for prefix, root in (("/models/", MODELS), ("/skins/", SKINS)):
+            if p.startswith(prefix):
+                rel = os.path.normpath(p[len(prefix):]).lstrip("\\/")
+                full = os.path.join(root, rel)
+                if os.path.commonpath([os.path.abspath(full), root]) == root:
+                    return full
+                return root
         return super().translate_path(path)
 
     def end_headers(self):
-        if self.path.startswith("/models/"):
+        if self.path.startswith(("/models/", "/skins/")):
             self.send_header("Cache-Control", "max-age=86400")
         else:
             self.send_header("Cache-Control", "no-cache")

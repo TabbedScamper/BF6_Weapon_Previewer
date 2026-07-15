@@ -33,27 +33,41 @@ def load_env():
             os.environ.setdefault(k, v)
 
 
+def _optimize_one(f):
+    src = os.path.join(RAW, f)
+    dst = os.path.join(WEB, f)
+    r = subprocess.run(
+        [GT, "optimize", src, dst, "--compress", "draco", "--texture-compress", "webp"],
+        capture_output=True, text=True, timeout=900,
+    )
+    if r.returncode != 0 or not os.path.exists(dst):
+        return "OPTIMIZE FAIL %s: %s" % (f, (r.stderr or r.stdout)[-300:])
+    return None
+
+
 def optimize_pass():
+    from concurrent.futures import ThreadPoolExecutor
+
     os.makedirs(WEB, exist_ok=True)
-    done = fail = 0
+    todo = []
     for f in sorted(os.listdir(RAW)):
         if not f.endswith(".glb"):
             continue
-        src = os.path.join(RAW, f)
         dst = os.path.join(WEB, f)
+        src = os.path.join(RAW, f)
         if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
             continue
-        r = subprocess.run(
-            [GT, "optimize", src, dst, "--compress", "draco", "--texture-compress", "webp"],
-            capture_output=True, text=True, timeout=600,
-        )
-        if r.returncode != 0 or not os.path.exists(dst):
-            print("OPTIMIZE FAIL %s: %s" % (f, (r.stderr or r.stdout)[-300:]), flush=True)
-            fail += 1
-        else:
-            done += 1
-            if done % 20 == 0:
-                print("optimized %d..." % done, flush=True)
+        todo.append(f)
+    done = fail = 0
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for err in ex.map(_optimize_one, todo):
+            if err:
+                print(err, flush=True)
+                fail += 1
+            else:
+                done += 1
+                if done % 25 == 0:
+                    print("optimized %d/%d..." % (done, len(todo)), flush=True)
     return done, fail
 
 
@@ -118,7 +132,7 @@ def main():
             break
         if od == 0 and up == 0:
             idle += 1
-            if idle >= 3:          # three quiet passes = conversion finished
+            if idle >= 8:          # ~16 quiet minutes = conversion finished
                 break
         else:
             idle = 0

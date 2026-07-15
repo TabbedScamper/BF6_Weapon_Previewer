@@ -141,6 +141,11 @@ def purge_cache():
 def main():
     db = json.load(open(DB, encoding="utf-8"))
     stems = mesh_list(db)
+    shard = next((a for a in sys.argv if a.startswith("--shard")), None)
+    if shard:                       # --shard i:N -> every Nth mesh, offset i
+        i, n = map(int, shard.split("=", 1)[1].split(":"))
+        stems = stems[i::n]
+        print("shard %d/%d" % (i, n))
     print("meshes to convert: %d" % len(stems))
     os.makedirs(MODELS, exist_ok=True)
     if "--purge-cache" in sys.argv:
