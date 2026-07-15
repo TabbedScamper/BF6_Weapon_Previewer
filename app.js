@@ -167,7 +167,14 @@ function currentParts() {
     return parts;
   }
   if (cur.base) parts.set('base', url(skinMesh(cur.base)));
-  (cur.fixed || []).forEach((m, i) => parts.set('fx' + i, url(skinMesh(m))));
+  (cur.fixed || []).forEach((m, i) => {
+    const fdt = (cur.fixedDt || {})[m];
+    const u = url(skinMesh(m));
+    parts.set('fx' + i, fdt ? { url: u, dt: fdt } : u);
+  });
+  // equipped barrel's muzzle offset (per-barrel bone_write, inch-exact)
+  const brlTok = build.brl || (cur.factory || {}).brl || null;
+  const wz = brlTok != null ? ((cur.brlWz || {})[brlTok] || 0) : 0;
   for (const [code, tok] of Object.entries(build)) {
     let mesh = null, dt = null;
     if (tok) {
@@ -176,6 +183,8 @@ function currentParts() {
     }
     if (!mesh) { mesh = (cur.defaults || {})[code] || null; dt = null; }  // default own part
     if (mesh && !dt) dt = (cur.partDt || {})[code] || null;  // bind-authored part families
+    if (mesh && code === 'mzl' && dt && wz)
+      dt = [dt[0], dt[1], dt[2] + wz];   // ride the equipped barrel's length
     if (mesh) mesh = skinMesh(mesh);
     if (mesh) parts.set('s_' + code, dt ? { url: url(mesh), dt } : url(mesh));
   }

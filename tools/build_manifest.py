@@ -48,7 +48,10 @@ def main():
         print("using EBX bindings (%d weapons)" % len(bindings))
 
     def bind_mesh(wb, code, tok):
-        """EBX-decoded mesh for slot/token: prefer 1p, skip skin-variant meshes."""
+        """EBX-decoded mesh for slot/token: prefer 1p, skip skin-variant
+        meshes. When the record's own dpf bundle name embeds the art token
+        (dpf_<w>_<part>_bundle_1p), prefer the candidate that matches it —
+        otherwise variant families collapse (all G22 barrels -> 135mm)."""
         e = (wb.get("attachments") or {}).get("%s/%s" % (code, tok))
         if not e:
             return None
@@ -60,8 +63,20 @@ def main():
         ]
         if not cands:
             return None
-        # base part first, then shortest name
-        return min(cands, key=lambda s: (0 if "_base_" in s else 1, len(s), s))
+        art = None
+        ri = e.get("record_inst")
+        if ri is not None:
+            rec = next((r for r in wb.get("records", []) if r["inst"] == ri), None)
+            dm = re.match(r"^dpf_(.+?)_bundle", (rec or {}).get("bundle_1p") or "")
+            if dm:
+                art = dm.group(1).lower()
+        def score(s):
+            hit = 1
+            if art:
+                core = s.lower()
+                hit = 0 if art.split("_")[-1] in core else 1
+            return (hit, 0 if "_base_" in s else 1, len(s), s)
+        return min(cands, key=score)
     placements = {}
     if os.path.exists(PLACEMENTS):
         placements = json.load(open(PLACEMENTS, encoding="utf-8"))
@@ -201,11 +216,25 @@ def main():
             if entries:
                 slots[code] = entries
 
-        # default build: shortest name per swappable family; other parts fixed
+        # default build: shortest name per swappable family; other parts fixed.
+        # Length-variant sets must stay consistent: slide102mm pairs with
+        # barrel102mm — pick fixed variants carrying the barrel's length token.
+        brl_mesh0 = None
+        for e in slots.get("brl", []):
+            if e.get("mesh"):
+                brl_mesh0 = e["mesh"]
+                break
+        lm = re.search(r"(\d+(?:mm|inch|in))", brl_mesh0 or "")
+        len_tok = lm.group(1) if lm else None
+
         defaults = {}
         fixed = []
         for fam, members in fams.items():
             slot = FAMILY_SLOT.get(fam)
+            if len_tok:
+                matched = [p for p in members if len_tok in p]
+                if matched:
+                    members = matched
             best = min(members, key=lambda p: (len(p), p))
             mesh = own_mesh(best)
             if fam == "base" or mesh is None:
@@ -223,15 +252,21 @@ def main():
 
         # EBX mount deltas: barrels + muzzle devices are authored at the shared
         # skeleton bind pose; the weapon's true anchors come from its md table.
+        # Muzzle devices track the EQUIPPED barrel: per-barrel bone_write z
+        # offsets ship in brlWz and the client adds them at build time.
         bdt = barrel_dt(wid)
-        wz = barrel_write_z(wid, factory.get("brl")) if bdt else 0.0
-        mdt = [bdt[0], bdt[1], round(bdt[2] + wz, 4)] if bdt else None
-        for e in slots.get("brl", []):
-            if bdt and e.get("mesh"):
-                e["dt"] = bdt
-        for e in slots.get("mzl", []):
-            if mdt and e.get("mesh"):
-                e["dt"] = mdt
+        brl_wz = {}
+        if bdt:
+            for e in slots.get("brl", []):
+                brl_wz[e["t"]] = round(barrel_write_z(wid, e["t"]), 4)
+        # pistol-style bone-mounted 'fixed' parts ride the barrel too
+        fixed_dt = {}
+        if bdt:
+            for mesh0 in fixed:
+                fam0 = re.sub(r"^ob_wep_[a-z0-9]+_[a-z0-9]+_", "", mesh0)
+                if fam0.startswith(("slide", "baseextension", "threadprotector",
+                                    "compensator", "piston")):
+                    fixed_dt[mesh0] = bdt
 
         # skins: texture recolors + REPLACEMENT meshes (legendary wraps ship
         # their own geometry/UVs in the skin folder — retexturing the standard
@@ -262,7 +297,8 @@ def main():
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
-            "partDt": {k: v for k, v in (("brl", bdt), ("mzl", mdt)) if v},
+            "partDt": ({"brl": bdt, "mzl": bdt} if bdt else {}),
+            "brlWz": brl_wz, "fixedDt": fixed_dt,
             "skins": w_skins,
         })
 
