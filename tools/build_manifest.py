@@ -16,7 +16,7 @@ import re
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(HERE, "data", "armory_db.json")
 BINDINGS = os.path.join(HERE, "data", "attachment_bindings.json")
-OUT = os.path.join(HERE, "site", "data", "manifest.json")
+OUT = os.path.join(HERE, "data", "manifest.json")
 
 SLOT_ORDER = ["scp", "sca", "brl", "mzl", "mag", "amo", "btm", "top", "lft", "rgt", "erg"]
 SLOT_LABEL = {
