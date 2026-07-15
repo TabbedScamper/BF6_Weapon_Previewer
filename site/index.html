@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BF6 Weapon Previewer</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand"><b>BF6</b><span class="slash">/</span><span>Weapon Previewer</span></div>
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="search" placeholder="Search weapons, gadgets, attachments…" autocomplete="off">
+    </div>
+    <div class="count" id="count"></div>
+    <button class="themebtn" id="themebtn" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<div id="stage"></div>
+
+<aside class="panel left" id="catalog">
+  <div class="tabs" id="modetabs">
+    <button data-mode="weapons" class="on">Weapons</button>
+    <button data-mode="gadgets">Gadgets</button>
+  </div>
+  <div class="chips" id="classchips"></div>
+  <div class="list" id="itemlist"></div>
+</aside>
+
+<aside class="panel right" id="buildpanel" hidden>
+  <div class="panel-title">BUILD</div>
+  <div class="slots" id="slots"></div>
+</aside>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-head">
+    <span id="drawer-title"></span>
+    <button id="drawer-close">✕</button>
+  </div>
+  <div class="drawer-list" id="drawer-list"></div>
+</div>
+
+<div class="nameplate" id="nameplate" hidden>
+  <div class="np-class" id="np-class"></div>
+  <div class="np-name" id="np-name"></div>
+  <div class="np-hint">drag = orbit · scroll = zoom · RMB = freelook + WASD</div>
+</div>
+
+<div class="status" id="status"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
