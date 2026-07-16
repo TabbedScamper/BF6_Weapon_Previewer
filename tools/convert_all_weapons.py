@@ -77,6 +77,48 @@ FAILLOG = os.path.join(HERE, "data", "convert_failures.tsv")
 SKIN_TOKEN = re.compile(r"_(ws[a-z]*|wae|msl|gsl)\d{4}(_|$)")
 
 
+DETAIL_MAT = {
+    # M_Detail_* = shared tiling detail materials with no baked per-part
+    # texture; the pipeline's fallback stretches a wrong texture over them.
+    # Render the material CLASS as flat PBR instead (name -> look).
+    "polymer": ([0.16, 0.16, 0.17, 1.0], 0.0, 0.85),
+    "rubber": ([0.10, 0.10, 0.10, 1.0], 0.0, 0.95),
+    "metal": ([0.45, 0.45, 0.47, 1.0], 0.9, 0.45),
+    "wood": ([0.35, 0.24, 0.15, 1.0], 0.0, 0.7),
+}
+
+
+def detail_fix(scene_parts, ms_path):
+    """Replace stretched-texture materials on M_Detail_* submeshes with flat
+    PBR. Submesh order in the GLB matches the MeshSet material table minus
+    shadow entries (same filter rebuild_one_noshadow applies)."""
+    import re as _re
+
+    import trimesh
+
+    d = open(ms_path, "rb").read()
+    seen = []
+    for s in _re.findall(rb"M_[ -~]{3,}", d):
+        n = s.decode("latin1")
+        if n not in seen:
+            seen.append(n)
+    from rebuild_one_noshadow import SHADOW_PAT
+
+    keep = [n for n in seen if not SHADOW_PAT.search(n)]
+    for i, (subkey, g) in enumerate(scene_parts):
+        if i >= len(keep) or not keep[i].lower().startswith("m_detail_"):
+            continue
+        tok = keep[i].lower().replace("m_detail_", "").split("_")[0]
+        look = DETAIL_MAT.get(tok)
+        if not look:
+            look = DETAIL_MAT["polymer"] if "poly" in tok else DETAIL_MAT["metal"]
+        col, met, rough = look
+        g.visual = trimesh.visual.TextureVisuals(
+            material=trimesh.visual.material.PBRMaterial(
+                baseColorFactor=col, metallicFactor=met, roughnessFactor=rough))
+    return scene_parts
+
+
 def mesh_list(db):
     """Collect mesh stems (with _mesh suffix) worth converting."""
     keys = []
@@ -171,6 +213,9 @@ def main():
                 fails.append((key, "no parts"))
                 fail += 1
                 continue
+            ms = a.msidx.get(key)
+            if ms:
+                ps = detail_fix(list(ps), ms)
             sc = trimesh.Scene()
             for subkey, g in ps:
                 sc.add_geometry(g, node_name=subkey, geom_name=subkey)

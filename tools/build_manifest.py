@@ -103,6 +103,18 @@ def main():
 
     BIND_BRL = [0.0, 0.0675, 0.5510]   # Wep_Barrel_ATT bind pose
 
+    def mag_dt(wid):
+        """Magazine anchor: GameplayBonesToSkeleton maps Wep_MGZ_ATT to
+        skeleton bone idx 22 (decoded from _weaponskeleton.ebx) — validated on
+        m4a1 (~0), g22 (grip), l85a3 (bullpup), mrad (~0)."""
+        wbm = bindmeta.get(wid) or {}
+        for bd in wbm.get("bone_defaults", []):
+            if bd["idx"] == 22:
+                t = bd["rot"][:3]
+                if any(abs(x) > 1e-4 for x in t):
+                    return [round(t[i] - BIND_MAG[i], 4) for i in range(3)]
+        return None
+
     def barrel_dt(wid):
         """Barrel parts are authored at the shared bind pose; the weapon's
         true barrel anchor is md bone_defaults idx4 (validated across pistol/
@@ -273,6 +285,7 @@ def main():
                 if any(abs(v) > 5e-4 for v in t):
                     sight_dt["scp" if g["slot_type"] == "sight" else "sca"] = t
         bdt = barrel_dt(wid)
+        gdt = mag_dt(wid)
         brl_wz = {}
         if bdt:
             for e in slots.get("brl", []):
@@ -315,7 +328,8 @@ def main():
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
-            "partDt": dict(({"brl": bdt, "mzl": bdt} if bdt else {}), **sight_dt),
+            "partDt": dict(({"brl": bdt, "mzl": bdt} if bdt else {}),
+                           **({"mag": gdt} if gdt else {}), **sight_dt),
             "brlWz": brl_wz, "fixedDt": fixed_dt, "irons": irons,
             "skins": w_skins,
         })
