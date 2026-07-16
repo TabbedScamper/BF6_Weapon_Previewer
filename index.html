@@ -25,6 +25,7 @@
     <div class="count" id="count"></div>
     <button class="mbtn" id="btn-arsenal">Arsenal</button>
     <button class="mbtn" id="btn-build">Build</button>
+    <button class="themebtn" id="btn-ref" title="Show the game's own armory render for comparison">▣</button>
     <button class="themebtn" id="btn-tune" title="Tune mode: double-click a part, drag the X/Y/Z arrows to reposition it, then copy the report">✛</button>
     <button class="themebtn" id="themebtn" title="Toggle theme">◐</button>
   </div>
@@ -62,9 +63,15 @@
 
 <div class="status" id="status"></div>
 
+<div class="refpanel" id="refpanel" hidden>
+  <img id="refimg" alt="in-game reference render">
+  <div class="ref-cap">IN-GAME FACTORY RENDER — click image to resize</div>
+</div>
+
 <div class="tunepanel" id="tunepanel" hidden>
   <div class="tp-title">TUNE — double-click a part, drag an axis arrow</div>
   <div class="tp-sel" id="tp-sel">no part selected</div>
+  <div class="tp-list" id="tp-list"></div>
   <button id="tp-copy">Copy report</button>
 </div>
 

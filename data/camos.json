@@ -1,0 +1,3354 @@
+{
+ "_notes": {
+  "source": "A:\\bf6dump (EbxVersion 6 RIFF) + MP bf6.exe reflection + ShaderBlockDepot scan (8,744 depots)",
+  "generated_by": "tools/decode_camos.py",
+  "confidence": {
+   "tex": "HIGH -- name pairing wcr#### <-> t_wep_camo_wcr#### in the same folder; the unlock EBX itself is a parameter-free UnlockAsset stub with zero imports (verified on all files)",
+   "tile": "MEDIUM -- no per-camo or per-weapon tiling exists in any EBX/depot; every weapon-part ShaderBlockDepot record holds exactly one float2 = (1.0,1.0) (param name-hash 0x51008a66). Real on-gun scale is baked into the shader + weapon UVs; previewer should expose one global visual constant.",
+   "tint": "HIGH (absence) -- no tint/color floats accompany the camo slot; patterns are fully-authored RGB textures",
+   "masking": "MEDIUM -- camo coverage = camo texture's OWN alpha (_ca = color+alpha; default t_hardwarecamo_ca is alpha=0 everywhere = camo off) x a weapon-side mask. Best channel candidate: the _wo utility map's ALPHA (binary-ish paintable-panel plates; R=edge wear, G=AO/cavity, B=grunge). Not proven from shader code.",
+   "bundle_spo": "HIGH -- decoded from md_<weapon>.ebx camo_spo slot group (field 1061057278 -> 157192813)"
+  },
+  "camo_sampler_name_hash": "0x01c7da1a",
+  "camo_default_texture": "common/shaders/textures/default/t_hardwarecamo_ca",
+  "camo_default_normal": "common/shaders/textures/default/t_hardwarecamo_nm",
+  "weapons_scanned": 59,
+  "weapons_offering_value_range": [
+   0,
+   59
+  ]
+ },
+ "camos": {
+  "debug_package": {
+   "unlock_file": "u_spo_wep_camo_debug_package.ebx",
+   "name": "U_SPO_WEP_Camo_DEBUG_package",
+   "unlock_id": 2755718999,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": null,
+   "weapons_offering": 0
+  },
+  "wcr0001": {
+   "unlock_file": "u_spo_wep_camo_wcr0001.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0001",
+   "unlock_id": 630381431,
+   "tex": "t_wep_camo_wcr0001",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "76b117ad2b3f93d75aff24bdde256329",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0001_accxs9_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0002": {
+   "unlock_file": "u_spo_wep_camo_wcr0002.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0002",
+   "unlock_id": 2987015653,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0002_pttm96_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0003": {
+   "unlock_file": "u_spo_wep_camo_wcr0003.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0003",
+   "unlock_id": 3318092202,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0003_yp6kp7_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0004": {
+   "unlock_file": "u_spo_wep_camo_wcr0004.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0004",
+   "unlock_id": 854522323,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0004_xxw6y4_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0005": {
+   "unlock_file": "u_spo_wep_camo_wcr0005.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0005",
+   "unlock_id": 302936877,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0005_16t95e5_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0006": {
+   "unlock_file": "u_spo_wep_camo_wcr0006.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0006",
+   "unlock_id": 2865440698,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0006_1maptv2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0007": {
+   "unlock_file": "u_spo_wep_camo_wcr0007.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0007",
+   "unlock_id": 1704476548,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0007_1v62sb3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0008": {
+   "unlock_file": "u_spo_wep_camo_wcr0008.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0008",
+   "unlock_id": 4249240800,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0008_19m6vfk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0009": {
+   "unlock_file": "u_spo_wep_camo_wcr0009.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0009",
+   "unlock_id": 740134693,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0009_1ihjtvl_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0010": {
+   "unlock_file": "u_spo_wep_camo_wcr0010.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0010",
+   "unlock_id": 2635974246,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0010_qxfjop_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0011": {
+   "unlock_file": "u_spo_wep_camo_wcr0011.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0011",
+   "unlock_id": 2856636878,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0011_fxfzt4_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0012": {
+   "unlock_file": "u_spo_wep_camo_wcr0012.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0012",
+   "unlock_id": 684205481,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0012_1hsscdn_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0013": {
+   "unlock_file": "u_spo_wep_camo_wcr0013.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0013",
+   "unlock_id": 452919596,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0013_i8geve_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0014": {
+   "unlock_file": "u_spo_wep_camo_wcr0014.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0014",
+   "unlock_id": 2703257032,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0014_1nebral_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0015": {
+   "unlock_file": "u_spo_wep_camo_wcr0015.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0015",
+   "unlock_id": 3675408925,
+   "tex": "t_wep_camo_wcr0015",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "678fbcf8ae5404f3c8f81bcecb582e55",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0015_1cec7f0_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0016": {
+   "unlock_file": "u_spo_wep_camo_wcr0016.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0016",
+   "unlock_id": 830360924,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0016_f8ki0f_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0017": {
+   "unlock_file": "u_spo_wep_camo_wcr0017.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0017",
+   "unlock_id": 1451690770,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0017_1epcmha_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0018": {
+   "unlock_file": "u_spo_wep_camo_wcr0018.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0018",
+   "unlock_id": 1232415266,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0018_1idsx_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0019": {
+   "unlock_file": "u_spo_wep_camo_wcr0019.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0019",
+   "unlock_id": 512918033,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0019_1o2mvwg_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0020": {
+   "unlock_file": "u_spo_wep_camo_wcr0020.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0020",
+   "unlock_id": 235832156,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0020_1flksru_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0021": {
+   "unlock_file": "u_spo_wep_camo_wcr0021.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0021",
+   "unlock_id": 1551103019,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0021_1rhecjv_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0022": {
+   "unlock_file": "u_spo_wep_camo_wcr0022.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0022",
+   "unlock_id": 2982785928,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0022_1as17xk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0023": {
+   "unlock_file": "u_spo_wep_camo_wcr0023.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0023",
+   "unlock_id": 2868967596,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0023_1mnurpl_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0024": {
+   "unlock_file": "u_spo_wep_camo_wcr0024.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0024",
+   "unlock_id": 72382346,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0024_d1cyem_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0025": {
+   "unlock_file": "u_spo_wep_camo_wcr0025.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0025",
+   "unlock_id": 3440023878,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0025_ox6i6n_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0026": {
+   "unlock_file": "u_spo_wep_camo_wcr0026.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0026",
+   "unlock_id": 4138551435,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0026_87tdkc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0027": {
+   "unlock_file": "u_spo_wep_camo_wcr0027.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0027",
+   "unlock_id": 10331017,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0027_k3mxcd_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0028": {
+   "unlock_file": "u_spo_wep_camo_wcr0028.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0028",
+   "unlock_id": 2240920719,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0028_opnmw2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0029": {
+   "unlock_file": "u_spo_wep_camo_wcr0029.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0029",
+   "unlock_id": 1997171120,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0029_10lh6o3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0030": {
+   "unlock_file": "u_spo_wep_camo_wcr0030.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0030",
+   "unlock_id": 1926840278,
+   "tex": null,
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0030_1x57off_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0031": {
+   "unlock_file": "u_spo_wep_camo_wcr0031.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0031",
+   "unlock_id": 1029255261,
+   "tex": "t_wep_camo_wcr0031",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5eb852d1e9391dd40efe7241a01771a7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0031_vcwlca_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0032": {
+   "unlock_file": "u_spo_wep_camo_wcr0032.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0032",
+   "unlock_id": 2025452596,
+   "tex": "t_wep_camo_wcr0032",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "3fd821dd1a1df7f52323607cfcc1177f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0032_1uu79d5_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0033": {
+   "unlock_file": "u_spo_wep_camo_wcr0033.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0033",
+   "unlock_id": 3928422801,
+   "tex": "t_wep_camo_wcr0033",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7c1d0140551a658d05cadbb754d83217",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0033_4hjsnc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0034": {
+   "unlock_file": "u_spo_wep_camo_wcr0034.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0034",
+   "unlock_id": 1188798609,
+   "tex": "t_wep_camo_wcr0034",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "55433354bfd8fe0897e1ea8360160129",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0034_ukzu27_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0035": {
+   "unlock_file": "u_spo_wep_camo_wcr0035.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0035",
+   "unlock_id": 1504316460,
+   "tex": "t_wep_camo_wcr0035",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "f99b88374cd6be9b40411e15f0de6f17",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0035_1rtssy6_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0036": {
+   "unlock_file": "u_spo_wep_camo_wcr0036.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0036",
+   "unlock_id": 4030197392,
+   "tex": "t_wep_camo_wcr0036",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "6b7f029fbdf32199fda1cd01a69cc2f3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0036_s9zezx_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0037": {
+   "unlock_file": "u_spo_wep_camo_wcr0037.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0037",
+   "unlock_id": 385205178,
+   "tex": "t_wep_camo_wcr0037",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "9166702e2003ef1c033ef9df329df619",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0037_10yg098_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0038": {
+   "unlock_file": "u_spo_wep_camo_wcr0038.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0038",
+   "unlock_id": 1231020650,
+   "tex": "t_wep_camo_wcr0038",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "8f9d038d304ef2038d02e0ec2f55c3eb",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0038_169aijn_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0039": {
+   "unlock_file": "u_spo_wep_camo_wcr0039.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0039",
+   "unlock_id": 1532645399,
+   "tex": "t_wep_camo_wcr0039",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5fe49d2bf401b691e6a4ce08f25e9493",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0039_4gzfgi_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0040": {
+   "unlock_file": "u_spo_wep_camo_wcr0040.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0040",
+   "unlock_id": 694240773,
+   "tex": "t_wep_camo_wcr0040",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "6f92e62c4d54f97480ba28eac00fd833",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0040_ibvbn0_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0041": {
+   "unlock_file": "u_spo_wep_camo_wcr0041.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0041",
+   "unlock_id": 867626418,
+   "tex": "t_wep_camo_wcr0041",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "c12e83015523b0f1b7223fa46a32a62d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0041_r78a31_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0042": {
+   "unlock_file": "u_spo_wep_camo_wcr0042.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0042",
+   "unlock_id": 2802407254,
+   "tex": "t_wep_camo_wcr0042",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "376bf870799a1de90c83a14cc967a203",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0042_16ooyjy_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0043": {
+   "unlock_file": "u_spo_wep_camo_wcr0043.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0043",
+   "unlock_id": 2497385219,
+   "tex": "t_wep_camo_wcr0043",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "01002dd4a9ff0d4bf3ade7bc03488089",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0043_1fk1wzz_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0044": {
+   "unlock_file": "u_spo_wep_camo_wcr0044.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0044",
+   "unlock_id": 2001284607,
+   "tex": "t_wep_camo_wcr0044",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ef584954e037fffb57a4ddae44f6ac13",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0044_1kw3608_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0045": {
+   "unlock_file": "u_spo_wep_camo_wcr0045.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0045",
+   "unlock_id": 100239284,
+   "tex": "t_wep_camo_wcr0045",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "bcf2501340e36db81988ab3bc4a0918b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0045_1trg4g9_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0046": {
+   "unlock_file": "u_spo_wep_camo_wcr0046.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0046",
+   "unlock_id": 1015421821,
+   "tex": "t_wep_camo_wcr0046",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "05fd6f9304e6858b1f6c4e7b9ee26dc3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0046_a7sqy2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0047": {
+   "unlock_file": "u_spo_wep_camo_wcr0047.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0047",
+   "unlock_id": 2068928227,
+   "tex": "t_wep_camo_wcr0047",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "391edab590bdc7e56d6b79f841a00a5f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0047_j35pe3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0048": {
+   "unlock_file": "u_spo_wep_camo_wcr0048.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0048",
+   "unlock_id": 459835650,
+   "tex": "t_wep_camo_wcr0048",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "b29b6f859d76bb10fb84bb228a070819",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0048_1qh27qc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0049": {
+   "unlock_file": "u_spo_wep_camo_wcr0049.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0049",
+   "unlock_id": 2731513295,
+   "tex": "t_wep_camo_wcr0049",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "910a9c7a3418a3108c0d71c172c32e19",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0049_bb479_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0050": {
+   "unlock_file": "u_spo_wep_camo_wcr0050.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0050",
+   "unlock_id": 940330850,
+   "tex": "t_wep_camo_wcr0050",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e6a74daca349a6f77cb7ce8edef25b1b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0050_17savzh_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0051": {
+   "unlock_file": "u_spo_wep_camo_wcr0051.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0051",
+   "unlock_id": 4099010938,
+   "tex": "t_wep_camo_wcr0051",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0e7e026f21be3f50bc087f883252518d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0051_wsbc3w_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0052": {
+   "unlock_file": "u_spo_wep_camo_wcr0052.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0052",
+   "unlock_id": 148558032,
+   "tex": "t_wep_camo_wcr0052",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "86f37d0723b1636bc44d7b0cc80acc15",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0052_1ynnoof_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0053": {
+   "unlock_file": "u_spo_wep_camo_wcr0053.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0053",
+   "unlock_id": 763732716,
+   "tex": "t_wep_camo_wcr0053",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "49ca4cf630bdbd1f6e2956521a43a655",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0053_z3br66_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0054": {
+   "unlock_file": "u_spo_wep_camo_wcr0054.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0054",
+   "unlock_id": 3257662771,
+   "tex": "t_wep_camo_wcr0054",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "2d50d30c33cd41bd7e8e5db5de0a39fd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0054_bbeodl_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0055": {
+   "unlock_file": "u_spo_wep_camo_wcr0055.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0055",
+   "unlock_id": 2814389048,
+   "tex": "t_wep_camo_wcr0055",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "584ef08170f1e1eaddb1b8a6cffd28a7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0055_bf4i0_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0056": {
+   "unlock_file": "u_spo_wep_camo_wcr0056.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0056",
+   "unlock_id": 2876000251,
+   "tex": "t_wep_camo_wcr0056",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0075a8c5cf004846945204d7ce5ebda9",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0056_126rh2j_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0057": {
+   "unlock_file": "u_spo_wep_camo_wcr0057.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0057",
+   "unlock_id": 2011063437,
+   "tex": "t_wep_camo_wcr0057",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "9c11a1ff92910c2bb20afc854a67378b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0057_2mfjka_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0058": {
+   "unlock_file": "u_spo_wep_camo_wcr0058.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0058",
+   "unlock_id": 1835565908,
+   "tex": "t_wep_camo_wcr0058",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "b737892f22a388879fe0134a34c4409d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0058_gwdq3p_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0059": {
+   "unlock_file": "u_spo_wep_camo_wcr0059.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0059",
+   "unlock_id": 924433601,
+   "tex": "t_wep_camo_wcr0059",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "4858c13f0aab6acf7c0e14d8ed6a84a1",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0059_5we684_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0060": {
+   "unlock_file": "u_spo_wep_camo_wcr0060.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0060",
+   "unlock_id": 1811443016,
+   "tex": "t_wep_camo_wcr0060",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e5ba29086978cc74552c22504245cd11",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0060_1wgg52m_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0061": {
+   "unlock_file": "u_spo_wep_camo_wcr0061.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0061",
+   "unlock_id": 2436011972,
+   "tex": "t_wep_camo_wcr0061",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a665c61d0884799fb09807dec75a26cf",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0061_9b5mvj_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0062": {
+   "unlock_file": "u_spo_wep_camo_wcr0062.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0062",
+   "unlock_id": 2310731395,
+   "tex": "t_wep_camo_wcr0062",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "33eda41a9c9c128133794525c23ac357",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0062_1rmwk8c_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0063": {
+   "unlock_file": "u_spo_wep_camo_wcr0063.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0063",
+   "unlock_id": 1512929748,
+   "tex": "t_wep_camo_wcr0063",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0110868204328f976e3acc95b2d9f4a9",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0063_4hm219_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0064": {
+   "unlock_file": "u_spo_wep_camo_wcr0064.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0064",
+   "unlock_id": 2486192263,
+   "tex": "t_wep_camo_wcr0064",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "74a01b61d57f06149efe83d237097865",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0064_zzjxgq_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0065": {
+   "unlock_file": "u_spo_wep_camo_wcr0065.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0065",
+   "unlock_id": 1474028621,
+   "tex": "t_wep_camo_wcr0065",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "1ebdf3ec17305865d40d075e1274ff39",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0065_1bvdh8r_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0066": {
+   "unlock_file": "u_spo_wep_camo_wcr0066.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0066",
+   "unlock_id": 2900568463,
+   "tex": "t_wep_camo_wcr0066",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0d0000d4ea1fcdc2914ddb7d2ae2e1b7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0066_v60cmg_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0067": {
+   "unlock_file": "u_spo_wep_camo_wcr0067.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0067",
+   "unlock_id": 3468105446,
+   "tex": "t_wep_camo_wcr0067",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "b93035cf65b12f8163b58cbd1c12fd3b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0067_171tweh_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0068": {
+   "unlock_file": "u_spo_wep_camo_wcr0068.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0068",
+   "unlock_id": 505797986,
+   "tex": "t_wep_camo_wcr0068",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "9613f4cf18816372739474723a9ebf3d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0068_15kiz6u_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0069": {
+   "unlock_file": "u_spo_wep_camo_wcr0069.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0069",
+   "unlock_id": 2513720698,
+   "tex": "t_wep_camo_wcr0069",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "52b0430401ac352837cbf51dc557aee1",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0069_1hgciyv_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0070": {
+   "unlock_file": "u_spo_wep_camo_wcr0070.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0070",
+   "unlock_id": 922339863,
+   "tex": "t_wep_camo_wcr0070",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "76e8d77b7eb6f6dc400f2cc46dfec125",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0070_eyyyr3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0071": {
+   "unlock_file": "u_spo_wep_camo_wcr0071.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0071",
+   "unlock_id": 476381250,
+   "tex": "t_wep_camo_wcr0071",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "cd2c23dc3cbd1bddfa9a7a8b3d74c443",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0071_1c7rxn2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0072": {
+   "unlock_file": "u_spo_wep_camo_wcr0072.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0072",
+   "unlock_id": 3965677801,
+   "tex": "t_wep_camo_wcr0072",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7d5d12e3866f4e4313f3dabbb12c1131",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0072_cnyjot_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0073": {
+   "unlock_file": "u_spo_wep_camo_wcr0073.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0073",
+   "unlock_id": 956423025,
+   "tex": "t_wep_camo_wcr0073",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "461982cebf9b2c693d6fbc2c40c1b9b5",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0073_lcf4y4_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0074": {
+   "unlock_file": "u_spo_wep_camo_wcr0074.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0074",
+   "unlock_id": 3677075972,
+   "tex": "t_wep_camo_wcr0074",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0b51fbe89c191b192ef458e1639c8f69",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0074_1hj6t4b_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0075": {
+   "unlock_file": "u_spo_wep_camo_wcr0075.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0075",
+   "unlock_id": 59493806,
+   "tex": "t_wep_camo_wcr0075",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "fd56ffbd94d408c9d0bd4e7a31d15a99",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0075_fqvq16_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0076": {
+   "unlock_file": "u_spo_wep_camo_wcr0076.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0076",
+   "unlock_id": 1979741775,
+   "tex": "t_wep_camo_wcr0076",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "c1f9adf36ef0bf86edecb0b152d6364d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0076_1f86e21_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0077": {
+   "unlock_file": "u_spo_wep_camo_wcr0077.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0077",
+   "unlock_id": 2050459049,
+   "tex": "t_wep_camo_wcr0077",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "d8716f72b16b217a6dc0a3555648c3ff",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0077_1nwmzbc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0078": {
+   "unlock_file": "u_spo_wep_camo_wcr0078.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0078",
+   "unlock_id": 3444025252,
+   "tex": "t_wep_camo_wcr0078",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e1f2f20d2f5417baac81881d9f4ca9cb",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0078_1n45uuf_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0079": {
+   "unlock_file": "u_spo_wep_camo_wcr0079.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0079",
+   "unlock_id": 1118123542,
+   "tex": "t_wep_camo_wcr0079",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "37c3cc730f6f3545971ea2c76d43c3f1",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0079_lburra_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0080": {
+   "unlock_file": "u_spo_wep_camo_wcr0080.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0080",
+   "unlock_id": 779268415,
+   "tex": "t_wep_camo_wcr0080",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "836a263b9667077866329c809e5770d3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0080_ee54tc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0081": {
+   "unlock_file": "u_spo_wep_camo_wcr0081.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0081",
+   "unlock_id": 241062420,
+   "tex": "t_wep_camo_wcr0081",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "83e3b428694b9b9ca6390c170ea77989",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0081_n9i39d_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0082": {
+   "unlock_file": "u_spo_wep_camo_wcr0082.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0082",
+   "unlock_id": 4222965617,
+   "tex": "t_wep_camo_wcr0082",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "2403d43602ffefa9b70eb98af6825d4d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0082_12qyrqa_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0083": {
+   "unlock_file": "u_spo_wep_camo_wcr0083.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0083",
+   "unlock_id": 979105269,
+   "tex": "t_wep_camo_wcr0083",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "d508200d5bfac09a30fcfa70257989ab",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0083_1bmbq6b_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0084": {
+   "unlock_file": "u_spo_wep_camo_wcr0084.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0084",
+   "unlock_id": 2139878081,
+   "tex": "t_wep_camo_wcr0084",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "3dbe77da01d6d55896dbb90386f66e6f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0084_1av1cf8_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0085": {
+   "unlock_file": "u_spo_wep_camo_wcr0085.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0085",
+   "unlock_id": 518654,
+   "tex": "t_wep_camo_wcr0085",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "21774a55b42ae4a7dade664a73c436f1",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0085_1jqeav9_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0086": {
+   "unlock_file": "u_spo_wep_camo_wcr0086.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0086",
+   "unlock_id": 875533857,
+   "tex": "t_wep_camo_wcr0086",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "45a610b89d110d6dd0fe0e5c5c0bd635",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0086_6qxd2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0087": {
+   "unlock_file": "u_spo_wep_camo_wcr0087.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0087",
+   "unlock_id": 689004850,
+   "tex": "t_wep_camo_wcr0087",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "66f7011f916d42001e7da7bb12239b81",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0087_923vt3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0088": {
+   "unlock_file": "u_spo_wep_camo_wcr0088.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0088",
+   "unlock_id": 2547462380,
+   "tex": "t_wep_camo_wcr0088",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "35dc7e1cffac66fb56b9c68846cecb95",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0088_15a2ap4_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0089": {
+   "unlock_file": "u_spo_wep_camo_wcr0089.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0089",
+   "unlock_id": 3021595004,
+   "tex": "t_wep_camo_wcr0089",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5f92286900bfae273c555bcb289590c5",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0089_1e5f955_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0090": {
+   "unlock_file": "u_spo_wep_camo_wcr0090.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0090",
+   "unlock_id": 3307435872,
+   "tex": "t_wep_camo_wcr0090",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "6deea73bdeacc5d1fa8402164f9e3f63",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0090_13ukp5t_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0091": {
+   "unlock_file": "u_spo_wep_camo_wcr0091.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0091",
+   "unlock_id": 1476053312,
+   "tex": "t_wep_camo_wcr0091",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "f309eb1e8d261b3b3bdc3e24d56857f7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0091_sul5a8_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0092": {
+   "unlock_file": "u_spo_wep_camo_wcr0092.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0092",
+   "unlock_id": 4252125973,
+   "tex": "t_wep_camo_wcr0092",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "3e3855bb2c226bba2e819381b7aff39d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0092_1upxhur_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0093": {
+   "unlock_file": "u_spo_wep_camo_wcr0093.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0093",
+   "unlock_id": 3432641450,
+   "tex": "t_wep_camo_wcr0093",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "6f4f214fe366804be3dc6c139cb86e65",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0093_v5lkci_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0094": {
+   "unlock_file": "u_spo_wep_camo_wcr0094.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0094",
+   "unlock_id": 4052496357,
+   "tex": "t_wep_camo_wcr0094",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a4f3a41df94aced1da045276a3d73c63",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0094_1acusl_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0095": {
+   "unlock_file": "u_spo_wep_camo_wcr0095.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0095",
+   "unlock_id": 3082271680,
+   "tex": "t_wep_camo_wcr0095",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "d9734351c88add4acbcf41ab9b9ac279",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0095_1pbhcw4_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0096": {
+   "unlock_file": "u_spo_wep_camo_wcr0096.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0096",
+   "unlock_id": 1364189317,
+   "tex": "t_wep_camo_wcr0096",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e5b3f8f344f877b649bd0f2e073d004f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0096_s5pnhj_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0097": {
+   "unlock_file": "u_spo_wep_camo_wcr0097.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0097",
+   "unlock_id": 2392898165,
+   "tex": "t_wep_camo_wcr0097",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a7cff07f91646680271cd04be27f4a69",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0097_1rmhrye_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0098": {
+   "unlock_file": "u_spo_wep_camo_wcr0098.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0098",
+   "unlock_id": 1414606943,
+   "tex": "t_wep_camo_wcr0098",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e9aaacfd9e581fc5763dc1a25c8cc5c5",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0098_1uqhv1l_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0099": {
+   "unlock_file": "u_spo_wep_camo_wcr0099.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0099",
+   "unlock_id": 3550545920,
+   "tex": "t_wep_camo_wcr0099",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "bc92954265078987a329f3685233b6e3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0099_1jqib60_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0100": {
+   "unlock_file": "u_spo_wep_camo_wcr0100.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0100",
+   "unlock_id": 3937525469,
+   "tex": "t_wep_camo_wcr0100",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "9f1f2b88232d524cf35e9e4b44c88055",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0100_rie39l_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0101": {
+   "unlock_file": "u_spo_wep_camo_wcr0101.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0101",
+   "unlock_id": 2304205909,
+   "tex": "t_wep_camo_wcr0101",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "65f038d4d7a1f2a3e01167f43ddbd6fd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0101_in14tk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0102": {
+   "unlock_file": "u_spo_wep_camo_wcr0102.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0102",
+   "unlock_id": 1522958418,
+   "tex": "t_wep_camo_wcr0102",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "02b22296e62dafbe8df533b947caa015",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0102_1fv7q6j_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0103": {
+   "unlock_file": "u_spo_wep_camo_wcr0103.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0103",
+   "unlock_id": 2500580776,
+   "tex": "t_wep_camo_wcr0103",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e094e84e37190d59f66402e7a6b21723",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0103_16zurqi_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0104": {
+   "unlock_file": "u_spo_wep_camo_wcr0104.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0104",
+   "unlock_id": 1349828418,
+   "tex": "t_wep_camo_wcr0104",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ab57da37248e7156a8b2a9c386710f79",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0104_1nzaavh_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0105": {
+   "unlock_file": "u_spo_wep_camo_wcr0105.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0105",
+   "unlock_id": 4071128493,
+   "tex": "t_wep_camo_wcr0105",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "abd49038d3591640a2904a1e3341424d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0105_1f3xcfg_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0106": {
+   "unlock_file": "u_spo_wep_camo_wcr0106.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0106",
+   "unlock_id": 3502850219,
+   "tex": "t_wep_camo_wcr0106",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e87c66dd376405a8ff0148a015e48b1f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0106_dazvtb_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0107": {
+   "unlock_file": "u_spo_wep_camo_wcr0107.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0107",
+   "unlock_id": 357404466,
+   "tex": "t_wep_camo_wcr0107",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "4f469ecc47512a44baf313884cdd30b5",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0107_4fmxda_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0108": {
+   "unlock_file": "u_spo_wep_camo_wcr0108.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0108",
+   "unlock_id": 2397385594,
+   "tex": "t_wep_camo_wcr0108",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "bd3325c0af22559ce80583ad2325b2c5",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0108_mgxdt_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0109": {
+   "unlock_file": "u_spo_wep_camo_wcr0109.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0109",
+   "unlock_id": 1143036927,
+   "tex": "t_wep_camo_wcr0109",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "b0d61423a66f072d7c65d5d8c962a419",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0109_1qs80ww_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0110": {
+   "unlock_file": "u_spo_wep_camo_wcr0110.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0110",
+   "unlock_id": 2022269779,
+   "tex": "t_wep_camo_wcr0110",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ffe7415cdd1fe7150a4f02dcc8c90815",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0110_61k2tk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0111": {
+   "unlock_file": "u_spo_wep_camo_wcr0111.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0111",
+   "unlock_id": 505260949,
+   "tex": "t_wep_camo_wcr0111",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "d7f598bddf888b130aa838ab1c4a4c21",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0111_1we7jjd_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0112": {
+   "unlock_file": "u_spo_wep_camo_wcr0112.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0112",
+   "unlock_id": 3003817881,
+   "tex": "t_wep_camo_wcr0112",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "2b0c668db301d4c8c376ddc2f0d2a977",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0112_wwwvii_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0113": {
+   "unlock_file": "u_spo_wep_camo_wcr0113.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0113",
+   "unlock_id": 2268342744,
+   "tex": "t_wep_camo_wcr0113",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "8ff4d384b4cc246cca84a91dedb296bd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0113_1yp7yln_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0114": {
+   "unlock_file": "u_spo_wep_camo_wcr0114.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0114",
+   "unlock_id": 2232902304,
+   "tex": "t_wep_camo_wcr0114",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a9a1da6e8da4db28b63251b031dc05ef",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0114_12igafg_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0115": {
+   "unlock_file": "u_spo_wep_camo_wcr0115.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0115",
+   "unlock_id": 686895488,
+   "tex": "t_wep_camo_wcr0115",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "15bb3b11b13ab87e74c020d18cf337d3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0115_ttzp65_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0116": {
+   "unlock_file": "u_spo_wep_camo_wcr0116.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0116",
+   "unlock_id": 631142729,
+   "tex": "t_wep_camo_wcr0116",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "324a6c42c2f8d2b60eda2ac41e475baf",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0116_1tdt34e_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0117": {
+   "unlock_file": "u_spo_wep_camo_wcr0117.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0117",
+   "unlock_id": 981229991,
+   "tex": "t_wep_camo_wcr0117",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a968718e99b9a8d71af5d276be69a73f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0117_w5048f_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0118": {
+   "unlock_file": "u_spo_wep_camo_wcr0118.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0118",
+   "unlock_id": 281706736,
+   "tex": "t_wep_camo_wcr0118",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7553b9b9be7f5808d02453cf6b09ac39",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0118_1e6qyww_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0119": {
+   "unlock_file": "u_spo_wep_camo_wcr0119.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0119",
+   "unlock_id": 339347825,
+   "tex": "t_wep_camo_wcr0119",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "43c5d928ec5cc4f96bd289202f7f59b7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0119_15iadnl_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0120": {
+   "unlock_file": "u_spo_wep_camo_wcr0120.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0120",
+   "unlock_id": 281602766,
+   "tex": "t_wep_camo_wcr0120",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a9bb2a6b8c9c3609b2299d4abe4d2bcd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0120_9mbg23_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0121": {
+   "unlock_file": "u_spo_wep_camo_wcr0121.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0121",
+   "unlock_id": 2220358235,
+   "tex": "t_wep_camo_wcr0121",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ff4a80d017a270b7d2046ddaaae09bff",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0121_1wrly96_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0122": {
+   "unlock_file": "u_spo_wep_camo_wcr0122.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0122",
+   "unlock_id": 2575347933,
+   "tex": "t_wep_camo_wcr0122",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "12a4965ddddd3eb532acc0b089d71053",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0122_4srv7t_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0123": {
+   "unlock_file": "u_spo_wep_camo_wcr0123.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0123",
+   "unlock_id": 3986225637,
+   "tex": "t_wep_camo_wcr0123",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "29598e033a209a4050c0a47b1b317e03",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0123_1ry2dew_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0124": {
+   "unlock_file": "u_spo_wep_camo_wcr0124.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0124",
+   "unlock_id": 4174809899,
+   "tex": "t_wep_camo_wcr0124",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0f06d01d9ea157539ff8e27fc6ad5a4b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0124_1637nnz_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0125": {
+   "unlock_file": "u_spo_wep_camo_wcr0125.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0125",
+   "unlock_id": 3731258949,
+   "tex": "t_wep_camo_wcr0125",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5ab2966b12e482081c34b08462b086db",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0125_u7e3vy_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0126": {
+   "unlock_file": "u_spo_wep_camo_wcr0126.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0126",
+   "unlock_id": 2455388672,
+   "tex": "t_wep_camo_wcr0126",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "615a8679e07212e7731a2b187815ab0b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0126_119o2tp_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0127": {
+   "unlock_file": "u_spo_wep_camo_wcr0127.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0127",
+   "unlock_id": 2518656825,
+   "tex": "t_wep_camo_wcr0127",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0be297b179541aa655e82cd339c33a2d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0127_pduj1o_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0128": {
+   "unlock_file": "u_spo_wep_camo_wcr0128.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0128",
+   "unlock_id": 3398950488,
+   "tex": "t_wep_camo_wcr0128",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "bf5a17d5b84b0448da1b46051ccd0159",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0128_1hric5f_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0129": {
+   "unlock_file": "u_spo_wep_camo_wcr0129.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0129",
+   "unlock_id": 88168614,
+   "tex": "t_wep_camo_wcr0129",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "78633bd7045b71a411bad6ca9f73e5b7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0129_15vosde_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0130": {
+   "unlock_file": "u_spo_wep_camo_wcr0130.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0130",
+   "unlock_id": 3560574777,
+   "tex": "t_wep_camo_wcr0130",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "452aebb718fdd15df14b321e2017327f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0130_zehkcq_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0131": {
+   "unlock_file": "u_spo_wep_camo_wcr0131.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0131",
+   "unlock_id": 4022367367,
+   "tex": "t_wep_camo_wcr0131",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "55b24be5eae95730bce6e9ee22660b2f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0131_1yythuz_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0132": {
+   "unlock_file": "u_spo_wep_camo_wcr0132.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0132",
+   "unlock_id": 3801405970,
+   "tex": "t_wep_camo_wcr0132",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "313531a33ce5d471f224d87bd360d465",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0132_x3h5ag_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0133": {
+   "unlock_file": "u_spo_wep_camo_wcr0133.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0133",
+   "unlock_id": 2519510035,
+   "tex": "t_wep_camo_wcr0133",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "3f25b5b32396bd00411edb33ebde4001",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0133_183gp61_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0134": {
+   "unlock_file": "u_spo_wep_camo_wcr0134.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0134",
+   "unlock_id": 4059409044,
+   "tex": "t_wep_camo_wcr0134",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "bd7f58f86c508ee088e3b3b0f86c8c75",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0134_1vvdrym_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0135": {
+   "unlock_file": "u_spo_wep_camo_wcr0135.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0135",
+   "unlock_id": 192513019,
+   "tex": "t_wep_camo_wcr0135",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "919d20d8d6bd66bc7dfdf913f3fc9461",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0135_welnhr_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0136": {
+   "unlock_file": "u_spo_wep_camo_wcr0136.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0136",
+   "unlock_id": 3108654085,
+   "tex": "t_wep_camo_wcr0136",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "c0bc2bd6c466291370bf28f1a209b433",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0136_1tkdcwc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0137": {
+   "unlock_file": "u_spo_wep_camo_wcr0137.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0137",
+   "unlock_id": 770631027,
+   "tex": "t_wep_camo_wcr0137",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "13839a61b2471d31f2b6ea322d4cb451",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0137_5j8ust_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0138": {
+   "unlock_file": "u_spo_wep_camo_wcr0138.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0138",
+   "unlock_id": 656753933,
+   "tex": "t_wep_camo_wcr0138",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7f447cc0dc1c22daafaa14a2848b3fed",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0138_8ikegy_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0139": {
+   "unlock_file": "u_spo_wep_camo_wcr0139.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0139",
+   "unlock_id": 219718817,
+   "tex": "t_wep_camo_wcr0139",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "111063a4270395b416783c6cf5528511",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0139_182wbz7_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0140": {
+   "unlock_file": "u_spo_wep_camo_wcr0140.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0140",
+   "unlock_id": 1225932388,
+   "tex": "t_wep_camo_wcr0140",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "c1aad0c258c28c62c021d87e223966e7",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0140_18d9fkd_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0141": {
+   "unlock_file": "u_spo_wep_camo_wcr0141.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0141",
+   "unlock_id": 4243108822,
+   "tex": "t_wep_camo_wcr0141",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "f50f21fdf91ac95d381466b2d79e5e99",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0141_zhwh4c_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0142": {
+   "unlock_file": "u_spo_wep_camo_wcr0142.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0142",
+   "unlock_id": 3836531085,
+   "tex": "t_wep_camo_wcr0142",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "82ea5b34454be11caf1d7de2bbf46093",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0142_1wq32hb_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0143": {
+   "unlock_file": "u_spo_wep_camo_wcr0143.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0143",
+   "unlock_id": 2406024673,
+   "tex": "t_wep_camo_wcr0143",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "0236a4db3e838def73ba4089b95eb3cd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0143_1nuq41a_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0144": {
+   "unlock_file": "u_spo_wep_camo_wcr0144.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0144",
+   "unlock_id": 2207469760,
+   "tex": "t_wep_camo_wcr0144",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5382caed8b4a708b167ee687c4b6686d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0144_bwd7yh_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0145": {
+   "unlock_file": "u_spo_wep_camo_wcr0145.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0145",
+   "unlock_id": 4266133967,
+   "tex": "t_wep_camo_wcr0145",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "64a4c4763c38a674088f5948ebb48c25",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0145_3109ig_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0146": {
+   "unlock_file": "u_spo_wep_camo_wcr0146.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0146",
+   "unlock_id": 4009198531,
+   "tex": "t_wep_camo_wcr0146",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7cf8d67303751e29cf12ff832359595b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0146_1096uvf_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0147": {
+   "unlock_file": "u_spo_wep_camo_wcr0147.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0147",
+   "unlock_id": 3982660789,
+   "tex": "t_wep_camo_wcr0147",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "4cbadec79a830d99fe0dc3db0136f1a9",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0147_rdtwfe_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0148": {
+   "unlock_file": "u_spo_wep_camo_wcr0148.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0148",
+   "unlock_id": 3826386750,
+   "tex": "t_wep_camo_wcr0148",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "afecb4accc32b0d485ac4af2a6c05fa3",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0148_hhc9ol_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0149": {
+   "unlock_file": "u_spo_wep_camo_wcr0149.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0149",
+   "unlock_id": 3744964441,
+   "tex": "t_wep_camo_wcr0149",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "4c3ee66e54fdf10158fafbcde560275f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0149_8lzb8k_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0150": {
+   "unlock_file": "u_spo_wep_camo_wcr0150.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0150",
+   "unlock_id": 2080888918,
+   "tex": "t_wep_camo_wcr0150",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "1d32d6c037bbbdd1ecef1cfac993146b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0150_mwff4c_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0151": {
+   "unlock_file": "u_spo_wep_camo_wcr0151.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0151",
+   "unlock_id": 3830043268,
+   "tex": "t_wep_camo_wcr0151",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "31390cb99edeef03793ef84a3f1f5f41",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0151_e7ytv1_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0152": {
+   "unlock_file": "u_spo_wep_camo_wcr0152.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0152",
+   "unlock_id": 2300179866,
+   "tex": "t_wep_camo_wcr0152",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5a5588bed0409af785015495fabdf157",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0152_1drs7ta_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0153": {
+   "unlock_file": "u_spo_wep_camo_wcr0153.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0153",
+   "unlock_id": 1997469464,
+   "tex": "t_wep_camo_wcr0153",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "1404c719333b110adc2936fea4330b25",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0153_giz8xb_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0154": {
+   "unlock_file": "u_spo_wep_camo_wcr0154.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0154",
+   "unlock_id": 278745242,
+   "tex": "t_wep_camo_wcr0154",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "a05afe5ef1dd5e3d6a0e36437c3a8a4b",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0154_1pgn9hk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0155": {
+   "unlock_file": "u_spo_wep_camo_wcr0155.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0155",
+   "unlock_id": 3995161633,
+   "tex": "t_wep_camo_wcr0155",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "deb848145dceab5ed53578309a0528ab",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0155_1gs6o89_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0156": {
+   "unlock_file": "u_spo_wep_camo_wcr0156.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0156",
+   "unlock_id": 2812303885,
+   "tex": "t_wep_camo_wcr0156",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "7dcada3ed82de2b036a14c7537dc9671",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0156_haw07e_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0157": {
+   "unlock_file": "u_spo_wep_camo_wcr0157.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0157",
+   "unlock_id": 3299916531,
+   "tex": "t_wep_camo_wcr0157",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "5cf46f9c88b56d4dd4dcac3708314e89",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0157_1j373aj_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0158": {
+   "unlock_file": "u_spo_wep_camo_wcr0158.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0158",
+   "unlock_id": 2593895771,
+   "tex": "t_wep_camo_wcr0158",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "761235376193dc04472eeb0f29486db1",
+    "category": "DefaultTextureGroup"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0158_1v1mb7o_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0159": {
+   "unlock_file": "u_spo_wep_camo_wcr0159.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0159",
+   "unlock_id": 3627787605,
+   "tex": "t_wep_camo_wcr0159",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "167fd0e3c6c630b7795510e82b212821",
+    "category": "DefaultTextureGroup"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0159_1md5pyd_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0160": {
+   "unlock_file": "u_spo_wep_camo_wcr0160.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0160",
+   "unlock_id": 378248474,
+   "tex": "t_wep_camo_wcr0160",
+   "tex_meta": {
+    "w": 4096,
+    "h": 4096,
+    "mips": 13,
+    "chunk": "fbace8b5438ee0c30ebc4d4fb6c570eb",
+    "category": "DefaultTextureGroup"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0160_qh6scv_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0161": {
+   "unlock_file": "u_spo_wep_camo_wcr0161.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0161",
+   "unlock_id": 2787909710,
+   "tex": "t_wep_camo_wcr0161",
+   "tex_meta": {
+    "w": 4096,
+    "h": 4096,
+    "mips": 13,
+    "chunk": "190b9d5871ad7a54d4168c9cc725293f",
+    "category": "DefaultTextureGroup"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0161_eld8ku_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0162": {
+   "unlock_file": "u_spo_wep_camo_wcr0162.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0162",
+   "unlock_id": 1836750101,
+   "tex": "t_wep_camo_wcr0162",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "543f290350cc021f2417c8bb9297b37d",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0162_lnn7il_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0163": {
+   "unlock_file": "u_spo_wep_camo_wcr0163.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0163",
+   "unlock_id": 2079256035,
+   "tex": "t_wep_camo_wcr0163",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "cb500f3ea2e33e90793d4363df131983",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0163_9rtnqk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0164": {
+   "unlock_file": "u_spo_wep_camo_wcr0164.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0164",
+   "unlock_id": 3735090864,
+   "tex": "t_wep_camo_wcr0164",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "4c936a07aab1bc1573643e8de1ff6dfd",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0164_1t1emq3_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0165": {
+   "unlock_file": "u_spo_wep_camo_wcr0165.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0165",
+   "unlock_id": 1603985921,
+   "tex": "t_wep_camo_wcr0165",
+   "tex_meta": {
+    "w": 4096,
+    "h": 4096,
+    "mips": 13,
+    "chunk": "849bf9750c4c937b1112678ac44fb705",
+    "category": "DefaultTextureGroup"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0165_1h5l2y2_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0166": {
+   "unlock_file": "u_spo_wep_camo_wcr0166.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0166",
+   "unlock_id": 3585063581,
+   "tex": "t_wep_camo_wcr0166",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "fcd328f7967042272af53be36ef77d5f",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0166_1o7v1vt_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0167": {
+   "unlock_file": "u_spo_wep_camo_wcr0167.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0167",
+   "unlock_id": 3446993809,
+   "tex": "t_wep_camo_wcr0167",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ea4bd81c5fa493243ab3003430c4cab1",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0167_1cc1i3s_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0168": {
+   "unlock_file": "u_spo_wep_camo_wcr0168.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0168",
+   "unlock_id": 1735670857,
+   "tex": "t_wep_camo_wcr0168",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "201e2a144abc5213e7445ef5191620bd",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0168_1ymdog7_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0169": {
+   "unlock_file": "u_spo_wep_camo_wcr0169.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0169",
+   "unlock_id": 1825184867,
+   "tex": "t_wep_camo_wcr0169",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "d90f9b4b2bb9f071c7b3c2f83f7a1173",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0169_1mqk4o6_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0170": {
+   "unlock_file": "u_spo_wep_camo_wcr0170.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0170",
+   "unlock_id": 1058094664,
+   "tex": "t_wep_camo_wcr0170",
+   "tex_meta": {
+    "w": 1024,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "d208c154d391a0973ea28afe211349c1",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0170_1g9cwni_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0171": {
+   "unlock_file": "u_spo_wep_camo_wcr0171.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0171",
+   "unlock_id": 1841165353,
+   "tex": "t_wep_camo_wcr0171",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "74183aaf8f9993d3096430ff5eb05649",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0171_gsks6n_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0172": {
+   "unlock_file": "u_spo_wep_camo_wcr0172.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0172",
+   "unlock_id": 4160471006,
+   "tex": "t_wep_camo_wcr0172",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "d45d3a137160d6856a023741529f69a1",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0172_1dychl8_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0173": {
+   "unlock_file": "u_spo_wep_camo_wcr0173.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0173",
+   "unlock_id": 2585416232,
+   "tex": "t_wep_camo_wcr0173",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "18fb9166c4e2f1ac303efe2a4909d505",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0173_1oyc1gt_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0174": {
+   "unlock_file": "u_spo_wep_camo_wcr0174.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0174",
+   "unlock_id": 323530635,
+   "tex": "t_wep_camo_wcr0174",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "af2f7bed895e2195c5704f8694362093",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0174_jsgp1m_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0175": {
+   "unlock_file": "u_spo_wep_camo_wcr0175.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0175",
+   "unlock_id": 4206466501,
+   "tex": "t_wep_camo_wcr0175",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "28c8ea199f2714b6cfb42e4329660791",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0175_1jcsmjv_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0176": {
+   "unlock_file": "u_spo_wep_camo_wcr0176.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0176",
+   "unlock_id": 2681709836,
+   "tex": "t_wep_camo_wcr0176",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "9ff655e1cc8f3d8caf9b4c7723bae0a9",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0176_hhg9zc_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0177": {
+   "unlock_file": "u_spo_wep_camo_wcr0177.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0177",
+   "unlock_id": 700043381,
+   "tex": "t_wep_camo_wcr0177",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ef4e3929154ce8e2c8a97dd773aa3067",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0177_shftux_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0178": {
+   "unlock_file": "u_spo_wep_camo_wcr0178.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0178",
+   "unlock_id": 3386706211,
+   "tex": "t_wep_camo_wcr0178",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "ee53b66b1d735a61fb7458f536648d73",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0178_pdfqrq_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0179": {
+   "unlock_file": "u_spo_wep_camo_wcr0179.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0179",
+   "unlock_id": 3417323180,
+   "tex": "t_wep_camo_wcr0179",
+   "tex_meta": {
+    "w": 1024,
+    "h": 1024,
+    "mips": 11,
+    "chunk": "e514bb68bbbe26977d91bc70aac4ed37",
+    "category": "Hardware_Camo_1k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0179_1oxro9z_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0192": {
+   "unlock_file": "u_spo_wep_camo_wcr0192.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0192",
+   "unlock_id": 2678351589,
+   "tex": "t_wep_camo_wcr0192",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "5e7d25cf0ac4b43bd25ecd4582bc1c09",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0192_19u20zm_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0193": {
+   "unlock_file": "u_spo_wep_camo_wcr0193.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0193",
+   "unlock_id": 3508712394,
+   "tex": "t_wep_camo_wcr0193",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "b8bbec1779c0836a2ea353c244c0e841",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0193_cl923n_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0194": {
+   "unlock_file": "u_spo_wep_camo_wcr0194.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0194",
+   "unlock_id": 19834405,
+   "tex": "t_wep_camo_wcr0194",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "e80f44bda517c0fd1b40ae10fee0e5d1",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0194_1fflfwk_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0195": {
+   "unlock_file": "u_spo_wep_camo_wcr0195.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0195",
+   "unlock_id": 478670609,
+   "tex": "t_wep_camo_wcr0195",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "12e29e0ffd5510a817de1502b88d3a7b",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0195_16r4un9_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0196": {
+   "unlock_file": "u_spo_wep_camo_wcr0196.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0196",
+   "unlock_id": 3039376937,
+   "tex": "t_wep_camo_wcr0196",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "38e03aa66d7fa4adbf2fdddfa318f0ed",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0196_79u6me_bundle_spo",
+   "weapons_offering": 59
+  },
+  "wcr0197": {
+   "unlock_file": "u_spo_wep_camo_wcr0197.ebx",
+   "name": "U_SPO_WEP_Camo_WCR0197",
+   "unlock_id": 294629966,
+   "tex": "t_wep_camo_wcr0197",
+   "tex_meta": {
+    "w": 2048,
+    "h": 2048,
+    "mips": 12,
+    "chunk": "5e3a2fb66149d4957e39558b742a31b5",
+    "category": "Hardware_Camo_2k(srgb)"
+   },
+   "tile": [
+    1.0,
+    1.0
+   ],
+   "bundle_spo": "spo_wep_camo_wcr0197_19259pj_bundle_spo",
+   "weapons_offering": 59
+  }
+ }
+}

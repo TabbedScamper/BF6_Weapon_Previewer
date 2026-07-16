@@ -16,9 +16,13 @@ import traceback
 
 PIPE = r"C:\Users\mwalt\Dropbox\Personal-Files\Portal\bf6-highpoly-pipeline\tools"
 sys.path.insert(0, PIPE)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import numpy as np
 import trimesh
 from assemble_portal import Assembler
 from rebuild_one_noshadow import OUT as CACHE_OUT
+
+import meshset_parts as mp
 
 
 def _patch_fullres_decode():
@@ -119,6 +123,375 @@ def detail_fix(scene_parts, ms_path):
     return scene_parts
 
 
+# ---------------------------------------------------------------------------
+# game-defined mechanical part split (weapons + weapon attachments only)
+# ---------------------------------------------------------------------------
+# Weapon 1p meshes are SKINNED: every vertex's dominant bone of the shared
+# 66-bone weapon skeleton IS its mechanical part (Wep_Bolt2 = bolt carrier /
+# charging handle, Wep_Trigger, ...) -- decoded from the MeshSet geometry
+# chunk by meshset_parts (docs/MESHSET-PARTS.md). The Fb_bf6_mesh .ascii
+# export keeps the chunk's per-section vertex order 1:1 (verified on m4a1:
+# counts equal, max |pos diff| 5.5e-7), so the chunk's per-vertex part ids
+# index the built trimesh vertices directly; a KDTree position match backs
+# up any mesh where that ever stops holding (positions are identical data).
+
+WEAPON_PREFIXES = ("ob_wep_", "ob_wepatt_")
+PART_MIN_TRIS = 12          # smaller fragments merge into the dominant part
+POS_TOL = 1e-5
+
+SPLIT_STATS = {"direct": 0, "kdtree": 0, "nosplit": []}
+_SKELETON_NAMES = None
+
+
+def _bone_names():
+    """Weapon-skeleton bone names, resolved once in a CLEAN SUBPROCESS: the
+    previewer's ebx/ebx_deser/typesdk modules share names with the pipeline's
+    twins (both tool dirs sit on sys.path here), so an in-process import of
+    decode_attachments binds the wrong modules and the skeleton silently
+    yields no names."""
+    global _SKELETON_NAMES
+    if _SKELETON_NAMES is None:
+        import subprocess
+        code = ("import sys, json; "
+                "sys.path.insert(0, %r); "
+                "import meshset_parts as mp; "
+                "print(json.dumps("
+                "mp.skeleton_bone_names(mp.DEFAULT_SKELETON) or []))"
+                % os.path.dirname(os.path.abspath(__file__)))
+        try:
+            r = subprocess.run([sys.executable, "-c", code],
+                               capture_output=True, text=True, timeout=300)
+            _SKELETON_NAMES = json.loads(r.stdout.strip().splitlines()[-1])
+        except Exception:
+            _SKELETON_NAMES = []
+        if not _SKELETON_NAMES:
+            print("  (weapon skeleton bone names unavailable -- "
+                  "parts will be named bone<N>)")
+    return _SKELETON_NAMES
+
+
+def _part_context(ms_path):
+    """LOD0 sections + per-vertex part ids (skeleton bone ids) + chunk bytes,
+    or None when the mesh carries no part data (Rigid, chunk missing...)."""
+    try:
+        ms = mp.parse_meshset(ms_path)
+        if ms["meshType"] != "Skinned" or not ms["lods"]:
+            return None
+        lod = ms["lods"][0]
+        chunk_path = mp.find_chunk(ms_path, lod["chunkId"])
+        if not chunk_path:
+            return None
+        pa = mp.assign_parts(ms, lod, chunk_path, _bone_names())
+        return {"lod": lod, "assign": pa["sections"],
+                "chunk": open(chunk_path, "rb").read()}
+    except Exception:
+        return None
+
+
+def _verts_match(g, sec, chunk):
+    """True when the built geometry's vertices are the chunk section's
+    vertices in the same order (they are: the .ascii export preserves it)."""
+    pos = mp._read_elem(chunk, sec, 1)
+    if pos is None or len(pos) != len(g.vertices):
+        return False
+    d = np.abs(pos[:, :3].astype(np.float64) -
+               np.asarray(g.vertices, dtype=np.float64))
+    return float(d.max()) < POS_TOL
+
+
+def _kdtree_parts(g, ctx):
+    """Fallback: nearest-position match against every skinned section of the
+    chunk (positions are identical data, so matches must be ~exact)."""
+    from scipy.spatial import cKDTree
+    pts, ids = [], []
+    for sec, sa in zip(ctx["lod"]["sections"], ctx["assign"]):
+        if sa["vertexParts"] is None:
+            continue
+        pos = mp._read_elem(ctx["chunk"], sec, 1)
+        if pos is None:
+            continue
+        pts.append(pos[:, :3].astype(np.float64))
+        ids.append(np.asarray(sa["vertexParts"], dtype=np.int64))
+    if not pts:
+        return None
+    d, j = cKDTree(np.vstack(pts)).query(
+        np.asarray(g.vertices, dtype=np.float64))
+    if float(np.max(d)) > POS_TOL:
+        return None
+    return np.concatenate(ids)[j]
+
+
+def _face_subset(g, fmask):
+    """Copy of g restricted to the masked faces (vertices remapped), sharing
+    the material OBJECT so the exported GLB keeps a single texture set."""
+    faces = g.faces[fmask]
+    used = np.unique(faces)
+    remap = np.full(len(g.vertices), -1, dtype=np.int64)
+    remap[used] = np.arange(len(used))
+    m = trimesh.Trimesh(vertices=g.vertices[used], faces=remap[faces],
+                        process=False)
+    try:
+        m.vertex_normals = g.vertex_normals[used]   # keep whole-part shading
+    except Exception:
+        pass
+    uv = getattr(g.visual, "uv", None)
+    if uv is not None and len(uv) == len(g.vertices):
+        uv = np.asarray(uv)[used]
+    else:
+        uv = None
+    m.visual = trimesh.visual.TextureVisuals(uv=uv, material=g.visual.material)
+    return m
+
+
+def split_weapon_parts(scene_parts, ms_path, name):
+    """Split each per-material geometry of a weapon mesh into one node per
+    game-defined mechanical part: <subkey>@<BoneName>. Geometries without
+    part data (rigid sections, derived sub-parts) pass through unchanged."""
+    ctx = _part_context(ms_path)
+    if ctx is None:
+        return scene_parts
+    names = _bone_names()
+    sub_re = re.compile(re.escape(name) + r"_s(\d+)$")
+    out = []
+    for subkey, g in scene_parts:
+        m = sub_re.match(subkey)
+        vp = None
+        if m and isinstance(g.visual, trimesh.visual.TextureVisuals):
+            si = int(m.group(1))
+            if si < len(ctx["lod"]["sections"]):
+                sec = ctx["lod"]["sections"][si]
+                cand = ctx["assign"][si]["vertexParts"]
+                if cand is not None and len(cand) == len(g.vertices) \
+                        and _verts_match(g, sec, ctx["chunk"]):
+                    vp = np.asarray(cand, dtype=np.int64)
+                    SPLIT_STATS["direct"] += 1
+            if vp is None:
+                try:
+                    vp = _kdtree_parts(g, ctx)
+                except Exception:
+                    vp = None
+                if vp is not None:
+                    SPLIT_STATS["kdtree"] += 1
+        if vp is None:
+            out.append((subkey, g))
+            continue
+        c = vp[np.asarray(g.faces, dtype=np.int64)]
+        tp = np.where(c[:, 1] == c[:, 2], c[:, 1], c[:, 0])
+        parts, counts = np.unique(tp, return_counts=True)
+        dom = int(parts[counts.argmax()])
+        for p, n in zip(parts, counts):        # merge dust into dominant
+            if n < PART_MIN_TRIS and int(p) != dom:
+                tp[tp == p] = dom
+        parts = np.unique(tp)
+        for p in parts:
+            bone = names[p] if names and 0 <= p < len(names) else "bone%d" % p
+            nodename = "%s@%s" % (subkey, bone)
+            if len(parts) == 1:                # whole section is one part
+                out.append((nodename, g))
+            else:
+                out.append((nodename, _face_subset(g, tp == p)))
+    return out
+
+
+def weapon_texture_fix(scene_parts, ms_path):
+    """Own weapon parts whose material name matched no texture end up with a
+    tiny fallback (G22: M_BaseDetail1 -> 256px scrap while the 1024x2048
+    base_cs atlas sits unused). Universal rule: pair the MESH part token
+    against co-located sheet stems (exact > digit-tolerant > the weapon's
+    'base' atlas, which carries slide/frame UVs)."""
+    import glob as _g
+
+    from PIL import Image
+    import rebuild_one_noshadow as rb
+    import trimesh
+
+    m = re.match(r"^ob_(?:wep|gad)_[a-z0-9]+_([a-z0-9]+)_(.+?)_(?:1p|3p)_mesh$",
+                 os.path.basename(ms_path)[: -len(".MeshSet")])
+    if not m:
+        return scene_parts
+    wname, part = m.group(1), m.group(2).lower()
+    art = os.path.dirname(ms_path)
+    sheets = {}
+    for t in _g.glob(os.path.join(art, "t_*_%s_*_cs.Texture" % wname)):
+        stem = re.sub(r"^t_[a-z0-9_]+?_%s_" % wname, "",
+                      os.path.basename(t)[: -len("_cs.Texture")]).lower()
+        if not re.search(r"_(3p)$", stem) and not re.match(r"^(ws|msl|gsl)", stem):
+            sheets[stem] = t
+
+    def digits(s):
+        return re.sub(r"\D", "", s)
+
+    def lcs_len(a, b):
+        """Longest common substring length (small strings only)."""
+        best = 0
+        for i in range(len(a)):
+            for j in range(i + best + 1, len(a) + 1):
+                if a[i:j] in b:
+                    best = j - i
+                else:
+                    break
+        return best
+
+    def score(stem):
+        if stem == part:
+            return 0
+        a, b = re.sub(r"\d", "", stem), re.sub(r"\d", "", part)
+        if a and (b.startswith(a) or a.startswith(b)):
+            ds, dp = digits(stem), digits(part)
+            return 1 if ds and ds in dp else 2
+        # shared word-fragment (magazine ~ defaultmagmapull) beats the
+        # base-atlas fallback but never an exact/prefix pair
+        if a and lcs_len(a, b) >= 4:
+            return 3
+        return 9 if stem != "base" else 5
+
+    if not sheets:
+        return scene_parts
+    best = min(sheets, key=lambda s: (score(s), len(s)))
+    if score(best) >= 9:
+        return scene_parts
+
+    need = [i for i, (_, g) in enumerate(scene_parts)
+            if getattr(getattr(g.visual, "material", None), "baseColorTexture", None) is None
+            or max(getattr(g.visual.material.baseColorTexture, "size", (0, 0))) < 512]
+
+    # per-submesh MATERIAL-name pairing: a submesh whose material names a
+    # different co-located sheet gets that sheet (mag GLBs carry bullet
+    # submeshes whose material maps to the ammo sheet, not the mag sheet)
+    d0 = open(ms_path, "rb").read()
+    mats_seen = []
+    for s0 in re.findall(rb"M_[ -~]{3,}", d0):
+        n0 = s0.decode("latin1")
+        if n0 not in mats_seen:
+            mats_seen.append(n0)
+    from rebuild_one_noshadow import SHADOW_PAT as _SP
+    mats_keep = [n0 for n0 in mats_seen if not _SP.search(n0)]
+    per_sub = {}
+    for i in range(len(scene_parts)):
+        if i >= len(mats_keep):
+            break
+        mat_core = re.sub(r"[^a-z]", "", mats_keep[i].lower().replace("m_", "", 1))
+        for stem in sheets:
+            if stem == part:
+                continue
+            toks = [t for t in re.split(r"[_\d]+", stem) if len(t) >= 3 and t != "base"]
+            if toks and all(t in mat_core for t in toks):
+                per_sub[i] = stem
+    need = sorted(set(need) | set(per_sub))
+    if not need:
+        return scene_parts
+    tmp = os.path.join(CACHE_OUT, "_texfix")
+    os.makedirs(tmp, exist_ok=True)
+    decoded = {}   # stem -> (cs Image, nmt Image|None); per-PID temp names
+                   # (parallel shards sharing one file lose to Windows locks)
+
+    def load_sheet(stem):
+        if stem in decoded:
+            return decoded[stem]
+        cs_png = os.path.join(tmp, "cs_%s_%d.png" % (stem[:20], os.getpid()))
+        if not rb.decode(sheets[stem], cs_png):
+            decoded[stem] = None
+            return None
+        cs0 = Image.open(cs_png).convert("RGBA")
+        nm0 = None
+        nmt_tex = sheets[stem].replace("_cs.Texture", "_nmt.Texture")
+        if os.path.exists(nmt_tex):
+            nm_png = os.path.join(tmp, "nm_%s_%d.png" % (stem[:20], os.getpid()))
+            if rb.decode(nmt_tex, nm_png):
+                nm0 = Image.open(nm_png).convert("RGB")
+        decoded[stem] = (cs0, nm0)
+        return decoded[stem]
+
+    for i in need:
+        pair = load_sheet(per_sub.get(i, best))
+        if not pair:
+            continue
+        cs, nm = pair
+        subkey, g = scene_parts[i]
+        g.visual = trimesh.visual.TextureVisuals(
+            uv=g.visual.uv if hasattr(g.visual, "uv") else None,
+            material=trimesh.visual.material.PBRMaterial(
+                baseColorTexture=cs, normalTexture=nm,
+                metallicFactor=0.55, roughnessFactor=0.55))
+    return scene_parts
+
+
+def _dot_texture():
+    """Collimated red-dot standin (the game draws reticles in-shader; only 3
+    optics ship baked t_ret_* sheets). Radial-falloff emissive dot."""
+    from PIL import Image
+    n = 128
+    img = Image.new("RGBA", (n, n), (0, 0, 0, 0))
+    px = img.load()
+    c = n / 2
+    for y in range(n):
+        for x in range(n):
+            r = ((x - c) ** 2 + (y - c) ** 2) ** 0.5 / (n * 0.10)
+            a = max(0.0, 1.0 - r)
+            if a > 0:
+                px[x, y] = (255, 24, 24, int(255 * min(1, a * 1.6)))
+    return img
+
+
+_DOT = None
+
+
+def optic_material_fix(scene_parts, ms_path):
+    """Reticle + lens material classes for optics: M_Reticle -> emissive red
+    dot (baked t_ret_* sheet when the optic ships one), M_Glass/M_Lens* ->
+    transparent glass. Reticle plane geometry itself is game data."""
+    global _DOT
+    import glob as _g
+
+    from PIL import Image
+    import rebuild_one_noshadow as rb
+    import trimesh
+
+    d = open(ms_path, "rb").read()
+    seen = []
+    for s in re.findall(rb"M_[ -~]{3,}", d):
+        n = s.decode("latin1")
+        if n not in seen:
+            seen.append(n)
+    from rebuild_one_noshadow import SHADOW_PAT
+
+    keep = [n for n in seen if not SHADOW_PAT.search(n)]
+    if not any(("reticle" in n.lower() or "lens" in n.lower() or n == "M_Glass")
+               for n in keep):
+        return scene_parts
+
+    ret_img = None
+    folder = os.path.dirname(ms_path)
+    for t in (_g.glob(os.path.join(folder, "t_ret_*.Texture"))
+              + _g.glob(os.path.join(folder, "textures", "t_ret_*.Texture"))):
+        if "dirt" in os.path.basename(t):
+            continue
+        p = os.path.join(CACHE_OUT, "_texfix", "ret_%d.png" % os.getpid())
+        if rb.decode(t, p):
+            ret_img = Image.open(p).convert("RGBA")
+            break
+    for i, (subkey, g) in enumerate(scene_parts):
+        if i >= len(keep):
+            continue
+        low = keep[i].lower()
+        if "reticle" in low:
+            if _DOT is None:
+                _DOT = _dot_texture()
+            img = ret_img or _DOT
+            g.visual = trimesh.visual.TextureVisuals(
+                uv=getattr(g.visual, "uv", None),
+                material=trimesh.visual.material.PBRMaterial(
+                    baseColorFactor=[0, 0, 0, 0], emissiveFactor=[1.0, 0.06, 0.06],
+                    emissiveTexture=img, baseColorTexture=img,
+                    alphaMode="BLEND", metallicFactor=0.0, roughnessFactor=1.0))
+        elif "lens" in low or low == "m_glass":
+            g.visual = trimesh.visual.TextureVisuals(
+                material=trimesh.visual.material.PBRMaterial(
+                    baseColorFactor=[0.06, 0.07, 0.09, 0.22],
+                    alphaMode="BLEND", metallicFactor=0.9, roughnessFactor=0.05))
+    return scene_parts
+
+
 def mesh_list(db):
     """Collect mesh stems (with _mesh suffix) worth converting."""
     keys = []
@@ -147,6 +520,11 @@ def mesh_list(db):
             elif not stem.endswith("_3p_mesh"):
                 if stem.replace("_mesh", "_1p_mesh") not in stems:
                     add(stem)
+
+    for c in db.get("charms", {}).values():
+        for stem in c["meshes"]:
+            if stem.endswith("_1p_mesh"):
+                add(stem)
 
     for g in db["gadgets"].values():
         stems = set(os.path.basename(m) for m in g["meshes"])
@@ -216,6 +594,15 @@ def main():
             ms = a.msidx.get(key)
             if ms:
                 ps = detail_fix(list(ps), ms)
+                if key.startswith(("ob_wep_", "ob_gad_")):
+                    ps = weapon_texture_fix(list(ps), ms)
+                if key.startswith(("ob_wepatt_", "ob_gad_")):
+                    ps = optic_material_fix(list(ps), ms)   # class rule: only
+                    # touches M_Reticle / M_Glass / M_Lens* materials
+                if key.startswith(WEAPON_PREFIXES + ("ob_gad_battlepickup_",)):
+                    ps = split_weapon_parts(list(ps), ms, name)
+                    if not any("@" in sk for sk, _ in ps):
+                        SPLIT_STATS["nosplit"].append(key)
             sc = trimesh.Scene()
             for subkey, g in ps:
                 sc.add_geometry(g, node_name=subkey, geom_name=subkey)
@@ -234,6 +621,9 @@ def main():
         for k, msg in fails:
             fh.write("%s\t%s\n" % (k, msg))
     print("DONE ok=%d skip=%d fail=%d (failures -> %s)" % (ok, skip, fail, FAILLOG))
+    print("part split: direct=%d kdtree=%d unsplit=%d %s"
+          % (SPLIT_STATS["direct"], SPLIT_STATS["kdtree"],
+             len(SPLIT_STATS["nosplit"]), SPLIT_STATS["nosplit"][:10]))
 
 
 if __name__ == "__main__":

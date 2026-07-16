@@ -1,0 +1,464 @@
+{
+ "_source": "md_<weapon>.ebx part-record AABBs (data/attachment_bindings.json) matched against reflex .MeshSet header bounding boxes; wpm_scp_*_riser.ebx carry no mesh reference (gameplay modifiers only)",
+ "_generated_by": "tools/decode_risers.py",
+ "_method": "AABB extent match (tol 5e-04) + per-record translation anchor for ties (tol 5e-03)",
+ "_notes": [
+  "riser = the tall mount: every small optic reuses ob_wepatt_reflex_eotechelfx_riser_(1p|3p)_mesh (the generic riser, textures t_wepatt_reflex_eotechelfx_riser_*), except shieldcqs which uses its own ob_wepatt_reflex_cqs_extendedriser_*.",
+  "lowriser = null for all optics except shieldcqs (ob_wepatt_reflex_cqs_shortriser_*): the lowriser bundles on secondaries contain only the optic's own base/lens(/mount) meshes, i.e. direct mount, no riser mesh.",
+  "3p twins exist for every riser mesh (same stem, _3p_mesh).",
+  "trans: the only transform floats inside wpm_scp_*_(low)riser.ebx (type 740e610e instance) are [0,0,0] on every optic; actual riser height offsets live per weapon in the md_ record bindings (Sight_ATT LinearTransform) / bone_writes already exported in attachment_bindings.json.",
+  "wpm guids: the single raw Guid inside each wpm is the optic's identity (identical between riser and lowriser of one optic, differs across optics); it is not a mesh reference."
+ ],
+ "_mesh_paths": {
+  "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": "eotechelfx/art/ob_wepatt_reflex_eotechelfx_riser_1p_mesh.MeshSet",
+  "ob_wepatt_reflex_eotechelfx_riser_3p_mesh": "eotechelfx/art/ob_wepatt_reflex_eotechelfx_riser_3p_mesh.MeshSet",
+  "ob_wepatt_reflex_cqs_extendedriser_1p_mesh": "cqs/art/ob_wepatt_reflex_cqs_extendedriser_1p_mesh.MeshSet",
+  "ob_wepatt_reflex_cqs_extendedriser_3p_mesh": "cqs/art/ob_wepatt_reflex_cqs_extendedriser_3p_mesh.MeshSet",
+  "ob_wepatt_reflex_cqs_shortriser_1p_mesh": "cqs/art/ob_wepatt_reflex_cqs_shortriser_1p_mesh.MeshSet",
+  "ob_wepatt_reflex_cqs_shortriser_3p_mesh": "cqs/art/ob_wepatt_reflex_cqs_shortriser_3p_mesh.MeshSet"
+ },
+ "acrop2": {
+  "dir": "acrop2",
+  "wpm_riser": {
+   "file": "wpm_scp_acrop2_riser.ebx",
+   "imports": [
+    {
+     "partition": "507af525-7c8f-4103-9f1b-8dca41a25696",
+     "instance": "9dd7e80b-335c-4843-b6e0-10b422243cd2",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x75_pip.ebx"
+    },
+    {
+     "partition": "d6ec6935-3eae-41b5-851a-7322781a4754",
+     "instance": "0cb6bf2e-743b-40c7-beb8-cca7aa9be2ab",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\acrop2\\ve_acrop2.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "a7a55fa9-7095-4ea0-98c4-37c598b90f59"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_acrop2_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "507af525-7c8f-4103-9f1b-8dca41a25696",
+     "instance": "9dd7e80b-335c-4843-b6e0-10b422243cd2",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x75_pip.ebx"
+    },
+    {
+     "partition": "d6ec6935-3eae-41b5-851a-7322781a4754",
+     "instance": "0cb6bf2e-743b-40c7-beb8-cca7aa9be2ab",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\acrop2\\ve_acrop2.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "a7a55fa9-7095-4ea0-98c4-37c598b90f59"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_eotechelfx_riser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": 52
+  },
+  "riser_weapon_records": 52,
+  "lowriser": null,
+  "lowriser_votes": {
+   "None": 3
+  },
+  "lowriser_weapon_records": 3,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "shieldcqs": {
+  "dir": "cqs",
+  "wpm_riser": {
+   "file": "wpm_scp_shieldcqs_riser.ebx",
+   "imports": [
+    {
+     "partition": "64d823d9-75f5-4f61-b206-224fbb1e5a52",
+     "instance": "ffab96cf-f622-4ef4-a0fa-617f37ebf113",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\cqs\\ve_shieldcqs.ebx"
+    },
+    {
+     "partition": "dc3256e7-da8f-4e7f-a2ba-040bd7c5047c",
+     "instance": "af826b5c-d9b7-453b-b1ff-ff2f24c7c165",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x25_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "9739dfdd-613b-488e-be2d-9957186bab82"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_shieldcqs_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "64d823d9-75f5-4f61-b206-224fbb1e5a52",
+     "instance": "ffab96cf-f622-4ef4-a0fa-617f37ebf113",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\cqs\\ve_shieldcqs.ebx"
+    },
+    {
+     "partition": "dc3256e7-da8f-4e7f-a2ba-040bd7c5047c",
+     "instance": "af826b5c-d9b7-453b-b1ff-ff2f24c7c165",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x25_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "9739dfdd-613b-488e-be2d-9957186bab82"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_cqs_extendedriser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_cqs_extendedriser_1p_mesh": 50
+  },
+  "riser_weapon_records": 50,
+  "lowriser": "ob_wepatt_reflex_cqs_shortriser_1p_mesh",
+  "lowriser_votes": {
+   "ob_wepatt_reflex_cqs_shortriser_1p_mesh": 5
+  },
+  "lowriser_weapon_records": 5,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "eotecheflx": {
+  "dir": "eotechelfx",
+  "wpm_riser": {
+   "file": "wpm_scp_eotecheflx_riser.ebx",
+   "imports": [
+    {
+     "partition": "b7514cbc-5f60-47c7-a4de-aae85b22aa05",
+     "instance": "86dd5155-a902-4032-aefc-fe72dd1f2540",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\eotechelfx\\ve_eotechelfx.ebx"
+    },
+    {
+     "partition": "fdabb8c9-a4ae-4c17-8391-c26ba1541fc9",
+     "instance": "a3b19754-275d-423a-ad63-cda6abfec451",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x00_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "c5cf1cb2-998f-4984-ba0e-d348b5507903"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_eotecheflx_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "b7514cbc-5f60-47c7-a4de-aae85b22aa05",
+     "instance": "86dd5155-a902-4032-aefc-fe72dd1f2540",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\eotechelfx\\ve_eotechelfx.ebx"
+    },
+    {
+     "partition": "fdabb8c9-a4ae-4c17-8391-c26ba1541fc9",
+     "instance": "a3b19754-275d-423a-ad63-cda6abfec451",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x00_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "c5cf1cb2-998f-4984-ba0e-d348b5507903"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_eotechelfx_riser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": 53
+  },
+  "riser_weapon_records": 53,
+  "lowriser": null,
+  "lowriser_votes": {
+   "None": 4
+  },
+  "lowriser_weapon_records": 4,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "rmr": {
+  "dir": "rmr",
+  "wpm_riser": {
+   "file": "wpm_scp_rmr_riser.ebx",
+   "imports": [
+    {
+     "partition": "fdabb8c9-a4ae-4c17-8391-c26ba1541fc9",
+     "instance": "a3b19754-275d-423a-ad63-cda6abfec451",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x00_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    },
+    {
+     "partition": "205ce9fd-2b85-4ca4-b8c5-03a15e806556",
+     "instance": "d3a0ce81-947d-47c3-b5fd-938a959b3d8a",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\rmr\\ve_rmr.ebx"
+    }
+   ],
+   "guids": [
+    "20f72809-b7ce-4bff-98dc-25bf614f3059"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_rmr_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "fdabb8c9-a4ae-4c17-8391-c26ba1541fc9",
+     "instance": "a3b19754-275d-423a-ad63-cda6abfec451",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x00_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    },
+    {
+     "partition": "205ce9fd-2b85-4ca4-b8c5-03a15e806556",
+     "instance": "d3a0ce81-947d-47c3-b5fd-938a959b3d8a",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\rmr\\ve_rmr.ebx"
+    }
+   ],
+   "guids": [
+    "20f72809-b7ce-4bff-98dc-25bf614f3059"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_eotechelfx_riser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": 49
+  },
+  "riser_weapon_records": 49,
+  "lowriser": null,
+  "lowriser_votes": {
+   "None": 3
+  },
+  "lowriser_weapon_records": 3,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "romeox": {
+  "dir": "romeox",
+  "wpm_riser": {
+   "file": "wpm_scp_romeox_riser.ebx",
+   "imports": [
+    {
+     "partition": "7e899361-d53b-4866-957b-78dd58806a64",
+     "instance": "5bd437ac-d6cf-4402-a009-d542e55b3724",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\romeox\\ve_romeox_riser.ebx"
+    },
+    {
+     "partition": "c330f6ab-9949-4cd0-92d0-4d2a3bdb7ea7",
+     "instance": "8805f011-02ef-4cee-a9de-7e99ae7edc6e",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x50_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "1103e853-0d81-4e4f-a7bd-6d40e53a9033"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_romeox_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "7e899361-d53b-4866-957b-78dd58806a64",
+     "instance": "5bd437ac-d6cf-4402-a009-d542e55b3724",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\romeox\\ve_romeox_riser.ebx"
+    },
+    {
+     "partition": "c330f6ab-9949-4cd0-92d0-4d2a3bdb7ea7",
+     "instance": "8805f011-02ef-4cee-a9de-7e99ae7edc6e",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x50_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "1103e853-0d81-4e4f-a7bd-6d40e53a9033"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_eotechelfx_riser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": 52
+  },
+  "riser_weapon_records": 52,
+  "lowriser": null,
+  "lowriser_votes": {
+   "None": 4
+  },
+  "lowriser_weapon_records": 4,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "trijiconsro": {
+  "dir": "trijiconsro",
+  "wpm_riser": {
+   "file": "wpm_scp_trijiconsro_riser.ebx",
+   "imports": [
+    {
+     "partition": "652b8327-10bd-4bf0-ac8b-5f9ae1b458bb",
+     "instance": "0ad8d74e-0039-4606-a1cc-8a9515e8abfa",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\trijiconsro\\ve_trijiconsro.ebx"
+    },
+    {
+     "partition": "dc3256e7-da8f-4e7f-a2ba-040bd7c5047c",
+     "instance": "af826b5c-d9b7-453b-b1ff-ff2f24c7c165",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x25_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "c675b4bd-f924-4414-811b-ffd3d99400aa"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "wpm_lowriser": {
+   "file": "wpm_scp_trijiconsro_lowriser.ebx",
+   "imports": [
+    {
+     "partition": "652b8327-10bd-4bf0-ac8b-5f9ae1b458bb",
+     "instance": "0ad8d74e-0039-4606-a1cc-8a9515e8abfa",
+     "path": "common\\hardware\\weapons\\_attachments\\reflex\\trijiconsro\\ve_trijiconsro.ebx"
+    },
+    {
+     "partition": "dc3256e7-da8f-4e7f-a2ba-040bd7c5047c",
+     "instance": "af826b5c-d9b7-453b-b1ff-ff2f24c7c165",
+     "path": "common\\gameplay\\aimingcontrollers\\weaponsgadgets\\aim_01x25_pip.ebx"
+    },
+    {
+     "partition": "440dc2eb-ded9-431f-83df-39160a425971",
+     "instance": "f2ff6d75-d77f-4331-bbcc-f8a0939ef7b3",
+     "path": "common\\gamesetup\\gameconfigurations\\ct_gla_ch1_s0_weaponunlocks.ebx"
+    }
+   ],
+   "guids": [
+    "c675b4bd-f924-4414-811b-ffd3d99400aa"
+   ],
+   "floats": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "riser": "ob_wepatt_reflex_eotechelfx_riser_1p_mesh",
+  "riser_votes": {
+   "ob_wepatt_reflex_eotechelfx_riser_1p_mesh": 50
+  },
+  "riser_weapon_records": 50,
+  "lowriser": null,
+  "lowriser_votes": {
+   "None": 3
+  },
+  "lowriser_weapon_records": 3,
+  "trans": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ }
+}

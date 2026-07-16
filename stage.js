@@ -78,6 +78,7 @@ export function initStage(view, status) {
   // ---------- part management ----------
   const parts = new Map();   // id -> {url, group}
   let gen = 0;
+  let inFlight = 0;          // GLB loads currently outstanding (all setParts calls)
   let curSkin = null;        // {partToken: {cs: url, nmt: url}} | null
   function setParts(want, refit) {
     // want: Map/obj id -> url
@@ -86,7 +87,8 @@ export function initStage(view, status) {
     const norm = v => (typeof v === 'string' ? { url: v, dt: null } : v);
     for (const [id, p] of [...parts]) {
       const w = wantMap.has(id) ? norm(wantMap.get(id)) : null;
-      if (!w || w.url !== p.url || String(w.dt) !== String(p.dt)) {
+      if (!w || w.url !== p.url || String(w.dt) !== String(p.dt)
+          || String(w.q) !== String(p.q)) {
         if (p.group) root.remove(p.group);
         parts.delete(id);
       }
@@ -94,25 +96,71 @@ export function initStage(view, status) {
     let pending = 0;
     for (const [id, v] of wantMap) {
       if (!v || parts.has(id)) continue;
-      const { url, dt } = norm(v);
-      const rec = { url, dt, group: null };
+      const { url, dt, q } = norm(v);
+      const rec = { url, dt, q, group: null };
       parts.set(id, rec);
       pending++;
+      inFlight++;
       loader.load(url, g => {
-        if (gen !== my || parts.get(id) !== rec) return;   // superseded
+        inFlight--;
+        // superseded only if the PART was replaced/removed — a newer setParts
+        // call that still wants this part must keep the finished load
+        if (parts.get(id) !== rec) return;
         rec.group = g.scene;
-        if (dt) g.scene.position.set(dt[0], dt[1], dt[2]);  // EBX mount delta
+        // weapon-own GLBs with @-part nodes place themselves entirely by the
+        // node rule (group dt would double-transform); shared attachments use
+        // the group-level mount formulas
+        const own = /\/ob_(wep|gad)_[^/]*\.glb/.test(url) && !/\/ob_wepatt_/.test(url);
+        const sawAt = applyBoneDt(g.scene, own, own ? dt : null);
+        if (dt && !(own && sawAt)) g.scene.position.set(dt[0], dt[1], dt[2]);
+        if (q && !(own && sawAt)) g.scene.quaternion.set(q[0], q[1], q[2], q[3]);
         root.add(g.scene);
         if (curSkin) skinRec(rec);
+        if (curCamoUrl) g.scene.traverse(camoMesh);
         if (--pending === 0 && refit) frame();
         status('');
       }, undefined, () => {
+        inFlight--;
         if (gen === my) status('missing model: ' + id);
         if (--pending === 0 && refit) frame();
       });
     }
     if (pending === 0 && refit) frame();
     else if (pending > 0) status('loading…');
+  }
+
+  // ---------- per-part bone deltas (nodes named ...@Wep_X) ----------
+  let boneDt = {};
+  const HIDE_BONES = ['Wep_MGZ_Mag2'];   // spare-mag geometry: not shown on the gun
+  function applyBoneDt(scene0, includeATT, fallbackDt) {
+    let sawAt = false;
+    scene0.traverse(o => {
+      const at = o.name && o.name.indexOf('@');
+      if (at > 0) {
+        sawAt = true;
+        const bone = o.name.slice(at + 1).split('#')[0];
+        if (HIDE_BONES.some(h => bone === h)) { o.visible = false; return; }
+        // shared attachments keep the group-level mount formulas for their
+        // _ATT nodes; weapon-own part GLBs are placed fully by the node rule
+        if (bone.endsWith('_ATT') && !includeATT) return;
+        const d = boneDt[bone];
+        if (!d) {
+          // bones without an md row fall back to the part's group delta
+          if (fallbackDt) o.position.set(fallbackDt[0], fallbackDt[1], fallbackDt[2]);
+          return;
+        }
+        if (Array.isArray(d)) { o.position.set(d[0], d[1], d[2]); return; }
+        if (d.t) o.position.set(d.t[0], d.t[1], d.t[2]);
+        if (d.q) o.quaternion.set(d.q[0], d.q[1], d.q[2], d.q[3]);
+      }
+    });
+    return sawAt;
+  }
+  function setBoneDt(map) {
+    boneDt = map || {};
+    for (const rec of parts.values())
+      if (rec.group) applyBoneDt(rec.group,
+        /\/ob_(wep|gad)_[^/]*\.glb/.test(rec.url) && !/\/ob_wepatt_/.test(rec.url));
   }
 
   // ---------- skins: swap part textures in place ----------
@@ -129,7 +177,7 @@ export function initStage(view, status) {
     return texCache.get(url);
   }
   function partToken(url) {
-    const m = /ob_(?:wep|gad)_[a-z0-9]+_[a-z0-9]+_(.+?)_(?:1p|3p)\.glb$/i.exec(url);
+    const m = /ob_(?:wep|gad)_[a-z0-9]+_[a-z0-9]+_(.+?)_(?:1p|3p)\.glb$/i.exec(url.split('?')[0]);
     return m ? m[1].toLowerCase() : null;
   }
   function skinRec(rec) {
@@ -161,6 +209,47 @@ export function initStage(view, status) {
   function applySkin(spec) {
     curSkin = spec;
     for (const rec of parts.values()) skinRec(rec);
+  }
+
+  // ---------- camo: tiling pattern blended over body materials ----------
+  // Game recipe (shaderblock decode): color = mix(base, camo.rgb, camo.a),
+  // camo UV = mesh UV0 x 1.0 (universal constant). Applied only to materials
+  // that carry a real texture atlas (skips detail-flats, glass, reticles).
+  let curCamoUrl = null;
+  function camoMesh(o) {
+    if (!o.isMesh || !o.material || !o.material.map) return;
+    const mat = o.material;
+    if (mat.transparent || (mat.emissive && (mat.emissive.r || mat.emissive.g))) return;
+    const img = mat.map.image;
+    if (img && Math.max(img.width || 0, img.height || 0) < 512) return;
+    if (curCamoUrl) {
+      const tex = skinTex(curCamoUrl, true);
+      mat.userData.camoTex = { value: tex };
+      if (!mat.userData.camoWired) {
+        mat.userData.camoWired = true;
+        mat.onBeforeCompile = sh => {
+          sh.uniforms.camoMap = mat.userData.camoTex;
+          sh.fragmentShader = sh.fragmentShader
+            .replace('#include <map_pars_fragment>',
+              '#include <map_pars_fragment>\nuniform sampler2D camoMap;')
+            .replace('#include <map_fragment>',
+              '#include <map_fragment>\n' +
+              'vec4 camoTexel = texture2D(camoMap, vMapUv);\n' +
+              'diffuseColor.rgb = mix(diffuseColor.rgb, camoTexel.rgb, camoTexel.a);');
+        };
+        mat.customProgramCacheKey = () => 'camo';
+      }
+    } else if (mat.userData.camoWired) {
+      mat.userData.camoWired = false;
+      mat.onBeforeCompile = () => {};
+      mat.customProgramCacheKey = () => 'plain';
+    }
+    mat.needsUpdate = true;
+  }
+  function applyCamo(url) {
+    curCamoUrl = url || null;
+    for (const rec of parts.values())
+      if (rec.group) rec.group.traverse(camoMesh);
   }
 
   // ---------- camera rig: freelook + dolly (Model Library scheme) ----------
@@ -252,6 +341,7 @@ export function initStage(view, status) {
     if (tuneSel && onTuneMove.cb) onTuneMove.cb(tuneReport());
   });
   const ray2 = new THREE.Raycaster();
+  let pickSpot = null, pickCycle = 0;        // dblclick-again cycles buried hits
   const tuned = new Set();                   // every Object3D the user has moved
   const hist = [];                           // undo stack: {obj, from, to}
   const redoStack = [];
@@ -263,18 +353,95 @@ export function initStage(view, status) {
     }
     return null;
   }
-  // dblclick selects the actual SUBMESH under the cursor, so combined GLBs
-  // (base receiver etc.) break apart into their material pieces for tuning
+  // Split a mesh into CONNECTED-GEOMETRY islands (weld by quantized position
+  // so UV seams don't over-split). Islands share attribute buffers — only the
+  // index differs — so this is cheap. Pieces that aren't physically welded
+  // (ejection cover, charging handle...) become independently grabbable.
+  function splitIslands(mesh) {
+    const geo = mesh.geometry;
+    if (!geo.index || mesh.userData._islands) return null;
+    const pos = geo.attributes.position;
+    const n = pos.count;
+    const weld = new Map();
+    const remap = new Uint32Array(n);
+    for (let i = 0; i < n; i++) {
+      const k = (Math.round(pos.getX(i) * 5000) + ',' +
+                 Math.round(pos.getY(i) * 5000) + ',' +
+                 Math.round(pos.getZ(i) * 5000));
+      const f = weld.get(k);
+      if (f === undefined) { weld.set(k, i); remap[i] = i; } else remap[i] = f;
+    }
+    const parent = new Uint32Array(n);
+    for (let i = 0; i < n; i++) parent[i] = i;
+    const find = a => { while (parent[a] !== a) { parent[a] = parent[parent[a]]; a = parent[a]; } return a; };
+    const uni = (a, b) => { a = find(a); b = find(b); if (a !== b) parent[b] = a; };
+    const idx = geo.index.array;
+    for (let t = 0; t < idx.length; t += 3) {
+      uni(remap[idx[t]], remap[idx[t + 1]]);
+      uni(remap[idx[t]], remap[idx[t + 2]]);
+    }
+    const buckets = new Map();          // root -> [face indices...]
+    const faceRoot = new Uint32Array(idx.length / 3);
+    for (let t = 0; t < idx.length; t += 3) {
+      const rt = find(remap[idx[t]]);
+      faceRoot[t / 3] = rt;
+      let b = buckets.get(rt);
+      if (!b) { b = []; buckets.set(rt, b); }
+      b.push(idx[t], idx[t + 1], idx[t + 2]);
+    }
+    if (buckets.size < 2) { mesh.userData._islands = true; return null; }
+    const grp = new THREE.Group();
+    grp.name = mesh.name;
+    grp.position.copy(mesh.position);
+    grp.quaternion.copy(mesh.quaternion);
+    grp.scale.copy(mesh.scale);
+    const rootToIsland = new Map();
+    let k = 0;
+    for (const [rt, faces] of buckets) {
+      const g = new THREE.BufferGeometry();
+      for (const [name, attr] of Object.entries(geo.attributes)) g.setAttribute(name, attr);
+      g.setIndex(faces);
+      const m = new THREE.Mesh(g, mesh.material);
+      m.name = mesh.name + '#' + k;
+      m.userData._islands = true;
+      rootToIsland.set(rt, m);
+      grp.add(m);
+      k++;
+    }
+    mesh.parent.add(grp);
+    mesh.parent.remove(mesh);
+    return { grp, faceRoot, rootToIsland };
+  }
+
+  // dblclick selects the piece under the cursor: submesh first, then its
+  // connected island — combined receivers break fully apart for tuning
   renderer.domElement.addEventListener('dblclick', e => {
     if (!tune) return;
     const r = renderer.domElement.getBoundingClientRect();
     const p = new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1,
                                 -((e.clientY - r.top) / r.height) * 2 + 1);
     ray2.setFromCamera(p, cam);
-    const hits = ray2.intersectObjects(root.children, true);
-    const hit = hits.find(h => h.object.isMesh && ownerRec(h.object));
+    const all = ray2.intersectObjects(root.children, true)
+      .filter(h => h.object.isMesh && ownerRec(h.object));
+    // dedupe to one hit per object, keep nearest-first order
+    const seen = new Set();
+    const uniq = all.filter(h => !seen.has(h.object) && seen.add(h.object));
+    // repeated dblclicks at (roughly) the same spot cycle through buried
+    // parts — a slide hidden inside the frame is the second hit
+    const spot = Math.round(e.clientX / 8) + ':' + Math.round(e.clientY / 8);
+    if (pickSpot === spot && uniq.length > 1) {
+      pickCycle = (pickCycle + 1) % uniq.length;
+    } else {
+      pickCycle = 0;
+    }
+    pickSpot = spot;
+    const hit = uniq[pickCycle];
     if (hit) {
-      const obj = hit.object;
+      let obj = hit.object;
+      if (!obj.userData._islands) {
+        const s = splitIslands(obj);
+        if (s) obj = s.rootToIsland.get(s.faceRoot[hit.faceIndex]) || obj;
+      }
       if (!obj.userData._tuneBase) obj.userData._tuneBase = obj.position.clone();
       tuneSel = obj;
       tuned.add(obj);
@@ -315,7 +482,7 @@ export function initStage(view, status) {
     const d = obj.position.clone().sub(obj.userData._tuneBase);
     return {
       id: own ? own[0] : '?',
-      mesh: own ? own[1].url.split('/').pop().replace('.glb', '') : '?',
+      mesh: own ? own[1].url.split('/').pop().split('?')[0].replace('.glb', '') : '?',
       sub: obj.name || '',
       baseDt: own && own[1].dt ? own[1].dt : [0, 0, 0],
       moved: [+d.x.toFixed(4), +d.y.toFixed(4), +d.z.toFixed(4)],
@@ -330,6 +497,32 @@ export function initStage(view, status) {
     gizmo.enabled = on;
     if (!on) { gizmo.detach(); tuneSel = null; }
   }
+  function listParts() {
+    const out = [];
+    for (const [id, rec] of parts) {
+      if (!rec.group) continue;
+      rec.group.traverse(o => {
+        if (o.isMesh) out.push({ id, name: o.name || id, uuid: o.uuid });
+      });
+    }
+    return out;
+  }
+  function selectPart(uuid) {
+    for (const rec of parts.values()) {
+      if (!rec.group) continue;
+      let found = null;
+      rec.group.traverse(o => { if (o.uuid === uuid) found = o; });
+      if (found) {
+        if (!found.userData._tuneBase) found.userData._tuneBase = found.position.clone();
+        tuneSel = found;
+        tuned.add(found);
+        gizmo.attach(found);
+        if (onTuneMove.cb) onTuneMove.cb(tuneReport());
+        return true;
+      }
+    }
+    return false;
+  }
   function tuneAll() {
     const out = [];
     for (const obj of tuned) {
@@ -340,5 +533,26 @@ export function initStage(view, status) {
     return out;
   }
 
-  return { setParts, frame, applySkin, setTune, tuneAll };
+  function nodesInfo() {
+    const out = [];
+    for (const [id, rec] of parts) {
+      if (!rec.group) continue;
+      rec.group.updateWorldMatrix(true, true);
+      const bb = new THREE.Box3().setFromObject(rec.group);
+      out.push({ id, node: '(part box)', vis: true,
+                 at: [bb.min.x, bb.min.y, bb.min.z, bb.max.x, bb.max.y, bb.max.z]
+                   .map(v => +v.toFixed(3)) });
+      rec.group.traverse(o => {
+        if (o.isMesh) {
+          const p = new THREE.Vector3();
+          o.getWorldPosition(p);
+          out.push({ id, node: o.name || o.parent.name, vis: o.visible,
+                     at: [p.x, p.y, p.z].map(v => +v.toFixed(3)) });
+        }
+      });
+    }
+    return out;
+  }
+  const busy = () => inFlight;
+  return { setParts, frame, applySkin, applyCamo, setTune, tuneAll, setBoneDt, listParts, selectPart, nodesInfo, busy };
 }

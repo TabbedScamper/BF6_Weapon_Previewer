@@ -1,0 +1,268 @@
+== weapons / assaultrifle  (10 internal vs 9 catalog; joined 8)
+   6p67                         -> AssaultRifle_KORD_6P67               KORD 6P67
+   g36                          -> AssaultRifle_B36A4                   B36A4
+   g3a4                         -> AssaultRifle_AK4D                    AK4D
+   hk433                        -> AssaultRifle_M433                    M433
+   l85a3                        -> AssaultRifle_L85A3                   L85A3
+   scarl                        -> AssaultRifle_SOR_556_Mk2             SOR 556 Mk2
+   tavor7                       -> AssaultRifle_TR_7                    TR-7
+   vhs2                         -> AssaultRifle_VCR_2                   VCR-2
+   UNMATCHED internal: ace32, m16a3
+   MISSING from previewer (catalog-only): AssaultRifle_NVO_228E
+== weapons / battlepickup  (2 internal vs 2 catalog; joined 2)
+   minigun                      -> BattlePickup_MP_RMG                  MP RMG
+   railgun                      -> BattlePickup_Rorsch_Mk_2_SMRW        Rorsch Mk 2 SMRW
+== weapons / boltaction  (5 internal vs 4 catalog; joined 4)
+   m2010esr                     -> Sniper_M2010_ESR                     M2010 ESR
+   minifix                      -> Sniper_Mini_Scout                    Mini Scout
+   mrad                         -> Sniper_PSR                           PSR
+   sv98m                        -> Sniper_SV_98                         SV 98
+   UNMATCHED internal: l115a3
+   [by-elimination] xm7 -> Carbine_M277
+== weapons / carbine  (8 internal vs 8 catalog; joined 8)
+   ak205                        -> Carbine_AK_205                       AK 205
+   hk417a2                      -> Carbine_M417_A2                      M417 A2
+   m4a1                         -> Carbine_M4A1                         M4A1
+   msbsgrotb                    -> Carbine_GRT_BC                       GRT BC
+   qbz192                       -> Carbine_QBZ_192                      QBZ 192
+   scarsc                       -> Carbine_SOR_300SC                    SOR 300SC
+   sig553r                      -> Carbine_SG_553R                      SG 553R
+   xm7                          -> Carbine_M277                         M277
+   [by-elimination] aradmr -> DMR_LMR27
+== weapons / dmr  (5 internal vs 5 catalog; joined 5)
+   aradmr                       -> DMR_LMR27                            LMR27
+   m39emr                       -> DMR_M39_EMR                          M39 EMR
+   msbsgrotcps                  -> DMR_GRT_CPS                          GRT CPS
+   svch                         -> DMR_SVK_86                           SVK 86
+   svdm                         -> DMR_SVDM                             SVDM
+== weapons / melee  (6 internal vs 5 catalog; joined 3)
+   combatknife                  -> Melee_Combat_Knife                   Combat Knife
+   iceclimbingaxe               -> Melee_Ice_Axe                        Ice Axe
+   sledgehammer                 -> Melee_Sledgehammer                   Sledgehammer
+   UNMATCHED internal: dinomachete, gekoknife, machete
+   MISSING from previewer (catalog-only): Melee_Hunting_Knife, Melee_Serrated_Blade
+== weapons / mg  (10 internal vs 9 catalog; joined 9)
+   m240l                        -> LMG_M240L                            M240L
+   m250                         -> LMG_M250                             M250
+   m27iar                       -> LMG_DRS_IAR                          DRS IAR
+   m60e6                        -> LMG_M_60                             M-60
+   mg4k                         -> LMG_M123K                            M123K
+   mg5                          -> LMG_M121_A2                          M121 A2
+   minimi                       -> LMG_L110                             L110
+   rpkm                         -> LMG_RPKM                             RPKM
+   ultimax                      -> LMG_KTS100_MK8                       KTS100 MK8
+   UNMATCHED internal: rpk74m
+== weapons / secondary  (7 internal vs 7 catalog; joined 7)
+   fiveseven                    -> Sidearm_ES_57                        ES 57
+   g22                          -> Sidearm_GGH_22                       GGH 22
+   m18                          -> Sidearm_P18                          P18
+   m45a1                        -> Sidearm_M45A1                        M45A1
+   raginghunter                 -> Sidearm_M44                          M44
+   skorpion                     -> Sidearm_VZ_61                        VZ 61
+   trr8                         -> Sidearm_M357_Trait                   M357 Trait
+== weapons / shotgun  (5 internal vs 4 catalog; joined 4)
+   185ksk                       -> Shotgun__185KS_K                     185KS-K
+   590a1                        -> Shotgun_M87A1                        M87A1
+   dp12                         -> Shotgun_DB_12                        DB 12
+   m1014                        -> Shotgun_M1014                        M1014
+   UNMATCHED internal: ksg
+== weapons / smg  (10 internal vs 9 catalog; joined 8)
+   apc10                        -> SMG_SCW_10                           SCW 10
+   mp5mli                       -> SMG_PW5A3                            PW5A3
+   mp7a2                        -> SMG_PW7A2                            PW7A2
+   mpx                          -> SMG_SGX                              SGX
+   p90                          -> SMG_USG_90                           USG 90
+   pp19                         -> SMG_KV9                              KV9
+   scorpionevo3                 -> SMG_CZ3A1                            CZ3A1
+   ump40                        -> SMG_UMG_40                           UMG 40
+   UNMATCHED internal: apdw, vector
+   MISSING from previewer (catalog-only): SMG_SL9
+== gadgets / callins  (3 internal vs 8 catalog; joined 1)
+   smokescreen                  -> CallIn_Smoke_Screen                  Smoke Screen
+   UNMATCHED internal: airdrop, kineticstrike
+   MISSING from previewer (catalog-only): CallIn_Air_Strike, CallIn_Ammo_Drop, CallIn_Anti_Vehicle_Drop, CallIn_Artillery_Strike, CallIn_Mobile_Redeploy, CallIn_UAV_Overwatch, CallIn_Weapon_Drop
+== gadgets / intel  (4 internal vs 36 catalog; joined 0)
+   UNMATCHED internal: datadrive, dataextractiontablet, lancet, surveillancecameradome
+   MISSING from previewer (catalog-only): CallIn_Air_Strike, CallIn_Ammo_Drop, CallIn_Anti_Vehicle_Drop, CallIn_Artillery_Strike, CallIn_Mobile_Redeploy, CallIn_Smoke_Screen, CallIn_UAV_Overwatch, CallIn_Weapon_Drop, Class_Adrenaline_Injector, Class_Motion_Sensor, Class_Repair_Tool, Class_Supply_Bag, Deployable_Cover, Deployable_Deploy_Beacon, Deployable_EOD_Bot, Deployable_Grenade_Intercept_System, Deployable_Missile_Intercept_System, Deployable_Portable_Mortar, Deployable_Recon_Drone, Deployable_Vehicle_Supply_Crate, Mask_Gas, Mask_NVG, Misc_Acoustic_Sensor_AV_Mine, Misc_Anti_Personnel_Mine, Misc_Anti_Vehicle_Mine, Misc_Assault_Ladder, Misc_Defibrillator, Misc_Demolition_Charge, Misc_Incendiary_Round_Shotgun, Misc_Laser_Designator, Misc_PortalGadget, Misc_Sniper_Decoy, Misc_Supply_Pouch, Misc_Suppression, Misc_Tracer_Dart, Misc_Tripwire_Sensor_AV_Mine
+== gadgets / launchers  (15 internal vs 19 catalog; joined 11)
+   airburstincendiary           -> Launcher_Incendiary_Airburst         Incendiary Airburst
+   breachingdart                -> Launcher_Breaching_Projectile        Breaching Projectile
+   igla                         -> Launcher_IGLA                        IGLA
+   javelin                      -> Launcher_Auto_Guided                 Auto Guided
+   m224mortar                   -> Deployable_Portable_Mortar           Portable Mortar
+   m320                         -> Launcher_High_Explosive              High Explosive
+   m320smoke                    -> Launcher_Smoke_Grenade               Smoke Grenade
+   m320thermobaric              -> Launcher_Thermobaric_Grenade         Thermobaric Grenade
+   mbtlaw                       -> Launcher_Aim_Guided                  Aim Guided
+   rpg7                         -> Launcher_Unguided_Rocket             Unguided Rocket
+   stinger                      -> Launcher_Air_Defense                 Air Defense
+   UNMATCHED internal: airburst, m136at4, m26mass, panzerfaust3
+   MISSING from previewer (catalog-only): Deployable_Cover, Deployable_Deploy_Beacon, Deployable_EOD_Bot, Deployable_Grenade_Intercept_System, Deployable_Missile_Intercept_System, Deployable_Recon_Drone, Deployable_Vehicle_Supply_Crate, Launcher_Long_Range
+== gadgets / mines  (3 internal vs 14 catalog; joined 3)
+   atmine                       -> Misc_Anti_Vehicle_Mine               Anti Vehicle Mine
+   m4slam                       -> Misc_Tripwire_Sensor_AV_Mine         Tripwire Sensor AV Mine
+   ptkm1r                       -> Misc_Acoustic_Sensor_AV_Mine         Acoustic Sensor AV Mine
+   MISSING from previewer (catalog-only): Misc_Anti_Personnel_Mine, Misc_Assault_Ladder, Misc_Defibrillator, Misc_Demolition_Charge, Misc_Incendiary_Round_Shotgun, Misc_Laser_Designator, Misc_PortalGadget, Misc_Sniper_Decoy, Misc_Supply_Pouch, Misc_Suppression, Misc_Tracer_Dart
+== gadgets / misc  (21 internal vs 36 catalog; joined 8)
+   beacon                       -> Deployable_Deploy_Beacon             Deploy Beacon
+   defibrillator                -> Misc_Defibrillator                   Defibrillator
+   drone                        -> Deployable_Recon_Drone               Recon Drone
+   eodbot                       -> Deployable_EOD_Bot                   EOD Bot
+   gasmask                      -> Mask_Gas                             Gas Mask
+   nvg                          -> Mask_NVG                             NVG
+   revivepen                    -> Class_Adrenaline_Injector            Adrenaline Injector
+   tracerdart                   -> Misc_Tracer_Dart                     Tracer Dart
+   UNMATCHED internal: cachegrabcase, ceramicarmor, dataextractioncase_01, inteldronecontroller, keycarddevice, mobilejammer, pld, seismicdetector, softarmor, spraycan, trackingantenna, vehiclekeycard, vestarmor
+   MISSING from previewer (catalog-only): CallIn_Air_Strike, CallIn_Ammo_Drop, CallIn_Anti_Vehicle_Drop, CallIn_Artillery_Strike, CallIn_Mobile_Redeploy, CallIn_Smoke_Screen, CallIn_UAV_Overwatch, CallIn_Weapon_Drop, Class_Motion_Sensor, Class_Repair_Tool, Class_Supply_Bag, Deployable_Cover, Deployable_Grenade_Intercept_System, Deployable_Missile_Intercept_System, Deployable_Portable_Mortar, Deployable_Vehicle_Supply_Crate, Misc_Acoustic_Sensor_AV_Mine, Misc_Anti_Personnel_Mine, Misc_Anti_Vehicle_Mine, Misc_Assault_Ladder, Misc_Demolition_Charge, Misc_Incendiary_Round_Shotgun, Misc_Laser_Designator, Misc_PortalGadget, Misc_Sniper_Decoy, Misc_Supply_Pouch, Misc_Suppression, Misc_Tripwire_Sensor_AV_Mine
+== gadgets / placedexplosives  (3 internal vs 14 catalog; joined 2)
+   demolitioncharge             -> Misc_Demolition_Charge               Demolition Charge
+   m18claymore                  -> Misc_Anti_Personnel_Mine             Anti Personnel Mine
+   UNMATCHED internal: thermitecharge
+   MISSING from previewer (catalog-only): Misc_Acoustic_Sensor_AV_Mine, Misc_Anti_Vehicle_Mine, Misc_Assault_Ladder, Misc_Defibrillator, Misc_Incendiary_Round_Shotgun, Misc_Laser_Designator, Misc_PortalGadget, Misc_Sniper_Decoy, Misc_Supply_Pouch, Misc_Suppression, Misc_Tracer_Dart, Misc_Tripwire_Sensor_AV_Mine
+== gadgets / supply  (1 internal vs 36 catalog; joined 1)
+   supplypouch                  -> Misc_Supply_Pouch                    Supply Pouch
+   MISSING from previewer (catalog-only): CallIn_Air_Strike, CallIn_Ammo_Drop, CallIn_Anti_Vehicle_Drop, CallIn_Artillery_Strike, CallIn_Mobile_Redeploy, CallIn_Smoke_Screen, CallIn_UAV_Overwatch, CallIn_Weapon_Drop, Class_Adrenaline_Injector, Class_Motion_Sensor, Class_Repair_Tool, Class_Supply_Bag, Deployable_Cover, Deployable_Deploy_Beacon, Deployable_EOD_Bot, Deployable_Grenade_Intercept_System, Deployable_Missile_Intercept_System, Deployable_Portable_Mortar, Deployable_Recon_Drone, Deployable_Vehicle_Supply_Crate, Mask_Gas, Mask_NVG, Misc_Acoustic_Sensor_AV_Mine, Misc_Anti_Personnel_Mine, Misc_Anti_Vehicle_Mine, Misc_Assault_Ladder, Misc_Defibrillator, Misc_Demolition_Charge, Misc_Incendiary_Round_Shotgun, Misc_Laser_Designator, Misc_PortalGadget, Misc_Sniper_Decoy, Misc_Suppression, Misc_Tracer_Dart, Misc_Tripwire_Sensor_AV_Mine
+== gadgets / throwables  (13 internal vs 9 catalog; joined 10)
+   antitank                     -> Throwable_Anti_Vehicle_Grenade       Anti Vehicle Grenade
+   concussion                   -> Throwable_Stun_Grenade               Stun Grenade
+   flashbang                    -> Throwable_Flash_Grenade              Flash Grenade
+   frag                         -> Throwable_Fragmentation_Grenade      Fragmentation Grenade
+   incendiary                   -> Throwable_Incendiary_Grenade         Incendiary Grenade
+   miniv40                      -> Throwable_Mini_Frag_Grenade          Mini Frag Grenade
+   proximity                    -> Throwable_Proximity_Detector         Proximity Detector
+   smoke                        -> Throwable_Smoke_Grenade              Smoke Grenade
+   throwingknife                -> Throwable_Throwing_Knife             Throwing Knife
+   vehiclesupplycrate           -> Deployable_Vehicle_Supply_Crate      Vehicle Supply Crate
+   UNMATCHED internal: c4, rfjammer, supplycrate
+== gadgets / tools  (13 internal vs 36 catalog; joined 6)
+   deployablecover              -> Deployable_Cover                     Cover
+   ladder                       -> Misc_Assault_Ladder                  Assault Ladder
+   laserdesignator              -> Misc_Laser_Designator                Laser Designator
+   repair                       -> Class_Repair_Tool                    Repair Tool
+   sniperdecoy                  -> Misc_Sniper_Decoy                    Sniper Decoy
+   tugs                         -> Class_Motion_Sensor                  Motion Sensor
+   UNMATCHED internal: boltcutters, eidos, gunsmithtoolkit, handheldradio, mpaps, rfradio, spawnbeacon
+   MISSING from previewer (catalog-only): CallIn_Air_Strike, CallIn_Ammo_Drop, CallIn_Anti_Vehicle_Drop, CallIn_Artillery_Strike, CallIn_Mobile_Redeploy, CallIn_Smoke_Screen, CallIn_UAV_Overwatch, CallIn_Weapon_Drop, Class_Adrenaline_Injector, Class_Supply_Bag, Deployable_Deploy_Beacon, Deployable_EOD_Bot, Deployable_Grenade_Intercept_System, Deployable_Missile_Intercept_System, Deployable_Portable_Mortar, Deployable_Recon_Drone, Deployable_Vehicle_Supply_Crate, Mask_Gas, Mask_NVG, Misc_Acoustic_Sensor_AV_Mine, Misc_Anti_Personnel_Mine, Misc_Anti_Vehicle_Mine, Misc_Defibrillator, Misc_Demolition_Charge, Misc_Incendiary_Round_Shotgun, Misc_PortalGadget, Misc_Supply_Pouch, Misc_Suppression, Misc_Tracer_Dart, Misc_Tripwire_Sensor_AV_Mine
+== attachments / amo  (9 internal vs 10 catalog; joined 9)
+   buckshot                     -> Ammo_Buckshot                        Buckshot
+   flechette                    -> Ammo_Flechette                       Flechette
+   fmj                          -> Ammo_FMJ                             FMJ
+   frangible                    -> Ammo_Frangible                       Frangible
+   hollowpoint                  -> Ammo_Hollow_Point                    Hollow Point
+   match                        -> Ammo_Match_Grade                     Match Grade
+   polymer_case                 -> Ammo_Polymer_Case                    Polymer Case
+   polymercase                  -> Ammo_Polymer_Case                    Polymer Case
+   slugs                        -> Ammo_Slugs                           Slugs
+   tungsten                     -> Ammo_Tungsten_Core                   Tungsten Core
+   MISSING from previewer (catalog-only): Ammo_Synthetic_Tip
+   [generic] ballistictip          -> Ballistic Tip
+   [generic] no00buckshot          -> No.00 Buckshot
+== attachments / brl  (0 internal vs 157 catalog; joined 0)
+   MISSING from previewer (catalog-only): Barrel_102mm_Compact, Barrel_105_Custom, Barrel_105_Factory, Barrel_10_Factory, Barrel_10_Full, Barrel_114mm_Factory, Barrel_114mm_Pencil, Barrel_115_Commando, Barrel_11_Extended, Barrel_11_Heavy, Barrel_122mm_Factory, Barrel_122mm_Pencil, Barrel_125_Fluted, Barrel_125_Mid, Barrel_12_Assaulter, Barrel_12_SBR, Barrel_135mm_Long, Barrel_13_Factory, Barrel_13_Fluted, Barrel_13_Prototype, Barrel_13_Standard, Barrel_145_Alt, Barrel_145_Carbine, Barrel_145_Common, Barrel_145_Factory, Barrel_145_Standard, Barrel_165_Basic, Barrel_165_Fluted, Barrel_165_LSW, Barrel_165_Rifle, Barrel_16_Custom, Barrel_16_Factory, Barrel_16_Pencil, Barrel_16_Rifle, Barrel_16_Short, Barrel_16_US, Barrel_17_Cut, Barrel_17_Factory, Barrel_17_Fluted, Barrel_180mm_Prototype, Barrel_180mm_Standard, Barrel_185_Factory, Barrel_189_Factory, Barrel_189_Prototype, Barrel_18_Custom, Barrel_18_EBR, Barrel_18_Extended, Barrel_18_US_LB, Barrel_200mm_Custom, Barrel_200mm_Custom_H, Barrel_200mm_Factory, Barrel_200mm_Fluted, Barrel_20_Factory, Barrel_20_LE, Barrel_20_Lima, Barrel_20_Long, Barrel_20_OH, Barrel_20_SDM_R, Barrel_215_Factory, Barrel_215_Fluted, Barrel_225mm_Factory, Barrel_22_E3_Long, Barrel_22_Factory, Barrel_240mm_Fluted, Barrel_240mm_SB, Barrel_245mm_Custom, Barrel_24_Bravo, Barrel_24_Extended, Barrel_24_Fluted, Barrel_24_Full, Barrel_264mm_Factory, Barrel_264mm_Fluted, Barrel_264mm_Prototype, Barrel_26_Carbon, Barrel_26_Factory, Barrel_27_MK22, Barrel_303mm_LB, Barrel_305mm_Custom, Barrel_305mm_Custom_H, Barrel_314mm_Factory, Barrel_314mm_Fluted, Barrel_314mm_Prototype, Barrel_330mm_Mk3, Barrel_349mm_Fluted, Barrel_349mm_SB, Barrel_370mm_Compact, Barrel_391mm_CQB, Barrel_39_Factory, Barrel_39_Pencil, Barrel_406mm_Standard, Barrel_407mm_Civ_S, Barrel_409mm_Cut, Barrel_409mm_Factory, Barrel_409mm_Fluted, Barrel_409mm_US, Barrel_415mm_Factory, Barrel_415mm_Fluted, Barrel_415mm_Prototype, Barrel_419mm_Boar_F, Barrel_430mm_Cut, Barrel_430mm_Factory, Barrel_442_mm_CQB, Barrel_450mm_Factory, Barrel_450mm_Standard, Barrel_457mm_Mk9, Barrel_457mm_Urban, Barrel_458mm_Custom, Barrel_45_Compact, Barrel_465mm_LB, Barrel_480mm_Factory, Barrel_480mm_Fluted, Barrel_480mm_MG, Barrel_508mm_Mk8, Barrel_510mm_DMR, Barrel_510mm_Fluted, Barrel_512_Compact, Barrel_514mm_Carbine, Barrel_518mm_Factory, Barrel_518mm_Fluted, Barrel_521mm_Boar, Barrel_521mm_Boar_F, Barrel_550mm_Factory, Barrel_556mm_Prototype, Barrel_55_Factory, Barrel_55_Fluted, Barrel_560mm_Cut, Barrel_560mm_Factory, Barrel_565mm_Fluted, Barrel_565mm_Para, Barrel_590mm_Factory, Barrel_5_Factory, Barrel_5_Pencil, Barrel_600mm_Cut, Barrel_600mm_DMR, Barrel_600mm_Fluted, Barrel_600mm_Tabuk, Barrel_612mm_VMW, Barrel_620mm_Classic, Barrel_646mm_Cut, Barrel_646mm_Fluted, Barrel_646mm_LSW, Barrel_650mm_Factory, Barrel_650mm_Fluted, Barrel_65_Extended, Barrel_675_Factory, Barrel_68_Factory, Barrel_68_Fluted, Barrel_6_Fluted, Barrel_6_Standard, Barrel_730mm_3LR, Barrel_75_Compact, Barrel_837_Long, Barrel_8_Extended, Barrel_9_Factory, Barrel_9_Fluted, Barrel_9_Heavy, Barrel_IAR_Heavy
+   [generic] basicbarrel           -> Basic Barrel
+   [generic] extended_barrel       -> Extended Barrel
+   [generic] extendedbarrel        -> Extended Barrel
+   [generic] fluted                -> Fluted Barrel
+   [generic] fluted_barrel         -> Fluted Barrel
+   [generic] heavy_barrel          -> Heavy Barrel
+   [generic] heavybarrel           -> Heavy Barrel
+   [generic] heavyextendedbarrel   -> Heavy Extended Barrel
+   [generic] hvyext                -> Heavy Extended Barrel
+   [generic] hvyextbarrel          -> Heavy Extended Barrel
+   [generic] lightbarrel           -> Light Barrel
+   [generic] short_barrel          -> Short Barrel
+   [generic] shortbarrel           -> Short Barrel
+   [generic] standardbarrel        -> Standard Barrel
+   [generic] treatedbarrel         -> Treated Barrel
+== attachments / btm  (44 internal vs 28 catalog; joined 2)
+   6ch64_vertical               -> Bottom_6H64_Vertical                 6H64 Vertical
+   6ch64vertical                -> Bottom_6H64_Vertical                 6H64 Vertical
+   bipod                        -> Bottom_Bipod                         Bipod
+   UNMATCHED internal: araafg, atlas_v8, atlasv8, atlasv8bolt, bcm_stubby, bcm_stubby_bolt, bcmstubby, bcmstubbybolt, bottom_rail, bottomrail, bt_grippod_qd, bt_grippod_qd_bolt, btgrippodqd, btgrippodqdbolt, cmr201, dp12grip, evo_handstop, evohandstop, fab_tfs, fabfs, fabtfs, gps2, gps2_bolt, gps2bolt, hfga, holosun_rmlt, holosunrmlt, kac_vertical_grip, kac_verticalgrip, kacverticalgrip, lmdpeir1, lt706qdharrisbipod, lwrci_vfg, lwrcivfg, m60e6bipod, magpul_afg, magpul_afg2, magpul_afg2_bolt, magpul_afg_bolt, magpul_afg_pdw, magpul_mvg, magpulafg, magpulafg2, magpulafg2bolt, magpulafg_pdw, magpulafgbolt, magpulafgpdw, magpulmvg, mg4kbipod, mg5bipod, msbs_a2_grip, msbsa2grip, perst1, qbz_grippod, qbzgrippod, sfx300, sfx400, svdmbipod, tango_stubby, tangodown_vertical, tangodownvertical, tangostubby, troy, ugl_mount, uglmount, x5l_g3, x5lg3, zenitco_rk1, zenitcork1
+   MISSING from previewer (catalog-only): Bottom_50_mW_Green, Bottom_5_mW_Green, Bottom_5_mW_Red, Bottom_Adjustable_Angled, Bottom_Alloy_Vertical, Bottom_Canted_Stubby, Bottom_Classic_Grip_Pod, Bottom_Classic_Vertical, Bottom_Compact_Handstop, Bottom_Factory_Angled, Bottom_Flashlight, Bottom_Folding_Stubby, Bottom_Folding_Vertical, Bottom_Full_Angled, Bottom_Laser_Light_Combo_Green, Bottom_Laser_Light_Combo_Red, Bottom_Low_Profile_Stubby, Bottom_PTT_Grip_Pod, Bottom_QD_Grip_Pod, Bottom_Ribbed_Stubby, Bottom_Ribbed_Vertical, Bottom_Slim_Angled, Bottom_Slim_Handstop, Bottom_Stippled_Stubby, Bottom_Underslung_Mount, Bottom_VIS_IR_Light
+== attachments / erg  (6 internal vs 5 catalog; joined 5)
+   dlc_bolt                     -> Ergonomic_DLC_Bolt                   DLC Bolt
+   dlcbolt                      -> Ergonomic_DLC_Bolt                   DLC Bolt
+   flared_magwell               -> Ergonomic_Magwell_Flare              Magwell Flare
+   flaredmagwell                -> Ergonomic_Magwell_Flare              Magwell Flare
+   improved_mag_catch           -> Ergonomic_Improved_Mag_Catch         Improved Mag Catch
+   improvedmagcatch             -> Ergonomic_Improved_Mag_Catch         Improved Mag Catch
+   magwell                      -> Ergonomic_Magwell_Flare              Magwell Flare
+   matchtrigger                 -> Ergonomic_Match_Trigger              Match Trigger
+   railcover                    -> Ergonomic_Rail_Cover                 Rail Cover
+   [generic] burstfireenable       -> Burst Fire
+   [generic] ergonomic             -> Ergonomic Grip
+   [generic] fullauto              -> Full Auto Receiver
+   [generic] pistolquickdraw       -> Quickdraw
+   [generic] recoilbuffer          -> Recoil Buffer
+   [generic] revolverquickdraw     -> Quickdraw
+== attachments / lft  (10 internal vs 8 catalog; joined 0)
+   UNMATCHED internal: anpeq16b, dbal-a3, fn_elity, fnelity, la-23, mepro_sting, modulemk3, perst4, raidxe, sf300, tl_missionlight, tlmissionlight
+   MISSING from previewer (catalog-only): Left_120_mW_Blue, Left_50_mW_Blue, Left_50_mW_Green, Left_5_mW_Green, Left_5_mW_Red, Left_Flashlight, Left_Range_Finder, Left_VIS_IR_Light
+== attachments / mag  (0 internal vs 49 catalog; joined 0)
+   MISSING from previewer (catalog-only): Magazine_100rnd_Belt_Box, Magazine_100rnd_Belt_Pouch, Magazine_100rnd_Drum_Mag, Magazine_10rnd_Fast_Mag, Magazine_10rnd_Magazine, Magazine_11rnd_Magazine, Magazine_15rnd_Fast_Mag, Magazine_15rnd_Magazine, Magazine_17rnd_Fast_Mag, Magazine_17rnd_Magazine, Magazine_200rnd_Belt_Box, Magazine_20rnd_Fast_Mag, Magazine_20rnd_Magazine, Magazine_21rnd_Magazine, Magazine_22rnd_Magazine, Magazine_23rnd_Magazine, Magazine_25rnd_Fast_Mag, Magazine_25rnd_Magazine, Magazine_27rnd_Magazine, Magazine_30rnd_Fast_Mag, Magazine_30rnd_Magazine, Magazine_36rnd_Magazine, Magazine_40rnd_Fast_Mag, Magazine_40rnd_Magazine, Magazine_41rnd_Magazine, Magazine_45rnd_Fast_Mag, Magazine_45rnd_Magazine, Magazine_4_Shell_Tube, Magazine_4rnd_Fast_Mag, Magazine_4rnd_Magazine, Magazine_50rnd_Belt_Pouch, Magazine_50rnd_Loose_Belt, Magazine_50rnd_Magazine, Magazine_5_Shell_Tube, Magazine_5rnd_Fast_Mag, Magazine_5rnd_Magazine, Magazine_60rnd_Drum_Mag, Magazine_60rnd_Magazine, Magazine_6_Shell_Tube, Magazine_6rnd_Speedloader, Magazine_75rnd_Belt_Box, Magazine_75rnd_Drum, Magazine_7_Shell_Dual_Tubes, Magazine_7_Shell_Tube, Magazine_7rnd_Magazine, Magazine_8rnd_Fast_Mag, Magazine_8rnd_Magazine, Magazine_8rnd_Moon_Clip, Magazine_8rnd_Speedloader
+   [generic] compact1              -> Compact Magazine I
+   [generic] compact2              -> Compact Magazine II
+   [generic] compact3              -> Compact Magazine III
+   [generic] extended1             -> Extended Magazine I
+   [generic] extended1fast         -> Extended Fast Mag I
+   [generic] extended2             -> Extended Magazine II
+   [generic] extended2fast         -> Extended Fast Mag II
+   [generic] extended3             -> Extended Magazine III
+   [generic] extended3fast         -> Extended Fast Mag III
+   [generic] extended4             -> Extended Magazine IV
+   [generic] extended5             -> Extended Magazine V
+   [generic] fast                  -> Fast Mag
+   [generic] magazinefast          -> Fast Mag
+   [generic] regular               -> Standard Magazine
+== attachments / mzl  (146 internal vs 12 catalog; joined 6)
+   akmslantbrake                -> Muzzle_Slant_Brake                   Slant Brake
+   awmdoubleportbrake           -> Muzzle_Double_port_Brake             Double port Brake
+   awmsingleportbrake           -> Muzzle_Single_port_Brake             Single port Brake
+   flashhider185ksk             -> Muzzle_Flash_Hider                   Flash Hider
+   kvpmachlinearcomp            -> Muzzle_Linear_Comp                   Linear Comp
+   sv98threadprotector          -> Muzzle_Thread_Protector              Thread Protector
+   UNMATCHED internal: 57-22suppressor, a-tecmp7suppressor, aac_sdn6_suppressor, aac_snd6_suppressor, aacsdn6suppressor, aactitanmb, aactitanqd, ak2000545suppressor, ak2000762suppressor, akmgen3, alaskan360suppressor, am338suppressor, aseultrasseriessl4isuppressor, awmsuppressor, barrett2-portmb, barrettam338suppressor, benellicomp, btrqd9suppressor, btsqd10mmsuppressor, bushwackersuppressor, bushwackertrilugsuppressor, compact_streamer, compactstreamer, dtk-1lmb, dtk-2lmb, dtk-2mb, dtk1, dtk1l, dtksv98mb, enticerlti, enticerltisuppressor, flashhiderace32, flashhideradmr, flashhiderak205, flashhiderapdw, flashhiderbttrilug, flashhiderdp12, flashhiderg36, flashhiderg3a4, flashhiderhk417a2, flashhiderhk433, flashhiderhkp4prong, flashhiderl85a3, flashhiderm240l, flashhiderm39emr, flashhiderm60e6, flashhidermg4k, flashhidermg5, flashhiderminimi556, flashhidermp540-10mm, flashhidermp7a2, flashhidermpx, flashhidermsbsgrotb, flashhiderp90, flashhiderq86, flashhiderqbz192, flashhiderrpk74m, flashhiderrpkm, flashhiderscarl, flashhiderscarsc, flashhiderscorpionevo3, flashhidersg553r, flashhidersigtaperedqd, flashhidersilentsteel, flashhiderstrelaak74gen2, flashhidersvdm, flashhiderultimax, flashhidervhs2, flashhideryhm338qd, gamicrocomp, garevmb, gk-01mb, hkp3-lugmb, hkpcomp3lug, hkpmicrocomp, huxmb, hx-qd556, hxqd762suppressor, hxqd_mb, hxqd_suppressor, hxqdmagnumtisuppressor, hxqdsuppressor, jk195, jk195versaxsuppressor, kacnt4qdsuppressor, kvpmachtriluglinearcomp, lantacdragonmb, lunar45suppressor, m4qdflashhider, m4qdmams, mashadowfh, mgsmod1suppressor, ms57suppressor, nt4_qd_suppressor, nt4qdsuppressor, obsidian459mmsuppressor, obsidian45directthreadsuppressor, osprey2_suppressor, osprey2suppressor, qbz191comp, qbz191suppressor, qcherrybomb, r43osirissuppressor, rdm240fvs, rotex_iia_suppressor, rotex_v, rotexiiasuppressor, rotexiimp7suppressor, rotexv, rotexvsuppressor, rsmicrotactical, rsrazor762suppressor, saicobrasuppressor, saimg30ltsuppressor, saimp5suppressor, sakoslimbrake, salvo12suppressor, sandman-s_mil_suppressor, sandman-smilsuppressor, sfsocom556mb, sfwarcomp, sig_slx_qd_suppressor, sig_tapered_mb, sigslxqd68suppressor, sigslxqd762suppressor, sigtaperedflashhider, sigtaperedmb, silentsteel_mb, silentsteelmb, socom556rc3suppressor, socom_mb, socom_rc3, socommb, socomrc3, srd9_suppressor, srd9suppressor, srvvfhmb545, srvvfhmbsv98, srvvjetmk2mb, stelaak74suppressor, stelaakmsuppressor, sv98msuppressor, svchmb, tavor7brake, thiccboi12suppressor, tionmb58x24, titanfs-t1flv2suppressor, titanfs-t2fv2suppressor, tka-545, tka-762, vityazflashcomp, vortex1001va3, wyssen
+   MISSING from previewer (catalog-only): Muzzle_CQB_Suppressor, Muzzle_Compensated_Brake, Muzzle_Lightened_Suppressor, Muzzle_Long_Suppressor, Muzzle_Standard_Suppressor, Muzzle_Triple_port_Brake
+   [generic] muzzlebrake           -> Muzzle Brake
+   [generic] nomuzzle              -> None
+== attachments / rgt  (14 internal vs 10 catalog; joined 0)
+   UNMATCHED internal: anpeq16b, dbal-a3, dbala3, fn_elity, fnelity, la-23, la23peq, mepro_sting, meprosting, modulemk3, perst4, raidxe, rightrail, sf300, sfx400, tl_missionlight, tlmissionlight, x5lg3
+   MISSING from previewer (catalog-only): Right_120_mW_Blue, Right_50_mW_Blue, Right_50_mW_Green, Right_5_mW_Green, Right_5_mW_Red, Right_Flashlight, Right_Laser_Light_Combo_Green, Right_Laser_Light_Combo_Red, Right_Range_Finder, Right_VIS_IR_Light
+== attachments / sca  (10 internal vs 45 catalog; joined 5)
+   agcoating                    -> Scope_Anti_Glare_Coating             Anti Glare Coating
+   cantedironsights             -> Scope_Canted_Iron_Sights             Canted Iron Sights
+   variable2x                   -> Scope_Adjustable_Magnification_200x  Adjustable Magnification 2.00X
+   variable3x                   -> Scope_Adjustable_Magnification_300x  Adjustable Magnification 3.00X
+   variable4x                   -> Scope_Adjustable_Magnification_400x  Adjustable Magnification 4.00X
+   UNMATCHED internal: cantedreflex, cantedreflexslanted, g43magnifier, offsetreddot, secondarysight
+   MISSING from previewer (catalog-only): Scope_1p87_150x, Scope_1p88_Variable, Scope_2Pro_125x, Scope_3VZR_175x, Scope_A_P2_175x, Scope_Aperture_Sight, Scope_BF_2M_250x, Scope_Baker_300x, Scope_CCO_200x, Scope_CQB_Sights, Scope_CQ_RDS_125x, Scope_DVO_LPVO, Scope_GRIM_150x, Scope_Iron_Sights, Scope_LDS_450x, Scope_LERT_800x, Scope_MC_CO_LPVO, Scope_Mars_F_LPVO, Scope_Mini_Flex_100x, Scope_NFX_800x, Scope_NGFC_LPVO, Scope_Osa_7_100x, Scope_PAS_35_300x, Scope_PVQ_31_400x, Scope_Piggyback_Reflex, Scope_R4T_200x, Scope_ROX_150x, Scope_RO_M_175x, Scope_RO_S_125x, Scope_R_MR_100x, Scope_R_VPS_1000x, Scope_SDO_350x, Scope_SF_G2_500x, Scope_SM_Rifle_Variable, Scope_SSDS_600x, Scope_ST_Prism_500x, Scope_SU_123_150x, Scope_SU_230_LPVO, Scope_S_VPS_600x, Scope_TS_HD_600x
+== attachments / scp  (40 internal vs 45 catalog; joined 20)
+   1p885                        -> Scope_1p88_Variable                  1p88 Variable
+   acro_p2                      -> Scope_A_P2_175x                      A-P2 1.75X
+   acrop2                       -> Scope_A_P2_175x                      A-P2 1.75X
+   anpas35                      -> Scope_PAS_35_300x                    PAS 35 3.00X
+   bravo3                       -> Scope_Baker_300x                     Baker 3.00X
+   cod2m                        -> Scope_BF_2M_250x                     BF 2M 2.50X
+   compm5b                      -> Scope_CCO_200x                       CCO 2.00X
+   cqc_iron_sights              -> Scope_CQB_Sights                     CQB Sights
+   eflxmini                     -> Scope_Mini_Flex_100x                 Mini Flex 1.00X
+   elcanlds                     -> Scope_LDS_450x                       LDS 4.50X
+   iron_sights                  -> Scope_Iron_Sights                    Iron Sights
+   ironsights                   -> Scope_Iron_Sights                    Iron Sights
+   meprom22                     -> Scope_RO_M_175x                      RO-M 1.75X
+   nx8-4                        -> Scope_NFX_800x                       NFX 8.00X
+   opk7                         -> Scope_Osa_7_100x                     Osa-7 1.00X
+   rmr                          -> Scope_R_MR_100x                      R-MR 1.00X
+   romeo4t                      -> Scope_R4T_200x                       R4T 2.00X
+   romeox                       -> Scope_ROX_150x                       ROX 1.50X
+   tango6t                      -> Scope_S_VPS_600x                     S-VPS 6.00X
+   trijiconmro                  -> Scope_RO_M_175x                      RO-M 1.75X
+   trijiconsdo                  -> Scope_SDO_350x                       SDO 3.50X
+   trijiconsro                  -> Scope_RO_S_125x                      RO-S 1.25X
+   vzor3                        -> Scope_3VZR_175x                      3VZR 1.75X
+   UNMATCHED internal: elcandr, hisshd, holosundrsth, ironsightsusgi, m7xi, marchffpshorty, mark4m5a2, nfatacr, nx8-1, pg350, sbpmii, shield_cqs, shieldcqs, spitfire, steinert536, trijiconrco, trijiconreapir, trijiconvcog, vortexm157, xps3
+   MISSING from previewer (catalog-only): Scope_1p87_150x, Scope_2Pro_125x, Scope_Adjustable_Magnification_200x, Scope_Adjustable_Magnification_300x, Scope_Adjustable_Magnification_400x, Scope_Anti_Glare_Coating, Scope_Aperture_Sight, Scope_CQ_RDS_125x, Scope_Canted_Iron_Sights, Scope_DVO_LPVO, Scope_GRIM_150x, Scope_LERT_800x, Scope_MC_CO_LPVO, Scope_Mars_F_LPVO, Scope_NGFC_LPVO, Scope_PVQ_31_400x, Scope_Piggyback_Reflex, Scope_R_VPS_1000x, Scope_SF_G2_500x, Scope_SM_Rifle_Variable, Scope_SSDS_600x, Scope_ST_Prism_500x, Scope_SU_123_150x, Scope_SU_230_LPVO, Scope_TS_HD_600x
+== attachments / top  (8 internal vs 5 catalog; joined 0)
+   UNMATCHED internal: anpeq16b, dbal-a3, dbala3, la-23, la23peq, mepro_sting, meprosting, perst4, raidxe, toprail
+   MISSING from previewer (catalog-only): Top_120_mW_Blue, Top_50_mW_Blue, Top_50_mW_Green, Top_5_mW_Green, Top_5_mW_Red

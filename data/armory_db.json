@@ -1,49 +1,1596 @@
 {
+ "charms": {
+  "_template": {
+   "meshes": [
+    "ob_wepchrm_template_1p_mesh",
+    "ob_wepchrm_template_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\_template"
+  },
+  "che0001": {
+   "meshes": [
+    "ob_wepchrm_che0001_1p_mesh",
+    "ob_wepchrm_che0001_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0001"
+  },
+  "che0002": {
+   "meshes": [
+    "ob_wepchrm_che0002_1p_mesh",
+    "ob_wepchrm_che0002_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0002"
+  },
+  "che0003": {
+   "meshes": [
+    "ob_wepchrm_che0003_1p_mesh",
+    "ob_wepchrm_che0003_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0003"
+  },
+  "che0004": {
+   "meshes": [
+    "ob_wepchrm_che0004_1p_mesh",
+    "ob_wepchrm_che0004_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0004"
+  },
+  "che0005": {
+   "meshes": [
+    "ob_wepchrm_che0005_1p_mesh",
+    "ob_wepchrm_che0005_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0005"
+  },
+  "che0006": {
+   "meshes": [
+    "ob_wepchrm_che0006_1p_mesh",
+    "ob_wepchrm_che0006_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0006"
+  },
+  "che0007": {
+   "meshes": [
+    "ob_wepchrm_che0007_1p_mesh",
+    "ob_wepchrm_che0007_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0007"
+  },
+  "che0008": {
+   "meshes": [
+    "ob_wepchrm_che0008_1p_mesh",
+    "ob_wepchrm_che0008_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0008"
+  },
+  "che0009": {
+   "meshes": [
+    "ob_wepchrm_che0009_1p_mesh",
+    "ob_wepchrm_che0009_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0009"
+  },
+  "che0010": {
+   "meshes": [
+    "ob_wepchrm_che0010_1p_mesh",
+    "ob_wepchrm_che0010_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0010"
+  },
+  "che0011": {
+   "meshes": [
+    "ob_wepchrm_che0011_1p_mesh",
+    "ob_wepchrm_che0011_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0011"
+  },
+  "che0012": {
+   "meshes": [
+    "ob_wepchrm_che0012_1p_mesh",
+    "ob_wepchrm_che0012_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0012"
+  },
+  "che0017": {
+   "meshes": [
+    "ob_wepchrm_che0017_1p_mesh",
+    "ob_wepchrm_che0017_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0017"
+  },
+  "che0018": {
+   "meshes": [
+    "ob_wepchrm_che0018_1p_mesh",
+    "ob_wepchrm_che0018_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0018"
+  },
+  "che0019": {
+   "meshes": [
+    "ob_wepchrm_che0019_1p_mesh",
+    "ob_wepchrm_che0019_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0019"
+  },
+  "che0020": {
+   "meshes": [
+    "ob_wepchrm_che0020_1p_mesh",
+    "ob_wepchrm_che0020_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0020"
+  },
+  "che0021": {
+   "meshes": [
+    "ob_wepchrm_che0021_1p_mesh",
+    "ob_wepchrm_che0021_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0021"
+  },
+  "che0022": {
+   "meshes": [
+    "ob_wepchrm_che0022_1p_mesh",
+    "ob_wepchrm_che0022_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0022"
+  },
+  "che0023": {
+   "meshes": [
+    "ob_wepchrm_che0023_1p_mesh",
+    "ob_wepchrm_che0023_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0023"
+  },
+  "che0024": {
+   "meshes": [
+    "ob_wepchrm_che0024_1p_mesh",
+    "ob_wepchrm_che0024_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0024"
+  },
+  "che0025": {
+   "meshes": [
+    "ob_wepchrm_che0025_1p_mesh",
+    "ob_wepchrm_che0025_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0025"
+  },
+  "che0026": {
+   "meshes": [
+    "ob_wepchrm_che0026_1p_mesh",
+    "ob_wepchrm_che0026_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0026"
+  },
+  "che0027": {
+   "meshes": [
+    "ob_wepchrm_che0027_1p_mesh",
+    "ob_wepchrm_che0027_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0027"
+  },
+  "che0028": {
+   "meshes": [
+    "ob_wepchrm_che0028_1p_mesh",
+    "ob_wepchrm_che0028_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0028"
+  },
+  "che0029": {
+   "meshes": [
+    "ob_wepchrm_che0029_1p_mesh",
+    "ob_wepchrm_che0029_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0029"
+  },
+  "che0030": {
+   "meshes": [
+    "ob_wepchrm_che0030_1p_mesh",
+    "ob_wepchrm_che0030_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0030"
+  },
+  "che0031": {
+   "meshes": [
+    "ob_wepchrm_che0031_1p_mesh",
+    "ob_wepchrm_che0031_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0031"
+  },
+  "che0032": {
+   "meshes": [
+    "ob_wepchrm_che0032_1p_mesh",
+    "ob_wepchrm_che0032_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0032"
+  },
+  "che0033": {
+   "meshes": [
+    "ob_wepchrm_che0033_1p_mesh",
+    "ob_wepchrm_che0033_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0033"
+  },
+  "che0034": {
+   "meshes": [
+    "ob_wepchrm_che0034_1p_mesh",
+    "ob_wepchrm_che0034_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0034"
+  },
+  "che0035": {
+   "meshes": [
+    "ob_wepchrm_che0035_1p_mesh",
+    "ob_wepchrm_che0035_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0035"
+  },
+  "che0036": {
+   "meshes": [
+    "ob_wepchrm_che0036_1p_mesh",
+    "ob_wepchrm_che0036_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0036"
+  },
+  "che0037": {
+   "meshes": [
+    "ob_wepchrm_che0037_1p_mesh",
+    "ob_wepchrm_che0037_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0037"
+  },
+  "che0039": {
+   "meshes": [
+    "ob_wepchrm_che0039_1p_mesh",
+    "ob_wepchrm_che0039_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0039"
+  },
+  "che0040": {
+   "meshes": [
+    "ob_wepchrm_che0040_1p_mesh",
+    "ob_wepchrm_che0040_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0040"
+  },
+  "che0041": {
+   "meshes": [
+    "ob_wepchrm_che0041_1p_mesh",
+    "ob_wepchrm_che0041_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0041"
+  },
+  "che0042": {
+   "meshes": [
+    "ob_wepchrm_che0042_1p_mesh",
+    "ob_wepchrm_che0042_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0042"
+  },
+  "che0044": {
+   "meshes": [
+    "ob_wepchrm_che0044_1p_mesh",
+    "ob_wepchrm_che0044_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0044"
+  },
+  "che0045": {
+   "meshes": [
+    "ob_wepchrm_che0045_1p_mesh",
+    "ob_wepchrm_che0045_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0045"
+  },
+  "che0046": {
+   "meshes": [
+    "ob_wepchrm_che0046_1p_mesh",
+    "ob_wepchrm_che0046_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0046"
+  },
+  "che0047": {
+   "meshes": [
+    "ob_wepchrm_che0047_1p_mesh",
+    "ob_wepchrm_che0047_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0047"
+  },
+  "che0050": {
+   "meshes": [
+    "ob_wepchrm_che0050_1p_mesh",
+    "ob_wepchrm_che0050_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0050"
+  },
+  "che0051": {
+   "meshes": [
+    "ob_wepchrm_che0051_1p_mesh",
+    "ob_wepchrm_che0051_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0051"
+  },
+  "che0052": {
+   "meshes": [
+    "ob_wepchrm_che0052_1p_mesh",
+    "ob_wepchrm_che0052_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0052"
+  },
+  "che0053": {
+   "meshes": [
+    "ob_wepchrm_che0053_1p_mesh",
+    "ob_wepchrm_che0053_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0053"
+  },
+  "che0054": {
+   "meshes": [
+    "ob_wepchrm_che0054_1p_mesh",
+    "ob_wepchrm_che0054_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0054"
+  },
+  "che0055": {
+   "meshes": [
+    "ob_wepchrm_che0055_1p_mesh",
+    "ob_wepchrm_che0055_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0055"
+  },
+  "che0056": {
+   "meshes": [
+    "ob_wepchrm_che0056_1p_mesh",
+    "ob_wepchrm_che0056_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0056"
+  },
+  "che0057": {
+   "meshes": [
+    "ob_wepchrm_che0057_1p_mesh",
+    "ob_wepchrm_che0057_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0057"
+  },
+  "che0058": {
+   "meshes": [
+    "ob_wepchrm_che0058_1p_mesh",
+    "ob_wepchrm_che0058_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0058"
+  },
+  "che0059": {
+   "meshes": [
+    "ob_wepchrm_che0059_1p_mesh",
+    "ob_wepchrm_che0059_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0059"
+  },
+  "che0060": {
+   "meshes": [
+    "ob_wepchrm_che0060_1p_mesh",
+    "ob_wepchrm_che0060_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0060"
+  },
+  "che0061": {
+   "meshes": [
+    "ob_wepchrm_che0061_1p_mesh",
+    "ob_wepchrm_che0061_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0061"
+  },
+  "che0062": {
+   "meshes": [
+    "ob_wepchrm_che0062_1p_mesh",
+    "ob_wepchrm_che0062_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0062"
+  },
+  "che0063": {
+   "meshes": [
+    "ob_wepchrm_che0063_1p_mesh",
+    "ob_wepchrm_che0063_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0063"
+  },
+  "che0064": {
+   "meshes": [
+    "ob_wepchrm_che0064_1p_mesh",
+    "ob_wepchrm_che0064_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0064"
+  },
+  "che0065": {
+   "meshes": [
+    "ob_wepchrm_che0065_1p_mesh",
+    "ob_wepchrm_che0065_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0065"
+  },
+  "che0068": {
+   "meshes": [
+    "ob_wepchrm_che0068_1p_mesh",
+    "ob_wepchrm_che0068_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0068"
+  },
+  "che0069": {
+   "meshes": [
+    "ob_wepchrm_che0069_1p_mesh",
+    "ob_wepchrm_che0069_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0069"
+  },
+  "che0070": {
+   "meshes": [
+    "ob_wepchrm_che0070_1p_mesh",
+    "ob_wepchrm_che0070_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0070"
+  },
+  "che0071": {
+   "meshes": [
+    "ob_wepchrm_che0071_1p_mesh",
+    "ob_wepchrm_che0071_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0071"
+  },
+  "che0072": {
+   "meshes": [
+    "ob_wepchrm_che0072_1p_mesh",
+    "ob_wepchrm_che0072_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0072"
+  },
+  "che0074": {
+   "meshes": [
+    "ob_wepchrm_che0074_1p_mesh",
+    "ob_wepchrm_che0074_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0074"
+  },
+  "che0075": {
+   "meshes": [
+    "ob_wepchrm_che0075_1p_mesh",
+    "ob_wepchrm_che0075_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0075"
+  },
+  "che0076": {
+   "meshes": [
+    "ob_wepchrm_che0076_1p_mesh",
+    "ob_wepchrm_che0076_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0076"
+  },
+  "che0077": {
+   "meshes": [
+    "ob_wepchrm_che0077_1p_mesh",
+    "ob_wepchrm_che0077_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0077"
+  },
+  "che0078": {
+   "meshes": [
+    "ob_wepchrm_che0078_1p_mesh",
+    "ob_wepchrm_che0078_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0078"
+  },
+  "che0080": {
+   "meshes": [
+    "ob_wepchrm_che0080_1p_mesh",
+    "ob_wepchrm_che0080_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0080"
+  },
+  "che0082": {
+   "meshes": [
+    "ob_wepchrm_che0082_1p_mesh",
+    "ob_wepchrm_che0082_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0082"
+  },
+  "che0084": {
+   "meshes": [
+    "ob_wepchrm_che0084_1p_mesh",
+    "ob_wepchrm_che0084_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0084"
+  },
+  "che0085": {
+   "meshes": [
+    "ob_wepchrm_che0085_1p_mesh",
+    "ob_wepchrm_che0085_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0085"
+  },
+  "che0086": {
+   "meshes": [
+    "ob_wepchrm_che0086_1p_mesh",
+    "ob_wepchrm_che0086_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0086"
+  },
+  "che0087": {
+   "meshes": [
+    "ob_wepchrm_che0087_1p_mesh",
+    "ob_wepchrm_che0087_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0087"
+  },
+  "che0089": {
+   "meshes": [
+    "ob_wepchrm_che0089_1p_mesh",
+    "ob_wepchrm_che0089_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0089"
+  },
+  "che0090": {
+   "meshes": [
+    "ob_wepchrm_che0090_1p_mesh",
+    "ob_wepchrm_che0090_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0090"
+  },
+  "che0091": {
+   "meshes": [
+    "ob_wepchrm_che0091_1p_mesh",
+    "ob_wepchrm_che0091_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0091"
+  },
+  "che0092": {
+   "meshes": [
+    "ob_wepchrm_che0092_1p_mesh",
+    "ob_wepchrm_che0092_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0092"
+  },
+  "che0094": {
+   "meshes": [
+    "ob_wepchrm_che0094_1p_mesh",
+    "ob_wepchrm_che0094_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0094"
+  },
+  "che0110": {
+   "meshes": [
+    "ob_wepchrm_che0110_1p_mesh",
+    "ob_wepchrm_che0110_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0110"
+  },
+  "che0111": {
+   "meshes": [
+    "ob_wepchrm_che0111_1p_mesh",
+    "ob_wepchrm_che0111_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0111"
+  },
+  "che0112": {
+   "meshes": [
+    "ob_wepchrm_che0112_1p_mesh",
+    "ob_wepchrm_che0112_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0112"
+  },
+  "che0114": {
+   "meshes": [
+    "ob_wepchrm_che0114_1p_mesh",
+    "ob_wepchrm_che0114_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0114"
+  },
+  "che0115": {
+   "meshes": [
+    "ob_wepchrm_che0115_1p_mesh",
+    "ob_wepchrm_che0115_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0115"
+  },
+  "che0116": {
+   "meshes": [
+    "ob_wepchrm_che0116_1p_mesh",
+    "ob_wepchrm_che0116_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0116"
+  },
+  "che0117": {
+   "meshes": [
+    "ob_wepchrm_che0117_1p_mesh",
+    "ob_wepchrm_che0117_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0117"
+  },
+  "che0118": {
+   "meshes": [
+    "ob_wepchrm_che0118_1p_mesh",
+    "ob_wepchrm_che0118_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0118"
+  },
+  "che0119": {
+   "meshes": [
+    "ob_wepchrm_che0119_1p_mesh",
+    "ob_wepchrm_che0119_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\che0119"
+  },
+  "chl0001": {
+   "meshes": [
+    "ob_wepchrm_chl0001_1p_mesh",
+    "ob_wepchrm_chl0001_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0001"
+  },
+  "chl0002": {
+   "meshes": [
+    "ob_wepchrm_chl0002_1p_mesh",
+    "ob_wepchrm_chl0002_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0002"
+  },
+  "chl0003": {
+   "meshes": [
+    "ob_wepchrm_chl0003_1p_mesh",
+    "ob_wepchrm_chl0003_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0003"
+  },
+  "chl0004": {
+   "meshes": [
+    "ob_wepchrm_chl0004_1p_mesh",
+    "ob_wepchrm_chl0004_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0004"
+  },
+  "chl0005": {
+   "meshes": [
+    "ob_wepchrm_chl0005_1p_mesh",
+    "ob_wepchrm_chl0005_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0005"
+  },
+  "chl0006": {
+   "meshes": [
+    "ob_wepchrm_chl0006_1p_mesh",
+    "ob_wepchrm_chl0006_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0006"
+  },
+  "chl0007": {
+   "meshes": [
+    "ob_wepchrm_chl0007_1p_mesh",
+    "ob_wepchrm_chl0007_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0007"
+  },
+  "chl0008": {
+   "meshes": [
+    "ob_wepchrm_chl0008_1p_mesh",
+    "ob_wepchrm_chl0008_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0008"
+  },
+  "chl0009": {
+   "meshes": [
+    "ob_wepchrm_chl0009_1p_mesh",
+    "ob_wepchrm_chl0009_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0009"
+  },
+  "chl0010": {
+   "meshes": [
+    "ob_wepchrm_chl0010_1p_mesh",
+    "ob_wepchrm_chl0010_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0010"
+  },
+  "chl0011": {
+   "meshes": [
+    "ob_wepchrm_chl0011_1p_mesh",
+    "ob_wepchrm_chl0011_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0011"
+  },
+  "chl0012": {
+   "meshes": [
+    "ob_wepchrm_chl0012_1p_mesh",
+    "ob_wepchrm_chl0012_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0012"
+  },
+  "chl0013": {
+   "meshes": [
+    "ob_wepchrm_chl0013_1p_mesh",
+    "ob_wepchrm_chl0013_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0013"
+  },
+  "chl0014": {
+   "meshes": [
+    "ob_wepchrm_chl0014_1p_mesh",
+    "ob_wepchrm_chl0014_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0014"
+  },
+  "chl0015": {
+   "meshes": [
+    "ob_wepchrm_chl0015_1p_mesh",
+    "ob_wepchrm_chl0015_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0015"
+  },
+  "chl0017": {
+   "meshes": [
+    "ob_wepchrm_chl0017_1p_mesh",
+    "ob_wepchrm_chl0017_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0017"
+  },
+  "chl0018": {
+   "meshes": [
+    "ob_wepchrm_chl0018_1p_mesh",
+    "ob_wepchrm_chl0018_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0018"
+  },
+  "chl0019": {
+   "meshes": [
+    "ob_wepchrm_chl0019_1p_mesh",
+    "ob_wepchrm_chl0019_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0019"
+  },
+  "chl0020": {
+   "meshes": [
+    "ob_wepchrm_chl0020_1p_mesh",
+    "ob_wepchrm_chl0020_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0020"
+  },
+  "chl0021": {
+   "meshes": [
+    "ob_wepchrm_chl0021_1p_mesh",
+    "ob_wepchrm_chl0021_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0021"
+  },
+  "chl0022": {
+   "meshes": [
+    "ob_wepchrm_chl0022_1p_mesh",
+    "ob_wepchrm_chl0022_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0022"
+  },
+  "chl0023": {
+   "meshes": [
+    "ob_wepchrm_chl0023_1p_mesh",
+    "ob_wepchrm_chl0023_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0023"
+  },
+  "chl0024": {
+   "meshes": [
+    "ob_wepchrm_chl0024_1p_mesh",
+    "ob_wepchrm_chl0024_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0024"
+  },
+  "chl0025": {
+   "meshes": [
+    "ob_wepchrm_chl0025_1p_mesh",
+    "ob_wepchrm_chl0025_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0025"
+  },
+  "chl0026": {
+   "meshes": [
+    "ob_wepchrm_chl0026_1p_mesh",
+    "ob_wepchrm_chl0026_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0026"
+  },
+  "chl0027": {
+   "meshes": [
+    "ob_wepchrm_chl0027_1p_mesh",
+    "ob_wepchrm_chl0027_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0027"
+  },
+  "chl0028": {
+   "meshes": [
+    "ob_wepchrm_chl0028_1p_mesh",
+    "ob_wepchrm_chl0028_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0028"
+  },
+  "chl0029": {
+   "meshes": [
+    "ob_wepchrm_chl0029_1p_mesh",
+    "ob_wepchrm_chl0029_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0029"
+  },
+  "chl0030": {
+   "meshes": [
+    "ob_wepchrm_chl0030_1p_mesh",
+    "ob_wepchrm_chl0030_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0030"
+  },
+  "chl0031": {
+   "meshes": [
+    "ob_wepchrm_chl0031_1p_mesh",
+    "ob_wepchrm_chl0031_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0031"
+  },
+  "chl0033": {
+   "meshes": [
+    "ob_wepchrm_chl0033_1p_mesh",
+    "ob_wepchrm_chl0033_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0033"
+  },
+  "chl0034": {
+   "meshes": [
+    "ob_wepchrm_chl0034_1p_mesh",
+    "ob_wepchrm_chl0034_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0034"
+  },
+  "chl0035": {
+   "meshes": [
+    "ob_wepchrm_chl0035_1p_mesh",
+    "ob_wepchrm_chl0035_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0035"
+  },
+  "chl0036": {
+   "meshes": [
+    "ob_wepchrm_chl0036_1p_mesh",
+    "ob_wepchrm_chl0036_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0036"
+  },
+  "chl0037": {
+   "meshes": [
+    "ob_wepchrm_chl0037_1p_mesh",
+    "ob_wepchrm_chl0037_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0037"
+  },
+  "chl0038": {
+   "meshes": [
+    "ob_wepchrm_chl0038_1p_mesh",
+    "ob_wepchrm_chl0038_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0038"
+  },
+  "chl0039": {
+   "meshes": [
+    "ob_wepchrm_chl0039_1p_mesh",
+    "ob_wepchrm_chl0039_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0039"
+  },
+  "chl0040": {
+   "meshes": [
+    "ob_wepchrm_chl0040_1p_mesh",
+    "ob_wepchrm_chl0040_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0040"
+  },
+  "chl0041": {
+   "meshes": [
+    "ob_wepchrm_chl0041_1p_mesh",
+    "ob_wepchrm_chl0041_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0041"
+  },
+  "chl0042": {
+   "meshes": [
+    "ob_wepchrm_chl0042_1p_mesh",
+    "ob_wepchrm_chl0042_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0042"
+  },
+  "chl0043": {
+   "meshes": [
+    "ob_wepchrm_chl0043_1p_mesh",
+    "ob_wepchrm_chl0043_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0043"
+  },
+  "chl0044": {
+   "meshes": [
+    "ob_wepchrm_chl0044_1p_mesh",
+    "ob_wepchrm_chl0044_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0044"
+  },
+  "chl0045": {
+   "meshes": [
+    "ob_wepchrm_chl0045_1p_mesh",
+    "ob_wepchrm_chl0045_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0045"
+  },
+  "chl0046": {
+   "meshes": [
+    "ob_wepchrm_chl0046_1p_mesh",
+    "ob_wepchrm_chl0046_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0046"
+  },
+  "chl0047": {
+   "meshes": [
+    "ob_wepchrm_chl0047_1p_mesh",
+    "ob_wepchrm_chl0047_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0047"
+  },
+  "chl0048": {
+   "meshes": [
+    "ob_wepchrm_chl0048_1p_mesh",
+    "ob_wepchrm_chl0048_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0048"
+  },
+  "chl0049": {
+   "meshes": [
+    "ob_wepchrm_chl0049_1p_mesh",
+    "ob_wepchrm_chl0049_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0049"
+  },
+  "chl0050": {
+   "meshes": [
+    "ob_wepchrm_chl0050_1p_mesh",
+    "ob_wepchrm_chl0050_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0050"
+  },
+  "chl0051": {
+   "meshes": [
+    "ob_wepchrm_chl0051_1p_mesh",
+    "ob_wepchrm_chl0051_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0051"
+  },
+  "chl0052": {
+   "meshes": [
+    "ob_wepchrm_chl0052_1p_mesh",
+    "ob_wepchrm_chl0052_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0052"
+  },
+  "chl0053": {
+   "meshes": [
+    "ob_wepchrm_chl0053_1p_mesh",
+    "ob_wepchrm_chl0053_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0053"
+  },
+  "chl0054": {
+   "meshes": [
+    "ob_wepchrm_chl0054_1p_mesh",
+    "ob_wepchrm_chl0054_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0054"
+  },
+  "chl0057": {
+   "meshes": [
+    "ob_wepchrm_chl0057_1p_mesh",
+    "ob_wepchrm_chl0057_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0057"
+  },
+  "chl0058": {
+   "meshes": [
+    "ob_wepchrm_chl0058_1p_mesh",
+    "ob_wepchrm_chl0058_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0058"
+  },
+  "chl0059": {
+   "meshes": [
+    "ob_wepchrm_chl0059_1p_mesh",
+    "ob_wepchrm_chl0059_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0059"
+  },
+  "chl0060": {
+   "meshes": [
+    "ob_wepchrm_chl0060_1p_mesh",
+    "ob_wepchrm_chl0060_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0060"
+  },
+  "chl0061": {
+   "meshes": [
+    "ob_wepchrm_chl0061_1p_mesh",
+    "ob_wepchrm_chl0061_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0061"
+  },
+  "chl0063": {
+   "meshes": [
+    "ob_wepchrm_chl0063_1p_mesh",
+    "ob_wepchrm_chl0063_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0063"
+  },
+  "chl0064": {
+   "meshes": [
+    "ob_wepchrm_chl0064_1p_mesh",
+    "ob_wepchrm_chl0064_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0064"
+  },
+  "chl0065": {
+   "meshes": [
+    "ob_wepchrm_chl0065_1p_mesh",
+    "ob_wepchrm_chl0065_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0065"
+  },
+  "chl0068": {
+   "meshes": [
+    "ob_wepchrm_chl0068_1p_mesh",
+    "ob_wepchrm_chl0068_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0068"
+  },
+  "chl0072": {
+   "meshes": [
+    "ob_wepchrm_chl0072_1p_mesh",
+    "ob_wepchrm_chl0072_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0072"
+  },
+  "chl0073": {
+   "meshes": [
+    "ob_wepchrm_chl0073_1p_mesh",
+    "ob_wepchrm_chl0073_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chl0073"
+  },
+  "chr0001": {
+   "meshes": [
+    "ob_wepchrm_chr0001_1p_mesh",
+    "ob_wepchrm_chr0001_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0001"
+  },
+  "chr0002": {
+   "meshes": [
+    "ob_wepchrm_chr0002_1p_mesh",
+    "ob_wepchrm_chr0002_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0002"
+  },
+  "chr0003": {
+   "meshes": [
+    "ob_wepchrm_chr0003_1p_mesh",
+    "ob_wepchrm_chr0003_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0003"
+  },
+  "chr0004": {
+   "meshes": [
+    "ob_wepchrm_chr0004_1p_mesh",
+    "ob_wepchrm_chr0004_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0004"
+  },
+  "chr0005": {
+   "meshes": [
+    "ob_wepchrm_chr0005_1p_mesh",
+    "ob_wepchrm_chr0005_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0005"
+  },
+  "chr0006": {
+   "meshes": [
+    "ob_wepchrm_chr0006_1p_mesh",
+    "ob_wepchrm_chr0006_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0006"
+  },
+  "chr0007": {
+   "meshes": [
+    "ob_wepchrm_chr0007_1p_mesh",
+    "ob_wepchrm_chr0007_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0007"
+  },
+  "chr0008": {
+   "meshes": [
+    "ob_wepchrm_chr0008_1p_mesh",
+    "ob_wepchrm_chr0008_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0008"
+  },
+  "chr0009": {
+   "meshes": [
+    "ob_wepchrm_chr0009_1p_mesh",
+    "ob_wepchrm_chr0009_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0009"
+  },
+  "chr0010": {
+   "meshes": [
+    "ob_wepchrm_chr0010_1p_mesh",
+    "ob_wepchrm_chr0010_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0010"
+  },
+  "chr0011": {
+   "meshes": [
+    "ob_wepchrm_chr0011_1p_mesh",
+    "ob_wepchrm_chr0011_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0011"
+  },
+  "chr0012": {
+   "meshes": [
+    "ob_wepchrm_chr0012_1p_mesh",
+    "ob_wepchrm_chr0012_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0012"
+  },
+  "chr0013": {
+   "meshes": [
+    "ob_wepchrm_chr0013_1p_mesh",
+    "ob_wepchrm_chr0013_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0013"
+  },
+  "chr0014": {
+   "meshes": [
+    "ob_wepchrm_chr0014_1p_mesh",
+    "ob_wepchrm_chr0014_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0014"
+  },
+  "chr0015": {
+   "meshes": [
+    "ob_wepchrm_chr0015_1p_mesh",
+    "ob_wepchrm_chr0015_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0015"
+  },
+  "chr0016": {
+   "meshes": [
+    "ob_wepchrm_chr0016_1p_mesh",
+    "ob_wepchrm_chr0016_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0016"
+  },
+  "chr0017": {
+   "meshes": [
+    "ob_wepchrm_chr0017_1p_mesh",
+    "ob_wepchrm_chr0017_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0017"
+  },
+  "chr0018": {
+   "meshes": [
+    "ob_wepchrm_chr0018_1p_mesh",
+    "ob_wepchrm_chr0018_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0018"
+  },
+  "chr0019": {
+   "meshes": [
+    "ob_wepchrm_chr0019_1p_mesh",
+    "ob_wepchrm_chr0019_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0019"
+  },
+  "chr0020": {
+   "meshes": [
+    "ob_wepchrm_chr0020_1p_mesh",
+    "ob_wepchrm_chr0020_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0020"
+  },
+  "chr0021": {
+   "meshes": [
+    "ob_wepchrm_chr0021_1p_mesh",
+    "ob_wepchrm_chr0021_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0021"
+  },
+  "chr0022": {
+   "meshes": [
+    "ob_wepchrm_chr0022_1p_mesh",
+    "ob_wepchrm_chr0022_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0022"
+  },
+  "chr0023": {
+   "meshes": [
+    "ob_wepchrm_chr0023_1p_mesh",
+    "ob_wepchrm_chr0023_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0023"
+  },
+  "chr0024": {
+   "meshes": [
+    "ob_wepchrm_chr0024_1p_mesh",
+    "ob_wepchrm_chr0024_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0024"
+  },
+  "chr0025": {
+   "meshes": [
+    "ob_wepchrm_chr0025_1p_mesh",
+    "ob_wepchrm_chr0025_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0025"
+  },
+  "chr0026": {
+   "meshes": [
+    "ob_wepchrm_chr0026_1p_mesh",
+    "ob_wepchrm_chr0026_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0026"
+  },
+  "chr0027": {
+   "meshes": [
+    "ob_wepchrm_chr0027_1p_mesh",
+    "ob_wepchrm_chr0027_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0027"
+  },
+  "chr0028": {
+   "meshes": [
+    "ob_wepchrm_chr0028_1p_mesh",
+    "ob_wepchrm_chr0028_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0028"
+  },
+  "chr0029": {
+   "meshes": [
+    "ob_wepchrm_chr0029_1p_mesh",
+    "ob_wepchrm_chr0029_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0029"
+  },
+  "chr0030": {
+   "meshes": [
+    "ob_wepchrm_chr0030_1p_mesh",
+    "ob_wepchrm_chr0030_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0030"
+  },
+  "chr0031": {
+   "meshes": [
+    "ob_wepchrm_chr0031_1p_mesh",
+    "ob_wepchrm_chr0031_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0031"
+  },
+  "chr0032": {
+   "meshes": [
+    "ob_wepchrm_chr0032_1p_mesh",
+    "ob_wepchrm_chr0032_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0032"
+  },
+  "chr0033": {
+   "meshes": [
+    "ob_wepchrm_chr0033_1p_mesh",
+    "ob_wepchrm_chr0033_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0033"
+  },
+  "chr0034": {
+   "meshes": [
+    "ob_wepchrm_chr0034_1p_mesh",
+    "ob_wepchrm_chr0034_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0034"
+  },
+  "chr0035": {
+   "meshes": [
+    "ob_wepchrm_chr0035_1p_mesh",
+    "ob_wepchrm_chr0035_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0035"
+  },
+  "chr0036": {
+   "meshes": [
+    "ob_wepchrm_chr0036_1p_mesh",
+    "ob_wepchrm_chr0036_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0036"
+  },
+  "chr0037": {
+   "meshes": [
+    "ob_wepchrm_chr0037_1p_mesh",
+    "ob_wepchrm_chr0037_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0037"
+  },
+  "chr0038": {
+   "meshes": [
+    "ob_wepchrm_chr0038_1p_mesh",
+    "ob_wepchrm_chr0038_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0038"
+  },
+  "chr0039": {
+   "meshes": [
+    "ob_wepchrm_chr0039_1p_mesh",
+    "ob_wepchrm_chr0039_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0039"
+  },
+  "chr0040": {
+   "meshes": [
+    "ob_wepchrm_chr0040_1p_mesh",
+    "ob_wepchrm_chr0040_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0040"
+  },
+  "chr0041": {
+   "meshes": [
+    "ob_wepchrm_chr0041_1p_mesh",
+    "ob_wepchrm_chr0041_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0041"
+  },
+  "chr0042": {
+   "meshes": [
+    "ob_wepchrm_chr0042_1p_mesh",
+    "ob_wepchrm_chr0042_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0042"
+  },
+  "chr0043": {
+   "meshes": [
+    "ob_wepchrm_chr0043_1p_mesh",
+    "ob_wepchrm_chr0043_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0043"
+  },
+  "chr0044": {
+   "meshes": [
+    "ob_wepchrm_chr0044_1p_mesh",
+    "ob_wepchrm_chr0044_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0044"
+  },
+  "chr0045": {
+   "meshes": [
+    "ob_wepchrm_chr0045_1p_mesh",
+    "ob_wepchrm_chr0045_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0045"
+  },
+  "chr0046": {
+   "meshes": [
+    "ob_wepchrm_chr0046_1p_mesh",
+    "ob_wepchrm_chr0046_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0046"
+  },
+  "chr0048": {
+   "meshes": [
+    "ob_wepchrm_chr0048_1p_mesh",
+    "ob_wepchrm_chr0048_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0048"
+  },
+  "chr0049": {
+   "meshes": [
+    "ob_wepchrm_chr0049_1p_mesh",
+    "ob_wepchrm_chr0049_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0049"
+  },
+  "chr0050": {
+   "meshes": [
+    "ob_wepchrm_chr0050_1p_mesh",
+    "ob_wepchrm_chr0050_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0050"
+  },
+  "chr0051": {
+   "meshes": [
+    "ob_wepchrm_chr0051_1p_mesh",
+    "ob_wepchrm_chr0051_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0051"
+  },
+  "chr0052": {
+   "meshes": [
+    "ob_wepchrm_chr0052_1p_mesh",
+    "ob_wepchrm_chr0052_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0052"
+  },
+  "chr0053": {
+   "meshes": [
+    "ob_wepchrm_chr0053_1p_mesh",
+    "ob_wepchrm_chr0053_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0053"
+  },
+  "chr0058": {
+   "meshes": [
+    "ob_wepchrm_chr0058_1p_mesh",
+    "ob_wepchrm_chr0058_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0058"
+  },
+  "chr0059": {
+   "meshes": [
+    "ob_wepchrm_chr0059_1p_mesh",
+    "ob_wepchrm_chr0059_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0059"
+  },
+  "chr0060": {
+   "meshes": [
+    "ob_wepchrm_chr0060_1p_mesh",
+    "ob_wepchrm_chr0060_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0060"
+  },
+  "chr0061": {
+   "meshes": [
+    "ob_wepchrm_chr0061_1p_mesh",
+    "ob_wepchrm_chr0061_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0061"
+  },
+  "chr0062": {
+   "meshes": [
+    "ob_wepchrm_chr0062_1p_mesh",
+    "ob_wepchrm_chr0062_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0062"
+  },
+  "chr0064": {
+   "meshes": [
+    "ob_wepchrm_chr0064_1p_mesh",
+    "ob_wepchrm_chr0064_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0064"
+  },
+  "chr0065": {
+   "meshes": [
+    "ob_wepchrm_chr0065_1p_mesh",
+    "ob_wepchrm_chr0065_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0065"
+  },
+  "chr0066": {
+   "meshes": [
+    "ob_wepchrm_chr0066_1p_mesh",
+    "ob_wepchrm_chr0066_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0066"
+  },
+  "chr0067": {
+   "meshes": [
+    "ob_wepchrm_chr0067_1p_mesh",
+    "ob_wepchrm_chr0067_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0067"
+  },
+  "chr0068": {
+   "meshes": [
+    "ob_wepchrm_chr0068_1p_mesh",
+    "ob_wepchrm_chr0068_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0068"
+  },
+  "chr0070": {
+   "meshes": [
+    "ob_wepchrm_chr0070_1p_mesh",
+    "ob_wepchrm_chr0070_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0070"
+  },
+  "chr0077": {
+   "meshes": [
+    "ob_wepchrm_chr0077_1p_mesh",
+    "ob_wepchrm_chr0077_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0077"
+  },
+  "chr0078": {
+   "meshes": [
+    "ob_wepchrm_chr0078_1p_mesh",
+    "ob_wepchrm_chr0078_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0078"
+  },
+  "chr0079": {
+   "meshes": [
+    "ob_wepchrm_chr0079_1p_mesh",
+    "ob_wepchrm_chr0079_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0079"
+  },
+  "chr0082": {
+   "meshes": [
+    "ob_wepchrm_chr0082_1p_mesh",
+    "ob_wepchrm_chr0082_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0082"
+  },
+  "chr0083": {
+   "meshes": [
+    "ob_wepchrm_chr0083_1p_mesh",
+    "ob_wepchrm_chr0083_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0083"
+  },
+  "chr0084": {
+   "meshes": [
+    "ob_wepchrm_chr0084_1p_mesh",
+    "ob_wepchrm_chr0084_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0084"
+  },
+  "chr0085": {
+   "meshes": [
+    "ob_wepchrm_chr0085_1p_mesh",
+    "ob_wepchrm_chr0085_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0085"
+  },
+  "chr0086": {
+   "meshes": [
+    "ob_wepchrm_chr0086_1p_mesh",
+    "ob_wepchrm_chr0086_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\chr0086"
+  },
+  "coin": {
+   "meshes": [
+    "ob_wepchrm_coin_1p_mesh",
+    "ob_wepchrm_coin_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\coin"
+  },
+  "dongle": {
+   "meshes": [
+    "ob_wepchrm_dongle_1p_mesh",
+    "ob_wepchrm_dongle_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\dongle"
+  },
+  "epicbenchmark": {
+   "meshes": [
+    "ob_wepchrm_epicbenchmark_1p_mesh",
+    "ob_wepchrm_epicbenchmark_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\epicbenchmark"
+  },
+  "legendarybenchmark": {
+   "meshes": [
+    "ob_wepchrm_legendarybenchmark_1p_mesh",
+    "ob_wepchrm_legendarybenchmark_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\legendarybenchmark"
+  },
+  "rarebenchmark": {
+   "meshes": [
+    "ob_wepchrm_rarebenchmark_1p_mesh",
+    "ob_wepchrm_rarebenchmark_3p_mesh"
+   ],
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\weapons\\_charms\\rarebenchmark"
+  }
+ },
  "gadgets": {
-  "battlepickups/artillerystrikemp": {
-   "meshes": [],
-   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\artillerystrikemp",
-   "skins": [],
-   "textures": 0
-  },
-  "battlepickups/minigun": {
-   "meshes": [
-    "art/ob_gad_battlepickup_minigun_base_1p_mesh",
-    "art/ob_gad_battlepickup_minigun_base_3p_mesh",
-    "art/ob_gad_battlepickup_minigun_magazine_1p_mesh",
-    "art/ob_gad_battlepickup_minigun_magazine_3p_mesh"
-   ],
-   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\minigun",
-   "skins": [],
-   "textures": 19
-  },
-  "battlepickups/railgun": {
-   "meshes": [
-    "art/ob_gad_battlepickup_railgun_base2_1p_mesh",
-    "art/ob_gad_battlepickup_railgun_base2_3p_mesh",
-    "art/ob_gad_battlepickup_railgun_base_1p_mesh",
-    "art/ob_gad_battlepickup_railgun_base_3p_mesh",
-    "art/ob_gad_battlepickup_railgun_reflex_1p_mesh",
-    "art/ob_gad_battlepickup_railgun_reflex_3p_mesh",
-    "art/ob_gad_battlepickup_railgun_scope_1p_mesh",
-    "art/ob_gad_battlepickup_railgun_scope_3p_mesh"
-   ],
-   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\railgun",
-   "skins": [],
-   "textures": 22
-  },
-  "battlepickups/smokescreenmp": {
-   "meshes": [],
-   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\smokescreenmp",
-   "skins": [],
-   "textures": 0
-  },
-  "battlepickups/systemmanager": {
-   "meshes": [],
-   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\systemmanager",
-   "skins": [],
-   "textures": 0
-  },
   "callins/_shared": {
    "meshes": [],
    "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\callins\\_shared",
@@ -9001,6 +10548,92 @@
      "raidxe"
     ]
    },
+   "unparsed_attachment_ebx": []
+  },
+  "battlepickup/minigun": {
+   "class": "battlepickup",
+   "config": [
+    "cust",
+    "dicefeature",
+    "equipment",
+    "gs",
+    "md",
+    "wb"
+   ],
+   "meshes": [
+    "ob_gad_battlepickup_minigun_base_1p_mesh",
+    "ob_gad_battlepickup_minigun_base_3p_mesh",
+    "ob_gad_battlepickup_minigun_magazine_1p_mesh",
+    "ob_gad_battlepickup_minigun_magazine_3p_mesh"
+   ],
+   "parts": {
+    "base": {
+     "1p": true,
+     "3p": true
+    },
+    "magazine": {
+     "1p": true,
+     "3p": true
+    }
+   },
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\minigun",
+   "prg": {
+    "top": [
+     "dbala3"
+    ]
+   },
+   "skin_files": {},
+   "skins": [],
+   "slots": {},
+   "unparsed_attachment_ebx": []
+  },
+  "battlepickup/railgun": {
+   "class": "battlepickup",
+   "config": [
+    "cust",
+    "dicefeature",
+    "equipment",
+    "gs",
+    "md",
+    "wb"
+   ],
+   "meshes": [
+    "ob_gad_battlepickup_railgun_base2_1p_mesh",
+    "ob_gad_battlepickup_railgun_base2_3p_mesh",
+    "ob_gad_battlepickup_railgun_base_1p_mesh",
+    "ob_gad_battlepickup_railgun_base_3p_mesh",
+    "ob_gad_battlepickup_railgun_reflex_1p_mesh",
+    "ob_gad_battlepickup_railgun_reflex_3p_mesh",
+    "ob_gad_battlepickup_railgun_scope_1p_mesh",
+    "ob_gad_battlepickup_railgun_scope_3p_mesh"
+   ],
+   "parts": {
+    "base": {
+     "1p": true,
+     "3p": true
+    },
+    "base2": {
+     "1p": true,
+     "3p": true
+    },
+    "reflex": {
+     "1p": true,
+     "3p": true
+    },
+    "scope": {
+     "1p": true,
+     "3p": true
+    }
+   },
+   "path": "A:\\bf6dump\\bundles\\common\\hardware\\gadgets\\battlepickups\\railgun",
+   "prg": {
+    "scp": [
+     "m7xi"
+    ]
+   },
+   "skin_files": {},
+   "skins": [],
+   "slots": {},
    "unparsed_attachment_ebx": []
   },
   "boltaction/l115a3": {

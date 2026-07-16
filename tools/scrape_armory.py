@@ -47,8 +47,9 @@ def list_files(path, ext):
         return []
 
 
-def scrape_weapon(cls, name):
-    root = os.path.join(WEAP, cls, name)
+def scrape_weapon(cls, name, root=None):
+    if root is None:
+        root = os.path.join(WEAP, cls, name)
     w = {
         "class": cls,
         "path": root,
@@ -86,7 +87,7 @@ def scrape_weapon(cls, name):
             w["config"].append("wb")
 
     art = os.path.join(root, "art")
-    part_re = re.compile(r"^ob_wep_[a-z0-9]+_%s_(.+?)_(1p|3p)_mesh\.MeshSet$" % re.escape(name))
+    part_re = re.compile(r"^ob_(?:wep|gad)_[a-z0-9]+_%s_(.+?)_(1p|3p)_mesh\.MeshSet$" % re.escape(name))
     for f in list_files(art, ".MeshSet"):
         w["meshes"].append(f[: -len(".MeshSet")])
         m = part_re.match(f)
@@ -139,11 +140,26 @@ def scrape_shared_attachments():
     return out
 
 
+def scrape_charms():
+    """Weapon charms: self-contained mesh+texture folders under _charms.
+    charmholder* entries are mount geometry, not selectable charms."""
+    root = os.path.join(WEAP, "_charms")
+    out = {}
+    for cid in list_dirs(root):
+        if cid.startswith("charmholder"):
+            continue
+        cdir = os.path.join(root, cid, "art")
+        meshes = [f[: -len(".MeshSet")] for f in list_files(cdir, ".MeshSet")]
+        if meshes:
+            out[cid] = {"path": os.path.join(root, cid), "meshes": sorted(meshes)}
+    return out
+
+
 def scrape_gadgets():
     out = {}
     for cat in list_dirs(GADG):
-        if cat.startswith("_"):
-            continue
+        if cat.startswith("_") or cat == "battlepickups":
+            continue   # battle pickups are structured as weapons (md_/gs_/pkg)
         for name in list_dirs(os.path.join(GADG, cat)):
             gdir = os.path.join(GADG, cat, name)
             entry = {"path": gdir, "meshes": [], "skins": [], "textures": 0}
@@ -172,9 +188,15 @@ def main():
     for cls in WEAPON_CLASSES:
         for name in list_dirs(os.path.join(WEAP, cls)):
             weapons["%s/%s" % (cls, name)] = scrape_weapon(cls, name)
+    for name in list_dirs(os.path.join(GADG, "battlepickups")):
+        w = scrape_weapon("battlepickup", name,
+                          root=os.path.join(GADG, "battlepickups", name))
+        if w["meshes"]:
+            weapons["battlepickup/%s" % name] = w
 
     shared = scrape_shared_attachments()
     gadgets = scrape_gadgets()
+    charms = scrape_charms()
 
     db = {
         "source": DUMP,
@@ -182,6 +204,7 @@ def main():
         "weapons": weapons,
         "shared_attachments": shared,
         "gadgets": gadgets,
+        "charms": charms,
     }
     os.makedirs(OUT, exist_ok=True)
     out_path = os.path.join(OUT, "armory_db.json")
@@ -200,6 +223,7 @@ def main():
     print("weapon own parts w/ 1p mesh: %d" % n_parts_1p)
     print("shared attachment models: %d  (base mesh parts: %d)" % (n_att_models, n_att_meshes))
     print("gadgets: %d  (meshes: %d)" % (len(gadgets), sum(len(g["meshes"]) for g in gadgets.values())))
+    print("charms: %d" % len(charms))
     print("skins total: %d" % sum(len(w["skins"]) for w in weapons.values()))
     print("wrote %s" % out_path)
 

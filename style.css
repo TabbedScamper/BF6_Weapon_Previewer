@@ -110,6 +110,7 @@ header{position:fixed;inset:0 0 auto 0;z-index:30;height:3.4rem;
 .att.nomodel{color:var(--faint)}
 .att .tag{margin-left:auto;font-family:var(--mono);font-size:.6rem;color:var(--faint);
   border:1px solid var(--line);border-radius:.25rem;padding:.05rem .35rem;text-transform:uppercase;flex:0 0 auto}
+.att .camothumb{width:34px;height:34px;border-radius:4px;object-fit:cover;flex:0 0 auto;background:#222}
 
 /* ---- nameplate ---- */
 .nameplate{position:fixed;left:21rem;bottom:1.6rem;z-index:15;pointer-events:none;user-select:none}
@@ -120,6 +121,17 @@ header{position:fixed;inset:0 0 auto 0;z-index:30;height:3.4rem;
 
 .status{position:fixed;right:1.4rem;bottom:1.2rem;z-index:15;font-family:var(--mono);font-size:.72rem;color:var(--muted)}
 
+/* ---- reference overlay ---- */
+#btn-ref.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.refpanel{position:fixed;left:21rem;top:4.4rem;z-index:24;max-width:26rem;
+  background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--accent-line);
+  border-radius:.7rem;padding:.5rem;cursor:default}
+.refpanel.big{max-width:min(60rem,60vw)}
+.refpanel img{display:block;width:100%;border-radius:.4rem;cursor:zoom-in}
+.refpanel.big img{cursor:zoom-out}
+.ref-cap{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--muted);
+  padding:.35rem .2rem 0;text-transform:uppercase}
+
 /* ---- tune mode ---- */
 #btn-tune.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .tunepanel{position:fixed;right:1rem;bottom:2.8rem;z-index:26;width:19rem;
@@ -129,6 +141,11 @@ header{position:fixed;inset:0 0 auto 0;z-index:30;height:3.4rem;
 .tp-sel{font-size:.78rem;color:var(--text);white-space:pre-wrap;margin-bottom:.5rem}
 #tp-copy{background:var(--accent);border:none;border-radius:.4rem;color:var(--accent-ink);
   font-family:var(--mono);font-size:.75rem;font-weight:700;padding:.4rem .8rem;cursor:pointer}
+.tp-list{max-height:11rem;overflow-y:auto;margin-bottom:.5rem;border-top:1px solid var(--line);padding-top:.3rem}
+.tp-list button{display:block;width:100%;text-align:left;background:none;border:none;color:var(--muted);
+  font-family:var(--mono);font-size:.66rem;padding:.15rem .2rem;cursor:pointer;border-radius:.25rem}
+.tp-list button:hover{background:var(--surface2);color:var(--text)}
+.tp-list button.on{color:var(--accent)}
 
 .list,.slots,.drawer-list{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 

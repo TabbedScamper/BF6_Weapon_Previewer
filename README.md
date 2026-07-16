@@ -10,9 +10,12 @@ combinations the game actually allows are offered.
 ## Features
 
 - Full-screen 3D stage: orbit / scroll zoom / RMB freelook + WASD fly
-- 66 weapons, 4,600+ real weapon×attachment pairs across 11 slots
-  (Scope, Secondary Sight, Barrel, Muzzle, Magazine, Ammo, Bottom/Top/Left/Right
-  Rail, Ergonomic)
+- 66 weapons (battle pickups included), 4,600+ real weapon×attachment pairs
+  across 11 slots (Scope, Secondary Sight, Barrel, Muzzle, Magazine, Ammo,
+  Bottom/Top/Left/Right Rail, Ergonomic)
+- In-game names for weapons, gadgets and attachments, joined from the
+  Portal SDK item catalog (see `docs/COVERAGE-AUDIT.md`)
+- Weapon skins, 157 tiling camo patterns, and 226 weapon charms
 - Gadgets & throwables browser
 - First-person-grade meshes with full-resolution PBR textures
 

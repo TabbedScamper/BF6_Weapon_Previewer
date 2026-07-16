@@ -15,7 +15,8 @@ SKINS = os.environ.get("BF6WPN_SKINS", r"A:\bf6weapons\skins")
 class H(SimpleHTTPRequestHandler):
     def translate_path(self, path):
         p = path.split("?", 1)[0].split("#", 1)[0]
-        for prefix, root in (("/models/", MODELS), ("/skins/", SKINS)):
+        for prefix, root in (("/models/", MODELS), ("/skins/", SKINS),
+                             ("/refs/", r"A:\bf6weapons\refs")):
             if p.startswith(prefix):
                 rel = os.path.normpath(p[len(prefix):]).lstrip("\\/")
                 full = os.path.join(root, rel)
@@ -26,7 +27,9 @@ class H(SimpleHTTPRequestHandler):
 
     def end_headers(self):
         if self.path.startswith(("/models/", "/skins/")):
-            self.send_header("Cache-Control", "max-age=86400")
+            # no-cache while we iterate on conversions — a long max-age here
+            # serves stale/deleted models across rebuilds
+            self.send_header("Cache-Control", "no-cache")
         else:
             self.send_header("Cache-Control", "no-cache")
         super().end_headers()

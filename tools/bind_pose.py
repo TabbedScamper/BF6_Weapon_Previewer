@@ -44,7 +44,20 @@ def bind_pose():
             continue
         t = da.lt(lts[j])
         out[n] = t["trans"]
-    return out
+    parents = inst.get(3155902000) or []          # parent bone index per bone
+    locals_ = []
+    localsM = []
+    poseM = []
+    for e in (inst.get(189845977) or []):         # parent-LOCAL bind LTs
+        t = da.lt(e) if isinstance(e, dict) else None
+        locals_.append(t["trans"] if t else [0, 0, 0])
+        localsM.append([t["right"], t["up"], t["front"], t["trans"]] if t
+                       else [[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0]])
+    for e in lts:                                  # MODEL-space bind LTs
+        t = da.lt(e) if isinstance(e, dict) else None
+        poseM.append([t["right"], t["up"], t["front"], t["trans"]] if t
+                     else [[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0]])
+    return out, list(names), list(parents), locals_, localsM, poseM
 
 
 # skeleton bone name -> gameplay bone name (md/bindings side)
@@ -59,9 +72,16 @@ SKE2GP = {
 
 
 def main():
-    pose_raw = bind_pose()
+    pose_raw, all_names, parents, locals_, localsM, poseM = bind_pose()
     pose = {SKE2GP[n]: t for n, t in pose_raw.items() if n in SKE2GP}
     json.dump(pose, open(os.path.join(HERE, "data", "skeleton_bind.json"), "w"), indent=1)
+    # full 66-bone bind pose + TRUE index order + hierarchy — per-part rule:
+    # md rows are PARENT-relative; world = accumulate chain (md row, else
+    # parent-local bind), dt = world − model-space bind (Bolt2 user-verified)
+    json.dump({"names": all_names, "pose": pose_raw,
+               "parents": parents, "locals": locals_,
+               "localsM": localsM, "poseM": poseM},
+              open(os.path.join(HERE, "data", "skeleton_full.json"), "w"), indent=1)
     print("gameplay bones (mapped) in shared skeleton:")
     for n, t in sorted(pose.items()):
         print("  %-22s (%.4f, %.4f, %.4f)" % (n, t[0], t[1], t[2]))

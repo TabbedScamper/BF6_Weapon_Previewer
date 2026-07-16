@@ -34,18 +34,71 @@ def norm(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+# weapon-part vocabulary for splitting glued tokens (longest first);
+# value = display words
+VOCAB = [
+    ("threadprotector", "Thread Protector"), ("flashhider", "Flash Hider"),
+    ("muzzlebrake", "Muzzle Brake"), ("compensator", "Compensator"),
+    ("suppressor", "Suppressor"), ("silencer", "Silencer"),
+    ("ironsights", "Iron Sights"), ("magnifier", "Magnifier"),
+    ("magwell", "Magwell"), ("handstop", "Handstop"),
+    ("foregrip", "Foregrip"), ("grippod", "Grip Pod"), ("bipod", "Bipod"),
+    ("verticalgrip", "Vertical Grip"), ("vertical", "Vertical"),
+    ("riser", "Riser"), ("mount", "Mount"), ("brake", "Brake"),
+    ("stubby", "Stubby"), ("comp", "Comp"), ("rail", "Rail"),
+    ("grip", "Grip"), ("qd", "QD"),
+]
+
+
 def title(s):
-    s = re.sub(r"([a-z])([A-Z0-9])", r"\1 \2", s)
-    s = s.replace("_", " ")
-    return re.sub(r"\s+", " ", s).strip().title()
+    toks = re.split(r"[_\s]+", s.strip())
+    out = []
+    while toks:
+        t = toks.pop(0)
+        low = t.lower()
+        for w, disp in VOCAB:
+            i = low.find(w)
+            if i >= 0 and len(low) > len(w):
+                pre, post = t[:i], t[i + len(w):]
+                rest = ([pre] if pre else []) + [disp] + ([post] if post else [])
+                toks = rest + toks
+                break
+        else:
+            if low in dict(VOCAB):
+                out.append(dict(VOCAB)[low])
+            elif len(t) <= 4 and re.search(r"\d", t):
+                out.append(t.upper())          # m4 -> M4, sv98 -> SV98
+            else:
+                out.append(t[:1].upper() + t[1:])
+    return re.sub(r"\s+", " ", " ".join(out)).strip()
 
 
 def main():
     db = json.load(open(DB, encoding="utf-8"))
+    # in-game display names joined from the Portal SDK block definitions
+    pn = {"weapons": {}, "gadgets": {}, "attachments": {}}
+    pnp = os.path.join(HERE, "data", "portal_names.json")
+    if os.path.exists(pnp):
+        pn = json.load(open(pnp, encoding="utf-8"))
+        print("using portal_names.json (%d weapons, %d gadgets)"
+              % (len(pn["weapons"]), len(pn["gadgets"])))
     bindings = {}
     if os.path.exists(BINDINGS):
         bindings = json.load(open(BINDINGS, encoding="utf-8")).get("weapons", {})
         print("using EBX bindings (%d weapons)" % len(bindings))
+
+    # small reflex optics ride a riser mesh; the per-record dpf bundle names
+    # which variant (riser/lowriser) and data/risers.json joins it to the
+    # actual mesh (AABB-matched from md records — see decode_risers.py)
+    risers = {}
+    rp = os.path.join(HERE, "data", "risers.json")
+    if os.path.exists(rp):
+        for k, v in json.load(open(rp, encoding="utf-8")).items():
+            if k.startswith("_") or not isinstance(v, dict):
+                continue
+            for kk in {k, str(v.get("dir") or k)}:
+                risers[kk.lower()] = {"riser": v.get("riser"), "lowriser": v.get("lowriser")}
+        print("using risers.json (%d optics)" % len(risers))
 
     def bind_mesh(wb, code, tok):
         """EBX-decoded mesh for slot/token: prefer 1p, skip skin-variant
@@ -76,7 +129,40 @@ def main():
                 core = s.lower()
                 hit = 0 if art.split("_")[-1] in core else 1
             return (hit, 0 if "_base_" in s else 1, len(s), s)
-        return min(cands, key=score)
+        primary = min(cands, key=score)
+        # records may carry EXTRA meshes that render with the attachment:
+        # weapon-own companions (fast-mag pull tab) and, for shared optics,
+        # the structural part roles the game always draws with the base —
+        # the mount/riser (clears folded irons) and the lens glass. Other
+        # same-model siblings (nocaps etc.) are variants, not additive.
+        ADDITIVE_PARTS = ("mount", "lens", "riser", "stand")
+        extras = []
+        for s in sorted(set(
+                s0[:-5] if s0.endswith("_mesh") else s0
+                for s0 in (m.get("meshes_1p") or [])
+                if not re.search(r"_(ws[a-z]*|wae|msl|gsl)\d{4}_", s0))):
+            if s == primary:
+                continue
+            pt = re.sub(r"^ob_wepatt_[a-z0-9]+_[a-z0-9]+_", "", s).split("_1p")[0]
+            if s.startswith("ob_wepatt_") and pt in ADDITIVE_PARTS:
+                extras.append(s)
+            elif not s.startswith("ob_wepatt_"):
+                extras.append(s)   # own-part companions filtered by caller
+        # riser: the record's bundle names the variant, risers.json the mesh
+        rm = re.match(r"^d[sp][fp]_(.+?)_(low)?riser_", (rec or {}).get("bundle_1p") or "")
+        if rm:
+            rmesh = risers.get(rm.group(1).lower(), {}).get(
+                "lowriser" if rm.group(2) else "riser")
+            if rmesh:
+                rmesh = rmesh[:-5] if rmesh.endswith("_mesh") else rmesh
+                if rmesh != primary and rmesh not in extras:
+                    extras.append(rmesh)
+        return primary, extras
+    skel_full = None
+    sfp = os.path.join(HERE, "data", "skeleton_full.json")
+    if os.path.exists(sfp):
+        skel_full = json.load(open(sfp, encoding="utf-8"))
+        print("using skeleton_full.json (%d bones)" % len(skel_full["names"]))
     placements = {}
     if os.path.exists(PLACEMENTS):
         placements = json.load(open(PLACEMENTS, encoding="utf-8"))
@@ -192,15 +278,148 @@ def main():
             fams.setdefault(m.group(1) if m else p, []).append(p)
 
         wb = bindings.get(wid, {})
+        own_stems = {s[:-5] if s.endswith("_mesh") else s for s in w["meshes"]}
+        wrecs = {r["inst"]: r for r in wb.get("records", [])}
+        wrows = {bd["idx"]: bd["rot"][:3] for bd in wb.get("bone_defaults", [])}
+        wsock = {}
+        for g in wb.get("slot_groups", []):
+            if g.get("socket"):
+                wsock[g["slot_type"]] = g["socket"]["transform"]["trans"]
+        BIND_SIGHT = [0.0, 0.1046, 0.0085]
+
+        # universal per-part rule: every skinned part (bolt, slide, trigger,
+        # mag release...) is a skeleton bone; its per-weapon position is the
+        # md row at that bone's index, its authored position the bind pose.
+        bone_dt = {}
+        charm_anchor = None
+        if skel_full:
+            import numpy as _np
+
+            names_f = skel_full["names"]
+            parents = skel_full.get("parents") or []
+            locsM = skel_full.get("localsM") or []
+            poseM = skel_full.get("poseM") or []
+            wquats = {bd["idx"]: bd["pos"] for bd in
+                      (bindmeta.get(wid) or {}).get("bone_defaults", [])}
+
+            def m44(axes):
+                m = _np.eye(4)
+                m[:3, 0], m[:3, 1], m[:3, 2], m[:3, 3] = axes[0], axes[1], axes[2], axes[3]
+                return m
+
+            def quat_m44(q, t):
+                x, y, z, w = q
+                m = _np.eye(4)
+                m[:3, :3] = [
+                    [1 - 2 * (y * y + z * z), 2 * (x * y - z * w), 2 * (x * z + y * w)],
+                    [2 * (x * y + z * w), 1 - 2 * (x * x + z * z), 2 * (y * z - x * w)],
+                    [2 * (x * z - y * w), 2 * (y * z + x * w), 1 - 2 * (x * x + y * y)]]
+                m[:3, 3] = t
+                return m
+
+            def world_md(j, depth=0):
+                """md rows (quat in 'pos', trans in 'rot') are PARENT-relative;
+                compose 4x4s down the chain, bind-local where no row exists."""
+                if j < 0 or depth > 12:
+                    return _np.eye(4)
+                row = wrows.get(j)
+                if row and any(abs(v) > 1e-4 for v in row + (wquats.get(j) or [0, 0, 0, 1])[:3]):
+                    loc = quat_m44(wquats.get(j, [0, 0, 0, 1]), row)
+                else:
+                    loc = m44(locsM[j]) if j < len(locsM) else _np.eye(4)
+                par = parents[j] if j < len(parents) else -1
+                return world_md(par, depth + 1) @ loc
+
+            for j, bn in enumerate(names_f):
+                row = wrows.get(j)
+                if not row or j >= len(poseM):
+                    continue
+                q = wquats.get(j, [0, 0, 0, 1])
+                if not (any(abs(v) > 1e-4 for v in row) or any(abs(v) > 1e-4 for v in q[:3])):
+                    continue
+                # delta that moves bind-baked geometry to the weapon pose:
+                # M = world_md ∘ bind⁻¹ (rotation about the bind pivot)
+                M = world_md(j) @ _np.linalg.inv(m44(poseM[j]))
+                t = M[:3, 3]
+                R = M[:3, :3]
+                tr = R[0, 0] + R[1, 1] + R[2, 2]
+                qw = max(1e-6, (1 + tr)) ** 0.5 / 2
+                qx = (R[2, 1] - R[1, 2]) / (4 * qw)
+                qy = (R[0, 2] - R[2, 0]) / (4 * qw)
+                qz = (R[1, 0] - R[0, 1]) / (4 * qw)
+                if any(abs(v) > 5e-4 for v in t) or any(abs(v) > 1e-3 for v in (qx, qy, qz)):
+                    e = {"t": [round(float(v), 4) for v in t]}
+                    if any(abs(v) > 1e-3 for v in (qx, qy, qz)):
+                        e["q"] = [round(float(v), 5) for v in (qx, qy, qz, qw)]
+                    bone_dt[bn] = e
+
+            # charm anchor: WORLD pose of Wep_Charm (bone 12) down the same
+            # md/bind parent chain — charms are authored dangling from origin
+            CM = world_md(12)
+            charm_anchor = {"t": [round(float(v), 4) for v in CM[:3, 3]]}
+            R = CM[:3, :3]
+            tr = R[0, 0] + R[1, 1] + R[2, 2]
+            qw = max(1e-6, (1 + tr)) ** 0.5 / 2
+            qv = [(R[2, 1] - R[1, 2]) / (4 * qw), (R[0, 2] - R[2, 0]) / (4 * qw),
+                  (R[1, 0] - R[0, 1]) / (4 * qw)]
+            if any(abs(v) > 1e-3 for v in qv):
+                charm_anchor["q"] = [round(float(v), 5) for v in qv + [qw]]
+
+        def optic_dt(tok_code, tok):
+            """Universal optic placement (user-calibrated, all EBX):
+            dt = (md sight row − bind pose) + group socket + the optic's own
+            record binding (its riser/mount offset). Sight row = skeleton bone
+            idx 51 (GameplayBonesToSkeleton), secondary sight = idx 54."""
+            att0 = (wb.get("attachments") or {}).get("%s/%s" % (tok_code, tok))
+            rec = wrecs.get(att0 and att0.get("record_inst"))
+            if not rec or not rec.get("bindings"):
+                return None
+            b0 = rec["bindings"][0]
+            bt = (b0.get("transform") or {}).get("trans") or [0, 0, 0]
+            if b0.get("bone") == "Sight_ATT":
+                row = wrows.get(51)
+                if not row or not any(abs(v) > 1e-4 for v in row):
+                    return None
+                sk = wsock.get("sight", [0, 0, 0])
+                return [round(row[i] - BIND_SIGHT[i] + sk[i] + bt[i], 4) for i in range(3)]
+            if b0.get("bone") == "SecondarySight_ATT":
+                row = wrows.get(54) or [0, 0, 0]
+                sk = wsock.get("secondarysight", [0, 0, 0])
+                return [round(row[i] + sk[i] + bt[i], 4) for i in range(3)]
+            return None
+
+        claimed_extras = set()
         slots = {}
         for code, toks in w["slots"].items():
             entries = []
             for t in sorted(set(toks)):
                 mesh = None
                 src = None
+                extras = []
                 bm = bind_mesh(wb, code, t)
                 if bm:
-                    mesh, src = bm, "ebx"
+                    (mesh, extras), src = bm, "ebx"
+
+                    def fam_of(stem):
+                        p = re.sub(r"^ob_(?:wep|gad)_[a-z0-9]+_[a-z0-9]+_", "", stem)
+                        f = re.match(r"^(barrel|magazine|ironsights|sight|slide|muzzle|baseextension)", p)
+                        return f.group(1) if f else p
+                    # extras render WITH the attachment — weapon-own companion
+                    # parts from a DIFFERENT family (fast-mag pull tab) and
+                    # shared structural roles (optic mount/lens, pre-curated
+                    # in bind_mesh). Same-family entries are variants.
+                    extras = [x for x in extras if x != mesh and
+                              (x.startswith("ob_wepatt_")
+                               or (x in own_stems and fam_of(x) != fam_of(mesh)))]
+                    # a record whose mesh isn't the slot's part family ADDS to
+                    # the default part instead of replacing it (fast mag =
+                    # standard magazine + pull tab)
+                    fam_prefix = {"mag": "magazine", "brl": "barrel"}.get(code)
+                    if mesh in own_stems and fam_prefix:
+                        pt = re.sub(r"^ob_(?:wep|gad)_[a-z0-9]+_[a-z0-9]+_", "", mesh)
+                        if not pt.startswith(fam_prefix):
+                            extras = [mesh] + extras
+                            mesh, src = None, None
                 if mesh is None:
                     nt = norm(t)
                     # own-part join (barrels, mags, own muzzles...)
@@ -220,10 +439,15 @@ def main():
                     join_hit += 1
                 else:
                     join_miss += 1
-                e = {"t": t, "label": title(t), "mesh": mesh, "src": src}
-                dt = placements.get(wid, {}).get("%s/%s" % (code, t))
-                if dt:
-                    e["dt"] = dt
+                e = {"t": t, "label": pn["attachments"].get(code, {}).get(t) or title(t),
+                     "mesh": mesh, "src": src}
+                if code in ("scp", "sca") and mesh:
+                    odt = optic_dt(code, t)
+                    if odt:
+                        e["dt"] = odt
+                if extras:
+                    e["x"] = extras
+                    claimed_extras.update(extras)
                 entries.append(e)
             if entries:
                 slots[code] = entries
@@ -264,8 +488,9 @@ def main():
                 continue
             if slot and slot in slots:
                 defaults[slot] = mesh  # shown until player picks a slot item
-            else:
-                fixed.append(mesh)
+            elif mesh not in claimed_extras:
+                fixed.append(mesh)   # attachment-companion parts render with
+                                     # their attachment, never always-on
 
         # factory/stock config (EBX equipment grants) — only tokens the slot lists
         factory = {}
@@ -287,23 +512,24 @@ def main():
         bdt = barrel_dt(wid)
         gdt = mag_dt(wid)
         brl_wz = {}
+        # own parts skinned to the muzzle bones (thread protectors, integral
+        # comps) anchor at the barrel row — user-calibrated on m45a1 to <1mm:
+        # dt = mdBarrel − bindMuzzle (bind muzzle == bind barrel pose)
+        if bdt:
+            for mb in ("Wep_Muzzle_ATT", "Wep_MuzzleAdaptor_ATT"):
+                bone_dt.setdefault(mb, {"t": bdt})
         if bdt:
             for e in slots.get("brl", []):
                 brl_wz[e["t"]] = round(barrel_write_z(wid, e["t"]), 4)
-        # pistol-style bone-mounted 'fixed' parts ride the barrel too
+        # slides etc. are skinned to non-ATT bones (Wep_Bolt1...) — the
+        # per-node bone rule places them once their GLBs carry @-part nodes
         fixed_dt = {}
-        if bdt:
-            for mesh0 in fixed:
-                fam0 = re.sub(r"^ob_wep_[a-z0-9]+_[a-z0-9]+_", "", mesh0)
-                if fam0.startswith(("slide", "baseextension", "threadprotector",
-                                    "compensator", "piston")):
-                    fixed_dt[mesh0] = bdt
 
         # skins: texture recolors + REPLACEMENT meshes (legendary wraps ship
         # their own geometry/UVs in the skin folder — retexturing the standard
         # mesh scrambles; swap the mesh instead, drop its tex entry)
         rep_re = re.compile(
-            r"^ob_wep_[a-z0-9]+_%s_(?P<sid>[a-z]+\d{4})_(?P<part>.+)_1p_mesh\.MeshSet$"
+            r"^ob_(?:wep|gad)_[a-z0-9]+_%s_(?P<sid>[a-z]+\d{4})_(?P<part>.+)_1p_mesh\.MeshSet$"
             % re.escape(name))
         w_skins = {}
         for sid in w["skins"]:
@@ -325,22 +551,34 @@ def main():
                     w_skins[sid]["mesh"] = rep
 
         weapons.append({
-            "id": wid, "cls": cls, "name": name, "display": name.upper(),
+            "id": wid, "cls": cls, "name": name,
+            "display": (pn["weapons"].get(name) or name).upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
             "partDt": dict(({"brl": bdt, "mzl": bdt} if bdt else {}),
-                           **({"mag": gdt} if gdt else {}), **sight_dt),
+                           **({"mag": gdt} if gdt else {})),
+            "boneDt": bone_dt,
             "brlWz": brl_wz, "fixedDt": fixed_dt, "irons": irons,
             "skins": w_skins,
+            **({"charm": charm_anchor} if charm_anchor else {}),
         })
 
     gadgets = []
+    skin_tok = re.compile(r"_(ws[a-z]*|wae|msl|gsl)\d{4}_")
     for gid, g in sorted(db["gadgets"].items()):
         cat, name = gid.split("/")
-        stems = [os.path.basename(m) for m in g["meshes"]]
+        stems = sorted({os.path.basename(m) for m in g["meshes"]
+                        if not skin_tok.search(os.path.basename(m))})
+        # prefer the 1p assembly; gadgets are authored in one model space so
+        # every companion part (railgun scope, drone rotors...) renders as-is
+        p1 = [s for s in stems if s.endswith("_1p_mesh")]
+        pool = p1 or [s for s in stems
+                      if not s.endswith("_3p_mesh")
+                      and s.replace("_mesh", "_1p_mesh") not in stems] \
+            or [s for s in stems if s.endswith("_3p_mesh")]
         best = None
         for pref in ("_base_1p_mesh", "_base_3p_mesh", "_base_mesh", "_1p_mesh", "_mesh"):
-            for s in stems:
+            for s in pool:
                 if s.endswith(pref):
                     best = s[:-5]
                     break
@@ -348,12 +586,38 @@ def main():
                 break
         if not best:
             continue
-        gadgets.append({"id": gid, "cat": cat, "name": name, "display": title(name), "mesh": best})
+        entry = {"id": gid, "cat": cat, "name": name,
+                 "display": pn["gadgets"].get(name) or title(name), "mesh": best}
+        extras = [s[:-5] for s in pool if s[:-5] != best]
+        if extras:
+            entry["x"] = extras
+        gadgets.append(entry)
+
+    charms = []
+    for cid, c in sorted(db.get("charms", {}).items()):
+        if cid.startswith("_"):
+            continue
+        mesh = next((s[:-5] for s in c["meshes"] if s.endswith("_1p_mesh")), None)
+        if mesh:
+            lab = re.sub(r"^(ch[a-z])(\d+)$", lambda m: "%s %s" % (m.group(1).upper(),
+                                                                   m.group(2)), cid)
+            charms.append({"id": cid, "mesh": mesh,
+                           "label": lab.upper() if lab != cid else title(cid)})
+
+    # tiling weapon camos (separate system from baked legendary skins):
+    # coverage rides the pattern's own alpha; tiling is the universal 1.0
+    camos = []
+    cp = os.path.join(HERE, "data", "camos.json")
+    if os.path.exists(cp):
+        for cid, c in sorted(json.load(open(cp, encoding="utf-8"))["camos"].items()):
+            if c.get("tex") and c.get("weapons_offering"):
+                camos.append(cid)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     manifest = {
         "slotOrder": SLOT_ORDER, "slotLabel": SLOT_LABEL,
-        "weapons": weapons, "gadgets": gadgets,
+        "weapons": weapons, "gadgets": gadgets, "charms": charms,
+        "camos": camos,
     }
     json.dump(manifest, open(OUT, "w", encoding="utf-8"), separators=(",", ":"))
     print("weapons=%d gadgets=%d  token joins: %d ok / %d missing  -> %s"
