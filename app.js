@@ -284,7 +284,7 @@ $('#btn-tune').onclick = () => {
   $('#tunepanel').hidden = !tuneOn;
   stage.setTune(tuneOn, rep => {
     $('#tp-sel').textContent = rep
-      ? `${rep.id}  ${rep.mesh}\nmoved  x ${rep.moved[0]}  y ${rep.moved[1]}  z ${rep.moved[2]}`
+      ? `${rep.id}  ${rep.sub || rep.mesh}\nmoved  x ${rep.moved[0]}  y ${rep.moved[1]}  z ${rep.moved[2]}\nCtrl+Z undo · Ctrl+Y redo`
       : 'no part selected';
   });
 };

@@ -252,46 +252,77 @@ export function initStage(view, status) {
     if (tuneSel && onTuneMove.cb) onTuneMove.cb(tuneReport());
   });
   const ray2 = new THREE.Raycaster();
-  function pickPart(e) {
+  const tuned = new Set();                   // every Object3D the user has moved
+  const hist = [];                           // undo stack: {obj, from, to}
+  const redoStack = [];
+  function ownerRec(obj) {
+    for (const [id, rec] of parts) {
+      if (!rec.group) continue;
+      let o = obj;
+      while (o) { if (o === rec.group) return [id, rec]; o = o.parent; }
+    }
+    return null;
+  }
+  // dblclick selects the actual SUBMESH under the cursor, so combined GLBs
+  // (base receiver etc.) break apart into their material pieces for tuning
+  renderer.domElement.addEventListener('dblclick', e => {
+    if (!tune) return;
     const r = renderer.domElement.getBoundingClientRect();
     const p = new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1,
                                 -((e.clientY - r.top) / r.height) * 2 + 1);
     ray2.setFromCamera(p, cam);
     const hits = ray2.intersectObjects(root.children, true);
-    for (const h of hits) {
-      for (const [id, rec] of parts) {
-        if (!rec.group) continue;
-        let o = h.object, mine = false;
-        while (o) { if (o === rec.group) { mine = true; break; } o = o.parent; }
-        if (mine) return [id, rec];
-      }
-    }
-    return null;
-  }
-  renderer.domElement.addEventListener('dblclick', e => {
-    if (!tune) return;
-    const hit = pickPart(e);
-    tuneSel = hit;
+    const hit = hits.find(h => h.object.isMesh && ownerRec(h.object));
     if (hit) {
-      const rec = hit[1];
-      if (!rec.basePos) rec.basePos = rec.group.position.clone();
-      gizmo.attach(rec.group);
-      if (onTuneMove.cb) onTuneMove.cb(tuneReport());
+      const obj = hit.object;
+      if (!obj.userData._tuneBase) obj.userData._tuneBase = obj.position.clone();
+      tuneSel = obj;
+      tuned.add(obj);
+      gizmo.attach(obj);
     } else {
+      tuneSel = null;
       gizmo.detach();
-      if (onTuneMove.cb) onTuneMove.cb(null);
+    }
+    if (onTuneMove.cb) onTuneMove.cb(tuneReport());
+  });
+  let dragFrom = null;
+  gizmo.addEventListener('dragging-changed', e => {
+    if (e.value && tuneSel) dragFrom = tuneSel.position.clone();
+    else if (!e.value && tuneSel && dragFrom && !tuneSel.position.equals(dragFrom)) {
+      hist.push({ obj: tuneSel, from: dragFrom, to: tuneSel.position.clone() });
+      redoStack.length = 0;
+      dragFrom = null;
     }
   });
-  function tuneReport() {
-    if (!tuneSel) return null;
-    const [id, rec] = tuneSel;
-    const d = rec.group.position.clone().sub(rec.basePos);
+  addEventListener('keydown', e => {
+    if (!tune || !(e.ctrlKey || e.metaKey)) return;
+    const k = e.key.toLowerCase();
+    if (k === 'z' && hist.length) {
+      e.preventDefault();
+      const h = hist.pop();
+      redoStack.push(h);
+      h.obj.position.copy(h.from);
+    } else if (k === 'y' && redoStack.length) {
+      e.preventDefault();
+      const h = redoStack.pop();
+      hist.push(h);
+      h.obj.position.copy(h.to);
+    } else return;
+    if (onTuneMove.cb) onTuneMove.cb(tuneReport());
+  });
+  function entry(obj) {
+    const own = ownerRec(obj);
+    const d = obj.position.clone().sub(obj.userData._tuneBase);
     return {
-      id,
-      mesh: rec.url.split('/').pop().replace('.glb', ''),
-      baseDt: rec.dt || [0, 0, 0],
+      id: own ? own[0] : '?',
+      mesh: own ? own[1].url.split('/').pop().replace('.glb', '') : '?',
+      sub: obj.name || '',
+      baseDt: own && own[1].dt ? own[1].dt : [0, 0, 0],
       moved: [+d.x.toFixed(4), +d.y.toFixed(4), +d.z.toFixed(4)],
     };
+  }
+  function tuneReport() {
+    return tuneSel && tuneSel.userData._tuneBase ? entry(tuneSel) : null;
   }
   function setTune(on, cb) {
     tune = on;
@@ -301,14 +332,10 @@ export function initStage(view, status) {
   }
   function tuneAll() {
     const out = [];
-    for (const [id, rec] of parts) {
-      if (rec.group && rec.basePos) {
-        const d = rec.group.position.clone().sub(rec.basePos);
-        if (d.lengthSq() > 1e-8)
-          out.push({ id, mesh: rec.url.split('/').pop().replace('.glb', ''),
-                     baseDt: rec.dt || [0, 0, 0],
-                     moved: [+d.x.toFixed(4), +d.y.toFixed(4), +d.z.toFixed(4)] });
-      }
+    for (const obj of tuned) {
+      if (!obj.userData._tuneBase) continue;
+      const e = entry(obj);
+      if (e.moved.some(v => Math.abs(v) > 1e-6)) out.push(e);
     }
     return out;
   }
