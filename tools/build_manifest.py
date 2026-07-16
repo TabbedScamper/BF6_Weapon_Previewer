@@ -229,8 +229,19 @@ def main():
 
         defaults = {}
         fixed = []
+        irons = {}
         for fam, members in fams.items():
             slot = FAMILY_SLOT.get(fam)
+            if fam in ("ironsights", "sight"):
+                # game rule: irons fold/hide when an optic is mounted — the
+                # dump ships *folded variant meshes for exactly this
+                up = [p for p in members if "folded" not in p]
+                fold = [p for p in members if "folded" in p and "front" not in p]
+                if up:
+                    irons["up"] = own_mesh(min(up, key=len))
+                if fold:
+                    irons["folded"] = own_mesh(min(fold, key=len))
+                continue
             if len_tok:
                 matched = [p for p in members if len_tok in p]
                 if matched:
@@ -254,6 +265,13 @@ def main():
         # skeleton bind pose; the weapon's true anchors come from its md table.
         # Muzzle devices track the EQUIPPED barrel: per-barrel bone_write z
         # offsets ship in brlWz and the client adds them at build time.
+        # Optics: per-weapon sight-group SOCKET trims (small rail offsets).
+        sight_dt = {}
+        for g in (bindmeta.get(wid) or {}).get("slot_groups", []):
+            if g.get("socket") and g["slot_type"] in ("sight", "secondarysight"):
+                t = [round(v, 4) for v in g["socket"]["transform"]["trans"]]
+                if any(abs(v) > 5e-4 for v in t):
+                    sight_dt["scp" if g["slot_type"] == "sight" else "sca"] = t
         bdt = barrel_dt(wid)
         brl_wz = {}
         if bdt:
@@ -297,8 +315,8 @@ def main():
             "id": wid, "cls": cls, "name": name, "display": name.upper(),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
-            "partDt": ({"brl": bdt, "mzl": bdt} if bdt else {}),
-            "brlWz": brl_wz, "fixedDt": fixed_dt,
+            "partDt": dict(({"brl": bdt, "mzl": bdt} if bdt else {}), **sight_dt),
+            "brlWz": brl_wz, "fixedDt": fixed_dt, "irons": irons,
             "skins": w_skins,
         })
 

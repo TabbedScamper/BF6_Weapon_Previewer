@@ -172,10 +172,18 @@ function currentParts() {
     const u = url(skinMesh(m));
     parts.set('fx' + i, fdt ? { url: u, dt: fdt } : u);
   });
+  // game rule: iron sights fold (or hide) while a real optic is mounted
+  if (cur.irons && cur.irons.up) {
+    const optic = build.scp && !/iron|cqb/i.test(build.scp);
+    const im = optic ? cur.irons.folded : cur.irons.up;
+    if (im) parts.set('irons', url(skinMesh(im)));
+  }
   // equipped barrel's muzzle offset (per-barrel bone_write, inch-exact)
   const brlTok = build.brl || (cur.factory || {}).brl || null;
   const wz = brlTok != null ? ((cur.brlWz || {})[brlTok] || 0) : 0;
   for (const [code, tok] of Object.entries(build)) {
+    // iron-type scope tokens are drawn by the irons part above, not the slot
+    if (code === 'scp' && cur.irons && cur.irons.up && tok && /iron|cqb/i.test(tok)) continue;
     let mesh = null, dt = null;
     if (tok) {
       const e = (cur.slots[code] || []).find(x => x.t === tok);
