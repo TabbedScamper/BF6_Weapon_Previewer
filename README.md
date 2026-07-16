@@ -17,6 +17,8 @@ combinations the game actually allows are offered.
   Portal SDK item catalog (see `docs/COVERAGE-AUDIT.md`)
 - Weapon skins, 157 tiling camo patterns, and 226 weapon charms
 - Gadgets & throwables browser
+- Downloadable master compatibility list (`data/compatibility.csv`, ⤓ in the
+  header): every weapon, slot, and available attachment in one sheet
 - First-person-grade meshes with full-resolution PBR textures
 
 ## Run locally

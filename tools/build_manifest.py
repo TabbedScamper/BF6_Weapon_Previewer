@@ -623,6 +623,9 @@ def main():
     print("weapons=%d gadgets=%d  token joins: %d ok / %d missing  -> %s"
           % (len(weapons), len(gadgets), join_hit, join_miss, OUT))
 
+    import export_compat
+    export_compat.main()
+
 
 if __name__ == "__main__":
     main()
