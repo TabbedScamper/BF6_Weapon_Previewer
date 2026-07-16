@@ -276,6 +276,28 @@ function openDrawer(code) {
   mk(null, 'Default / none', true);
   for (const o of cur.slots[code]) mk(o.t, o.label, o.mesh);
 }
+// ---------- tune mode: user repositions parts, exports exact offsets ------
+let tuneOn = false;
+$('#btn-tune').onclick = () => {
+  tuneOn = !tuneOn;
+  $('#btn-tune').classList.toggle('on', tuneOn);
+  $('#tunepanel').hidden = !tuneOn;
+  stage.setTune(tuneOn, rep => {
+    $('#tp-sel').textContent = rep
+      ? `${rep.id}  ${rep.mesh}\nmoved  x ${rep.moved[0]}  y ${rep.moved[1]}  z ${rep.moved[2]}`
+      : 'no part selected';
+  });
+};
+$('#tp-copy').onclick = () => {
+  const report = {
+    weapon: cur && cur.id, build, skin,
+    moves: stage.tuneAll(),
+  };
+  navigator.clipboard.writeText(JSON.stringify(report, null, 1));
+  $('#tp-copy').textContent = 'Copied!';
+  setTimeout(() => { $('#tp-copy').textContent = 'Copy report'; }, 1200);
+};
+
 $('#drawer-close').onclick = () => { openSlot = null; $('#drawer').hidden = true; renderSlots(); };
 addEventListener('keydown', e => {
   if (e.key === 'Escape' && !$('#drawer').hidden) $('#drawer-close').onclick();

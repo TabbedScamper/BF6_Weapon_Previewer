@@ -25,6 +25,7 @@
     <div class="count" id="count"></div>
     <button class="mbtn" id="btn-arsenal">Arsenal</button>
     <button class="mbtn" id="btn-build">Build</button>
+    <button class="themebtn" id="btn-tune" title="Tune mode: double-click a part, drag the X/Y/Z arrows to reposition it, then copy the report">✛</button>
     <button class="themebtn" id="themebtn" title="Toggle theme">◐</button>
   </div>
 </header>
@@ -60,6 +61,12 @@
 </div>
 
 <div class="status" id="status"></div>
+
+<div class="tunepanel" id="tunepanel" hidden>
+  <div class="tp-title">TUNE — double-click a part, drag an axis arrow</div>
+  <div class="tp-sel" id="tp-sel">no part selected</div>
+  <button id="tp-copy">Copy report</button>
+</div>
 
 <script type="module" src="app.js"></script>
 </body>

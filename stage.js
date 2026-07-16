@@ -3,6 +3,7 @@
 // RoomEnvironment PMREM so PBR gunmetal actually reads as metal.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { TransformControls } from 'three/addons/controls/TransformControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
@@ -235,5 +236,82 @@ export function initStage(view, status) {
     renderer.render(scene, cam);
   })();
 
-  return { setParts, frame, applySkin };
+  // ---------- tune mode: drag parts on axis rails, report exact offsets ----
+  // The user places a mispositioned part correctly; the recorded world-space
+  // delta is then correlated offline against EBX transform candidates.
+  const gizmo = new TransformControls(cam, renderer.domElement);
+  gizmo.setMode('translate');
+  gizmo.setTranslationSnap(0.001);          // 1 mm
+  scene.add(gizmo.getHelper ? gizmo.getHelper() : gizmo);
+  gizmo.enabled = false;
+  let tune = false;
+  let tuneSel = null;                        // [id, rec]
+  const onTuneMove = { cb: null };
+  gizmo.addEventListener('dragging-changed', e => { controls.enabled = !e.value; });
+  gizmo.addEventListener('objectChange', () => {
+    if (tuneSel && onTuneMove.cb) onTuneMove.cb(tuneReport());
+  });
+  const ray2 = new THREE.Raycaster();
+  function pickPart(e) {
+    const r = renderer.domElement.getBoundingClientRect();
+    const p = new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1,
+                                -((e.clientY - r.top) / r.height) * 2 + 1);
+    ray2.setFromCamera(p, cam);
+    const hits = ray2.intersectObjects(root.children, true);
+    for (const h of hits) {
+      for (const [id, rec] of parts) {
+        if (!rec.group) continue;
+        let o = h.object, mine = false;
+        while (o) { if (o === rec.group) { mine = true; break; } o = o.parent; }
+        if (mine) return [id, rec];
+      }
+    }
+    return null;
+  }
+  renderer.domElement.addEventListener('dblclick', e => {
+    if (!tune) return;
+    const hit = pickPart(e);
+    tuneSel = hit;
+    if (hit) {
+      const rec = hit[1];
+      if (!rec.basePos) rec.basePos = rec.group.position.clone();
+      gizmo.attach(rec.group);
+      if (onTuneMove.cb) onTuneMove.cb(tuneReport());
+    } else {
+      gizmo.detach();
+      if (onTuneMove.cb) onTuneMove.cb(null);
+    }
+  });
+  function tuneReport() {
+    if (!tuneSel) return null;
+    const [id, rec] = tuneSel;
+    const d = rec.group.position.clone().sub(rec.basePos);
+    return {
+      id,
+      mesh: rec.url.split('/').pop().replace('.glb', ''),
+      baseDt: rec.dt || [0, 0, 0],
+      moved: [+d.x.toFixed(4), +d.y.toFixed(4), +d.z.toFixed(4)],
+    };
+  }
+  function setTune(on, cb) {
+    tune = on;
+    onTuneMove.cb = cb || null;
+    gizmo.enabled = on;
+    if (!on) { gizmo.detach(); tuneSel = null; }
+  }
+  function tuneAll() {
+    const out = [];
+    for (const [id, rec] of parts) {
+      if (rec.group && rec.basePos) {
+        const d = rec.group.position.clone().sub(rec.basePos);
+        if (d.lengthSq() > 1e-8)
+          out.push({ id, mesh: rec.url.split('/').pop().replace('.glb', ''),
+                     baseDt: rec.dt || [0, 0, 0],
+                     moved: [+d.x.toFixed(4), +d.y.toFixed(4), +d.z.toFixed(4)] });
+      }
+    }
+    return out;
+  }
+
+  return { setParts, frame, applySkin, setTune, tuneAll };
 }
