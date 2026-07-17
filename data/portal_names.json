@@ -1,7 +1,7 @@
 {
  "attachments": {
   "amo": {
-   "ballistictip": "Ballistic Tip",
+   "ballistictip": "Synthetic Tip",
    "buckshot": "Buckshot",
    "flechette": "Flechette",
    "fmj": "FMJ",
@@ -112,6 +112,57 @@
    "vzor3": "3VZR 1.75X"
   }
  },
+ "catalog_mags": [
+  "Magazine_100rnd_Belt_Box",
+  "Magazine_100rnd_Belt_Pouch",
+  "Magazine_100rnd_Drum_Mag",
+  "Magazine_10rnd_Fast_Mag",
+  "Magazine_10rnd_Magazine",
+  "Magazine_11rnd_Magazine",
+  "Magazine_15rnd_Fast_Mag",
+  "Magazine_15rnd_Magazine",
+  "Magazine_17rnd_Fast_Mag",
+  "Magazine_17rnd_Magazine",
+  "Magazine_200rnd_Belt_Box",
+  "Magazine_20rnd_Fast_Mag",
+  "Magazine_20rnd_Magazine",
+  "Magazine_21rnd_Magazine",
+  "Magazine_22rnd_Magazine",
+  "Magazine_23rnd_Magazine",
+  "Magazine_25rnd_Fast_Mag",
+  "Magazine_25rnd_Magazine",
+  "Magazine_27rnd_Magazine",
+  "Magazine_30rnd_Fast_Mag",
+  "Magazine_30rnd_Magazine",
+  "Magazine_36rnd_Magazine",
+  "Magazine_4_Shell_Tube",
+  "Magazine_40rnd_Fast_Mag",
+  "Magazine_40rnd_Magazine",
+  "Magazine_41rnd_Magazine",
+  "Magazine_45rnd_Fast_Mag",
+  "Magazine_45rnd_Magazine",
+  "Magazine_4rnd_Fast_Mag",
+  "Magazine_4rnd_Magazine",
+  "Magazine_5_Shell_Tube",
+  "Magazine_50rnd_Belt_Pouch",
+  "Magazine_50rnd_Loose_Belt",
+  "Magazine_50rnd_Magazine",
+  "Magazine_5rnd_Fast_Mag",
+  "Magazine_5rnd_Magazine",
+  "Magazine_6_Shell_Tube",
+  "Magazine_60rnd_Drum_Mag",
+  "Magazine_60rnd_Magazine",
+  "Magazine_6rnd_Speedloader",
+  "Magazine_7_Shell_Dual_Tubes",
+  "Magazine_7_Shell_Tube",
+  "Magazine_75rnd_Belt_Box",
+  "Magazine_75rnd_Drum",
+  "Magazine_7rnd_Magazine",
+  "Magazine_8rnd_Fast_Mag",
+  "Magazine_8rnd_Magazine",
+  "Magazine_8rnd_Moon_Clip",
+  "Magazine_8rnd_Speedloader"
+ ],
  "gadgets": {
   "airburstincendiary": "Incendiary Airburst",
   "antitank": "Anti Vehicle Grenade",
@@ -155,6 +206,654 @@
   "tracerdart": "Tracer Dart",
   "tugs": "Motion Sensor",
   "vehiclesupplycrate": "Vehicle Supply Crate"
+ },
+ "sdk": {
+  "attachments": {
+   "amo": {
+    "ballistictip": {
+     "enum": "Ammo_Synthetic_Tip",
+     "src": "WeaponAttachments"
+    },
+    "buckshot": {
+     "enum": "Ammo_Buckshot",
+     "src": "WeaponAttachments"
+    },
+    "flechette": {
+     "enum": "Ammo_Flechette",
+     "src": "WeaponAttachments"
+    },
+    "fmj": {
+     "enum": "Ammo_FMJ",
+     "src": "WeaponAttachments"
+    },
+    "frangible": {
+     "enum": "Ammo_Frangible",
+     "src": "WeaponAttachments"
+    },
+    "hollowpoint": {
+     "enum": "Ammo_Hollow_Point",
+     "src": "WeaponAttachments"
+    },
+    "match": {
+     "enum": "Ammo_Match_Grade",
+     "src": "WeaponAttachments"
+    },
+    "polymer_case": {
+     "enum": "Ammo_Polymer_Case",
+     "src": "WeaponAttachments"
+    },
+    "polymercase": {
+     "enum": "Ammo_Polymer_Case",
+     "src": "WeaponAttachments"
+    },
+    "slugs": {
+     "enum": "Ammo_Slugs",
+     "src": "WeaponAttachments"
+    },
+    "tungsten": {
+     "enum": "Ammo_Tungsten_Core",
+     "src": "WeaponAttachments"
+    }
+   },
+   "btm": {
+    "6ch64_vertical": {
+     "enum": "Bottom_6H64_Vertical",
+     "src": "WeaponAttachments"
+    },
+    "6ch64vertical": {
+     "enum": "Bottom_6H64_Vertical",
+     "src": "WeaponAttachments"
+    },
+    "bipod": {
+     "enum": "Bottom_Bipod",
+     "src": "WeaponAttachments"
+    }
+   },
+   "erg": {
+    "dlc_bolt": {
+     "enum": "Ergonomic_DLC_Bolt",
+     "src": "WeaponAttachments"
+    },
+    "dlcbolt": {
+     "enum": "Ergonomic_DLC_Bolt",
+     "src": "WeaponAttachments"
+    },
+    "flared_magwell": {
+     "enum": "Ergonomic_Magwell_Flare",
+     "src": "WeaponAttachments"
+    },
+    "flaredmagwell": {
+     "enum": "Ergonomic_Magwell_Flare",
+     "src": "WeaponAttachments"
+    },
+    "improved_mag_catch": {
+     "enum": "Ergonomic_Improved_Mag_Catch",
+     "src": "WeaponAttachments"
+    },
+    "improvedmagcatch": {
+     "enum": "Ergonomic_Improved_Mag_Catch",
+     "src": "WeaponAttachments"
+    },
+    "magwell": {
+     "enum": "Ergonomic_Magwell_Flare",
+     "src": "WeaponAttachments"
+    },
+    "matchtrigger": {
+     "enum": "Ergonomic_Match_Trigger",
+     "src": "WeaponAttachments"
+    },
+    "railcover": {
+     "enum": "Ergonomic_Rail_Cover",
+     "src": "WeaponAttachments"
+    }
+   },
+   "mzl": {
+    "akmslantbrake": {
+     "enum": "Muzzle_Slant_Brake",
+     "src": "WeaponAttachments"
+    },
+    "awmdoubleportbrake": {
+     "enum": "Muzzle_Double_port_Brake",
+     "src": "WeaponAttachments"
+    },
+    "awmsingleportbrake": {
+     "enum": "Muzzle_Single_port_Brake",
+     "src": "WeaponAttachments"
+    },
+    "flashhider185ksk": {
+     "enum": "Muzzle_Flash_Hider",
+     "src": "WeaponAttachments"
+    },
+    "kvpmachlinearcomp": {
+     "enum": "Muzzle_Linear_Comp",
+     "src": "WeaponAttachments"
+    },
+    "sv98threadprotector": {
+     "enum": "Muzzle_Thread_Protector",
+     "src": "WeaponAttachments"
+    }
+   },
+   "sca": {
+    "agcoating": {
+     "enum": "Scope_Anti_Glare_Coating",
+     "src": "WeaponAttachments"
+    },
+    "cantedironsights": {
+     "enum": "Scope_Canted_Iron_Sights",
+     "src": "WeaponAttachments"
+    },
+    "variable2x": {
+     "enum": "Scope_Adjustable_Magnification_200x",
+     "src": "WeaponAttachments"
+    },
+    "variable3x": {
+     "enum": "Scope_Adjustable_Magnification_300x",
+     "src": "WeaponAttachments"
+    },
+    "variable4x": {
+     "enum": "Scope_Adjustable_Magnification_400x",
+     "src": "WeaponAttachments"
+    }
+   },
+   "scp": {
+    "1p885": {
+     "enum": "Scope_1p88_Variable",
+     "src": "WeaponAttachments"
+    },
+    "acro_p2": {
+     "enum": "Scope_A_P2_175x",
+     "src": "WeaponAttachments"
+    },
+    "acrop2": {
+     "enum": "Scope_A_P2_175x",
+     "src": "WeaponAttachments"
+    },
+    "anpas35": {
+     "enum": "Scope_PAS_35_300x",
+     "src": "WeaponAttachments"
+    },
+    "bravo3": {
+     "enum": "Scope_Baker_300x",
+     "src": "WeaponAttachments"
+    },
+    "cod2m": {
+     "enum": "Scope_BF_2M_250x",
+     "src": "WeaponAttachments"
+    },
+    "compm5b": {
+     "enum": "Scope_CCO_200x",
+     "src": "WeaponAttachments"
+    },
+    "cqc_iron_sights": {
+     "enum": "Scope_CQB_Sights",
+     "src": "WeaponAttachments"
+    },
+    "eflxmini": {
+     "enum": "Scope_Mini_Flex_100x",
+     "src": "WeaponAttachments"
+    },
+    "elcanlds": {
+     "enum": "Scope_LDS_450x",
+     "src": "WeaponAttachments"
+    },
+    "iron_sights": {
+     "enum": "Scope_Iron_Sights",
+     "src": "WeaponAttachments"
+    },
+    "ironsights": {
+     "enum": "Scope_Iron_Sights",
+     "src": "WeaponAttachments"
+    },
+    "meprom22": {
+     "enum": "Scope_RO_M_175x",
+     "src": "WeaponAttachments"
+    },
+    "nx8-4": {
+     "enum": "Scope_NFX_800x",
+     "src": "WeaponAttachments"
+    },
+    "opk7": {
+     "enum": "Scope_Osa_7_100x",
+     "src": "WeaponAttachments"
+    },
+    "rmr": {
+     "enum": "Scope_R_MR_100x",
+     "src": "WeaponAttachments"
+    },
+    "romeo4t": {
+     "enum": "Scope_R4T_200x",
+     "src": "WeaponAttachments"
+    },
+    "romeox": {
+     "enum": "Scope_ROX_150x",
+     "src": "WeaponAttachments"
+    },
+    "tango6t": {
+     "enum": "Scope_S_VPS_600x",
+     "src": "WeaponAttachments"
+    },
+    "trijiconmro": {
+     "enum": "Scope_RO_M_175x",
+     "src": "WeaponAttachments"
+    },
+    "trijiconsdo": {
+     "enum": "Scope_SDO_350x",
+     "src": "WeaponAttachments"
+    },
+    "trijiconsro": {
+     "enum": "Scope_RO_S_125x",
+     "src": "WeaponAttachments"
+    },
+    "vzor3": {
+     "enum": "Scope_3VZR_175x",
+     "src": "WeaponAttachments"
+    }
+   }
+  },
+  "gadgets": {
+   "airburstincendiary": {
+    "enum": "Launcher_Incendiary_Airburst",
+    "src": "Gadgets"
+   },
+   "antitank": {
+    "enum": "Throwable_Anti_Vehicle_Grenade",
+    "src": "Gadgets"
+   },
+   "atmine": {
+    "enum": "Misc_Anti_Vehicle_Mine",
+    "src": "Gadgets"
+   },
+   "beacon": {
+    "enum": "Deployable_Deploy_Beacon",
+    "src": "Gadgets"
+   },
+   "breachingdart": {
+    "enum": "Launcher_Breaching_Projectile",
+    "src": "Gadgets"
+   },
+   "concussion": {
+    "enum": "Throwable_Stun_Grenade",
+    "src": "Gadgets"
+   },
+   "defibrillator": {
+    "enum": "Misc_Defibrillator",
+    "src": "Gadgets"
+   },
+   "demolitioncharge": {
+    "enum": "Misc_Demolition_Charge",
+    "src": "Gadgets"
+   },
+   "deployablecover": {
+    "enum": "Deployable_Cover",
+    "src": "Gadgets"
+   },
+   "drone": {
+    "enum": "Deployable_Recon_Drone",
+    "src": "Gadgets"
+   },
+   "eodbot": {
+    "enum": "Deployable_EOD_Bot",
+    "src": "Gadgets"
+   },
+   "flashbang": {
+    "enum": "Throwable_Flash_Grenade",
+    "src": "Gadgets"
+   },
+   "frag": {
+    "enum": "Throwable_Fragmentation_Grenade",
+    "src": "Gadgets"
+   },
+   "gasmask": {
+    "enum": "Mask_Gas",
+    "src": "Gadgets"
+   },
+   "igla": {
+    "enum": "Launcher_IGLA",
+    "src": "Gadgets"
+   },
+   "incendiary": {
+    "enum": "Throwable_Incendiary_Grenade",
+    "src": "Gadgets"
+   },
+   "javelin": {
+    "enum": "Launcher_Auto_Guided",
+    "src": "Gadgets"
+   },
+   "ladder": {
+    "enum": "Misc_Assault_Ladder",
+    "src": "Gadgets"
+   },
+   "laserdesignator": {
+    "enum": "Misc_Laser_Designator",
+    "src": "Gadgets"
+   },
+   "m18claymore": {
+    "enum": "Misc_Anti_Personnel_Mine",
+    "src": "Gadgets"
+   },
+   "m224mortar": {
+    "enum": "Deployable_Portable_Mortar",
+    "src": "Gadgets"
+   },
+   "m320": {
+    "enum": "Launcher_High_Explosive",
+    "src": "Gadgets"
+   },
+   "m320smoke": {
+    "enum": "Launcher_Smoke_Grenade",
+    "src": "Gadgets"
+   },
+   "m320thermobaric": {
+    "enum": "Launcher_Thermobaric_Grenade",
+    "src": "Gadgets"
+   },
+   "m4slam": {
+    "enum": "Misc_Tripwire_Sensor_AV_Mine",
+    "src": "Gadgets"
+   },
+   "mbtlaw": {
+    "enum": "Launcher_Aim_Guided",
+    "src": "Gadgets"
+   },
+   "miniv40": {
+    "enum": "Throwable_Mini_Frag_Grenade",
+    "src": "Gadgets"
+   },
+   "nvg": {
+    "enum": "Mask_NVG",
+    "src": "Gadgets"
+   },
+   "proximity": {
+    "enum": "Throwable_Proximity_Detector",
+    "src": "Gadgets"
+   },
+   "ptkm1r": {
+    "enum": "Misc_Acoustic_Sensor_AV_Mine",
+    "src": "Gadgets"
+   },
+   "repair": {
+    "enum": "Class_Repair_Tool",
+    "src": "Gadgets"
+   },
+   "revivepen": {
+    "enum": "Class_Adrenaline_Injector",
+    "src": "Gadgets"
+   },
+   "rpg7": {
+    "enum": "Launcher_Unguided_Rocket",
+    "src": "Gadgets"
+   },
+   "smoke": {
+    "enum": "Throwable_Smoke_Grenade",
+    "src": "Gadgets"
+   },
+   "smokescreen": {
+    "enum": "CallIn_Smoke_Screen",
+    "src": "Gadgets"
+   },
+   "sniperdecoy": {
+    "enum": "Misc_Sniper_Decoy",
+    "src": "Gadgets"
+   },
+   "stinger": {
+    "enum": "Launcher_Air_Defense",
+    "src": "Gadgets"
+   },
+   "supplypouch": {
+    "enum": "Misc_Supply_Pouch",
+    "src": "Gadgets"
+   },
+   "throwingknife": {
+    "enum": "Throwable_Throwing_Knife",
+    "src": "Gadgets"
+   },
+   "tracerdart": {
+    "enum": "Misc_Tracer_Dart",
+    "src": "Gadgets"
+   },
+   "tugs": {
+    "enum": "Class_Motion_Sensor",
+    "src": "Gadgets"
+   },
+   "vehiclesupplycrate": {
+    "enum": "Deployable_Vehicle_Supply_Crate",
+    "src": "Gadgets"
+   }
+  },
+  "weapons": {
+   "185ksk": {
+    "enum": "Shotgun__185KS_K",
+    "src": "Weapons"
+   },
+   "590a1": {
+    "enum": "Shotgun_M87A1",
+    "src": "Weapons"
+   },
+   "6p67": {
+    "enum": "AssaultRifle_KORD_6P67",
+    "src": "Weapons"
+   },
+   "ak205": {
+    "enum": "Carbine_AK_205",
+    "src": "Weapons"
+   },
+   "apc10": {
+    "enum": "SMG_SCW_10",
+    "src": "Weapons"
+   },
+   "aradmr": {
+    "enum": "DMR_LMR27",
+    "src": "Weapons"
+   },
+   "combatknife": {
+    "enum": "Melee_Combat_Knife",
+    "src": "Gadgets"
+   },
+   "dp12": {
+    "enum": "Shotgun_DB_12",
+    "src": "Weapons"
+   },
+   "fiveseven": {
+    "enum": "Sidearm_ES_57",
+    "src": "Weapons"
+   },
+   "g22": {
+    "enum": "Sidearm_GGH_22",
+    "src": "Weapons"
+   },
+   "g36": {
+    "enum": "AssaultRifle_B36A4",
+    "src": "Weapons"
+   },
+   "g3a4": {
+    "enum": "AssaultRifle_AK4D",
+    "src": "Weapons"
+   },
+   "hk417a2": {
+    "enum": "Carbine_M417_A2",
+    "src": "Weapons"
+   },
+   "hk433": {
+    "enum": "AssaultRifle_M433",
+    "src": "Weapons"
+   },
+   "iceclimbingaxe": {
+    "enum": "Melee_Ice_Axe",
+    "src": "Gadgets"
+   },
+   "l85a3": {
+    "enum": "AssaultRifle_L85A3",
+    "src": "Weapons"
+   },
+   "m1014": {
+    "enum": "Shotgun_M1014",
+    "src": "Weapons"
+   },
+   "m18": {
+    "enum": "Sidearm_P18",
+    "src": "Weapons"
+   },
+   "m2010esr": {
+    "enum": "Sniper_M2010_ESR",
+    "src": "Weapons"
+   },
+   "m240l": {
+    "enum": "LMG_M240L",
+    "src": "Weapons"
+   },
+   "m250": {
+    "enum": "LMG_M250",
+    "src": "Weapons"
+   },
+   "m27iar": {
+    "enum": "LMG_DRS_IAR",
+    "src": "Weapons"
+   },
+   "m39emr": {
+    "enum": "DMR_M39_EMR",
+    "src": "Weapons"
+   },
+   "m45a1": {
+    "enum": "Sidearm_M45A1",
+    "src": "Weapons"
+   },
+   "m4a1": {
+    "enum": "Carbine_M4A1",
+    "src": "Weapons"
+   },
+   "m60e6": {
+    "enum": "LMG_M_60",
+    "src": "Weapons"
+   },
+   "mg4k": {
+    "enum": "LMG_M123K",
+    "src": "Weapons"
+   },
+   "mg5": {
+    "enum": "LMG_M121_A2",
+    "src": "Weapons"
+   },
+   "minifix": {
+    "enum": "Sniper_Mini_Scout",
+    "src": "Weapons"
+   },
+   "minigun": {
+    "enum": "BattlePickup_MP_RMG",
+    "src": "Weapons"
+   },
+   "minimi": {
+    "enum": "LMG_L110",
+    "src": "Weapons"
+   },
+   "mp5mli": {
+    "enum": "SMG_PW5A3",
+    "src": "Weapons"
+   },
+   "mp7a2": {
+    "enum": "SMG_PW7A2",
+    "src": "Weapons"
+   },
+   "mpx": {
+    "enum": "SMG_SGX",
+    "src": "Weapons"
+   },
+   "mrad": {
+    "enum": "Sniper_PSR",
+    "src": "Weapons"
+   },
+   "msbsgrotb": {
+    "enum": "Carbine_GRT_BC",
+    "src": "Weapons"
+   },
+   "msbsgrotcps": {
+    "enum": "DMR_GRT_CPS",
+    "src": "Weapons"
+   },
+   "p90": {
+    "enum": "SMG_USG_90",
+    "src": "Weapons"
+   },
+   "pp19": {
+    "enum": "SMG_KV9",
+    "src": "Weapons"
+   },
+   "qbz192": {
+    "enum": "Carbine_QBZ_192",
+    "src": "Weapons"
+   },
+   "raginghunter": {
+    "enum": "Sidearm_M44",
+    "src": "Weapons"
+   },
+   "railgun": {
+    "enum": "BattlePickup_Rorsch_Mk_2_SMRW",
+    "src": "Weapons"
+   },
+   "rpkm": {
+    "enum": "LMG_RPKM",
+    "src": "Weapons"
+   },
+   "scarl": {
+    "enum": "AssaultRifle_SOR_556_Mk2",
+    "src": "Weapons"
+   },
+   "scarsc": {
+    "enum": "Carbine_SOR_300SC",
+    "src": "Weapons"
+   },
+   "scorpionevo3": {
+    "enum": "SMG_CZ3A1",
+    "src": "Weapons"
+   },
+   "sig553r": {
+    "enum": "Carbine_SG_553R",
+    "src": "Weapons"
+   },
+   "skorpion": {
+    "enum": "Sidearm_VZ_61",
+    "src": "Weapons"
+   },
+   "sledgehammer": {
+    "enum": "Melee_Sledgehammer",
+    "src": "Gadgets"
+   },
+   "sv98m": {
+    "enum": "Sniper_SV_98",
+    "src": "Weapons"
+   },
+   "svch": {
+    "enum": "DMR_SVK_86",
+    "src": "Weapons"
+   },
+   "svdm": {
+    "enum": "DMR_SVDM",
+    "src": "Weapons"
+   },
+   "tavor7": {
+    "enum": "AssaultRifle_TR_7",
+    "src": "Weapons"
+   },
+   "trr8": {
+    "enum": "Sidearm_M357_Trait",
+    "src": "Weapons"
+   },
+   "ultimax": {
+    "enum": "LMG_KTS100_MK8",
+    "src": "Weapons"
+   },
+   "ump40": {
+    "enum": "SMG_UMG_40",
+    "src": "Weapons"
+   },
+   "vhs2": {
+    "enum": "AssaultRifle_VCR_2",
+    "src": "Weapons"
+   },
+   "xm7": {
+    "enum": "Carbine_M277",
+    "src": "Weapons"
+   }
+  }
  },
  "weapons": {
   "185ksk": "185KS-K",

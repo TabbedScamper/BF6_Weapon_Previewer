@@ -15,10 +15,21 @@ combinations the game actually allows are offered.
   Bottom/Top/Left/Right Rail, Ergonomic)
 - In-game names for weapons, gadgets and attachments, joined from the
   Portal SDK item catalog (see `docs/COVERAGE-AUDIT.md`)
+- Format research notes for modders: `docs/BF6-FORMATS.md` (EBX, textures,
+  weapon assembly, the layered card-icon system) and
+  `docs/EBX-ATTACHMENT-FORMAT.md`
 - Weapon skins, 157 tiling camo patterns, and 226 weapon charms
 - Gadgets & throwables browser
-- Downloadable master compatibility list (`data/compatibility.csv`, ⤓ in the
-  header): every weapon, slot, and available attachment in one sheet
+- Portal creator tools: `</> PORTAL CODE` generates verified Portal SDK
+  TypeScript for the current build (give-weapon-with-attachments and
+  weapon-card UI), and a live weapon card composited from the game's own
+  layered card icons updates as you swap parts
+- Downloadable master armory list (⤓ in the header): a single offline HTML
+  file with every weapon, slot, and available attachment plus the game's own
+  armory renders — includes a CSV export button (`data/armory-list.html`).
+  Also available as a navigable Excel workbook — Home sheet → category →
+  weapon sheets with renders and back links (`data/compatibility.xlsx`) —
+  and a raw flat sheet (`data/compatibility.csv`)
 - First-person-grade meshes with full-resolution PBR textures
 
 ## Run locally

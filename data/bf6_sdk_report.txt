@@ -1,0 +1,35 @@
+BF6 SDK DLL extraction report
+============================================
+source dll : C:\Users\mwalt\Downloads\BF6SDK.dll
+exe enrich : filled 6150 real-type nameHashes; cross-checked 15586 synthetic (0 mismatch = 100.00% agree)
+clr        : v4.0.30319
+
+types  : 26667  (real-named=8198  stripped=18469)
+fields : 63406 instances  (real-named=20329  stripped=43077)
+
+FIELD-NAME COVERAGE
+  unique field-name hashes in BF6 (complete reflection): 34526
+  named directly by the DLL (100% precision)          : 12077 = 35.0%
+  covered incl. cross-game fallback                    : 14104 = 40.9%
+  hashes with >1 recovered name (modal chosen)         : 91
+
+TYPE-NAME COVERAGE
+  total types              : 26667
+  real-named               : 8198 = 30.7%
+  type nameHashes in dict  : 6150
+
+DICTIONARY
+  merged entries           : 20614
+  authoritative (DLL+exe)  : 18000
+  cross-game fallback-only : 2614
+
+CROSS-GAME PRECISION AUDIT (old guesses vs DLL ground truth)
+  TYPE names  (GUID join, stable) : 4813/4823 = 99.8% correct
+  FIELD names (offset join, drift): 2294/7050 = 32.5% correct
+  -> the prior ~99% precision claim held only for TYPE names;
+     FIELD names (what the EBX parser needs) were far worse.
+
+NOTE: the game field/type nameHash function is NOT reproduced
+by Frosty HashTypeName (SHA256(lower(name)+"1030")) for BF6.
+That construction is exact for BF2042 but the BF6 seed/algo is
+uncracked; names here come from the DLL reflection, not hashing.

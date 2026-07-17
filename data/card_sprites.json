@@ -1,0 +1,13586 @@
+{
+ "1001808296": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_magazine_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Magazine_Icon",
+  "pl": [
+   233.0,
+   111.0
+  ],
+  "sz": [
+   62.0,
+   102.0
+  ]
+ },
+ "1006217015": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_ssqdbrake_icon.webp",
+  "name": "T_UI_DPF_SSQDBrake_Icon",
+  "pl": [
+   219.0,
+   109.0
+  ],
+  "sz": [
+   50.0,
+   37.0
+  ]
+ },
+ "101073843": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_barrel_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Barrel_Icon",
+  "pl": [
+   258.0,
+   110.0
+  ],
+  "sz": [
+   247.0,
+   36.0
+  ]
+ },
+ "1011063483": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Magazine20rnd_Icon",
+  "pl": [
+   229.0,
+   113.0
+  ],
+  "sz": [
+   52.0,
+   84.0
+  ]
+ },
+ "1011674873": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_la23_90_icon.webp",
+  "name": "T_UI_DPF_LA23_90_Icon",
+  "pl": [
+   243.0,
+   100.0
+  ],
+  "sz": [
+   107.0,
+   47.0
+  ]
+ },
+ "1012740767": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_magwellflare_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Magwellflare_Icon",
+  "pl": [
+   174.0,
+   113.0
+  ],
+  "sz": [
+   71.0,
+   38.0
+  ]
+ },
+ "1015487413": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_base_icon.webp",
+  "name": "T_UI_DPF_M60E6_Base_Icon",
+  "pl": [
+   89.0,
+   63.0
+  ],
+  "sz": [
+   315.0,
+   113.0
+  ]
+ },
+ "1017819378": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_barrel_icon.webp",
+  "name": "T_UI_DPF_M45A1_Barrel_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   81.0,
+   37.0
+  ]
+ },
+ "1021235233": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_bipod_icon.webp",
+  "name": "T_UI_DPF_SVDM_Bipod_Icon",
+  "pl": [
+   19.0,
+   107.0
+  ],
+  "sz": [
+   38.0,
+   97.0
+  ]
+ },
+ "1048365023": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_magwellflare_icon.webp",
+  "name": "T_UI_DPF_M4A1_Magwellflare_Icon",
+  "pl": [
+   185.0,
+   115.0
+  ],
+  "sz": [
+   58.0,
+   37.0
+  ]
+ },
+ "1061186088": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_ironsight_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Ironsight_Icon",
+  "pl": [
+   116.0,
+   68.0
+  ],
+  "sz": [
+   166.0,
+   56.0
+  ]
+ },
+ "1061523048": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_barrel203mm_icon.webp",
+  "name": "T_UI_DPF_MPX_Barrel203mm_Icon",
+  "pl": [
+   215.0,
+   110.0
+  ],
+  "sz": [
+   86.0,
+   35.0
+  ]
+ },
+ "1069994465": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_magazine_icon.webp",
+  "name": "T_UI_DPF_M16A3_Magazine_Icon",
+  "pl": [
+   235.0,
+   112.0
+  ],
+  "sz": [
+   58.0,
+   96.0
+  ]
+ },
+ "1071142177": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_akmagwell_base_icon.webp",
+  "name": "T_UI_DPF_AKMagwell_Base_Icon",
+  "pl": [
+   177.0,
+   105.0
+  ],
+  "sz": [
+   69.0,
+   34.0
+  ]
+ },
+ "1075926871": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_magazine20rndmagpull_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Magazine20rndMagpull_Icon",
+  "pl": [
+   216.0,
+   113.0
+  ],
+  "sz": [
+   63.0,
+   97.0
+  ]
+ },
+ "1076326426": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_barrelheavy663mm_icon.webp",
+  "name": "T_UI_DPF_MG5_BarrelHeavy663mm_Icon",
+  "pl": [
+   162.0,
+   109.0
+  ],
+  "sz": [
+   278.0,
+   37.0
+  ]
+ },
+ "1077966591": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_barrel12inch_icon.webp",
+  "name": "T_UI_DPF_M4A1_Barrel12Inch_Icon",
+  "pl": [
+   228.0,
+   109.0
+  ],
+  "sz": [
+   152.0,
+   37.0
+  ]
+ },
+ "1080716273": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsdo_icon.webp",
+  "name": "T_UI_DPF_TrijiconSDO_Icon",
+  "pl": [
+   175.0,
+   94.0
+  ],
+  "sz": [
+   95.0,
+   50.0
+  ]
+ },
+ "1082496523": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_barrel367_icon.webp",
+  "name": "T_UI_DPF_PP19_Barrel367_Icon",
+  "pl": [
+   188.0,
+   112.0
+  ],
+  "sz": [
+   86.0,
+   32.0
+  ]
+ },
+ "1083371452": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_barrel419mmfluted_icon.webp",
+  "name": "T_UI_DPF_RPK74M_Barrel419mmFluted_Icon",
+  "pl": [
+   290.0,
+   96.0
+  ],
+  "sz": [
+   168.0,
+   52.0
+  ]
+ },
+ "108348469": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_cantedironsight_mpx_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MPX_Icon",
+  "pl": [
+   116.0,
+   111.0
+  ],
+  "sz": [
+   156.0,
+   44.0
+  ]
+ },
+ "1093214402": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_atlasv8_l115a3_icon.webp",
+  "name": "T_UI_DPF_AtlasV8_L115A3_Icon",
+  "pl": [
+   223.0,
+   85.0
+  ],
+  "sz": [
+   83.0,
+   119.0
+  ]
+ },
+ "1099459002": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_rsrazor762_supressor_icon.webp",
+  "name": "T_UI_DPF_RSRAZOR762_Supressor_Icon",
+  "pl": [
+   181.0,
+   108.0
+  ],
+  "sz": [
+   88.0,
+   40.0
+  ]
+ },
+ "1100386928": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_cqcsights_icon.webp",
+  "name": "T_UI_DPF_UMP40_CQCSights_Icon",
+  "pl": [
+   117.0,
+   60.0
+  ],
+  "sz": [
+   159.0,
+   36.0
+  ]
+ },
+ "110973583": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_muzzlebrake_icon.webp",
+  "name": "T_UI_DPF_MRAD_MuzzleBrake_Icon",
+  "pl": [
+   216.0,
+   107.0
+  ],
+  "sz": [
+   54.0,
+   41.0
+  ]
+ },
+ "1110441465": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_barrel560mm_icon.webp",
+  "name": "T_UI_DPF_M60E6_Barrel560mm_Icon",
+  "pl": [
+   182.0,
+   104.0
+  ],
+  "sz": [
+   225.0,
+   56.0
+  ]
+ },
+ "1119601787": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_defaultmuzzle_icon.webp",
+  "name": "T_UI_DPF_SV98M_DefaultMuzzle_Icon",
+  "pl": [
+   221.0,
+   108.0
+  ],
+  "sz": [
+   47.0,
+   39.0
+  ]
+ },
+ "1126128486": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_base_icon.webp",
+  "name": "T_UI_DPF_UMP40_Base_Icon",
+  "pl": [
+   114.0,
+   63.0
+  ],
+  "sz": [
+   273.0,
+   107.0
+  ]
+ },
+ "1130519456": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_dtk1_icon.webp",
+  "name": "T_UI_DPF_DTK1_Icon",
+  "pl": [
+   208.0,
+   109.0
+  ],
+  "sz": [
+   61.0,
+   38.0
+  ]
+ },
+ "1132735533": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_barrel457_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Barrel457_Icon",
+  "pl": [
+   303.0,
+   102.0
+  ],
+  "sz": [
+   202.0,
+   50.0
+  ]
+ },
+ "1133622966": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_lt706harris_icon.webp",
+  "name": "T_UI_DPF_LT706Harris_Icon",
+  "pl": [
+   221.0,
+   114.0
+  ],
+  "sz": [
+   60.0,
+   85.0
+  ]
+ },
+ "1133978065": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_elcandr_icon.webp",
+  "name": "T_UI_DPF_ElcanDR_Icon",
+  "pl": [
+   186.0,
+   89.0
+  ],
+  "sz": [
+   85.0,
+   53.0
+  ]
+ },
+ "1149129531": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_sight_icon.webp",
+  "name": "T_UI_DPF_XM7_Sight_Icon",
+  "pl": [
+   69.0,
+   58.0
+  ],
+  "sz": [
+   209.0,
+   42.0
+  ]
+ },
+ "1150367002": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_eotecheflx_lowriser_icon.webp",
+  "name": "T_UI_DPF_EotechEFLX_LowRiser_Icon",
+  "pl": [
+   240.0,
+   104.0
+  ],
+  "sz": [
+   46.0,
+   37.0
+  ]
+ },
+ "1150537644": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_l5awm20rndfast_icon.webp",
+  "name": "T_UI_DPF_L5AWM20rndFast_Icon",
+  "pl": [
+   238.0,
+   113.0
+  ],
+  "sz": [
+   54.0,
+   90.0
+  ]
+ },
+ "1157361903": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_barrel170mm_icon.webp",
+  "name": "T_UI_DPF_APC10_Barrel170mm_Icon",
+  "pl": [
+   254.0,
+   111.0
+  ],
+  "sz": [
+   79.0,
+   33.0
+  ]
+ },
+ "1158789400": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_bipod_icon.webp",
+  "name": "T_UI_DPF_MG5_Bipod_Icon",
+  "pl": [
+   183.0,
+   91.0
+  ],
+  "sz": [
+   131.0,
+   55.0
+  ]
+ },
+ "1161316806": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsro_icon.webp",
+  "name": "T_UI_DPF_TrijiconSRO_Icon",
+  "pl": [
+   239.0,
+   102.0
+  ],
+  "sz": [
+   49.0,
+   39.0
+  ]
+ },
+ "1167257659": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_hisshd_msbsgrotcps_icon.webp",
+  "name": "T_UI_DPF_HISSHD_MSBSGROTCPS_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "1168272184": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_bipod_icon.webp",
+  "name": "T_UI_DPF_Minimi_Bipod_Icon",
+  "pl": [
+   162.0,
+   92.0
+  ],
+  "sz": [
+   44.0,
+   134.0
+  ]
+ },
+ "1174247697": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_muzzle_icon.webp",
+  "name": "T_UI_DPF_M240L_Muzzle_Icon",
+  "pl": [
+   215.0,
+   110.0
+  ],
+  "sz": [
+   54.0,
+   36.0
+  ]
+ },
+ "1191391304": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_muzzle_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Muzzle_Icon",
+  "pl": [
+   223.0,
+   111.0
+  ],
+  "sz": [
+   46.0,
+   34.0
+  ]
+ },
+ "1193404795": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_reflex_opk7_tall_icon.webp",
+  "name": "T_UI_DPF_Reflex_OPK7_Tall_Icon",
+  "pl": [
+   226.0,
+   98.0
+  ],
+  "sz": [
+   64.0,
+   46.0
+  ]
+ },
+ "1196625630": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_l7awm20_icon.webp",
+  "name": "T_UI_DPF_L7AWM20_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   59.0,
+   88.0
+  ]
+ },
+ "1198909321": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_magazine_icon.webp",
+  "name": "T_UI_DPF_VHS2_Magazine_Icon",
+  "pl": [
+   231.0,
+   111.0
+  ],
+  "sz": [
+   70.0,
+   102.0
+  ]
+ },
+ "1201525829": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_barrel480mm_icon.webp",
+  "name": "T_UI_DPF_HK433_Barrel480mm_Icon",
+  "pl": [
+   213.0,
+   103.0
+  ],
+  "sz": [
+   206.0,
+   46.0
+  ]
+ },
+ "1208736534": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_srvv_fhmbsv98_icon.webp",
+  "name": "T_UI_DPF_SRVV_FHMBSV98_Icon",
+  "pl": [
+   187.0,
+   108.0
+  ],
+  "sz": [
+   82.0,
+   39.0
+  ]
+ },
+ "1232591337": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_magazine_icon.webp",
+  "name": "T_UI_DPF_MPX_Magazine_Icon",
+  "pl": [
+   179.0,
+   94.0
+  ],
+  "sz": [
+   57.0,
+   106.0
+  ]
+ },
+ "1236425775": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sigtaperedqdmb_icon.webp",
+  "name": "T_UI_DPF_SIGTaperedQDMB_Icon",
+  "pl": [
+   219.0,
+   109.0
+  ],
+  "sz": [
+   50.0,
+   37.0
+  ]
+ },
+ "1237893029": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_barrelfluted152mm_icon.webp",
+  "name": "T_UI_DPF_MPX_BarrelFluted152mm_Icon",
+  "pl": [
+   237.0,
+   110.0
+  ],
+  "sz": [
+   64.0,
+   35.0
+  ]
+ },
+ "1239989668": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_barrel368mm_icon.webp",
+  "name": "T_UI_DPF_HK433_Barrel368mm_Icon",
+  "pl": [
+   258.0,
+   103.0
+  ],
+  "sz": [
+   162.0,
+   46.0
+  ]
+ },
+ "1248377730": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pg350_icon.webp",
+  "name": "T_UI_DPF_PG350_Icon",
+  "pl": [
+   192.0,
+   108.0
+  ],
+  "sz": [
+   78.0,
+   50.0
+  ]
+ },
+ "1255033737": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_sights_icon.webp",
+  "name": "T_UI_DPF_6P67_Sights_Icon",
+  "pl": [
+   28.0,
+   65.0
+  ],
+  "sz": [
+   255.0,
+   60.0
+  ]
+ },
+ "1255517359": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_la23_icon.webp",
+  "name": "T_UI_DPF_LA23_Icon",
+  "pl": [
+   243.0,
+   108.0
+  ],
+  "sz": [
+   107.0,
+   41.0
+  ]
+ },
+ "1263281846": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_barrel10in_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Barrel10in_Icon",
+  "pl": [
+   238.0,
+   104.0
+  ],
+  "sz": [
+   132.0,
+   43.0
+  ]
+ },
+ "1280451311": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_barrel600mm_icon.webp",
+  "name": "T_UI_DPF_G3A4_Barrel600mm_Icon",
+  "pl": [
+   158.0,
+   110.0
+  ],
+  "sz": [
+   121.0,
+   35.0
+  ]
+ },
+ "13056595": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_ironsights_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_IronSights_Icon",
+  "pl": [
+   157.0,
+   66.0
+  ],
+  "sz": [
+   132.0,
+   36.0
+  ]
+ },
+ "1305685044": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_base_icon.webp",
+  "name": "T_UI_DPF_L115A3_Base_Icon",
+  "pl": [
+   59.0,
+   81.0
+  ],
+  "sz": [
+   337.0,
+   101.0
+  ]
+ },
+ "1315902118": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_barrel305mm_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Barrel305mm_Icon",
+  "pl": [
+   244.0,
+   111.0
+  ],
+  "sz": [
+   65.0,
+   33.0
+  ]
+ },
+ "1320543715": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_barrel27influted_icon.webp",
+  "name": "T_UI_DPF_L115A3_Barrel27inFluted_Icon",
+  "pl": [
+   233.0,
+   109.0
+  ],
+  "sz": [
+   279.0,
+   38.0
+  ]
+ },
+ "1321933604": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_magazine60rnd_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Magazine60rnd_Icon",
+  "pl": [
+   172.0,
+   101.0
+  ],
+  "sz": [
+   72.0,
+   100.0
+  ]
+ },
+ "132342971": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_mag30_icon.webp",
+  "name": "T_UI_DPF_APDW_Mag30_Icon",
+  "pl": [
+   137.0,
+   100.0
+  ],
+  "sz": [
+   123.0,
+   40.0
+  ]
+ },
+ "1327132744": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_cantedironsight_m16a3_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M16A3_Icon",
+  "pl": [
+   66.0,
+   112.0
+  ],
+  "sz": [
+   206.0,
+   43.0
+  ]
+ },
+ "1334862159": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_btunigrip_icon.webp",
+  "name": "T_UI_DPF_BTUnigrip_Icon",
+  "pl": [
+   234.0,
+   113.0
+  ],
+  "sz": [
+   47.0,
+   102.0
+  ]
+ },
+ "1338778658": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_enticerlti_icon.webp",
+  "name": "T_UI_DPF_EnticerLTi_Icon",
+  "pl": [
+   177.0,
+   107.0
+  ],
+  "sz": [
+   92.0,
+   41.0
+  ]
+ },
+ "1338853011": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_m4a1_defaultmagmapull_icon.webp",
+  "name": "T_UI_DPF_M4A1_DefaultMagMapull_Icon",
+  "pl": [
+   234.0,
+   112.0
+  ],
+  "sz": [
+   59.0,
+   107.0
+  ]
+ },
+ "1339247387": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dsp_cqs_icon.webp",
+  "name": "T_UI_DSP_CQS_Icon",
+  "pl": [
+   236.0,
+   103.0
+  ],
+  "sz": [
+   47.0,
+   38.0
+  ]
+ },
+ "1343710845": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_reflex_mro_tall_icon.webp",
+  "name": "T_UI_DPF_Reflex_MRO_Tall_Icon",
+  "pl": [
+   228.0,
+   89.0
+  ],
+  "sz": [
+   51.0,
+   54.0
+  ]
+ },
+ "1346242407": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_magpulafg_icon.webp",
+  "name": "T_UI_DPF_MagpulAFG_Icon",
+  "pl": [
+   222.0,
+   114.0
+  ],
+  "sz": [
+   71.0,
+   49.0
+  ]
+ },
+ "1347556924": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_barrel419mmfluted_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Barrel419mmFluted_Icon",
+  "pl": [
+   238.0,
+   104.0
+  ],
+  "sz": [
+   185.0,
+   45.0
+  ]
+ },
+ "1347626338": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_ironsight_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_IronSight_Icon",
+  "pl": [
+   63.0,
+   61.0
+  ],
+  "sz": [
+   216.0,
+   42.0
+  ]
+ },
+ "1355585829": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_barrelsmall_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_BarrelSmall_Icon",
+  "pl": [
+   274.0,
+   105.0
+  ],
+  "sz": [
+   85.0,
+   47.0
+  ]
+ },
+ "1369382754": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_apdw_muzzle_icon.webp",
+  "name": "T_UI_DPF_APDW_Muzzle_Icon",
+  "pl": [
+   226.0,
+   111.0
+  ],
+  "sz": [
+   46.0,
+   34.0
+  ]
+ },
+ "137453286": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rmr_icon.webp",
+  "name": "T_UI_DPF_RMR_Icon",
+  "pl": [
+   239.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   36.0
+  ]
+ },
+ "1375277644": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_base_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Base_Icon",
+  "pl": [
+   49.0,
+   73.0
+  ],
+  "sz": [
+   320.0,
+   106.0
+  ]
+ },
+ "1377356979": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel16indpms_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel16inDPMS_Icon",
+  "pl": [
+   232.0,
+   89.0
+  ],
+  "sz": [
+   185.0,
+   66.0
+  ]
+ },
+ "1380447995": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_l7awm25_icon.webp",
+  "name": "T_UI_DPF_L7AWM25_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   59.0,
+   102.0
+  ]
+ },
+ "1387761268": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_magazinesmallextended_icon.webp",
+  "name": "T_UI_DPF_590A1_MagazineSmallExtended_Icon",
+  "pl": [
+   78.0,
+   108.0
+  ],
+  "sz": [
+   213.0,
+   39.0
+  ]
+ },
+ "1390552891": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_flairedmagwell_icon.webp",
+  "name": "T_UI_DPF_SCARL_FlairedMagwell_Icon",
+  "pl": [
+   180.0,
+   105.0
+  ],
+  "sz": [
+   58.0,
+   42.0
+  ]
+ },
+ "1399367725": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_extendedmagazine_icon.webp",
+  "name": "T_UI_DPF_M18_ExtendedMagazine_Icon",
+  "pl": [
+   289.0,
+   128.0
+  ],
+  "sz": [
+   51.0,
+   78.0
+  ]
+ },
+ "1413440365": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpk40_magpull_icon.webp",
+  "name": "T_UI_DPF_RPK40_Magpull_Icon",
+  "pl": [
+   188.0,
+   112.0
+  ],
+  "sz": [
+   107.0,
+   113.0
+  ]
+ },
+ "141997913": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_magazine30rnd_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_Magazine30rnd_Icon",
+  "pl": [
+   233.0,
+   104.0
+  ],
+  "sz": [
+   58.0,
+   93.0
+  ]
+ },
+ "1426132916": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_pmag20rnd556_icon.webp",
+  "name": "T_UI_DPF_PMAG20rnd556_Icon",
+  "pl": [
+   238.0,
+   113.0
+  ],
+  "sz": [
+   56.0,
+   79.0
+  ]
+ },
+ "1428954371": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_cantedironsight_qbz192_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_QBZ192_Icon",
+  "pl": [
+   126.0,
+   112.0
+  ],
+  "sz": [
+   146.0,
+   43.0
+  ]
+ },
+ "1429595259": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_sight_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Sight_Icon",
+  "pl": [
+   109.0,
+   66.0
+  ],
+  "sz": [
+   160.0,
+   38.0
+  ]
+ },
+ "1430623392": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cherrybomb_icon.webp",
+  "name": "T_UI_DPF_CherryBomb_Icon",
+  "pl": [
+   227.0,
+   110.0
+  ],
+  "sz": [
+   42.0,
+   35.0
+  ]
+ },
+ "1436459496": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_lwrcifolding_icon.webp",
+  "name": "T_UI_DPF_LWRCIFolding_Icon",
+  "pl": [
+   236.0,
+   114.0
+  ],
+  "sz": [
+   40.0,
+   59.0
+  ]
+ },
+ "1438456406": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_barrel_102mm_icon.webp",
+  "name": "T_UI_DPF_G22_Barrel_102mm_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   70.0,
+   34.0
+  ]
+ },
+ "1458663409": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_cantedironsight_msbsgrotcps_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MSBSGROTCPS_Icon",
+  "pl": [
+   50.0,
+   112.0
+  ],
+  "sz": [
+   222.0,
+   43.0
+  ]
+ },
+ "1461175732": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_pmag30rnd556_icon.webp",
+  "name": "T_UI_DPF_PMAG30rnd556_Icon",
+  "pl": [
+   233.0,
+   112.0
+  ],
+  "sz": [
+   61.0,
+   101.0
+  ]
+ },
+ "1463427869": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tango_stubby_icon.webp",
+  "name": "T_UI_DPF_Tango_Stubby_Icon",
+  "pl": [
+   234.0,
+   113.0
+  ],
+  "sz": [
+   44.0,
+   57.0
+  ]
+ },
+ "1464909362": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_sight_icon.webp",
+  "name": "T_UI_DPF_ACE32_Sight_Icon",
+  "pl": [
+   79.0,
+   72.0
+  ],
+  "sz": [
+   197.0,
+   54.0
+  ]
+ },
+ "1465656507": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_sight_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Sight_Icon",
+  "pl": [
+   131.0,
+   53.0
+  ],
+  "sz": [
+   151.0,
+   44.0
+  ]
+ },
+ "1466028092": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_aacblackout51t_icon.webp",
+  "name": "T_UI_DPF_AACBlackout51T_Icon",
+  "pl": [
+   222.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   36.0
+  ]
+ },
+ "1468384925": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_barrel11inheavy_icon.webp",
+  "name": "T_UI_DPF_APDW_Barrel11inHeavy_Icon",
+  "pl": [
+   224.0,
+   111.0
+  ],
+  "sz": [
+   133.0,
+   34.0
+  ]
+ },
+ "147146724": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_magazine_ext_icon.webp",
+  "name": "T_UI_DPF_M60E6_Magazine_Ext_Icon",
+  "pl": [
+   265.0,
+   102.0
+  ],
+  "sz": [
+   64.0,
+   109.0
+  ]
+ },
+ "1494523754": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_muzzle_icon.webp",
+  "name": "T_UI_DPF_SCARL_Muzzle_Icon",
+  "pl": [
+   219.0,
+   110.0
+  ],
+  "sz": [
+   50.0,
+   35.0
+  ]
+ },
+ "1497194957": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_15rndmagpul_icon.webp",
+  "name": "T_UI_DPF_APC10_15rndMagpul_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   51.0,
+   100.0
+  ]
+ },
+ "1497847641": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_barrel_icon.webp",
+  "name": "T_UI_DPF_UMP40_Barrel_Icon",
+  "pl": [
+   238.0,
+   109.0
+  ],
+  "sz": [
+   106.0,
+   37.0
+  ]
+ },
+ "1498735088": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_bipod_icon.webp",
+  "name": "T_UI_DPF_M240L_Bipod_Icon",
+  "pl": [
+   0.0,
+   91.0
+  ],
+  "sz": [
+   133.0,
+   56.0
+  ]
+ },
+ "150897591": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine15rnd_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine15rnd_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   72.0
+  ]
+ },
+ "1509127728": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_cantedreddot_longeyerelief_minifix_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_LongEyeRelief_Minifix_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "1512060337": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_muzzle_icon.webp",
+  "name": "T_UI_DPF_M60E6_Muzzle_Icon",
+  "pl": [
+   220.0,
+   110.0
+  ],
+  "sz": [
+   49.0,
+   36.0
+  ]
+ },
+ "1514227461": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_anpas35_icon.webp",
+  "name": "T_UI_DPF_ANPAS35_Icon",
+  "pl": [
+   188.0,
+   89.0
+  ],
+  "sz": [
+   90.0,
+   55.0
+  ]
+ },
+ "1531383096": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_ironsights_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_IronSights_Icon",
+  "pl": [
+   222.0,
+   81.0
+  ],
+  "sz": [
+   43.0,
+   30.0
+  ]
+ },
+ "1542011597": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_barrel457mm_icon.webp",
+  "name": "T_UI_DPF_SVCh_Barrel457mm_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   199.0,
+   36.0
+  ]
+ },
+ "1542870754": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_compactstreamer_icon.webp",
+  "name": "T_UI_DPF_CompactStreamer_Icon",
+  "pl": [
+   187.0,
+   107.0
+  ],
+  "sz": [
+   82.0,
+   41.0
+  ]
+ },
+ "1551763944": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12foregrip_base_icon.webp",
+  "name": "T_UI_DPF_DP12Foregrip_Base_Icon",
+  "pl": [
+   232.0,
+   113.0
+  ],
+  "sz": [
+   57.0,
+   72.0
+  ]
+ },
+ "1552187297": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_sights_icon.webp",
+  "name": "T_UI_DPF_APDW_Sights_Icon",
+  "pl": [
+   149.0,
+   74.0
+  ],
+  "sz": [
+   140.0,
+   41.0
+  ]
+ },
+ "1553440142": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_extendedmagazine_icon.webp",
+  "name": "T_UI_DPF_MPX_ExtendedMagazine_Icon",
+  "pl": [
+   213.0,
+   113.0
+  ],
+  "sz": [
+   65.0,
+   120.0
+  ]
+ },
+ "1559666738": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_barrel432mmflutted_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Barrel432mmFlutted_Icon",
+  "pl": [
+   237.0,
+   99.0
+  ],
+  "sz": [
+   156.0,
+   46.0
+  ]
+ },
+ "1562571850": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_cantedironsight_m7_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M7_Icon",
+  "pl": [
+   61.0,
+   112.0
+  ],
+  "sz": [
+   211.0,
+   43.0
+  ]
+ },
+ "1563177322": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_muzzle_icon.webp",
+  "name": "T_UI_DPF_MPX_Muzzle_Icon",
+  "pl": [
+   226.0,
+   111.0
+  ],
+  "sz": [
+   43.0,
+   34.0
+  ]
+ },
+ "1567295481": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_SVDM_Magazine20rnd_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   65.0,
+   83.0
+  ]
+ },
+ "1580424656": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_magazine200rnd_icon.webp",
+  "name": "T_UI_DPF_Minimi_Magazine200rnd_Icon",
+  "pl": [
+   226.0,
+   86.0
+  ],
+  "sz": [
+   59.0,
+   117.0
+  ]
+ },
+ "1598492967": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_hisshd_m39emr_icon.webp",
+  "name": "T_UI_DPF_HISSHD_M39EMR_Icon",
+  "pl": [
+   68.0,
+   85.0
+  ],
+  "sz": [
+   203.0,
+   63.0
+  ]
+ },
+ "1600233649": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_raidxe_icon.webp",
+  "name": "T_UI_DPF_RaidXe_Icon",
+  "pl": [
+   241.0,
+   108.0
+  ],
+  "sz": [
+   62.0,
+   39.0
+  ]
+ },
+ "1603001051": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dsp_cqs_riser_icon.webp",
+  "name": "T_UI_DSP_CQS_Riser_Icon",
+  "pl": [
+   236.0,
+   103.0
+  ],
+  "sz": [
+   47.0,
+   48.0
+  ]
+ },
+ "1606282408": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_aitacticalshortsuppressor_base_icon.webp",
+  "name": "T_UI_DPF_AITacticalShortSuppressor_Base_Icon",
+  "pl": [
+   154.0,
+   105.0
+  ],
+  "sz": [
+   115.0,
+   46.0
+  ]
+ },
+ "1607077398": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_barrel16inpencil_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Barrel16inPencil_Icon",
+  "pl": [
+   204.0,
+   109.0
+  ],
+  "sz": [
+   185.0,
+   37.0
+  ]
+ },
+ "1612689418": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_cantedironsight_scorpionevo3_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_ScorpionEvo3_Icon",
+  "pl": [
+   141.0,
+   112.0
+  ],
+  "sz": [
+   131.0,
+   43.0
+  ]
+ },
+ "1628089276": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_cantedironsight_ump40_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_UMP40_Icon",
+  "pl": [
+   194.0,
+   112.0
+  ],
+  "sz": [
+   78.0,
+   43.0
+  ]
+ },
+ "1632845251": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_flashhider_icon.webp",
+  "name": "T_UI_DPF_MRAD_FlashHider_Icon",
+  "pl": [
+   217.0,
+   107.0
+  ],
+  "sz": [
+   52.0,
+   41.0
+  ]
+ },
+ "1638067024": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_bipod_icon.webp",
+  "name": "T_UI_DPF_M60E6_Bipod_Icon",
+  "pl": [
+   198.0,
+   77.0
+  ],
+  "sz": [
+   132.0,
+   56.0
+  ]
+ },
+ "1644002394": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_barrelheavy_icon.webp",
+  "name": "T_UI_DPF_UMP40_BarrelHeavy_Icon",
+  "pl": [
+   238.0,
+   109.0
+  ],
+  "sz": [
+   106.0,
+   37.0
+  ]
+ },
+ "1645602400": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_jk195lt_icon.webp",
+  "name": "T_UI_DPF_JK195LT_Icon",
+  "pl": [
+   217.0,
+   108.0
+  ],
+  "sz": [
+   52.0,
+   39.0
+  ]
+ },
+ "164595106": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_barrelcommander_icon.webp",
+  "name": "T_UI_DPF_M45A1_BarrelCommander_Icon",
+  "pl": [
+   245.0,
+   111.0
+  ],
+  "sz": [
+   75.0,
+   37.0
+  ]
+ },
+ "1650939202": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_surefire60rnd556_icon.webp",
+  "name": "T_UI_DPF_SureFire60rnd556_Icon",
+  "pl": [
+   224.0,
+   113.0
+  ],
+  "sz": [
+   69.0,
+   110.0
+  ]
+ },
+ "1653984432": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_laser_meprosting_icon.webp",
+  "name": "T_UI_DPF_Laser_MeproSting_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   60.0,
+   38.0
+  ]
+ },
+ "165539193": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_ironsightscanted_icon.webp",
+  "name": "T_UI_DPF_M250_IronSightsCanted_Icon",
+  "pl": [
+   32.0,
+   112.0
+  ],
+  "sz": [
+   240.0,
+   43.0
+  ]
+ },
+ "1657022042": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_sight_icon.webp",
+  "name": "T_UI_DPF_Vector_Sight_Icon",
+  "pl": [
+   133.0,
+   76.0
+  ],
+  "sz": [
+   139.0,
+   43.0
+  ]
+ },
+ "1659629252": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_barrel580mm_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Barrel580mm_Icon",
+  "pl": [
+   204.0,
+   99.0
+  ],
+  "sz": [
+   189.0,
+   46.0
+  ]
+ },
+ "1663020178": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_cantedironsight_apdw_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_APDW_Icon",
+  "pl": [
+   171.0,
+   112.0
+  ],
+  "sz": [
+   101.0,
+   43.0
+  ]
+ },
+ "1664049859": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_barrel254mm_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Barrel254mm_Icon",
+  "pl": [
+   237.0,
+   102.0
+  ],
+  "sz": [
+   139.0,
+   47.0
+  ]
+ },
+ "1664154180": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_barrel410mm_icon.webp",
+  "name": "T_UI_DPF_VHS2_Barrel410mm_Icon",
+  "pl": [
+   242.0,
+   112.0
+  ],
+  "sz": [
+   117.0,
+   32.0
+  ]
+ },
+ "1667791012": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_m250_suppressor_icon.webp",
+  "name": "T_UI_DPF_M250_Suppressor_Icon",
+  "pl": [
+   174.0,
+   107.0
+  ],
+  "sz": [
+   91.0,
+   42.0
+  ]
+ },
+ "1671513447": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_cantedironsight_m240l_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M240L_Icon",
+  "pl": [
+   179.0,
+   112.0
+  ],
+  "sz": [
+   93.0,
+   43.0
+  ]
+ },
+ "1672829007": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_barrel12in_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Barrel12in_Icon",
+  "pl": [
+   242.0,
+   109.0
+  ],
+  "sz": [
+   147.0,
+   37.0
+  ]
+ },
+ "1677073049": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_mp5flashhider_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_MP5Flashhider_Icon",
+  "pl": [
+   210.0,
+   109.0
+  ],
+  "sz": [
+   58.0,
+   38.0
+  ]
+ },
+ "1678063448": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_ironsight27in_icon.webp",
+  "name": "T_UI_DPF_L115A3_IronSight27in_Icon",
+  "pl": [
+   206.0,
+   73.0
+  ],
+  "sz": [
+   39.0,
+   37.0
+  ]
+ },
+ "167890366": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_barrel11in_icon.webp",
+  "name": "T_UI_DPF_APDW_Barrel11in_Icon",
+  "pl": [
+   224.0,
+   111.0
+  ],
+  "sz": [
+   133.0,
+   34.0
+  ]
+ },
+ "1684923793": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_flashhider_hk433_icon.webp",
+  "name": "T_UI_DPF_FlashHider_HK433_Icon",
+  "pl": [
+   220.0,
+   110.0
+  ],
+  "sz": [
+   49.0,
+   35.0
+  ]
+ },
+ "1688069953": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_magazine_icon.webp",
+  "name": "T_UI_DPF_HK433_Magazine_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   60.0,
+   98.0
+  ]
+ },
+ "1693900350": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_fstitan545_icon.webp",
+  "name": "T_UI_DPF_FSTitan545_Icon",
+  "pl": [
+   163.0,
+   104.0
+  ],
+  "sz": [
+   106.0,
+   48.0
+  ]
+ },
+ "1711761680": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_barrellong_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_BarrelLong_Icon",
+  "pl": [
+   244.0,
+   105.0
+  ],
+  "sz": [
+   115.0,
+   47.0
+  ]
+ },
+ "1712673550": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsdo_reflex_icon.webp",
+  "name": "T_UI_DPF_TrijiconSDO_Reflex_Icon",
+  "pl": [
+   240.0,
+   107.0
+  ],
+  "sz": [
+   40.0,
+   34.0
+  ]
+ },
+ "1716599292": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_magazine27rnd_icon.webp",
+  "name": "T_UI_DPF_Vector_Magazine27rnd_Icon",
+  "pl": [
+   237.0,
+   114.0
+  ],
+  "sz": [
+   61.0,
+   90.0
+  ]
+ },
+ "1719430872": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cantedironsight_m27_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M27_Icon",
+  "pl": [
+   83.0,
+   112.0
+  ],
+  "sz": [
+   189.0,
+   43.0
+  ]
+ },
+ "1726658213": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel518mm_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel518mm_Icon",
+  "pl": [
+   237.0,
+   105.0
+  ],
+  "sz": [
+   144.0,
+   47.0
+  ]
+ },
+ "1726714193": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_nightforce7x35_icon.webp",
+  "name": "T_UI_DPF_Nightforce7x35_Icon",
+  "pl": [
+   87.0,
+   77.0
+  ],
+  "sz": [
+   188.0,
+   66.0
+  ]
+ },
+ "1740333118": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_cantedironsight_svch_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SVCh_Icon",
+  "pl": [
+   16.0,
+   112.0
+  ],
+  "sz": [
+   256.0,
+   43.0
+  ]
+ },
+ "1741430234": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_magazineext_icon.webp",
+  "name": "T_UI_DPF_MRAD_MagazineExt_Icon",
+  "pl": [
+   241.0,
+   115.0
+  ],
+  "sz": [
+   68.0,
+   69.0
+  ]
+ },
+ "1744141526": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_barrel521mmfluted_icon.webp",
+  "name": "T_UI_DPF_RPKM_Barrel521mmFluted_Icon",
+  "pl": [
+   264.0,
+   96.0
+  ],
+  "sz": [
+   194.0,
+   52.0
+  ]
+ },
+ "1745181062": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_romeox_icon.webp",
+  "name": "T_UI_DPF_RomeoX_Icon",
+  "pl": [
+   241.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   36.0
+  ]
+ },
+ "1751056843": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_muzzle_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Muzzle_Icon",
+  "pl": [
+   222.0,
+   111.0
+  ],
+  "sz": [
+   50.0,
+   34.0
+  ]
+ },
+ "1756840317": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_aactitanqd90t_icon.webp",
+  "name": "T_UI_DPF_AACTitanQD90T_Icon",
+  "pl": [
+   224.0,
+   109.0
+  ],
+  "sz": [
+   45.0,
+   37.0
+  ]
+ },
+ "1765593325": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_barrel565mm_icon.webp",
+  "name": "T_UI_DPF_SVDM_Barrel565mm_Icon",
+  "pl": [
+   230.0,
+   103.0
+  ],
+  "sz": [
+   242.0,
+   44.0
+  ]
+ },
+ "1778337460": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag40rnd556_icon.webp",
+  "name": "T_UI_DPF_PMAG40rnd556_Icon",
+  "pl": [
+   228.0,
+   112.0
+  ],
+  "sz": [
+   66.0,
+   120.0
+  ]
+ },
+ "1780524315": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_ironsights_icon.webp",
+  "name": "T_UI_DPF_HK433_IronSights_Icon",
+  "pl": [
+   94.0,
+   56.0
+  ],
+  "sz": [
+   193.0,
+   45.0
+  ]
+ },
+ "1781695931": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_ironsights_icon.webp",
+  "name": "T_UI_DPF_PP19_IronSights_Icon",
+  "pl": [
+   166.0,
+   73.0
+  ],
+  "sz": [
+   46.0,
+   31.0
+  ]
+ },
+ "1784382145": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_barrel120mm_icon.webp",
+  "name": "T_UI_DPF_M18_Barrel120mm_Icon",
+  "pl": [
+   230.0,
+   110.0
+  ],
+  "sz": [
+   81.0,
+   38.0
+  ]
+ },
+ "179220649": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_mantacover_large_icon.webp",
+  "name": "T_UI_DPF_MantaCover_Large_Icon",
+  "pl": [
+   214.0,
+   109.0
+  ],
+  "sz": [
+   84.0,
+   37.0
+  ]
+ },
+ "1793213203": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_flutedbarrel_icon.webp",
+  "name": "T_UI_DPF_ACE32_FlutedBarrel_Icon",
+  "pl": [
+   240.0,
+   112.0
+  ],
+  "sz": [
+   63.0,
+   32.0
+  ]
+ },
+ "1793374793": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_mantacover_medium_icon.webp",
+  "name": "T_UI_DPF_MantaCover_Medium_Icon",
+  "pl": [
+   229.0,
+   109.0
+  ],
+  "sz": [
+   54.0,
+   38.0
+  ]
+ },
+ "1795472199": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_magazineext_magpul_icon.webp",
+  "name": "T_UI_DPF_MRAD_MagazineExt_Magpul_Icon",
+  "pl": [
+   169.0,
+   114.0
+  ],
+  "sz": [
+   140.0,
+   70.0
+  ]
+ },
+ "1797759578": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_eotechg43_icon.webp",
+  "name": "T_UI_DPF_EOTechG43_Icon",
+  "pl": [
+   220.0,
+   91.0
+  ],
+  "sz": [
+   50.0,
+   52.0
+  ]
+ },
+ "1798228561": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hxqd762mm_icon.webp",
+  "name": "T_UI_DPF_HXQD762mm_Icon",
+  "pl": [
+   164.0,
+   107.0
+  ],
+  "sz": [
+   105.0,
+   41.0
+  ]
+ },
+ "1798276718": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_anpas35_nopad_icon.webp",
+  "name": "T_UI_DPF_ANPAS35_NoPad_Icon",
+  "pl": [
+   194.0,
+   89.0
+  ],
+  "sz": [
+   84.0,
+   55.0
+  ]
+ },
+ "1799464655": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vzor3_short_icon.webp",
+  "name": "T_UI_DPF_VZOR3_Short_Icon",
+  "pl": [
+   214.0,
+   93.0
+  ],
+  "sz": [
+   58.0,
+   49.0
+  ]
+ },
+ "1799798079": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_barrel730mm_icon.webp",
+  "name": "T_UI_DPF_SV98M_Barrel730mm_Icon",
+  "pl": [
+   197.0,
+   110.0
+  ],
+  "sz": [
+   303.0,
+   36.0
+  ]
+ },
+ "1806029794": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_barrel391mm_icon.webp",
+  "name": "T_UI_DPF_G36_Barrel391mm_Icon",
+  "pl": [
+   285.0,
+   112.0
+  ],
+  "sz": [
+   137.0,
+   32.0
+  ]
+ },
+ "181129871": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_cantedironsight_mg5_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MG5_Icon",
+  "pl": [
+   175.0,
+   112.0
+  ],
+  "sz": [
+   97.0,
+   43.0
+  ]
+ },
+ "1815274364": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpk75drum_icon.webp",
+  "name": "T_UI_DPF_RPK75Drum_Icon",
+  "pl": [
+   218.0,
+   111.0
+  ],
+  "sz": [
+   76.0,
+   96.0
+  ]
+ },
+ "1828988889": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hk4010_flashhider_icon.webp",
+  "name": "T_UI_DPF_HK4010_FlashHider_Icon",
+  "pl": [
+   217.0,
+   109.0
+  ],
+  "sz": [
+   52.0,
+   38.0
+  ]
+ },
+ "1831659817": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_sight_icon.webp",
+  "name": "T_UI_DPF_Minimi_Sight_Icon",
+  "pl": [
+   55.0,
+   58.0
+  ],
+  "sz": [
+   256.0,
+   46.0
+  ]
+ },
+ "1836774022": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_l7awm25_magpul_icon.webp",
+  "name": "T_UI_DPF_L7AWM25_Magpul_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   59.0,
+   110.0
+  ]
+ },
+ "183867451": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_sight_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Sight_Icon",
+  "pl": [
+   108.0,
+   57.0
+  ],
+  "sz": [
+   169.0,
+   45.0
+  ]
+ },
+ "1848499589": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_wepatt_sniperoptic_mark4m2_icon.webp",
+  "name": "T_UI_DPF_WEPATT_SniperOptic_Mark4M2_Icon",
+  "pl": [
+   144.0,
+   88.0
+  ],
+  "sz": [
+   127.0,
+   54.0
+  ]
+ },
+ "1853892628": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vortexm157_icon.webp",
+  "name": "T_UI_DPF_VortexM157_Icon",
+  "pl": [
+   162.0,
+   94.0
+  ],
+  "sz": [
+   110.0,
+   49.0
+  ]
+ },
+ "1854463625": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_barrel229mm_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Barrel229mm_Icon",
+  "pl": [
+   229.0,
+   111.0
+  ],
+  "sz": [
+   47.0,
+   33.0
+  ]
+ },
+ "1858085126": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_base_icon.webp",
+  "name": "T_UI_DPF_APC10_Base_Icon",
+  "pl": [
+   140.0,
+   73.0
+  ],
+  "sz": [
+   235.0,
+   101.0
+  ]
+ },
+ "1858582286": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_comp5mb_icon.webp",
+  "name": "T_UI_DPF_Comp5MB_Icon",
+  "pl": [
+   216.0,
+   94.0
+  ],
+  "sz": [
+   77.0,
+   48.0
+  ]
+ },
+ "1858645172": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_hisshd_svch_icon.webp",
+  "name": "T_UI_DPF_HISSHD_SVCh_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "186604199": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_barrel9in_icon.webp",
+  "name": "T_UI_DPF_APDW_Barrel9in_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   118.0,
+   34.0
+  ]
+ },
+ "1870702542": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_barrel20in_icon.webp",
+  "name": "T_UI_DPF_L115A3_Barrel20in_Icon",
+  "pl": [
+   304.0,
+   109.0
+  ],
+  "sz": [
+   208.0,
+   38.0
+  ]
+ },
+ "1871264032": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_sight_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_Sight_Icon",
+  "pl": [
+   7.0,
+   62.0
+  ],
+  "sz": [
+   240.0,
+   42.0
+  ]
+ },
+ "1874291374": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_magazineextended10_icon.webp",
+  "name": "T_UI_DPF_QBZ192_MagazineExtended10_Icon",
+  "pl": [
+   208.0,
+   109.0
+  ],
+  "sz": [
+   86.0,
+   117.0
+  ]
+ },
+ "1880009474": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_short45_icon.webp",
+  "name": "T_UI_DPF_Short45_Icon",
+  "pl": [
+   205.0,
+   106.0
+  ],
+  "sz": [
+   64.0,
+   43.0
+  ]
+ },
+ "188451321": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_anpeq16b_90_icon.webp",
+  "name": "T_UI_DPF_ANPEQ16B_90_Icon",
+  "pl": [
+   241.0,
+   107.0
+  ],
+  "sz": [
+   54.0,
+   53.0
+  ]
+ },
+ "1888721286": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_bravo3x_reflex_icon.webp",
+  "name": "T_UI_DPF_Bravo3x_Reflex_Icon",
+  "pl": [
+   239.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   40.0
+  ]
+ },
+ "1889179068": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_barrel419mmfluted_icon.webp",
+  "name": "T_UI_DPF_RPKM_Barrel419mmFluted_Icon",
+  "pl": [
+   290.0,
+   96.0
+  ],
+  "sz": [
+   168.0,
+   52.0
+  ]
+ },
+ "1892960021": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_barrel13in_icon.webp",
+  "name": "T_UI_DPF_XM7_Barrel13in_Icon",
+  "pl": [
+   259.0,
+   109.0
+  ],
+  "sz": [
+   150.0,
+   38.0
+  ]
+ },
+ "189488165": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_cantedironsight_mg4k_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MG4K_Icon",
+  "pl": [
+   156.0,
+   112.0
+  ],
+  "sz": [
+   116.0,
+   43.0
+  ]
+ },
+ "1896103540": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_magazine30rd_icon.webp",
+  "name": "T_UI_DPF_UMP40_Magazine30Rd_Icon",
+  "pl": [
+   216.0,
+   114.0
+  ],
+  "sz": [
+   62.0,
+   127.0
+  ]
+ },
+ "1897110933": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_mp5mli_mp5muzzlebrake_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_MP5MuzzleBrake_Icon",
+  "pl": [
+   217.0,
+   109.0
+  ],
+  "sz": [
+   52.0,
+   38.0
+  ]
+ },
+ "1900784054": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_socommb556_icon.webp",
+  "name": "T_UI_DPF_SOCOMMB556_Icon",
+  "pl": [
+   218.0,
+   110.0
+  ],
+  "sz": [
+   51.0,
+   36.0
+  ]
+ },
+ "1904240689": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_95rdmag_icon.webp",
+  "name": "T_UI_DPF_RPK74M_95RdMag_Icon",
+  "pl": [
+   226.0,
+   112.0
+  ],
+  "sz": [
+   68.0,
+   96.0
+  ]
+ },
+ "1905221834": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_barrel330mmfluted_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Barrel330mmFluted_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   66.0,
+   33.0
+  ]
+ },
+ "1906556180": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cantedreddot_slanted_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_Slanted_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   40.0
+  ]
+ },
+ "1909759791": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_base_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Base_Icon",
+  "pl": [
+   179.0,
+   69.0
+  ],
+  "sz": [
+   230.0,
+   108.0
+  ]
+ },
+ "1912666275": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_cantedironsight_scarsc_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SCARSC_Icon",
+  "pl": [
+   112.0,
+   112.0
+  ],
+  "sz": [
+   154.0,
+   43.0
+  ]
+ },
+ "1918151897": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_muzzle_icon.webp",
+  "name": "T_UI_DPF_Minimi_Muzzle_Icon",
+  "pl": [
+   220.0,
+   110.0
+  ],
+  "sz": [
+   49.0,
+   35.0
+  ]
+ },
+ "1922213166": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_acrop2_riser_icon.webp",
+  "name": "T_UI_DPF_AcroP2_Riser_Icon",
+  "pl": [
+   240.0,
+   104.0
+  ],
+  "sz": [
+   49.0,
+   47.0
+  ]
+ },
+ "1925969449": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_barrel_extended_icon.webp",
+  "name": "T_UI_DPF_P90_Barrel_Extended_Icon",
+  "pl": [
+   184.0,
+   110.0
+  ],
+  "sz": [
+   85.0,
+   34.0
+  ]
+ },
+ "1926175704": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_cantedironsight_pp19_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_PP19_Icon",
+  "pl": [
+   187.0,
+   112.0
+  ],
+  "sz": [
+   85.0,
+   43.0
+  ]
+ },
+ "1931073225": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_bcm_icon.webp",
+  "name": "T_UI_DPF_BCM_Icon",
+  "pl": [
+   233.0,
+   114.0
+  ],
+  "sz": [
+   46.0,
+   52.0
+  ]
+ },
+ "1937662796": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_barrel419mm_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Barrel419mm_Icon",
+  "pl": [
+   201.0,
+   111.0
+  ],
+  "sz": [
+   108.0,
+   33.0
+  ]
+ },
+ "1940329041": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_bipod_icon.webp",
+  "name": "T_UI_DPF_SV98M_Bipod_Icon",
+  "pl": [
+   40.0,
+   96.0
+  ],
+  "sz": [
+   126.0,
+   101.0
+  ]
+ },
+ "1942424838": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_magazineextended_icon.webp",
+  "name": "T_UI_DPF_G3A4_MagazineExtended_Icon",
+  "pl": [
+   237.0,
+   112.0
+  ],
+  "sz": [
+   64.0,
+   113.0
+  ]
+ },
+ "1948870085": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_ironsight_icon.webp",
+  "name": "T_UI_DPF_590A1_IronSight_Icon",
+  "pl": [
+   203.0,
+   82.0
+  ],
+  "sz": [
+   28.0,
+   31.0
+  ]
+ },
+ "1953855960": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_msbsgrotb_flashhider_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_FlashHider_Icon",
+  "pl": [
+   223.0,
+   110.0
+  ],
+  "sz": [
+   46.0,
+   35.0
+  ]
+ },
+ "1959805080": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_tlmissionlight_icon.webp",
+  "name": "T_UI_DPF_TLMissionLight_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   85.0,
+   48.0
+  ]
+ },
+ "1960217583": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_barrel152mm_icon.webp",
+  "name": "T_UI_DPF_MPX_Barrel152mm_Icon",
+  "pl": [
+   237.0,
+   110.0
+  ],
+  "sz": [
+   64.0,
+   35.0
+  ]
+ },
+ "1960249929": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rk1_icon.webp",
+  "name": "T_UI_DPF_RK1_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   44.0,
+   69.0
+  ]
+ },
+ "196808851": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_ak762mm_icon.webp",
+  "name": "T_UI_DPF_AK762mm_Icon",
+  "pl": [
+   170.0,
+   107.0
+  ],
+  "sz": [
+   99.0,
+   41.0
+  ]
+ },
+ "1973107974": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_romeox_riser_icon.webp",
+  "name": "T_UI_DPF_RomeoX_Riser_Icon",
+  "pl": [
+   240.0,
+   105.0
+  ],
+  "sz": [
+   49.0,
+   46.0
+  ]
+ },
+ "1978411911": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_magazine10rnd_magpul_icon.webp",
+  "name": "T_UI_DPF_SVDM_Magazine10rnd_Magpul_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   62.0,
+   81.0
+  ]
+ },
+ "1987080979": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_magextended40_icon.webp",
+  "name": "T_UI_DPF_MP7A2_MagExtended40_Icon",
+  "pl": [
+   229.0,
+   113.0
+  ],
+  "sz": [
+   56.0,
+   105.0
+  ]
+ },
+ "1988380390": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_base_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Base_Icon",
+  "pl": [
+   156.0,
+   72.0
+  ],
+  "sz": [
+   251.0,
+   104.0
+  ]
+ },
+ "1995279721": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_magazine_icon.webp",
+  "name": "T_UI_DPF_P90_Magazine_Icon",
+  "pl": [
+   194.0,
+   108.0
+  ],
+  "sz": [
+   130.0,
+   41.0
+  ]
+ },
+ "1995446183": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_cantedironsight_dp12_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_DP12_Icon",
+  "pl": [
+   111.0,
+   112.0
+  ],
+  "sz": [
+   161.0,
+   43.0
+  ]
+ },
+ "199548047": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_perst4_90_icon.webp",
+  "name": "T_UI_DPF_PERST4_90_Icon",
+  "pl": [
+   240.0,
+   97.0
+  ],
+  "sz": [
+   61.0,
+   50.0
+  ]
+ },
+ "2002631187": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine20rnd_Icon",
+  "pl": [
+   233.0,
+   112.0
+  ],
+  "sz": [
+   50.0,
+   78.0
+  ]
+ },
+ "2010213746": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_sight_icon.webp",
+  "name": "T_UI_DPF_UMP40_Sight_Icon",
+  "pl": [
+   117.0,
+   60.0
+  ],
+  "sz": [
+   161.0,
+   36.0
+  ]
+ },
+ "2013825851": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_barrel16inch_icon.webp",
+  "name": "T_UI_DPF_XM7_Barrel16inch_Icon",
+  "pl": [
+   242.0,
+   109.0
+  ],
+  "sz": [
+   167.0,
+   38.0
+  ]
+ },
+ "2021936128": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sb525x56_icon.webp",
+  "name": "T_UI_DPF_SB525x56_Icon",
+  "pl": [
+   84.0,
+   81.0
+  ],
+  "sz": [
+   185.0,
+   62.0
+  ]
+ },
+ "2025372091": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vcog_nocap_icon.webp",
+  "name": "T_UI_DPF_VCOG_NoCap_Icon",
+  "pl": [
+   133.0,
+   102.0
+  ],
+  "sz": [
+   137.0,
+   56.0
+  ]
+ },
+ "2026664833": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_sight_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Sight_Icon",
+  "pl": [
+   81.0,
+   61.0
+  ],
+  "sz": [
+   188.0,
+   42.0
+  ]
+ },
+ "2030463519": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_magazine17rnd_icon.webp",
+  "name": "T_UI_DPF_Vector_Magazine17rnd_Icon",
+  "pl": [
+   237.0,
+   114.0
+  ],
+  "sz": [
+   54.0,
+   69.0
+  ]
+ },
+ "2035403981": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "trr8/t_ui_dpf_trr8_base_icon.webp",
+  "name": "T_UI_DPF_TRR8_Base_Icon",
+  "pl": [
+   187.0,
+   83.0
+  ],
+  "sz": [
+   101.0,
+   86.0
+  ]
+ },
+ "2036279764": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_mark4m5a2_icon.webp",
+  "name": "T_UI_DPF_Mark4M5A2_Icon",
+  "pl": [
+   107.0,
+   79.0
+  ],
+  "sz": [
+   165.0,
+   64.0
+  ]
+ },
+ "2052108802": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_barrelshort_icon.webp",
+  "name": "T_UI_DPF_M4A1_BarrelShort_Icon",
+  "pl": [
+   238.0,
+   109.0
+  ],
+  "sz": [
+   142.0,
+   37.0
+  ]
+ },
+ "2059226313": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel18infaxon_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel18inFaxon_Icon",
+  "pl": [
+   213.0,
+   89.0
+  ],
+  "sz": [
+   204.0,
+   66.0
+  ]
+ },
+ "2062995571": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_obsidian45_9mmadapter_icon.webp",
+  "name": "T_UI_DPF_Obsidian45_9mmAdapter_Icon",
+  "pl": [
+   168.0,
+   107.0
+  ],
+  "sz": [
+   101.0,
+   42.0
+  ]
+ },
+ "207040973": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_base_icon.webp",
+  "name": "T_UI_DPF_M45A1_Base_Icon",
+  "pl": [
+   178.0,
+   95.0
+  ],
+  "sz": [
+   113.0,
+   81.0
+  ]
+ },
+ "2074002757": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_magazine7rnd_icon.webp",
+  "name": "T_UI_DPF_M45A1_Magazine7rnd_Icon",
+  "pl": [
+   231.0,
+   105.0
+  ],
+  "sz": [
+   53.0,
+   75.0
+  ]
+ },
+ "2078731373": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_barrel457mmfluted_icon.webp",
+  "name": "T_UI_DPF_VHS2_Barrel457mmFluted_Icon",
+  "pl": [
+   218.0,
+   112.0
+  ],
+  "sz": [
+   141.0,
+   32.0
+  ]
+ },
+ "2079409176": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_barrel650mm_icon.webp",
+  "name": "T_UI_DPF_SV98M_Barrel650mm_Icon",
+  "pl": [
+   227.0,
+   110.0
+  ],
+  "sz": [
+   273.0,
+   36.0
+  ]
+ },
+ "2080265191": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_barrel565mmfluted_icon.webp",
+  "name": "T_UI_DPF_SVDM_Barrel565mmFluted_Icon",
+  "pl": [
+   230.0,
+   103.0
+  ],
+  "sz": [
+   242.0,
+   44.0
+  ]
+ },
+ "2082979282": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_magazine11rnd_icon.webp",
+  "name": "T_UI_DPF_M45A1_Magazine11rnd_Icon",
+  "pl": [
+   231.0,
+   105.0
+  ],
+  "sz": [
+   56.0,
+   82.0
+  ]
+ },
+ "2092384353": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_barrelstandard_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_BarrelStandard_Icon",
+  "pl": [
+   259.0,
+   105.0
+  ],
+  "sz": [
+   100.0,
+   47.0
+  ]
+ },
+ "2097403607": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_sight_icon.webp",
+  "name": "T_UI_DPF_M1014_Sight_Icon",
+  "pl": [
+   0.0,
+   65.0
+  ],
+  "sz": [
+   261.0,
+   38.0
+  ]
+ },
+ "2102463485": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_magazine40rnd_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Magazine40rnd_Icon",
+  "pl": [
+   210.0,
+   112.0
+  ],
+  "sz": [
+   71.0,
+   118.0
+  ]
+ },
+ "2108869526": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_cantedironsight_ace32_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_ACE32_Icon",
+  "pl": [
+   106.0,
+   112.0
+  ],
+  "sz": [
+   166.0,
+   43.0
+  ]
+ },
+ "2108998920": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_magazine_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Magazine_Icon",
+  "pl": [
+   175.0,
+   92.0
+  ],
+  "sz": [
+   65.0,
+   90.0
+  ]
+ },
+ "2109446316": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_magazine_icon.webp",
+  "name": "T_UI_DPF_590A1_Magazine_Icon",
+  "pl": [
+   63.0,
+   99.0
+  ],
+  "sz": [
+   228.0,
+   47.0
+  ]
+ },
+ "2114660683": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_barrel_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_Barrel_Icon",
+  "pl": [
+   237.0,
+   110.0
+  ],
+  "sz": [
+   255.0,
+   35.0
+  ]
+ },
+ "2124293824": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_barrel330mm_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Barrel330mm_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   66.0,
+   33.0
+  ]
+ },
+ "2124833780": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_hisshd_m2010_icon.webp",
+  "name": "T_UI_DPF_HISSHD_M2010_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "2127979164": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_barrel_icon.webp",
+  "name": "T_UI_DPF_M1014_Barrel_Icon",
+  "pl": [
+   234.0,
+   108.0
+  ],
+  "sz": [
+   252.0,
+   51.0
+  ]
+ },
+ "212916992": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_gamicrocomp_icon.webp",
+  "name": "T_UI_DPF_GAMicroComp_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   34.0,
+   34.0
+  ]
+ },
+ "213097972": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_base_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_Base_Icon",
+  "pl": [
+   4.0,
+   75.0
+  ],
+  "sz": [
+   381.0,
+   102.0
+  ]
+ },
+ "2131083144": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel20infactory_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel20inFactory_Icon",
+  "pl": [
+   193.0,
+   89.0
+  ],
+  "sz": [
+   224.0,
+   66.0
+  ]
+ },
+ "2156178143": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_dbala3_270_icon.webp",
+  "name": "T_UI_DPF_DBALA3_270_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   56.0,
+   49.0
+  ]
+ },
+ "2156485785": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_cantedironsight_m4a1_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M4A1_Icon",
+  "pl": [
+   119.0,
+   112.0
+  ],
+  "sz": [
+   153.0,
+   43.0
+  ]
+ },
+ "2156880076": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_dtk1l_icon.webp",
+  "name": "T_UI_DPF_DTK1L_Icon",
+  "pl": [
+   207.0,
+   109.0
+  ],
+  "sz": [
+   62.0,
+   38.0
+  ]
+ },
+ "2163326446": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_la23_nopad_270_icon.webp",
+  "name": "T_UI_DPF_LA23_NoPad_270_Icon",
+  "pl": [
+   243.0,
+   108.0
+  ],
+  "sz": [
+   60.0,
+   47.0
+  ]
+ },
+ "2167386190": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_shortfluttedbarrel_icon.webp",
+  "name": "T_UI_DPF_MG4K_ShortFluttedBarrel_Icon",
+  "pl": [
+   268.0,
+   102.0
+  ],
+  "sz": [
+   154.0,
+   56.0
+  ]
+ },
+ "2177374891": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12_base_icon.webp",
+  "name": "T_UI_DPF_DP12_Base_Icon",
+  "pl": [
+   98.0,
+   70.0
+  ],
+  "sz": [
+   303.0,
+   109.0
+  ]
+ },
+ "2177499525": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_anpeq16b_270_icon.webp",
+  "name": "T_UI_DPF_ANPEQ16B_270_Icon",
+  "pl": [
+   241.0,
+   95.0
+  ],
+  "sz": [
+   54.0,
+   53.0
+  ]
+ },
+ "2178006748": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_barrel521mm_icon.webp",
+  "name": "T_UI_DPF_RPKM_Barrel521mm_Icon",
+  "pl": [
+   264.0,
+   96.0
+  ],
+  "sz": [
+   194.0,
+   52.0
+  ]
+ },
+ "2182827594": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_nt4_icon.webp",
+  "name": "T_UI_DPF_NT4_Icon",
+  "pl": [
+   178.0,
+   107.0
+  ],
+  "sz": [
+   93.0,
+   41.0
+  ]
+ },
+ "2183853197": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazine20magpull_icon.webp",
+  "name": "T_UI_DPF_PP19_Magazine20Magpull_Icon",
+  "pl": [
+   231.0,
+   110.0
+  ],
+  "sz": [
+   64.0,
+   103.0
+  ]
+ },
+ "2183933194": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dpf_skorpion_magazine_icon.webp",
+  "name": "T_UI_DPF_Skorpion_Magazine_Icon",
+  "pl": [
+   231.0,
+   111.0
+  ],
+  "sz": [
+   50.0,
+   74.0
+  ]
+ },
+ "2185623057": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_magazinemagpul_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_MagazineMagpul_Icon",
+  "pl": [
+   233.0,
+   117.0
+  ],
+  "sz": [
+   63.0,
+   73.0
+  ]
+ },
+ "2210756863": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_grip_icon.webp",
+  "name": "T_UI_DPF_APDW_Grip_Icon",
+  "pl": [
+   199.0,
+   113.0
+  ],
+  "sz": [
+   89.0,
+   69.0
+  ]
+ },
+ "2216981446": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag30rnd556_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG30rnd556_Ranger_Icon",
+  "pl": [
+   233.0,
+   112.0
+  ],
+  "sz": [
+   61.0,
+   104.0
+  ]
+ },
+ "2218686569": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tka_545mm_icon.webp",
+  "name": "T_UI_DPF_TKA_545mm_Icon",
+  "pl": [
+   174.0,
+   106.0
+  ],
+  "sz": [
+   95.0,
+   43.0
+  ]
+ },
+ "2222984262": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsro_riser_icon.webp",
+  "name": "T_UI_DPF_TrijiconSRO_Riser_Icon",
+  "pl": [
+   239.0,
+   102.0
+  ],
+  "sz": [
+   50.0,
+   49.0
+  ]
+ },
+ "2223050331": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_60rdmag_icon.webp",
+  "name": "T_UI_DPF_RPK74M_60RdMag_Icon",
+  "pl": [
+   207.0,
+   112.0
+  ],
+  "sz": [
+   87.0,
+   110.0
+  ]
+ },
+ "2224853903": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag10rnd762n_extended5rnd_icon.webp",
+  "name": "T_UI_DPF_PMAG10rnd762N_Extended5rnd_Icon",
+  "pl": [
+   238.0,
+   112.0
+  ],
+  "sz": [
+   59.0,
+   71.0
+  ]
+ },
+ "2230744319": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_ak126h64_icon.webp",
+  "name": "T_UI_DPF_AK126H64_Icon",
+  "pl": [
+   234.0,
+   112.0
+  ],
+  "sz": [
+   44.0,
+   71.0
+  ]
+ },
+ "2235016293": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_base_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_Base_Icon",
+  "pl": [
+   188.0,
+   83.0
+  ],
+  "sz": [
+   113.0,
+   90.0
+  ]
+ },
+ "2238054792": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_magazine_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Magazine_Icon",
+  "pl": [
+   235.0,
+   112.0
+  ],
+  "sz": [
+   58.0,
+   96.0
+  ]
+ },
+ "2242541592": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74_45rnd_icon.webp",
+  "name": "T_UI_DPF_RPK74_45rnd_Icon",
+  "pl": [
+   209.0,
+   113.0
+  ],
+  "sz": [
+   85.0,
+   125.0
+  ]
+ },
+ "2245843408": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_magazine30rnd_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Magazine30rnd_Icon",
+  "pl": [
+   233.0,
+   111.0
+  ],
+  "sz": [
+   62.0,
+   102.0
+  ]
+ },
+ "2254293541": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_barrel_ext_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Barrel_Ext_Icon",
+  "pl": [
+   237.0,
+   110.0
+  ],
+  "sz": [
+   268.0,
+   36.0
+  ]
+ },
+ "2264026796": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrelfluted314mm_icon.webp",
+  "name": "T_UI_DPF_AK205_BarrelFluted314mm_Icon",
+  "pl": [
+   239.0,
+   96.0
+  ],
+  "sz": [
+   132.0,
+   50.0
+  ]
+ },
+ "2271604378": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "trr8/t_ui_dpf_trr8_barrel_icon.webp",
+  "name": "T_UI_DPF_TRR8_Barrel_Icon",
+  "pl": [
+   243.0,
+   106.0
+  ],
+  "sz": [
+   75.0,
+   44.0
+  ]
+ },
+ "2278087216": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_barrel18_icon.webp",
+  "name": "T_UI_DPF_SCARL_Barrel18_Icon",
+  "pl": [
+   238.0,
+   111.0
+  ],
+  "sz": [
+   108.0,
+   33.0
+  ]
+ },
+ "2278421972": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12_barrel_icon.webp",
+  "name": "T_UI_DPF_DP12_Barrel_Icon",
+  "pl": [
+   240.0,
+   109.0
+  ],
+  "sz": [
+   205.0,
+   38.0
+  ]
+ },
+ "228237996": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vortex1001va3_icon.webp",
+  "name": "T_UI_DPF_Vortex1001VA3_Icon",
+  "pl": [
+   206.0,
+   109.0
+  ],
+  "sz": [
+   63.0,
+   37.0
+  ]
+ },
+ "228344349": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_barrelextended_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_BarrelExtended_Icon",
+  "pl": [
+   230.0,
+   112.0
+  ],
+  "sz": [
+   86.0,
+   36.0
+  ]
+ },
+ "2287098051": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_cantedironsight_apc10_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_APC10_Icon",
+  "pl": [
+   126.0,
+   112.0
+  ],
+  "sz": [
+   146.0,
+   43.0
+  ]
+ },
+ "2288354803": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine20rndfast_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine20rndFast_Icon",
+  "pl": [
+   232.0,
+   112.0
+  ],
+  "sz": [
+   51.0,
+   92.0
+  ]
+ },
+ "2288459102": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tlmissionlight_180_icon.webp",
+  "name": "T_UI_DPF_TLMissionLight_180_Icon",
+  "pl": [
+   241.0,
+   99.0
+  ],
+  "sz": [
+   85.0,
+   48.0
+  ]
+ },
+ "2289102913": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_heavybarrel_icon.webp",
+  "name": "T_UI_DPF_MG4K_HeavyBarrel_Icon",
+  "pl": [
+   236.0,
+   102.0
+  ],
+  "sz": [
+   186.0,
+   56.0
+  ]
+ },
+ "2289513873": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_flashhider_icon.webp",
+  "name": "T_UI_DPF_ACE32_FlashHider_Icon",
+  "pl": [
+   225.0,
+   111.0
+  ],
+  "sz": [
+   44.0,
+   34.0
+  ]
+ },
+ "2291022647": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_magwellflare_icon.webp",
+  "name": "T_UI_DPF_XM7_MagwellFlare_Icon",
+  "pl": [
+   178.0,
+   111.0
+  ],
+  "sz": [
+   65.0,
+   38.0
+  ]
+ },
+ "2291055884": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_barrel140mm_icon.webp",
+  "name": "T_UI_DPF_Vector_Barrel140mm_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   63.0,
+   33.0
+  ]
+ },
+ "2291716541": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_magazine15rnd_icon.webp",
+  "name": "T_UI_DPF_APC10_Magazine15rnd_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   48.0,
+   76.0
+  ]
+ },
+ "2298807311": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_base_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Base_Icon",
+  "pl": [
+   113.0,
+   68.0
+  ],
+  "sz": [
+   259.0,
+   104.0
+  ]
+ },
+ "2299066410": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_magazinemagpul_icon.webp",
+  "name": "T_UI_DPF_QBZ192_MagazineMagpul_Icon",
+  "pl": [
+   223.0,
+   109.0
+  ],
+  "sz": [
+   71.0,
+   101.0
+  ]
+ },
+ "230822756": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_raidxe270_icon.webp",
+  "name": "T_UI_DPF_RaidXe270_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   62.0,
+   46.0
+  ]
+ },
+ "2310273135": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_baseext_icon.webp",
+  "name": "T_UI_DPF_G36_BaseExt_Icon",
+  "pl": [
+   43.0,
+   64.0
+  ],
+  "sz": [
+   338.0,
+   105.0
+  ]
+ },
+ "2311254794": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_muzzle_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Muzzle_Icon",
+  "pl": [
+   223.0,
+   110.0
+  ],
+  "sz": [
+   46.0,
+   36.0
+  ]
+ },
+ "2314578886": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cantedreddot_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "2316713204": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_base_icon.webp",
+  "name": "T_UI_DPF_MRAD_Base_Icon",
+  "pl": [
+   0.0,
+   71.0
+  ],
+  "sz": [
+   407.0,
+   107.0
+  ]
+ },
+ "2318069351": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconm150rco_icon.webp",
+  "name": "T_UI_DPF_TrijiconM150RCO_Icon",
+  "pl": [
+   214.0,
+   90.0
+  ],
+  "sz": [
+   82.0,
+   53.0
+  ]
+ },
+ "2318606127": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_magazine25_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Magazine25_Icon",
+  "pl": [
+   174.0,
+   92.0
+  ],
+  "sz": [
+   66.0,
+   101.0
+  ]
+ },
+ "2330818649": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpkm_muzzle_icon.webp",
+  "name": "T_UI_DPF_RPKM_Muzzle_Icon",
+  "pl": [
+   230.0,
+   111.0
+  ],
+  "sz": [
+   39.0,
+   33.0
+  ]
+ },
+ "2333407645": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_base_icon.webp",
+  "name": "T_UI_DPF_MG4K_Base_Icon",
+  "pl": [
+   46.0,
+   63.0
+  ],
+  "sz": [
+   371.0,
+   115.0
+  ]
+ },
+ "2336542920": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_barrel26in_icon.webp",
+  "name": "T_UI_DPF_MRAD_Barrel26in_Icon",
+  "pl": [
+   238.0,
+   107.0
+  ],
+  "sz": [
+   274.0,
+   41.0
+  ]
+ },
+ "2342825394": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_pmag36rndakm_icon.webp",
+  "name": "T_UI_DPF_PMAG36rndAKM_Icon",
+  "pl": [
+   203.0,
+   111.0
+  ],
+  "sz": [
+   92.0,
+   113.0
+  ]
+ },
+ "2344205107": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_ironsights_114mm_icon.webp",
+  "name": "T_UI_DPF_G22_IronSights_114mm_Icon",
+  "pl": [
+   190.0,
+   97.0
+  ],
+  "sz": [
+   94.0,
+   28.0
+  ]
+ },
+ "234562285": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_magazineextfast_icon.webp",
+  "name": "T_UI_DPF_185KSK_MagazineExtFast_Icon",
+  "pl": [
+   214.0,
+   106.0
+  ],
+  "sz": [
+   85.0,
+   120.0
+  ]
+ },
+ "2348038095": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_barrelhamr_icon.webp",
+  "name": "T_UI_DPF_SCARL_BarrelHAMR_Icon",
+  "pl": [
+   274.0,
+   111.0
+  ],
+  "sz": [
+   82.0,
+   34.0
+  ]
+ },
+ "2352657446": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_heavyextendedbarrel_icon.webp",
+  "name": "T_UI_DPF_MG4K_HeavyExtendedBarrel_Icon",
+  "pl": [
+   170.0,
+   102.0
+  ],
+  "sz": [
+   252.0,
+   56.0
+  ]
+ },
+ "2356415121": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_qbztype7_icon.webp",
+  "name": "T_UI_DPF_QBZType7_Icon",
+  "pl": [
+   227.0,
+   113.0
+  ],
+  "sz": [
+   56.0,
+   110.0
+  ]
+ },
+ "236114337": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_barrelfluted_icon.webp",
+  "name": "T_UI_DPF_SV98M_BarrelFluted_Icon",
+  "pl": [
+   227.0,
+   110.0
+  ],
+  "sz": [
+   273.0,
+   36.0
+  ]
+ },
+ "2364101255": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_barrel510mmfluted_icon.webp",
+  "name": "T_UI_DPF_G36_Barrel510mmFluted_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   183.0,
+   37.0
+  ]
+ },
+ "2371974289": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine20rnd_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   82.0
+  ]
+ },
+ "2373931195": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_laser_meprosting_270_icon.webp",
+  "name": "T_UI_DPF_Laser_MeproSting_270_Icon",
+  "pl": [
+   240.0,
+   97.0
+  ],
+  "sz": [
+   58.0,
+   48.0
+  ]
+ },
+ "2376965642": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_muzzle_icon.webp",
+  "name": "T_UI_DPF_VHS2_Muzzle_Icon",
+  "pl": [
+   226.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   35.0
+  ]
+ },
+ "2381085806": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_hisshd_minifix_icon.webp",
+  "name": "T_UI_DPF_HISSHD_MiniFix_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "2382761267": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_perst4_270_icon.webp",
+  "name": "T_UI_DPF_PERST4_270_Icon",
+  "pl": [
+   240.0,
+   109.0
+  ],
+  "sz": [
+   61.0,
+   49.0
+  ]
+ },
+ "2393414983": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_base_icon.webp",
+  "name": "T_UI_DPF_AK205_Base_Icon",
+  "pl": [
+   90.0,
+   78.0
+  ],
+  "sz": [
+   280.0,
+   97.0
+  ]
+ },
+ "2397009338": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine10rndfast_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine10rndFast_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   69.0
+  ]
+ },
+ "2399515823": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_muzzlebrake_icon.webp",
+  "name": "T_UI_DPF_SV98M_MuzzleBrake_Icon",
+  "pl": [
+   203.0,
+   108.0
+  ],
+  "sz": [
+   65.0,
+   39.0
+  ]
+ },
+ "2409406284": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_btrotexv_icon.webp",
+  "name": "T_UI_DPF_BTRotexV_Icon",
+  "pl": [
+   182.0,
+   108.0
+  ],
+  "sz": [
+   87.0,
+   39.0
+  ]
+ },
+ "2413953030": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_reflex_romeo4t_nocaps_icon.webp",
+  "name": "T_UI_DPF_Reflex_Romeo4T_NoCaps_Icon",
+  "pl": [
+   224.0,
+   106.0
+  ],
+  "sz": [
+   61.0,
+   52.0
+  ]
+ },
+ "2422648306": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_barrel_135mm_icon.webp",
+  "name": "T_UI_DPF_G22_Barrel_135mm_Icon",
+  "pl": [
+   230.0,
+   111.0
+  ],
+  "sz": [
+   83.0,
+   34.0
+  ]
+ },
+ "2423143034": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_usgisight_icon.webp",
+  "name": "T_UI_DPF_M16A3_USGISight_Icon",
+  "pl": [
+   40.0,
+   65.0
+  ],
+  "sz": [
+   233.0,
+   67.0
+  ]
+ },
+ "2426467084": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_l5awm20rnd_icon.webp",
+  "name": "T_UI_DPF_L5AWM20rnd_Icon",
+  "pl": [
+   238.0,
+   113.0
+  ],
+  "sz": [
+   54.0,
+   79.0
+  ]
+ },
+ "2431447906": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_alaskan360_icon.webp",
+  "name": "T_UI_DPF_Alaskan360_Icon",
+  "pl": [
+   176.0,
+   107.0
+  ],
+  "sz": [
+   93.0,
+   41.0
+  ]
+ },
+ "2445959847": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_cantedironsight_hk433_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_HK433_Icon",
+  "pl": [
+   76.0,
+   112.0
+  ],
+  "sz": [
+   196.0,
+   43.0
+  ]
+ },
+ "2450467519": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_magazinefast17rnd_icon.webp",
+  "name": "T_UI_DPF_Vector_MagazineFast17rnd_Icon",
+  "pl": [
+   237.0,
+   114.0
+  ],
+  "sz": [
+   54.0,
+   78.0
+  ]
+ },
+ "2454124440": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pufgun45rnd556_base_icon.webp",
+  "name": "T_UI_DPF_Pufgun45rnd556_Base_Icon",
+  "pl": [
+   225.0,
+   112.0
+  ],
+  "sz": [
+   69.0,
+   129.0
+  ]
+ },
+ "2459046288": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_ironsights_icon.webp",
+  "name": "T_UI_DPF_M45A1_IronSights_Icon",
+  "pl": [
+   239.0,
+   95.0
+  ],
+  "sz": [
+   36.0,
+   30.0
+  ]
+ },
+ "2476493009": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_barrel_icon.webp",
+  "name": "T_UI_DPF_P90_Barrel_Icon",
+  "pl": [
+   231.0,
+   111.0
+  ],
+  "sz": [
+   38.0,
+   33.0
+  ]
+ },
+ "2477406167": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_barrelextended_icon.webp",
+  "name": "T_UI_DPF_M4A1_BarrelExtended_Icon",
+  "pl": [
+   209.0,
+   109.0
+  ],
+  "sz": [
+   171.0,
+   37.0
+  ]
+ },
+ "2479120431": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12_muzzle_icon.webp",
+  "name": "T_UI_DPF_DP12_Muzzle_Icon",
+  "pl": [
+   220.0,
+   110.0
+  ],
+  "sz": [
+   61.0,
+   36.0
+  ]
+ },
+ "2480108007": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hfga_icon.webp",
+  "name": "T_UI_DPF_HFGA_Icon",
+  "pl": [
+   205.0,
+   113.0
+  ],
+  "sz": [
+   91.0,
+   49.0
+  ]
+ },
+ "2484550957": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_fstitanakm_icon.webp",
+  "name": "T_UI_DPF_FSTitanAKM_Icon",
+  "pl": [
+   167.0,
+   104.0
+  ],
+  "sz": [
+   102.0,
+   48.0
+  ]
+ },
+ "2494481043": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dpf_skorpion_magazine10rnd_icon.webp",
+  "name": "T_UI_DPF_Skorpion_Magazine10Rnd_Icon",
+  "pl": [
+   238.0,
+   111.0
+  ],
+  "sz": [
+   43.0,
+   60.0
+  ]
+ },
+ "2499220302": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_base_icon.webp",
+  "name": "T_UI_DPF_6P67_Base_Icon",
+  "pl": [
+   28.0,
+   65.0
+  ],
+  "sz": [
+   347.0,
+   110.0
+  ]
+ },
+ "2516904566": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_barrel590mm_icon.webp",
+  "name": "T_UI_DPF_RPK74M_Barrel590mm_Icon",
+  "pl": [
+   238.0,
+   96.0
+  ],
+  "sz": [
+   220.0,
+   52.0
+  ]
+ },
+ "2517154586": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_magazine30rnd_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Magazine30rnd_Icon",
+  "pl": [
+   221.0,
+   113.0
+  ],
+  "sz": [
+   60.0,
+   100.0
+  ]
+ },
+ "2519457659": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_barrel514mm_icon.webp",
+  "name": "T_UI_DPF_SV98M_Barrel514mm_Icon",
+  "pl": [
+   278.0,
+   110.0
+  ],
+  "sz": [
+   222.0,
+   36.0
+  ]
+ },
+ "2530991845": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrel207mm_icon.webp",
+  "name": "T_UI_DPF_AK205_Barrel207mm_Icon",
+  "pl": [
+   259.0,
+   96.0
+  ],
+  "sz": [
+   112.0,
+   52.0
+  ]
+ },
+ "2531789880": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_bipod_icon.webp",
+  "name": "T_UI_DPF_M250_Bipod_Icon",
+  "pl": [
+   163.0,
+   103.0
+  ],
+  "sz": [
+   42.0,
+   121.0
+  ]
+ },
+ "2539247550": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_cantedreddot_longeyerelief_mrad_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_LongEyeRelief_MRAD_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "2539476101": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "trr8/t_ui_dpf_trr8_moonclip_icon.webp",
+  "name": "T_UI_DPF_TRR8_MoonClip_Icon",
+  "pl": [
+   228.0,
+   107.0
+  ],
+  "sz": [
+   42.0,
+   42.0
+  ]
+ },
+ "2544743029": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_base_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Base_Icon",
+  "pl": [
+   79.0,
+   74.0
+  ],
+  "sz": [
+   284.0,
+   100.0
+  ]
+ },
+ "2548113306": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_ironsights_icon.webp",
+  "name": "T_UI_DPF_AK205_IronSights_Icon",
+  "pl": [
+   69.0,
+   77.0
+  ],
+  "sz": [
+   132.0,
+   51.0
+  ]
+ },
+ "2560766889": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_barrel27in_icon.webp",
+  "name": "T_UI_DPF_MRAD_Barrel27in_Icon",
+  "pl": [
+   229.0,
+   107.0
+  ],
+  "sz": [
+   283.0,
+   41.0
+  ]
+ },
+ "2570478779": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cantedreddot_longeyerelief_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_LongEyeRelief_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "2571089952": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_sight_icon.webp",
+  "name": "T_UI_DPF_MRAD_Sight_Icon",
+  "pl": [
+   11.0,
+   61.0
+  ],
+  "sz": [
+   255.0,
+   42.0
+  ]
+ },
+ "2574308550": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag40rnd556_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG40rnd556_Ranger_Icon",
+  "pl": [
+   227.0,
+   112.0
+  ],
+  "sz": [
+   67.0,
+   122.0
+  ]
+ },
+ "257612966": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_base_icon.webp",
+  "name": "T_UI_DPF_Vector_Base_Icon",
+  "pl": [
+   128.0,
+   89.0
+  ],
+  "sz": [
+   248.0,
+   94.0
+  ]
+ },
+ "2577990470": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_base_icon.webp",
+  "name": "T_UI_DPF_L85A3_Base_Icon",
+  "pl": [
+   136.0,
+   76.0
+  ],
+  "sz": [
+   269.0,
+   99.0
+  ]
+ },
+ "2582922004": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_kvpmach3_directthread_icon.webp",
+  "name": "T_UI_DPF_KVPMach3_DirectThread_Icon",
+  "pl": [
+   229.0,
+   108.0
+  ],
+  "sz": [
+   40.0,
+   39.0
+  ]
+ },
+ "2584584529": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_barrelfluted_icon.webp",
+  "name": "T_UI_DPF_ARADMR_BarrelFluted_Icon",
+  "pl": [
+   257.0,
+   110.0
+  ],
+  "sz": [
+   248.0,
+   36.0
+  ]
+ },
+ "2586057018": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_barrelfluted_icon.webp",
+  "name": "T_UI_DPF_XM7_BarrelFluted_Icon",
+  "pl": [
+   259.0,
+   109.0
+  ],
+  "sz": [
+   150.0,
+   38.0
+  ]
+ },
+ "2589556255": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_magazine15rnd_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Magazine15rnd_Icon",
+  "pl": [
+   219.0,
+   113.0
+  ],
+  "sz": [
+   60.0,
+   73.0
+  ]
+ },
+ "2593373604": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_barrel9inheavy_icon.webp",
+  "name": "T_UI_DPF_APDW_Barrel9inHeavy_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   118.0,
+   34.0
+  ]
+ },
+ "2599103834": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_magazine5rnds_icon.webp",
+  "name": "T_UI_DPF_M1014_Magazine5Rnds_Icon",
+  "pl": [
+   60.0,
+   108.0
+  ],
+  "sz": [
+   209.0,
+   39.0
+  ]
+ },
+ "260165300": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag20rndakm_icon.webp",
+  "name": "T_UI_DPF_PMAG20rndAKM_Icon",
+  "pl": [
+   227.0,
+   111.0
+  ],
+  "sz": [
+   68.0,
+   88.0
+  ]
+ },
+ "2605387513": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz191comp_icon.webp",
+  "name": "T_UI_DPF_QBZ191Comp_Icon",
+  "pl": [
+   219.0,
+   111.0
+  ],
+  "sz": [
+   50.0,
+   34.0
+  ]
+ },
+ "2614261755": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_sight_icon.webp",
+  "name": "T_UI_DPF_M4A1_Sight_Icon",
+  "pl": [
+   90.0,
+   65.0
+  ],
+  "sz": [
+   183.0,
+   45.0
+  ]
+ },
+ "2616342898": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine30rnd_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine30rnd_Icon",
+  "pl": [
+   229.0,
+   112.0
+  ],
+  "sz": [
+   54.0,
+   94.0
+  ]
+ },
+ "2620523951": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_holosundrs_base_icon.webp",
+  "name": "T_UI_DPF_HolosunDRS_Base_Icon",
+  "pl": [
+   207.0,
+   84.0
+  ],
+  "sz": [
+   64.0,
+   59.0
+  ]
+ },
+ "2624377824": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrel415mm_icon.webp",
+  "name": "T_UI_DPF_AK205_Barrel415mm_Icon",
+  "pl": [
+   211.0,
+   96.0
+  ],
+  "sz": [
+   160.0,
+   52.0
+  ]
+ },
+ "2626703919": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_barrel480mmfluted_icon.webp",
+  "name": "T_UI_DPF_G36_Barrel480mmFluted_Icon",
+  "pl": [
+   251.0,
+   111.0
+  ],
+  "sz": [
+   171.0,
+   37.0
+  ]
+ },
+ "2629074749": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_muzzle_01_icon.webp",
+  "name": "T_UI_DPF_AK205_Muzzle_01_Icon",
+  "pl": [
+   213.0,
+   110.0
+  ],
+  "sz": [
+   56.0,
+   36.0
+  ]
+ },
+ "2630369253": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_magazineext_icon.webp",
+  "name": "T_UI_DPF_185KSK_MagazineExt_Icon",
+  "pl": [
+   214.0,
+   106.0
+  ],
+  "sz": [
+   85.0,
+   118.0
+  ]
+ },
+ "2641071598": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_base_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Base_Icon",
+  "pl": [
+   161.0,
+   83.0
+  ],
+  "sz": [
+   259.0,
+   92.0
+  ]
+ },
+ "264315632": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_msx240_icon.webp",
+  "name": "T_UI_DPF_M240L_MSX240_Icon",
+  "pl": [
+   161.0,
+   106.0
+  ],
+  "sz": [
+   116.0,
+   44.0
+  ]
+ },
+ "2643653621": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_supressor_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Supressor_Icon",
+  "pl": [
+   153.0,
+   107.0
+  ],
+  "sz": [
+   118.0,
+   42.0
+  ]
+ },
+ "264614123": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_magazine30rd_fast_icon.webp",
+  "name": "T_UI_DPF_UMP40_Magazine30Rd_Fast_Icon",
+  "pl": [
+   216.0,
+   114.0
+  ],
+  "sz": [
+   62.0,
+   140.0
+  ]
+ },
+ "2650905598": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_barrel16_icon.webp",
+  "name": "T_UI_DPF_SCARL_Barrel16_Icon",
+  "pl": [
+   257.0,
+   111.0
+  ],
+  "sz": [
+   89.0,
+   33.0
+  ]
+ },
+ "2653435337": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74_45rnd_magpull_icon.webp",
+  "name": "T_UI_DPF_RPK74_45rnd_Magpull_Icon",
+  "pl": [
+   203.0,
+   113.0
+  ],
+  "sz": [
+   91.0,
+   128.0
+  ]
+ },
+ "2655765881": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_bravo3x_icon.webp",
+  "name": "T_UI_DPF_Bravo3x_Icon",
+  "pl": [
+   188.0,
+   92.0
+  ],
+  "sz": [
+   83.0,
+   52.0
+  ]
+ },
+ "2661410122": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_awmsingleport_base_icon.webp",
+  "name": "T_UI_DPF_AWMSinglePort_Base_Icon",
+  "pl": [
+   212.0,
+   109.0
+  ],
+  "sz": [
+   57.0,
+   38.0
+  ]
+ },
+ "2665318058": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_l5awm36rnd_icon.webp",
+  "name": "T_UI_DPF_L5AWM36rnd_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   59.0,
+   101.0
+  ]
+ },
+ "2665742903": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_cantedironsight_rpk74m_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_RPK74M_Icon",
+  "pl": [
+   183.0,
+   112.0
+  ],
+  "sz": [
+   89.0,
+   43.0
+  ]
+ },
+ "2669114845": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_base_icon.webp",
+  "name": "T_UI_DPF_Minimi_Base_Icon",
+  "pl": [
+   45.0,
+   58.0
+  ],
+  "sz": [
+   349.0,
+   121.0
+  ]
+ },
+ "2685751458": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_bushwacker_icon.webp",
+  "name": "T_UI_DPF_Bushwacker_Icon",
+  "pl": [
+   168.0,
+   107.0
+  ],
+  "sz": [
+   101.0,
+   42.0
+  ]
+ },
+ "2693308416": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_ironsight_icon.webp",
+  "name": "T_UI_DPF_VHS2_IronSight_Icon",
+  "pl": [
+   150.0,
+   56.0
+  ],
+  "sz": [
+   184.0,
+   41.0
+  ]
+ },
+ "269705784": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_raidxe90_icon.webp",
+  "name": "T_UI_DPF_RaidXe90_Icon",
+  "pl": [
+   241.0,
+   100.0
+  ],
+  "sz": [
+   62.0,
+   46.0
+  ]
+ },
+ "2697923636": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_ak545mm_icon.webp",
+  "name": "T_UI_DPF_AK545mm_Icon",
+  "pl": [
+   170.0,
+   107.0
+  ],
+  "sz": [
+   99.0,
+   41.0
+  ]
+ },
+ "2703483691": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_barrel525mm_icon.webp",
+  "name": "T_UI_DPF_G3A4_Barrel525mm_Icon",
+  "pl": [
+   194.0,
+   110.0
+  ],
+  "sz": [
+   85.0,
+   35.0
+  ]
+ },
+ "2710202574": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_mepro22_icon.webp",
+  "name": "T_UI_DPF_Mepro22_Icon",
+  "pl": [
+   236.0,
+   91.0
+  ],
+  "sz": [
+   63.0,
+   52.0
+  ]
+ },
+ "2715102949": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrelheavy314mm_icon.webp",
+  "name": "T_UI_DPF_AK205_BarrelHeavy314mm_Icon",
+  "pl": [
+   239.0,
+   96.0
+  ],
+  "sz": [
+   132.0,
+   50.0
+  ]
+ },
+ "2724569958": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_base_icon.webp",
+  "name": "T_UI_DPF_APDW_Base_Icon",
+  "pl": [
+   129.0,
+   83.0
+  ],
+  "sz": [
+   226.0,
+   104.0
+  ]
+ },
+ "27306108": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpk40_icon.webp",
+  "name": "T_UI_DPF_RPK40_Icon",
+  "pl": [
+   196.0,
+   112.0
+  ],
+  "sz": [
+   99.0,
+   113.0
+  ]
+ },
+ "2738585075": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_hisshd_aradmr_icon.webp",
+  "name": "T_UI_DPF_HISSHD_ARADMR_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "2748137137": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_barrel420mmflutted_icon.webp",
+  "name": "T_UI_DPF_HK433_Barrel420mmFlutted_Icon",
+  "pl": [
+   239.0,
+   103.0
+  ],
+  "sz": [
+   181.0,
+   46.0
+  ]
+ },
+ "2751351527": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_troy_icon.webp",
+  "name": "T_UI_DPF_Troy_Icon",
+  "pl": [
+   219.0,
+   114.0
+  ],
+  "sz": [
+   77.0,
+   51.0
+  ]
+ },
+ "2758741987": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_dbala3_90_icon.webp",
+  "name": "T_UI_DPF_DBALA3_90_Icon",
+  "pl": [
+   243.0,
+   96.0
+  ],
+  "sz": [
+   56.0,
+   49.0
+  ]
+ },
+ "2763678191": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_magazinemagpull_icon.webp",
+  "name": "T_UI_DPF_MPX_MagazineMagpull_Icon",
+  "pl": [
+   218.0,
+   113.0
+  ],
+  "sz": [
+   60.0,
+   120.0
+  ]
+ },
+ "2776714426": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_barrel_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_Barrel_Icon",
+  "pl": [
+   237.0,
+   112.0
+  ],
+  "sz": [
+   79.0,
+   36.0
+  ]
+ },
+ "2777518769": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_flashhider_icon.webp",
+  "name": "T_UI_DPF_L85A3_FlashHider_Icon",
+  "pl": [
+   214.0,
+   111.0
+  ],
+  "sz": [
+   56.0,
+   34.0
+  ]
+ },
+ "2786883616": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_saicobra_base_icon.webp",
+  "name": "T_UI_DPF_SAICobra_Base_Icon",
+  "pl": [
+   180.0,
+   108.0
+  ],
+  "sz": [
+   89.0,
+   40.0
+  ]
+ },
+ "2787793649": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_magazine15rndmagpull_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Magazine15rndMagpull_Icon",
+  "pl": [
+   217.0,
+   113.0
+  ],
+  "sz": [
+   62.0,
+   85.0
+  ]
+ },
+ "2793767769": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_cantedironsight_tavor7_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_Tavor7_Icon",
+  "pl": [
+   106.0,
+   112.0
+  ],
+  "sz": [
+   166.0,
+   43.0
+  ]
+ },
+ "2798870852": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_la23_nopad_icon.webp",
+  "name": "T_UI_DPF_LA23_NoPad_Icon",
+  "pl": [
+   243.0,
+   108.0
+  ],
+  "sz": [
+   60.0,
+   38.0
+  ]
+ },
+ "2800762994": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_la23_nopad_90_icon.webp",
+  "name": "T_UI_DPF_LA23_NoPad_90_Icon",
+  "pl": [
+   243.0,
+   100.0
+  ],
+  "sz": [
+   60.0,
+   47.0
+  ]
+ },
+ "2802443186": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_magazine36rd_icon.webp",
+  "name": "T_UI_DPF_UMP40_Magazine36Rd_Icon",
+  "pl": [
+   213.0,
+   114.0
+  ],
+  "sz": [
+   65.0,
+   142.0
+  ]
+ },
+ "2817827554": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_muzzle_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Muzzle_Icon",
+  "pl": [
+   222.0,
+   111.0
+  ],
+  "sz": [
+   46.0,
+   34.0
+  ]
+ },
+ "2821934548": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_barrel433fluted_icon.webp",
+  "name": "T_UI_DPF_M60E6_Barrel433Fluted_Icon",
+  "pl": [
+   236.0,
+   104.0
+  ],
+  "sz": [
+   171.0,
+   56.0
+  ]
+ },
+ "2830815879": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_perst1_icon.webp",
+  "name": "T_UI_DPF_Perst1_Icon",
+  "pl": [
+   239.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   41.0
+  ]
+ },
+ "2831115337": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_bipod_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Bipod_Icon",
+  "pl": [
+   176.0,
+   88.0
+  ],
+  "sz": [
+   152.0,
+   36.0
+  ]
+ },
+ "2843114950": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_pmag20rnd556_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG20rnd556_Ranger_Icon",
+  "pl": [
+   237.0,
+   113.0
+  ],
+  "sz": [
+   57.0,
+   84.0
+  ]
+ },
+ "2844955865": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_barrelheavy550mm_icon.webp",
+  "name": "T_UI_DPF_MG5_BarrelHeavy550mm_Icon",
+  "pl": [
+   205.0,
+   109.0
+  ],
+  "sz": [
+   235.0,
+   37.0
+  ]
+ },
+ "2847789755": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_ironsights_icon.webp",
+  "name": "T_UI_DPF_G3A4_IronSights_Icon",
+  "pl": [
+   33.0,
+   60.0
+  ],
+  "sz": [
+   257.0,
+   56.0
+  ]
+ },
+ "2851933826": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_barrel559_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Barrel559_Icon",
+  "pl": [
+   267.0,
+   102.0
+  ],
+  "sz": [
+   238.0,
+   50.0
+  ]
+ },
+ "2853769966": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_magazine5rnd_icon.webp",
+  "name": "T_UI_DPF_SVDM_Magazine5rnd_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   62.0,
+   60.0
+  ]
+ },
+ "2855319918": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_magazine50rndpouch_icon.webp",
+  "name": "T_UI_DPF_MG5_Magazine50rndPouch_Icon",
+  "pl": [
+   226.0,
+   81.0
+  ],
+  "sz": [
+   60.0,
+   132.0
+  ]
+ },
+ "2857591825": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Magazine20rnd_Icon",
+  "pl": [
+   218.0,
+   113.0
+  ],
+  "sz": [
+   61.0,
+   86.0
+  ]
+ },
+ "2861505525": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_base_icon.webp",
+  "name": "T_UI_DPF_RPK74M_Base_Icon",
+  "pl": [
+   39.0,
+   78.0
+  ],
+  "sz": [
+   317.0,
+   94.0
+  ]
+ },
+ "286179794": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_barrelheavy_icon.webp",
+  "name": "T_UI_DPF_MP7A2_BarrelHeavy_Icon",
+  "pl": [
+   260.0,
+   111.0
+  ],
+  "sz": [
+   38.0,
+   33.0
+  ]
+ },
+ "2862480660": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_magazine30rndmagpull_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Magazine30rndMagpull_Icon",
+  "pl": [
+   215.0,
+   113.0
+  ],
+  "sz": [
+   66.0,
+   114.0
+  ]
+ },
+ "2863144245": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_heavybarrel419mm_icon.webp",
+  "name": "T_UI_DPF_M27IAR_HeavyBarrel419mm_Icon",
+  "pl": [
+   238.0,
+   104.0
+  ],
+  "sz": [
+   185.0,
+   46.0
+  ]
+ },
+ "2864469551": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_barrel237_icon.webp",
+  "name": "T_UI_DPF_PP19_Barrel237_Icon",
+  "pl": [
+   237.0,
+   112.0
+  ],
+  "sz": [
+   37.0,
+   32.0
+  ]
+ },
+ "2873280470": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_magwellflare_icon.webp",
+  "name": "T_UI_DPF_HK433_MagwellFlare_Icon",
+  "pl": [
+   180.0,
+   110.0
+  ],
+  "sz": [
+   60.0,
+   38.0
+  ]
+ },
+ "2876161503": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_barrel415mmflutted_icon.webp",
+  "name": "T_UI_DPF_6P67_Barrel415mmFlutted_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   112.0,
+   38.0
+  ]
+ },
+ "2880318119": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_raidxe_90_icon.webp",
+  "name": "T_UI_DPF_RaidXe_90_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   62.0,
+   46.0
+  ]
+ },
+ "2882770554": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_sight_icon.webp",
+  "name": "T_UI_DPF_SCARL_Sight_Icon",
+  "pl": [
+   99.0,
+   52.0
+  ],
+  "sz": [
+   185.0,
+   46.0
+  ]
+ },
+ "2886396441": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_m7xi20x50_icon.webp",
+  "name": "T_UI_dpf_m7xi20x50_Icon",
+  "pl": [
+   88.0,
+   84.0
+  ],
+  "sz": [
+   181.0,
+   60.0
+  ]
+ },
+ "2888270948": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_magazine60rd_icon.webp",
+  "name": "T_UI_DPF_RPKM_Magazine60rd_Icon",
+  "pl": [
+   205.0,
+   112.0
+  ],
+  "sz": [
+   88.0,
+   109.0
+  ]
+ },
+ "2890202901": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_base_icon.webp",
+  "name": "T_UI_DPF_M240L_Base_Icon",
+  "pl": [
+   0.0,
+   62.0
+  ],
+  "sz": [
+   361.0,
+   112.0
+  ]
+ },
+ "2890443787": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_magextended30_fast_icon.webp",
+  "name": "T_UI_DPF_MP7A2_MagExtended30_Fast_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   52.0,
+   95.0
+  ]
+ },
+ "2891797810": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_barrel14in_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Barrel14in_Icon",
+  "pl": [
+   209.0,
+   104.0
+  ],
+  "sz": [
+   161.0,
+   40.0
+  ]
+ },
+ "2892720108": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_cantedironsight_sig553r_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SIG553R_Icon",
+  "pl": [
+   171.0,
+   112.0
+  ],
+  "sz": [
+   101.0,
+   43.0
+  ]
+ },
+ "2897701177": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_flashhider_strela545_icon.webp",
+  "name": "T_UI_DPF_FlashHider_Strela545_Icon",
+  "pl": [
+   214.0,
+   108.0
+  ],
+  "sz": [
+   55.0,
+   39.0
+  ]
+ },
+ "2901053892": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_warcomp556_icon.webp",
+  "name": "T_UI_DPF_Warcomp556_Icon",
+  "pl": [
+   217.0,
+   110.0
+  ],
+  "sz": [
+   52.0,
+   36.0
+  ]
+ },
+ "2904652040": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_r43osiris_base_icon.webp",
+  "name": "T_UI_DPF_R43Osiris_Base_Icon",
+  "pl": [
+   165.0,
+   106.0
+  ],
+  "sz": [
+   104.0,
+   43.0
+  ]
+ },
+ "2904834004": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_barrel_icon.webp",
+  "name": "T_UI_DPF_185KSK_Barrel_Icon",
+  "pl": [
+   236.0,
+   111.0
+  ],
+  "sz": [
+   84.0,
+   34.0
+  ]
+ },
+ "2910717839": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_base_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Base_Icon",
+  "pl": [
+   79.0,
+   73.0
+  ],
+  "sz": [
+   292.0,
+   100.0
+  ]
+ },
+ "2911644817": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_cantedironsight_g3a4_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_G3A4_Icon",
+  "pl": [
+   175.0,
+   112.0
+  ],
+  "sz": [
+   96.0,
+   43.0
+  ]
+ },
+ "2915595016": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_sai9mm_base_icon.webp",
+  "name": "T_UI_DPF_Sai9mm_Base_Icon",
+  "pl": [
+   187.0,
+   105.0
+  ],
+  "sz": [
+   83.0,
+   45.0
+  ]
+ },
+ "2917140041": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_cantedironsight_vector_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_Vector_Icon",
+  "pl": [
+   130.0,
+   112.0
+  ],
+  "sz": [
+   142.0,
+   43.0
+  ]
+ },
+ "2920173383": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_lmdpeir1_icon.webp",
+  "name": "T_UI_DPF_LMDPEIR1_Icon",
+  "pl": [
+   243.0,
+   109.0
+  ],
+  "sz": [
+   53.0,
+   40.0
+  ]
+ },
+ "2920889053": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_acrop2_plate_icon.webp",
+  "name": "T_UI_DPF_AcroP2_Plate_Icon",
+  "pl": [
+   243.0,
+   104.0
+  ],
+  "sz": [
+   44.0,
+   39.0
+  ]
+ },
+ "2932655005": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_base_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Base_Icon",
+  "pl": [
+   115.0,
+   73.0
+  ],
+  "sz": [
+   302.0,
+   112.0
+  ]
+ },
+ "2933984408": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_magazine7rnds_icon.webp",
+  "name": "T_UI_DPF_M1014_Magazine7Rnds_Icon",
+  "pl": [
+   60.0,
+   108.0
+  ],
+  "sz": [
+   209.0,
+   39.0
+  ]
+ },
+ "2937725323": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_shortbarrel_icon.webp",
+  "name": "T_UI_DPF_ACE32_ShortBarrel_Icon",
+  "pl": [
+   269.0,
+   112.0
+  ],
+  "sz": [
+   34.0,
+   32.0
+  ]
+ },
+ "2943524818": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rmr_lowriser_icon.webp",
+  "name": "T_UI_DPF_RMR_LowRiser_Icon",
+  "pl": [
+   239.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   36.0
+  ]
+ },
+ "2953083219": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_barrellong_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_BarrelLong_Icon",
+  "pl": [
+   218.0,
+   111.0
+  ],
+  "sz": [
+   116.0,
+   34.0
+  ]
+ },
+ "295757841": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_promag30rnd762n_icon.webp",
+  "name": "T_UI_DPF_ProMag30rnd762N_Icon",
+  "pl": [
+   233.0,
+   111.0
+  ],
+  "sz": [
+   65.0,
+   112.0
+  ]
+ },
+ "2957727328": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_muzzle_icon.webp",
+  "name": "T_UI_DPF_SVCh_Muzzle_Icon",
+  "pl": [
+   215.0,
+   109.0
+  ],
+  "sz": [
+   54.0,
+   37.0
+  ]
+ },
+ "2957760921": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_muzzle_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Muzzle_Icon",
+  "pl": [
+   224.0,
+   110.0
+  ],
+  "sz": [
+   45.0,
+   35.0
+  ]
+ },
+ "2958491846": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_base_icon.webp",
+  "name": "T_UI_DPF_HK433_Base_Icon",
+  "pl": [
+   89.0,
+   72.0
+  ],
+  "sz": [
+   281.0,
+   99.0
+  ]
+ },
+ "2960922311": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_barrel394mm_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Barrel394mm_Icon",
+  "pl": [
+   250.0,
+   99.0
+  ],
+  "sz": [
+   143.0,
+   46.0
+  ]
+ },
+ "297292141": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_base_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_Base_Icon",
+  "pl": [
+   183.0,
+   98.0
+  ],
+  "sz": [
+   105.0,
+   78.0
+  ]
+ },
+ "2973844965": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_hisshd_icon.webp",
+  "name": "T_UI_DPF_HISSHD_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "2976241913": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_cantedironsight_aradmr_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_ARADMR_Icon",
+  "pl": [
+   111.0,
+   112.0
+  ],
+  "sz": [
+   161.0,
+   43.0
+  ]
+ },
+ "2977683685": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconreap_icon.webp",
+  "name": "T_UI_DPF_TrijiconREAP_Icon",
+  "pl": [
+   170.0,
+   85.0
+  ],
+  "sz": [
+   101.0,
+   57.0
+  ]
+ },
+ "2980850029": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_suppressor_icon.webp",
+  "name": "T_UI_DPF_SV98M_Suppressor_Icon",
+  "pl": [
+   144.0,
+   106.0
+  ],
+  "sz": [
+   124.0,
+   44.0
+  ]
+ },
+ "2982829254": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pmag20rndakm_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG20rndAKM_Ranger_Icon",
+  "pl": [
+   221.0,
+   111.0
+  ],
+  "sz": [
+   74.0,
+   92.0
+  ]
+ },
+ "2983352488": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_ironsights_icon.webp",
+  "name": "T_UI_DPF_RPK74M_IronSights_Icon",
+  "pl": [
+   157.0,
+   77.0
+  ],
+  "sz": [
+   48.0,
+   30.0
+  ]
+ },
+ "29960073": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_barrel406_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Barrel406_Icon",
+  "pl": [
+   326.0,
+   102.0
+  ],
+  "sz": [
+   178.0,
+   50.0
+  ]
+ },
+ "2997807536": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_magazine_magpull_icon.webp",
+  "name": "T_UI_DPF_G3A4_Magazine_Magpull_Icon",
+  "pl": [
+   238.0,
+   112.0
+  ],
+  "sz": [
+   63.0,
+   94.0
+  ]
+ },
+ "3002194468": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_magazinefast_icon.webp",
+  "name": "T_UI_DPF_185KSK_MagazineFast_Icon",
+  "pl": [
+   227.0,
+   106.0
+  ],
+  "sz": [
+   72.0,
+   97.0
+  ]
+ },
+ "3003549996": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_magazine_icon.webp",
+  "name": "T_UI_DPF_185KSK_Magazine_Icon",
+  "pl": [
+   228.0,
+   106.0
+  ],
+  "sz": [
+   71.0,
+   89.0
+  ]
+ },
+ "3007456851": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_flashhider_icon.webp",
+  "name": "T_UI_DPF_SVDM_FlashHider_Icon",
+  "pl": [
+   222.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   36.0
+  ]
+ },
+ "3014093386": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_muzzle_icon.webp",
+  "name": "T_UI_DPF_6P67_Muzzle_Icon",
+  "pl": [
+   198.0,
+   109.0
+  ],
+  "sz": [
+   71.0,
+   37.0
+  ]
+ },
+ "3015049222": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazineextended_icon.webp",
+  "name": "T_UI_DPF_PP19_MagazineExtended_Icon",
+  "pl": [
+   219.0,
+   110.0
+  ],
+  "sz": [
+   76.0,
+   118.0
+  ]
+ },
+ "3015599695": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_barrel170mm_icon.webp",
+  "name": "T_UI_DPF_Vector_Barrel170mm_Icon",
+  "pl": [
+   234.0,
+   111.0
+  ],
+  "sz": [
+   72.0,
+   33.0
+  ]
+ },
+ "3022316504": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_sight_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Sight_Icon",
+  "pl": [
+   84.0,
+   60.0
+  ],
+  "sz": [
+   223.0,
+   49.0
+  ]
+ },
+ "3032480710": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazine25_icon.webp",
+  "name": "T_UI_DPF_PP19_Magazine25_Icon",
+  "pl": [
+   219.0,
+   110.0
+  ],
+  "sz": [
+   76.0,
+   118.0
+  ]
+ },
+ "3047778412": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_q86blk_icon.webp",
+  "name": "T_UI_DPF_Q86BLK_Icon",
+  "pl": [
+   222.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   35.0
+  ]
+ },
+ "3061580850": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine10rnd_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine10rnd_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   63.0
+  ]
+ },
+ "3068987424": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_sight_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Sight_Icon",
+  "pl": [
+   90.0,
+   61.0
+  ],
+  "sz": [
+   164.0,
+   48.0
+  ]
+ },
+ "3085727152": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hxmbqd_icon.webp",
+  "name": "T_UI_DPF_HXMBQD_Icon",
+  "pl": [
+   220.0,
+   109.0
+  ],
+  "sz": [
+   49.0,
+   37.0
+  ]
+ },
+ "3092410979": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrelheavy415mm_icon.webp",
+  "name": "T_UI_DPF_AK205_BarrelHeavy415mm_Icon",
+  "pl": [
+   211.0,
+   96.0
+  ],
+  "sz": [
+   160.0,
+   52.0
+  ]
+ },
+ "3094621074": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine30rndfast_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine30rndFast_Icon",
+  "pl": [
+   226.0,
+   112.0
+  ],
+  "sz": [
+   57.0,
+   108.0
+  ]
+ },
+ "3102136399": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_base_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Base_Icon",
+  "pl": [
+   98.0,
+   71.0
+  ],
+  "sz": [
+   289.0,
+   99.0
+  ]
+ },
+ "3114606152": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_m4a1_magazine_icon.webp",
+  "name": "T_UI_DPF_M4A1_Magazine_Icon",
+  "pl": [
+   235.0,
+   112.0
+  ],
+  "sz": [
+   58.0,
+   96.0
+  ]
+ },
+ "3115171023": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_barrel475mm_icon.webp",
+  "name": "T_UI_DPF_6P67_Barrel475mm_Icon",
+  "pl": [
+   216.0,
+   111.0
+  ],
+  "sz": [
+   131.0,
+   38.0
+  ]
+ },
+ "3117140904": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_barrellong_icon.webp",
+  "name": "T_UI_DPF_Ultimax_BarrelLong_Icon",
+  "pl": [
+   174.0,
+   111.0
+  ],
+  "sz": [
+   219.0,
+   34.0
+  ]
+ },
+ "3118145906": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_sight_icon.webp",
+  "name": "T_UI_DPF_G36_Sight_Icon",
+  "pl": [
+   142.0,
+   57.0
+  ],
+  "sz": [
+   138.0,
+   38.0
+  ]
+ },
+ "3119951872": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_barrel154mm_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Barrel154mm_Icon",
+  "pl": [
+   237.0,
+   111.0
+  ],
+  "sz": [
+   39.0,
+   33.0
+  ]
+ },
+ "314265705": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_5rdmag_icon.webp",
+  "name": "T_UI_DPF_L115A3_5RdMag_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   64.0,
+   61.0
+  ]
+ },
+ "3145512429": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_barrel368mm_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Barrel368mm_Icon",
+  "pl": [
+   189.0,
+   102.0
+  ],
+  "sz": [
+   187.0,
+   47.0
+  ]
+ },
+ "3148441620": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_marchffpshorty_icon.webp",
+  "name": "T_UI_dpf_marchffpshorty_Icon",
+  "pl": [
+   158.0,
+   81.0
+  ],
+  "sz": [
+   114.0,
+   60.0
+  ]
+ },
+ "3148994202": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_magazine10rnd_icon.webp",
+  "name": "T_UI_DPF_SVDM_Magazine10rnd_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   62.0,
+   73.0
+  ]
+ },
+ "3154600285": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_base_icon.webp",
+  "name": "T_UI_DPF_RPKM_Base_Icon",
+  "pl": [
+   69.0,
+   78.0
+  ],
+  "sz": [
+   301.0,
+   94.0
+  ]
+ },
+ "31549026": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_rotexii_icon.webp",
+  "name": "T_UI_DPF_RotexII_Icon",
+  "pl": [
+   154.0,
+   106.0
+  ],
+  "sz": [
+   115.0,
+   44.0
+  ]
+ },
+ "3155631426": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_atecshort_icon.webp",
+  "name": "T_UI_DPF_ATecShort_Icon",
+  "pl": [
+   199.0,
+   109.0
+  ],
+  "sz": [
+   70.0,
+   38.0
+  ]
+ },
+ "3159457381": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_magwellflare_icon.webp",
+  "name": "T_UI_DPF_M27IAR_MagwellFlare_Icon",
+  "pl": [
+   185.0,
+   115.0
+  ],
+  "sz": [
+   59.0,
+   35.0
+  ]
+ },
+ "3161489774": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_eotecheflx_riser_icon.webp",
+  "name": "T_UI_DPF_EotechEFLX_Riser_Icon",
+  "pl": [
+   240.0,
+   104.0
+  ],
+  "sz": [
+   49.0,
+   47.0
+  ]
+ },
+ "3166432847": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_base_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Base_Icon",
+  "pl": [
+   99.0,
+   74.0
+  ],
+  "sz": [
+   265.0,
+   100.0
+  ]
+ },
+ "3168228792": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_barrel16inchheavy_icon.webp",
+  "name": "T_UI_DPF_XM7_Barrel16inchHeavy_Icon",
+  "pl": [
+   240.0,
+   109.0
+  ],
+  "sz": [
+   169.0,
+   38.0
+  ]
+ },
+ "3171850460": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_barrel521mm_icon.webp",
+  "name": "T_UI_DPF_RPK74M_Barrel521mm_Icon",
+  "pl": [
+   264.0,
+   96.0
+  ],
+  "sz": [
+   194.0,
+   52.0
+  ]
+ },
+ "3172559224": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_bipod_icon.webp",
+  "name": "T_UI_DPF_MG4K_Bipod_Icon",
+  "pl": [
+   238.0,
+   93.0
+  ],
+  "sz": [
+   131.0,
+   55.0
+  ]
+ },
+ "3175733614": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_base_icon.webp",
+  "name": "T_UI_DPF_MPX_Base_Icon",
+  "pl": [
+   150.0,
+   77.0
+  ],
+  "sz": [
+   219.0,
+   97.0
+  ]
+ },
+ "3182145686": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_hisshd_svdm_icon.webp",
+  "name": "T_UI_DPF_HISSHD_SVDM_Icon",
+  "pl": [
+   55.0,
+   82.0
+  ],
+  "sz": [
+   216.0,
+   62.0
+  ]
+ },
+ "318276488": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_barrel560mm_icon.webp",
+  "name": "T_UI_DPF_SVCh_Barrel560mm_Icon",
+  "pl": [
+   205.0,
+   110.0
+  ],
+  "sz": [
+   237.0,
+   36.0
+  ]
+ },
+ "318840787": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_magazinesmall_icon.webp",
+  "name": "T_UI_DPF_590A1_MagazineSmall_Icon",
+  "pl": [
+   99.0,
+   109.0
+  ],
+  "sz": [
+   192.0,
+   37.0
+  ]
+ },
+ "319099618": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rc3556mm_icon.webp",
+  "name": "T_UI_DPF_RC3556mm_Icon",
+  "pl": [
+   182.0,
+   107.0
+  ],
+  "sz": [
+   87.0,
+   42.0
+  ]
+ },
+ "3206211777": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_promag40rnd545_magpull_icon.webp",
+  "name": "T_UI_DPF_ProMag40rnd545_Magpull_Icon",
+  "pl": [
+   213.0,
+   112.0
+  ],
+  "sz": [
+   81.0,
+   122.0
+  ]
+ },
+ "3212414873": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_muzzle_icon.webp",
+  "name": "T_UI_DPF_MG4K_Muzzle_Icon",
+  "pl": [
+   221.0,
+   110.0
+  ],
+  "sz": [
+   48.0,
+   35.0
+  ]
+ },
+ "3213002641": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_modulemk3_icon.webp",
+  "name": "T_UI_DPF_ModuleMk3_Icon",
+  "pl": [
+   239.0,
+   106.0
+  ],
+  "sz": [
+   79.0,
+   56.0
+  ]
+ },
+ "3216303075": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazine20_icon.webp",
+  "name": "T_UI_DPF_PP19_Magazine20_Icon",
+  "pl": [
+   232.0,
+   110.0
+  ],
+  "sz": [
+   63.0,
+   87.0
+  ]
+ },
+ "3219100268": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_bushwacker_trilug_icon.webp",
+  "name": "T_UI_DPF_Bushwacker_TriLug_Icon",
+  "pl": [
+   168.0,
+   107.0
+  ],
+  "sz": [
+   101.0,
+   42.0
+  ]
+ },
+ "3221002705": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_barrel_114mm_icon.webp",
+  "name": "T_UI_DPF_G22_Barrel_114mm_Icon",
+  "pl": [
+   238.0,
+   111.0
+  ],
+  "sz": [
+   75.0,
+   34.0
+  ]
+ },
+ "3236682615": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_barrel368mm_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Barrel368mm_Icon",
+  "pl": [
+   258.0,
+   104.0
+  ],
+  "sz": [
+   165.0,
+   45.0
+  ]
+ },
+ "3244631713": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_barrel406mm_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Barrel406mm_Icon",
+  "pl": [
+   273.0,
+   102.0
+  ],
+  "sz": [
+   183.0,
+   47.0
+  ]
+ },
+ "3248459881": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_sight_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Sight_Icon",
+  "pl": [
+   92.0,
+   79.0
+  ],
+  "sz": [
+   230.0,
+   59.0
+  ]
+ },
+ "325545059": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_base_icon.webp",
+  "name": "T_UI_DPF_M1014_Base_Icon",
+  "pl": [
+   43.0,
+   69.0
+  ],
+  "sz": [
+   352.0,
+   96.0
+  ]
+ },
+ "3258627025": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_reflex_opk7_icon.webp",
+  "name": "T_UI_DPF_Reflex_OPK7_Icon",
+  "pl": [
+   226.0,
+   102.0
+  ],
+  "sz": [
+   64.0,
+   42.0
+  ]
+ },
+ "3263008354": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sdn6_icon.webp",
+  "name": "T_UI_DPF_SDN6_Icon",
+  "pl": [
+   167.0,
+   107.0
+  ],
+  "sz": [
+   102.0,
+   41.0
+  ]
+ },
+ "3264124357": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_suppressor_slxqd762_icon.webp",
+  "name": "T_UI_DPF_Suppressor_SLXQD762_Icon",
+  "pl": [
+   178.0,
+   107.0
+  ],
+  "sz": [
+   91.0,
+   42.0
+  ]
+ },
+ "3264921847": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_magazine15fast_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Magazine15Fast_Icon",
+  "pl": [
+   237.0,
+   113.0
+  ],
+  "sz": [
+   57.0,
+   82.0
+  ]
+ },
+ "3265194799": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_barrel620mm_icon.webp",
+  "name": "T_UI_DPF_SVDM_Barrel620mm_Icon",
+  "pl": [
+   209.0,
+   103.0
+  ],
+  "sz": [
+   263.0,
+   44.0
+  ]
+ },
+ "3266615423": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_belt_icon.webp",
+  "name": "T_UI_DPF_M240L_Belt_Icon",
+  "pl": [
+   143.0,
+   71.0
+  ],
+  "sz": [
+   53.0,
+   110.0
+  ]
+ },
+ "3269353507": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel18infactory_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel18inFactory_Icon",
+  "pl": [
+   213.0,
+   89.0
+  ],
+  "sz": [
+   204.0,
+   66.0
+  ]
+ },
+ "3278433881": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_barrel9influtted_icon.webp",
+  "name": "T_UI_DPF_APDW_Barrel9inFlutted_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   118.0,
+   34.0
+  ]
+ },
+ "327959331": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_barrelext_icon.webp",
+  "name": "T_UI_DPF_M240L_BarrelExt_Icon",
+  "pl": [
+   197.0,
+   94.0
+  ],
+  "sz": [
+   211.0,
+   52.0
+  ]
+ },
+ "329194662": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_barrelflutted460mm_icon.webp",
+  "name": "T_UI_DPF_MG5_BarrelFlutted460mm_Icon",
+  "pl": [
+   239.0,
+   109.0
+  ],
+  "sz": [
+   201.0,
+   37.0
+  ]
+ },
+ "3299979024": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_promag40rnd545_icon.webp",
+  "name": "T_UI_DPF_ProMag40rnd545_Icon",
+  "pl": [
+   214.0,
+   112.0
+  ],
+  "sz": [
+   80.0,
+   119.0
+  ]
+ },
+ "3301344971": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_barrel16in_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Barrel16in_Icon",
+  "pl": [
+   204.0,
+   109.0
+  ],
+  "sz": [
+   185.0,
+   37.0
+  ]
+ },
+ "3304699616": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "railgun/t_ui_dpf_railgun_base_icon.webp",
+  "name": "T_UI_DPF_Railgun_Base_Icon",
+  "pl": [
+   66.0,
+   0.0
+  ],
+  "sz": [
+   446.0,
+   190.0
+  ]
+ },
+ "3306959588": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_base_icon.webp",
+  "name": "T_UI_DPF_SVCh_Base_Icon",
+  "pl": [
+   27.0,
+   78.0
+  ],
+  "sz": [
+   369.0,
+   96.0
+  ]
+ },
+ "3317742541": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_cantedironsight_ak205_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_AK205_Icon",
+  "pl": [
+   142.0,
+   112.0
+  ],
+  "sz": [
+   130.0,
+   43.0
+  ]
+ },
+ "3320597989": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_magwellflare_icon.webp",
+  "name": "T_UI_DPF_RPKM_MagwellFlare_Icon",
+  "pl": [
+   177.0,
+   105.0
+  ],
+  "sz": [
+   69.0,
+   34.0
+  ]
+ },
+ "3322481002": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_chimera_icon.webp",
+  "name": "T_UI_DPF_Chimera_Icon",
+  "pl": [
+   176.0,
+   107.0
+  ],
+  "sz": [
+   93.0,
+   41.0
+  ]
+ },
+ "3327524246": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_atlasv8_icon.webp",
+  "name": "T_UI_DPF_AtlasV8_Icon",
+  "pl": [
+   235.0,
+   113.0
+  ],
+  "sz": [
+   45.0,
+   91.0
+  ]
+ },
+ "3329492806": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_barrelfluted140mm_icon.webp",
+  "name": "T_UI_DPF_Vector_BarrelFluted140mm_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   63.0,
+   33.0
+  ]
+ },
+ "3331927290": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_sight_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Sight_Icon",
+  "pl": [
+   178.0,
+   67.0
+  ],
+  "sz": [
+   137.0,
+   45.0
+  ]
+ },
+ "333287464": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vzor3_tall_icon.webp",
+  "name": "T_UI_DPF_VZOR3_Tall_Icon",
+  "pl": [
+   214.0,
+   89.0
+  ],
+  "sz": [
+   58.0,
+   53.0
+  ]
+ },
+ "3336529172": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_magextended30_icon.webp",
+  "name": "T_UI_DPF_MP7A2_MagExtended30_Icon",
+  "pl": [
+   234.0,
+   113.0
+  ],
+  "sz": [
+   51.0,
+   89.0
+  ]
+ },
+ "3344511633": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_elcan4x_icon.webp",
+  "name": "T_UI_DPF_Elcan4x_Icon",
+  "pl": [
+   184.0,
+   89.0
+  ],
+  "sz": [
+   85.0,
+   53.0
+  ]
+ },
+ "3356508270": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_base_114mm_icon.webp",
+  "name": "T_UI_DPF_G22_Base_114mm_Icon",
+  "pl": [
+   189.0,
+   99.0
+  ],
+  "sz": [
+   102.0,
+   75.0
+  ]
+ },
+ "3360627200": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_srvvmk2_icon.webp",
+  "name": "T_UI_DPF_SRVVMk2_Icon",
+  "pl": [
+   194.0,
+   108.0
+  ],
+  "sz": [
+   75.0,
+   39.0
+  ]
+ },
+ "3374314102": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_magwellflare_icon.webp",
+  "name": "T_UI_DPF_M16A3_Magwellflare_Icon",
+  "pl": [
+   185.0,
+   115.0
+  ],
+  "sz": [
+   58.0,
+   37.0
+  ]
+ },
+ "3379998255": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dsp_cqs_vz61_icon.webp",
+  "name": "T_UI_DSP_CQS_vz61_Icon",
+  "pl": [
+   236.0,
+   103.0
+  ],
+  "sz": [
+   47.0,
+   38.0
+  ]
+ },
+ "3384606841": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_flashhider_sigtaperedqd_icon.webp",
+  "name": "T_UI_DPF_FlashHider_SIGTaperedQD_Icon",
+  "pl": [
+   222.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   36.0
+  ]
+ },
+ "3390486449": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rotex2a762mm_icon.webp",
+  "name": "T_UI_DPF_Rotex2A762mm_Icon",
+  "pl": [
+   152.0,
+   107.0
+  ],
+  "sz": [
+   117.0,
+   42.0
+  ]
+ },
+ "3392789442": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_lunar45_icon.webp",
+  "name": "T_UI_DPF_Lunar45_Icon",
+  "pl": [
+   145.0,
+   107.0
+  ],
+  "sz": [
+   124.0,
+   42.0
+  ]
+ },
+ "3398013896": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_akmslantbrake_icon.webp",
+  "name": "T_UI_DPF_AKMSlantBrake_Icon",
+  "pl": [
+   230.0,
+   111.0
+  ],
+  "sz": [
+   39.0,
+   34.0
+  ]
+ },
+ "3402382787": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_cantedironsight_l85a3_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_L85A3_Icon",
+  "pl": [
+   103.0,
+   112.0
+  ],
+  "sz": [
+   169.0,
+   43.0
+  ]
+ },
+ "3406945676": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_magazine_ext_icon.webp",
+  "name": "T_UI_DPF_MG4K_Magazine_Ext_Icon",
+  "pl": [
+   227.0,
+   72.0
+  ],
+  "sz": [
+   57.0,
+   126.0
+  ]
+ },
+ "3410573538": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_pmagak74gen3_ext_icon.webp",
+  "name": "T_UI_DPF_PMagAK74Gen3_Ext_Icon",
+  "pl": [
+   216.0,
+   111.0
+  ],
+  "sz": [
+   79.0,
+   111.0
+  ]
+ },
+ "3410884634": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_magazine_icon.webp",
+  "name": "T_UI_DPF_MG4K_Magazine_Icon",
+  "pl": [
+   227.0,
+   72.0
+  ],
+  "sz": [
+   57.0,
+   155.0
+  ]
+ },
+ "341420222": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_barrel433mm_icon.webp",
+  "name": "T_UI_DPF_M60E6_Barrel433mm_Icon",
+  "pl": [
+   236.0,
+   104.0
+  ],
+  "sz": [
+   171.0,
+   56.0
+  ]
+ },
+ "3424080072": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_magazine_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Magazine_Icon",
+  "pl": [
+   223.0,
+   109.0
+  ],
+  "sz": [
+   71.0,
+   97.0
+  ]
+ },
+ "3431072441": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_magazineextended6_icon.webp",
+  "name": "T_UI_DPF_QBZ192_MagazineExtended6_Icon",
+  "pl": [
+   217.0,
+   109.0
+  ],
+  "sz": [
+   77.0,
+   105.0
+  ]
+ },
+ "3431693945": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_magazine15rndextended_icon.webp",
+  "name": "T_UI_DPF_G22_Magazine15rndExtended_Icon",
+  "pl": [
+   234.0,
+   104.0
+  ],
+  "sz": [
+   57.0,
+   84.0
+  ]
+ },
+ "343417506": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_elityballisticcalculator_icon.webp",
+  "name": "T_UI_DPF_ElityBallisticCalculator_Icon",
+  "pl": [
+   241.0,
+   105.0
+  ],
+  "sz": [
+   77.0,
+   58.0
+  ]
+ },
+ "3439040090": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_magazine_icon.webp",
+  "name": "T_UI_DPF_M250_Magazine_Icon",
+  "pl": [
+   214.0,
+   85.0
+  ],
+  "sz": [
+   74.0,
+   112.0
+  ]
+ },
+ "344137529": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_ironsights_icon.webp",
+  "name": "T_UI_DPF_SVDM_IronSights_Icon",
+  "pl": [
+   0.0,
+   77.0
+  ],
+  "sz": [
+   171.0,
+   35.0
+  ]
+ },
+ "3450879918": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_nx8_1_icon.webp",
+  "name": "T_UI_DPF_NX8_1_Icon",
+  "pl": [
+   159.0,
+   85.0
+  ],
+  "sz": [
+   112.0,
+   58.0
+  ]
+ },
+ "3455613262": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_barrel368mm_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Barrel368mm_Icon",
+  "pl": [
+   290.0,
+   102.0
+  ],
+  "sz": [
+   166.0,
+   47.0
+  ]
+ },
+ "345911506": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tango_vertical_icon.webp",
+  "name": "T_UI_DPF_Tango_Vertical_Icon",
+  "pl": [
+   234.0,
+   113.0
+  ],
+  "sz": [
+   44.0,
+   71.0
+  ]
+ },
+ "3459245252": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_barrel409mm_icon.webp",
+  "name": "T_UI_DPF_G3A4_Barrel409mm_Icon",
+  "pl": [
+   231.0,
+   111.0
+  ],
+  "sz": [
+   48.0,
+   34.0
+  ]
+ },
+ "3462975833": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_steinert536_icon.webp",
+  "name": "T_UI_DPF_SteinerT536_Icon",
+  "pl": [
+   210.0,
+   93.0
+  ],
+  "sz": [
+   73.0,
+   50.0
+  ]
+ },
+ "3467251773": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_barrel13inchheavy_icon.webp",
+  "name": "T_UI_DPF_XM7_Barrel13inchHeavy_Icon",
+  "pl": [
+   259.0,
+   109.0
+  ],
+  "sz": [
+   150.0,
+   38.0
+  ]
+ },
+ "3468646760": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_m60e6_ironsights_icon.webp",
+  "name": "T_UI_DPF_M60E6_IronSights_Icon",
+  "pl": [
+   36.0,
+   46.0
+  ],
+  "sz": [
+   195.0,
+   70.0
+  ]
+ },
+ "3482227404": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_base_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Base_Icon",
+  "pl": [
+   70.0,
+   76.0
+  ],
+  "sz": [
+   317.0,
+   101.0
+  ]
+ },
+ "3482286834": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_cantedironsight_hk471a2_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_HK471A2_Icon",
+  "pl": [
+   105.0,
+   112.0
+  ],
+  "sz": [
+   167.0,
+   43.0
+  ]
+ },
+ "3486234298": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_zt410_icon.webp",
+  "name": "T_UI_DPF_ZT410_Icon",
+  "pl": [
+   208.0,
+   89.0
+  ],
+  "sz": [
+   72.0,
+   53.0
+  ]
+ },
+ "3488731036": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_barrel600mm_icon.webp",
+  "name": "T_UI_DPF_RPKM_Barrel600mm_Icon",
+  "pl": [
+   230.0,
+   96.0
+  ],
+  "sz": [
+   228.0,
+   52.0
+  ]
+ },
+ "349537984": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_lantacdragon762_icon.webp",
+  "name": "T_UI_DPF_LANTACDragon762_Icon",
+  "pl": [
+   217.0,
+   110.0
+  ],
+  "sz": [
+   52.0,
+   35.0
+  ]
+ },
+ "3506279074": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_barrel415mmheavy_icon.webp",
+  "name": "T_UI_DPF_6P67_Barrel415mmHeavy_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   112.0,
+   38.0
+  ]
+ },
+ "3518615727": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_barrel196mm_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Barrel196mm_Icon",
+  "pl": [
+   238.0,
+   111.0
+  ],
+  "sz": [
+   100.0,
+   33.0
+  ]
+ },
+ "3538373626": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_sight_icon.webp",
+  "name": "T_UI_DPF_P90_Sight_Icon",
+  "pl": [
+   191.0,
+   46.0
+  ],
+  "sz": [
+   90.0,
+   48.0
+  ]
+ },
+ "354247865": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_cantedironsight_m1014_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M1014_Icon",
+  "pl": [
+   190.0,
+   112.0
+  ],
+  "sz": [
+   82.0,
+   43.0
+  ]
+ },
+ "3551378043": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_qbz192_sight_icon.webp",
+  "name": "T_UI_DPF_QBZ192_Sight_Icon",
+  "pl": [
+   107.0,
+   65.0
+  ],
+  "sz": [
+   166.0,
+   40.0
+  ]
+ },
+ "3557912251": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_ironsights_icon.webp",
+  "name": "T_UI_DPF_M16A3_IronSights_Icon",
+  "pl": [
+   40.0,
+   64.0
+  ],
+  "sz": [
+   238.0,
+   68.0
+  ]
+ },
+ "3562942847": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine15rndfast_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine15rndFast_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   78.0
+  ]
+ },
+ "3565046544": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_ironsights_icon.webp",
+  "name": "T_UI_DPF_M18_IronSights_Icon",
+  "pl": [
+   192.0,
+   92.0
+  ],
+  "sz": [
+   87.0,
+   29.0
+  ]
+ },
+ "3567137711": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel457mm_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel457mm_Icon",
+  "pl": [
+   260.0,
+   105.0
+  ],
+  "sz": [
+   121.0,
+   47.0
+  ]
+ },
+ "3577983714": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_btrqd9mm_icon.webp",
+  "name": "T_UI_DPF_BTRQD9mm_Icon",
+  "pl": [
+   172.0,
+   106.0
+  ],
+  "sz": [
+   100.0,
+   44.0
+  ]
+ },
+ "3581349649": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_muzzle_icon.webp",
+  "name": "T_UI_DPF_MG5_Muzzle_Icon",
+  "pl": [
+   225.0,
+   110.0
+  ],
+  "sz": [
+   48.0,
+   35.0
+  ]
+ },
+ "3581985907": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_magazine_icon.webp",
+  "name": "T_UI_DPF_MRAD_Magazine_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   70.0,
+   63.0
+  ]
+ },
+ "3587501200": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "trr8/t_ui_dpf_trr8_ironsights_icon.webp",
+  "name": "T_UI_DPF_TRR8_IronSights_Icon",
+  "pl": [
+   241.0,
+   115.0
+  ],
+  "sz": [
+   30.0,
+   26.0
+  ]
+ },
+ "3589566820": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_base_icon.webp",
+  "name": "T_UI_DPF_SVDM_Base_Icon",
+  "pl": [
+   20.0,
+   80.0
+  ],
+  "sz": [
+   365.0,
+   95.0
+  ]
+ },
+ "3592825798": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_magazinecompact_icon.webp",
+  "name": "T_UI_DPF_G3A4_MagazineCompact_Icon",
+  "pl": [
+   240.0,
+   112.0
+  ],
+  "sz": [
+   61.0,
+   79.0
+  ]
+ },
+ "3606845323": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_muzzle_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Muzzle_Icon",
+  "pl": [
+   225.0,
+   110.0
+  ],
+  "sz": [
+   44.0,
+   35.0
+  ]
+ },
+ "3609159287": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_vcog_icon.webp",
+  "name": "T_UI_DPF_VCOG_Icon",
+  "pl": [
+   133.0,
+   102.0
+  ],
+  "sz": [
+   137.0,
+   56.0
+  ]
+ },
+ "3616651947": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_barrel406mmfluted_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Barrel406mmFluted_Icon",
+  "pl": [
+   273.0,
+   102.0
+  ],
+  "sz": [
+   183.0,
+   47.0
+  ]
+ },
+ "3618639706": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg4k/t_ui_dpf_mg4k_sights_icon.webp",
+  "name": "T_UI_DPF_MG4K_Sights_Icon",
+  "pl": [
+   55.0,
+   51.0
+  ],
+  "sz": [
+   229.0,
+   51.0
+  ]
+ },
+ "3620551076": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_barrel500mm_icon.webp",
+  "name": "T_UI_DPF_VHS2_Barrel500mm_Icon",
+  "pl": [
+   208.0,
+   110.0
+  ],
+  "sz": [
+   151.0,
+   38.0
+  ]
+ },
+ "3623414064": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_muzzlebrake_icon.webp",
+  "name": "T_UI_DPF_185KSK_MuzzleBrake_Icon",
+  "pl": [
+   192.0,
+   108.0
+  ],
+  "sz": [
+   77.0,
+   39.0
+  ]
+ },
+ "362448294": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_base_icon.webp",
+  "name": "T_UI_DPF_ACE32_Base_Icon",
+  "pl": [
+   72.0,
+   74.0
+  ],
+  "sz": [
+   296.0,
+   100.0
+  ]
+ },
+ "3628209874": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_sights_icon.webp",
+  "name": "T_UI_DPF_M240L_Sights_Icon",
+  "pl": [
+   235.0,
+   61.0
+  ],
+  "sz": [
+   54.0,
+   34.0
+  ]
+ },
+ "3631120006": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_pmag30rndakm_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG30rndAKM_Ranger_Icon",
+  "pl": [
+   206.0,
+   111.0
+  ],
+  "sz": [
+   89.0,
+   108.0
+  ]
+ },
+ "3631125532": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_cantedironsight_svdm_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SVDM_Icon",
+  "pl": [
+   146.0,
+   112.0
+  ],
+  "sz": [
+   120.0,
+   43.0
+  ]
+ },
+ "3632597767": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "unused/t_ui_dpf_laser_meprosting_90_icon.webp",
+  "name": "T_UI_DPF_Laser_MeproSting_90_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   58.0,
+   48.0
+  ]
+ },
+ "3641591569": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_hisshd_l115a3_icon.webp",
+  "name": "T_UI_DPF_HISSHD_L115A3_Icon",
+  "pl": [
+   34.0,
+   82.0
+  ],
+  "sz": [
+   237.0,
+   62.0
+  ]
+ },
+ "3642368777": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_magazine10_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Magazine10_Icon",
+  "pl": [
+   179.0,
+   92.0
+  ],
+  "sz": [
+   61.0,
+   67.0
+  ]
+ },
+ "3643574694": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_srvv_fhmb545_icon.webp",
+  "name": "T_UI_DPF_SRVV_FHMB545_Icon",
+  "pl": [
+   207.0,
+   110.0
+  ],
+  "sz": [
+   62.0,
+   36.0
+  ]
+ },
+ "3645817027": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_receiver_icon.webp",
+  "name": "T_UI_DPF_M4A1_Receiver_Icon",
+  "pl": [
+   91.0,
+   80.0
+  ],
+  "sz": [
+   262.0,
+   94.0
+  ]
+ },
+ "3652687667": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_cantedironsight_msbsgrotb_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MSBSGROTB_Icon",
+  "pl": [
+   145.0,
+   112.0
+  ],
+  "sz": [
+   127.0,
+   43.0
+  ]
+ },
+ "3662016287": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_cantedironsight_scarl_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SCARL_Icon",
+  "pl": [
+   95.0,
+   112.0
+  ],
+  "sz": [
+   177.0,
+   43.0
+  ]
+ },
+ "3680158640": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_mag_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Mag_Icon",
+  "pl": [
+   239.0,
+   113.0
+  ],
+  "sz": [
+   46.0,
+   69.0
+  ]
+ },
+ "3684249593": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_x5lg3_icon.webp",
+  "name": "T_UI_DPF_X5LG3_Icon",
+  "pl": [
+   243.0,
+   106.0
+  ],
+  "sz": [
+   57.0,
+   40.0
+  ]
+ },
+ "3685475798": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_barret338mm_icon.webp",
+  "name": "T_UI_DPF_Barret338mm_Icon",
+  "pl": [
+   151.0,
+   104.0
+  ],
+  "sz": [
+   120.0,
+   47.0
+  ]
+ },
+ "3689326591": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_kabroomstick_icon.webp",
+  "name": "T_UI_DPF_KABroomstick_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   45.0,
+   68.0
+  ]
+ },
+ "3689682035": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_magazine_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Magazine_Icon",
+  "pl": [
+   241.0,
+   113.0
+  ],
+  "sz": [
+   52.0,
+   61.0
+  ]
+ },
+ "3692377770": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_awmdoubleport_base_icon.webp",
+  "name": "T_UI_DPF_AWMDoubleport_Base_Icon",
+  "pl": [
+   213.0,
+   109.0
+  ],
+  "sz": [
+   56.0,
+   39.0
+  ]
+ },
+ "3693818358": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_ironsights_icon.webp",
+  "name": "T_UI_DPF_185KSK_IronSights_Icon",
+  "pl": [
+   76.0,
+   74.0
+  ],
+  "sz": [
+   127.0,
+   54.0
+  ]
+ },
+ "3699799459": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_sights_icon.webp",
+  "name": "T_UI_DPF_SVCh_Sights_Icon",
+  "pl": [
+   40.0,
+   59.0
+  ],
+  "sz": [
+   242.0,
+   49.0
+  ]
+ },
+ "3702925537": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazine_icon.webp",
+  "name": "T_UI_DPF_PP19_Magazine_Icon",
+  "pl": [
+   224.0,
+   110.0
+  ],
+  "sz": [
+   71.0,
+   104.0
+  ]
+ },
+ "3709811847": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_holosunrml_icon.webp",
+  "name": "T_UI_DPF_HolosunRML_Icon",
+  "pl": [
+   242.0,
+   110.0
+  ],
+  "sz": [
+   45.0,
+   35.0
+  ]
+ },
+ "3712724763": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_raidxe_270_icon.webp",
+  "name": "T_UI_DPF_RaidXe_270_Icon",
+  "pl": [
+   241.0,
+   100.0
+  ],
+  "sz": [
+   62.0,
+   46.0
+  ]
+ },
+ "3715392546": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_osprey2_icon.webp",
+  "name": "T_UI_DPF_Osprey2_Icon",
+  "pl": [
+   175.0,
+   108.0
+  ],
+  "sz": [
+   94.0,
+   43.0
+  ]
+ },
+ "3720132138": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_barrel_icon.webp",
+  "name": "T_UI_DPF_M240L_Barrel_Icon",
+  "pl": [
+   235.0,
+   94.0
+  ],
+  "sz": [
+   173.0,
+   52.0
+  ]
+ },
+ "3736255075": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_magazine_icon.webp",
+  "name": "T_UI_DPF_SVCh_Magazine_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   71.0,
+   79.0
+  ]
+ },
+ "3736403867": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_sight_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Sight_Icon",
+  "pl": [
+   188.0,
+   56.0
+  ],
+  "sz": [
+   123.0,
+   41.0
+  ]
+ },
+ "3740647212": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12_magazine_icon.webp",
+  "name": "T_UI_DPF_DP12_Magazine_Icon",
+  "pl": [
+   67.0,
+   110.0
+  ],
+  "sz": [
+   198.0,
+   36.0
+  ]
+ },
+ "3744974823": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_magpulafg2_icon.webp",
+  "name": "T_UI_DPF_MagpulAFG2_Icon",
+  "pl": [
+   218.0,
+   113.0
+  ],
+  "sz": [
+   75.0,
+   48.0
+  ]
+ },
+ "3745305593": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_flashhider_silentsteel_icon.webp",
+  "name": "T_UI_DPF_FlashHider_SilentSteel_Icon",
+  "pl": [
+   219.0,
+   110.0
+  ],
+  "sz": [
+   50.0,
+   36.0
+  ]
+ },
+ "3769551127": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_magazinecompact_magpull_icon.webp",
+  "name": "T_UI_DPF_G3A4_MagazineCompact_Magpull_Icon",
+  "pl": [
+   240.0,
+   112.0
+  ],
+  "sz": [
+   61.0,
+   88.0
+  ]
+ },
+ "3778267113": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_magazine_icon.webp",
+  "name": "T_UI_DPF_SCARL_Magazine_Icon",
+  "pl": [
+   235.0,
+   112.0
+  ],
+  "sz": [
+   58.0,
+   95.0
+  ]
+ },
+ "3783241357": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dpf_skorpion_base_icon.webp",
+  "name": "T_UI_DPF_Skorpion_Base_Icon",
+  "pl": [
+   170.0,
+   87.0
+  ],
+  "sz": [
+   211.0,
+   86.0
+  ]
+ },
+ "3795904634": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_sight_icon.webp",
+  "name": "T_UI_DPF_MPX_Sight_Icon",
+  "pl": [
+   150.0,
+   63.0
+  ],
+  "sz": [
+   127.0,
+   43.0
+  ]
+ },
+ "3798999298": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_hxqdmagnumti_icon.webp",
+  "name": "T_UI_DPF_HXQDMagnumTI_Icon",
+  "pl": [
+   152.0,
+   107.0
+  ],
+  "sz": [
+   117.0,
+   41.0
+  ]
+ },
+ "3800668664": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vector/t_ui_dpf_vector_magazine23rnd_icon.webp",
+  "name": "T_UI_DPF_Vector_Magazine23rnd_Icon",
+  "pl": [
+   237.0,
+   114.0
+  ],
+  "sz": [
+   59.0,
+   80.0
+  ]
+ },
+ "3803783590": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rmr_riser_icon.webp",
+  "name": "T_UI_DPF_RMR_Riser_Icon",
+  "pl": [
+   239.0,
+   105.0
+  ],
+  "sz": [
+   50.0,
+   46.0
+  ]
+ },
+ "3807604710": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_barrel240mm_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Barrel240mm_Icon",
+  "pl": [
+   261.0,
+   109.0
+  ],
+  "sz": [
+   107.0,
+   37.0
+  ]
+ },
+ "3814132417": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_flutedbarrel_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_FlutedBarrel_Icon",
+  "pl": [
+   237.0,
+   110.0
+  ],
+  "sz": [
+   255.0,
+   35.0
+  ]
+ },
+ "3818387979": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_magazineextended_icon.webp",
+  "name": "T_UI_DPF_590A1_MagazineExtended_Icon",
+  "pl": [
+   42.0,
+   99.0
+  ],
+  "sz": [
+   249.0,
+   48.0
+  ]
+ },
+ "3818427074": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_btsqd10mm_icon.webp",
+  "name": "T_UI_DPF_BTSQD10mm_Icon",
+  "pl": [
+   168.0,
+   107.0
+  ],
+  "sz": [
+   101.0,
+   41.0
+  ]
+ },
+ "3821075374": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_eotecheflx_icon.webp",
+  "name": "T_UI_DPF_EotechEFLX_Icon",
+  "pl": [
+   240.0,
+   104.0
+  ],
+  "sz": [
+   46.0,
+   37.0
+  ]
+ },
+ "3822692110": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_barrel314mm_icon.webp",
+  "name": "T_UI_DPF_AK205_Barrel314mm_Icon",
+  "pl": [
+   239.0,
+   96.0
+  ],
+  "sz": [
+   132.0,
+   50.0
+  ]
+ },
+ "3828035706": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_cantedironsight_m2010esr_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M2010ESR_Icon",
+  "pl": [
+   107.0,
+   112.0
+  ],
+  "sz": [
+   165.0,
+   43.0
+  ]
+ },
+ "3831206375": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_barrel509mm_icon.webp",
+  "name": "T_UI_DPF_SVCh_Barrel509mm_Icon",
+  "pl": [
+   223.0,
+   110.0
+  ],
+  "sz": [
+   219.0,
+   36.0
+  ]
+ },
+ "3831762546": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_romeox_lowriser_icon.webp",
+  "name": "T_UI_DPF_RomeoX_LowRiser_Icon",
+  "pl": [
+   241.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   36.0
+  ]
+ },
+ "3837416169": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_barrel27in_icon.webp",
+  "name": "T_UI_DPF_L115A3_Barrel27in_Icon",
+  "pl": [
+   233.0,
+   109.0
+  ],
+  "sz": [
+   279.0,
+   38.0
+  ]
+ },
+ "3844959074": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_muzzle_icon.webp",
+  "name": "T_UI_DPF_G3A4_Muzzle_Icon",
+  "pl": [
+   227.0,
+   110.0
+  ],
+  "sz": [
+   47.0,
+   36.0
+  ]
+ },
+ "3846688090": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_mag100_icon.webp",
+  "name": "T_UI_DPF_M240L_Mag100_Icon",
+  "pl": [
+   228.0,
+   76.0
+  ],
+  "sz": [
+   60.0,
+   104.0
+  ]
+ },
+ "3849239534": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sfx300_icon.webp",
+  "name": "T_UI_DPF_SFX300_Icon",
+  "pl": [
+   243.0,
+   105.0
+  ],
+  "sz": [
+   65.0,
+   43.0
+  ]
+ },
+ "3852165734": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_base_icon.webp",
+  "name": "T_UI_DPF_PP19_Base_Icon",
+  "pl": [
+   102.0,
+   74.0
+  ],
+  "sz": [
+   278.0,
+   103.0
+  ]
+ },
+ "3854586420": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_heavybarrel508mm_icon.webp",
+  "name": "T_UI_DPF_M27IAR_HeavyBarrel508mm_Icon",
+  "pl": [
+   206.0,
+   104.0
+  ],
+  "sz": [
+   217.0,
+   46.0
+  ]
+ },
+ "3857460457": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tfs_icon.webp",
+  "name": "T_UI_DPF_TFS_Icon",
+  "pl": [
+   230.0,
+   113.0
+  ],
+  "sz": [
+   49.0,
+   71.0
+  ]
+ },
+ "3857975540": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_pmag30rndakm_icon.webp",
+  "name": "T_UI_DPF_PMAG30rndAKM_Icon",
+  "pl": [
+   213.0,
+   111.0
+  ],
+  "sz": [
+   82.0,
+   106.0
+  ]
+ },
+ "3858123597": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_base_icon.webp",
+  "name": "T_UI_DPF_M18_Base_Icon",
+  "pl": [
+   191.0,
+   93.0
+  ],
+  "sz": [
+   95.0,
+   78.0
+  ]
+ },
+ "386325889": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_sights_icon.webp",
+  "name": "T_UI_DPF_L85A3_Sights_Icon",
+  "pl": [
+   147.0,
+   61.0
+  ],
+  "sz": [
+   183.0,
+   46.0
+  ]
+ },
+ "3865723033": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_barrel_icon.webp",
+  "name": "T_UI_DPF_ACE32_Barrel_Icon",
+  "pl": [
+   240.0,
+   112.0
+  ],
+  "sz": [
+   63.0,
+   32.0
+  ]
+ },
+ "3866216815": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m45a1/t_ui_dpf_m45a1_barrellongslide_icon.webp",
+  "name": "T_UI_DPF_M45A1_BarrelLongslide_Icon",
+  "pl": [
+   227.0,
+   111.0
+  ],
+  "sz": [
+   93.0,
+   37.0
+  ]
+ },
+ "3880991427": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_l7awm20_magpul_icon.webp",
+  "name": "T_UI_DPF_L7AWM20_Magpul_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   59.0,
+   98.0
+  ]
+ },
+ "3889786213": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_compact_fh_icon.webp",
+  "name": "T_UI_DPF_G36_Compact_FH_Icon",
+  "pl": [
+   228.0,
+   111.0
+  ],
+  "sz": [
+   45.0,
+   34.0
+  ]
+ },
+ "388989613": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_cantedironsight_m39emr_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M39EMR_Icon",
+  "pl": [
+   148.0,
+   112.0
+  ],
+  "sz": [
+   124.0,
+   43.0
+  ]
+ },
+ "3893438516": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_flashhider_icon.webp",
+  "name": "T_UI_DPF_185KSK_Flashhider_Icon",
+  "pl": [
+   217.0,
+   110.0
+  ],
+  "sz": [
+   52.0,
+   36.0
+  ]
+ },
+ "3896592230": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_base_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_Base_Icon",
+  "pl": [
+   115.0,
+   74.0
+  ],
+  "sz": [
+   281.0,
+   104.0
+  ]
+ },
+ "390561047": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_panelleft_icon.webp",
+  "name": "T_UI_DPF_M4A1_PanelLeft_Icon",
+  "pl": [
+   115.0,
+   85.0
+  ],
+  "sz": [
+   86.0,
+   40.0
+  ]
+ },
+ "3909346475": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_base_icon.webp",
+  "name": "T_UI_DPF_185KSK_Base_Icon",
+  "pl": [
+   76.0,
+   74.0
+  ],
+  "sz": [
+   309.0,
+   104.0
+  ]
+ },
+ "3916054033": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_suppressor_strelaakmgen3_icon.webp",
+  "name": "T_UI_DPF_Suppressor_StrelaAKMGen3_Icon",
+  "pl": [
+   182.0,
+   104.0
+  ],
+  "sz": [
+   87.0,
+   47.0
+  ]
+ },
+ "3923260245": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_barrel465mm_icon.webp",
+  "name": "T_UI_DPF_Minimi_Barrel465mm_Icon",
+  "pl": [
+   190.0,
+   110.0
+  ],
+  "sz": [
+   192.0,
+   35.0
+  ]
+ },
+ "3930978081": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_1p88_icon.webp",
+  "name": "T_UI_DPF_1P88_Icon",
+  "pl": [
+   120.0,
+   67.0
+  ],
+  "sz": [
+   152.0,
+   75.0
+  ]
+ },
+ "3942602841": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_spitfire5x_icon.webp",
+  "name": "T_UI_DPF_Spitfire5x_Icon",
+  "pl": [
+   212.0,
+   95.0
+  ],
+  "sz": [
+   59.0,
+   49.0
+  ]
+ },
+ "3946605642": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "trr8/t_ui_dpf_trr8_magazine_icon.webp",
+  "name": "T_UI_DPF_TRR8_Magazine_Icon",
+  "pl": [
+   211.0,
+   88.0
+  ],
+  "sz": [
+   56.0,
+   43.0
+  ]
+ },
+ "3948242482": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsro_lowriser_icon.webp",
+  "name": "T_UI_DPF_TrijiconSRO_LowRiser_Icon",
+  "pl": [
+   239.0,
+   102.0
+  ],
+  "sz": [
+   49.0,
+   39.0
+  ]
+ },
+ "3956279057": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_laser_cmr201_icon.webp",
+  "name": "T_UI_DPF_Laser_CMR201_Icon",
+  "pl": [
+   243.0,
+   109.0
+  ],
+  "sz": [
+   41.0,
+   35.0
+  ]
+ },
+ "3956354482": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dpf_skorpion_barrel_icon.webp",
+  "name": "T_UI_DPF_Skorpion_Barrel_Icon",
+  "pl": [
+   229.0,
+   112.0
+  ],
+  "sz": [
+   42.0,
+   31.0
+  ]
+ },
+ "3959336487": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_gps2l85_icon.webp",
+  "name": "T_UI_DPF_GPS2L85_Icon",
+  "pl": [
+   234.0,
+   112.0
+  ],
+  "sz": [
+   44.0,
+   119.0
+  ]
+ },
+ "3968836384": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_barrelfluted_icon.webp",
+  "name": "T_UI_DPF_M240L_BarrelFluted_Icon",
+  "pl": [
+   235.0,
+   94.0
+  ],
+  "sz": [
+   173.0,
+   52.0
+  ]
+ },
+ "3971150793": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_magazine_icon.webp",
+  "name": "T_UI_DPF_6P67_Magazine_Icon",
+  "pl": [
+   218.0,
+   112.0
+  ],
+  "sz": [
+   80.0,
+   113.0
+  ]
+ },
+ "3978672876": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_barrel305mmheavy_icon.webp",
+  "name": "T_UI_DPF_UMP40_Barrel305mmHeavy_Icon",
+  "pl": [
+   199.0,
+   109.0
+  ],
+  "sz": [
+   145.0,
+   37.0
+  ]
+ },
+ "3982924158": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_extendedbarrel_icon.webp",
+  "name": "T_UI_DPF_ACE32_ExtendedBarrel_Icon",
+  "pl": [
+   222.0,
+   112.0
+  ],
+  "sz": [
+   81.0,
+   32.0
+  ]
+ },
+ "3987217718": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_barrel419mm_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Barrel419mm_Icon",
+  "pl": [
+   238.0,
+   104.0
+  ],
+  "sz": [
+   185.0,
+   45.0
+  ]
+ },
+ "398813410": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_barrelext_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_BarrelExt_Icon",
+  "pl": [
+   216.0,
+   110.0
+  ],
+  "sz": [
+   276.0,
+   35.0
+  ]
+ },
+ "3991714295": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine35rnd_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine35rnd_Icon",
+  "pl": [
+   224.0,
+   111.0
+  ],
+  "sz": [
+   59.0,
+   104.0
+  ]
+ },
+ "3992053161": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_barrel145_icon.webp",
+  "name": "T_UI_DPF_SCARL_Barrel145_Icon",
+  "pl": [
+   274.0,
+   111.0
+  ],
+  "sz": [
+   77.0,
+   33.0
+  ]
+ },
+ "399755506": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_sight_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Sight_Icon",
+  "pl": [
+   155.0,
+   57.0
+  ],
+  "sz": [
+   164.0,
+   44.0
+  ]
+ },
+ "3998004449": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_sight_icon.webp",
+  "name": "T_UI_DPF_MG5_Sight_Icon",
+  "pl": [
+   42.0,
+   50.0
+  ],
+  "sz": [
+   170.0,
+   49.0
+  ]
+ },
+ "4005380876": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotb/t_ui_dpf_msbsgrotb_barrel254mmnoflute_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTB_Barrel254mmNoFlute_Icon",
+  "pl": [
+   237.0,
+   102.0
+  ],
+  "sz": [
+   139.0,
+   47.0
+  ]
+ },
+ "4017581771": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_barrel200mm_icon.webp",
+  "name": "T_UI_DPF_APC10_Barrel200mm_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   90.0,
+   33.0
+  ]
+ },
+ "4020943833": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_flashhider_icon.webp",
+  "name": "T_UI_DPF_MP7A2_FlashHider_Icon",
+  "pl": [
+   218.0,
+   112.0
+  ],
+  "sz": [
+   51.0,
+   32.0
+  ]
+ },
+ "4021493977": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "aradmr/t_ui_dpf_aradmr_magazine20rndfast_icon.webp",
+  "name": "T_UI_DPF_ARADMR_Magazine20rndFast_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   53.0,
+   88.0
+  ]
+ },
+ "4021820296": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_barrel265mm_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Barrel265mm_Icon",
+  "pl": [
+   212.0,
+   111.0
+  ],
+  "sz": [
+   126.0,
+   33.0
+  ]
+ },
+ "4024638190": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_pmagak74gen3_ranger_icon.webp",
+  "name": "T_UI_DPF_PMagAK74Gen3_Ranger_Icon",
+  "pl": [
+   219.0,
+   111.0
+  ],
+  "sz": [
+   76.0,
+   106.0
+  ]
+ },
+ "4036775941": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_barrel18in_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Barrel18in_Icon",
+  "pl": [
+   184.0,
+   109.0
+  ],
+  "sz": [
+   205.0,
+   37.0
+  ]
+ },
+ "4036834347": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_base_icon.webp",
+  "name": "T_UI_DPF_590A1_Base_Icon",
+  "pl": [
+   40.0,
+   86.0
+  ],
+  "sz": [
+   330.0,
+   100.0
+  ]
+ },
+ "4037322506": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_saimg30lt_icon.webp",
+  "name": "T_UI_DPF_M240L_SAIMG30LT_Icon",
+  "pl": [
+   158.0,
+   105.0
+  ],
+  "sz": [
+   119.0,
+   45.0
+  ]
+ },
+ "4038032826": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_406mmbarrelfluted_icon.webp",
+  "name": "T_UI_DPF_M250_406mmBarrelFluted_Icon",
+  "pl": [
+   270.0,
+   105.0
+  ],
+  "sz": [
+   242.0,
+   54.0
+  ]
+ },
+ "4048857271": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m27iar/t_ui_dpf_m27iar_barrel508mm_icon.webp",
+  "name": "T_UI_DPF_M27IAR_Barrel508mm_Icon",
+  "pl": [
+   206.0,
+   104.0
+  ],
+  "sz": [
+   217.0,
+   45.0
+  ]
+ },
+ "4051538880": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_garev_icon.webp",
+  "name": "T_UI_DPF_GaRev_Icon",
+  "pl": [
+   220.0,
+   108.0
+  ],
+  "sz": [
+   49.0,
+   39.0
+  ]
+ },
+ "405593790": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_hisshd_sv98_icon.webp",
+  "name": "T_UI_DPF_HISSHD_SV98_Icon",
+  "pl": [
+   37.0,
+   83.0
+  ],
+  "sz": [
+   234.0,
+   62.0
+  ]
+ },
+ "4059845585": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_comp5mb_nocaps_icon.webp",
+  "name": "T_UI_DPF_Comp5MB_NoCaps_Icon",
+  "pl": [
+   226.0,
+   94.0
+  ],
+  "sz": [
+   58.0,
+   48.0
+  ]
+ },
+ "4070389230": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_eotechxps3_icon.webp",
+  "name": "T_UI_DPF_EotechXPS3_Icon",
+  "pl": [
+   225.0,
+   107.0
+  ],
+  "sz": [
+   61.0,
+   50.0
+  ]
+ },
+ "4071892640": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_cantedreddot_longeyerelief_sv98_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_LongEyeRelief_SV98_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "4079543228": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_barrel349mm_icon.webp",
+  "name": "T_UI_DPF_Minimi_Barrel349mm_Icon",
+  "pl": [
+   239.0,
+   110.0
+  ],
+  "sz": [
+   143.0,
+   35.0
+  ]
+ },
+ "4081461712": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_magazine25rd_icon.webp",
+  "name": "T_UI_DPF_UMP40_Magazine25Rd_Icon",
+  "pl": [
+   218.0,
+   114.0
+  ],
+  "sz": [
+   60.0,
+   118.0
+  ]
+ },
+ "4083262807": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_magazine35rndfast_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Magazine35rndFast_Icon",
+  "pl": [
+   222.0,
+   111.0
+  ],
+  "sz": [
+   61.0,
+   117.0
+  ]
+ },
+ "4088476576": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_barrel303mm_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Barrel303mm_Icon",
+  "pl": [
+   238.0,
+   109.0
+  ],
+  "sz": [
+   130.0,
+   37.0
+  ]
+ },
+ "4090841570": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "raginghunter/t_ui_dpf_raginghunter_magazine_icon.webp",
+  "name": "T_UI_DPF_RagingHunter_Magazine_Icon",
+  "pl": [
+   228.0,
+   106.0
+  ],
+  "sz": [
+   55.0,
+   43.0
+  ]
+ },
+ "4093391365": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel20inhbar_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel20inHBAR_Icon",
+  "pl": [
+   193.0,
+   89.0
+  ],
+  "sz": [
+   224.0,
+   66.0
+  ]
+ },
+ "4096168413": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_185ksk_barrelext_icon.webp",
+  "name": "T_UI_DPF_185KSK_BarrelExt_Icon",
+  "pl": [
+   205.0,
+   111.0
+  ],
+  "sz": [
+   115.0,
+   34.0
+  ]
+ },
+ "4102066974": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_barrel590mm_icon.webp",
+  "name": "T_UI_DPF_RPKM_Barrel590mm_Icon",
+  "pl": [
+   238.0,
+   96.0
+  ],
+  "sz": [
+   220.0,
+   52.0
+  ]
+ },
+ "4104271410": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_cantedironsight_g36_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_G36_Icon",
+  "pl": [
+   130.0,
+   112.0
+  ],
+  "sz": [
+   142.0,
+   43.0
+  ]
+ },
+ "4106137936": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "skorpion/t_ui_dpf_skorpion_ironsights_icon.webp",
+  "name": "T_UI_DPF_Skorpion_IronSights_Icon",
+  "pl": [
+   179.0,
+   84.0
+  ],
+  "sz": [
+   86.0,
+   31.0
+  ]
+ },
+ "4107572729": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_reflex_romeo4t_icon.webp",
+  "name": "T_UI_DPF_Reflex_Romeo4T_Icon",
+  "pl": [
+   214.0,
+   106.0
+  ],
+  "sz": [
+   83.0,
+   52.0
+  ]
+ },
+ "4123407910": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel582mm_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel582mm_Icon",
+  "pl": [
+   213.0,
+   105.0
+  ],
+  "sz": [
+   168.0,
+   47.0
+  ]
+ },
+ "4134063392": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_hisshd_mrad_icon.webp",
+  "name": "T_UI_DPF_HISSHD_MRAD_Icon",
+  "pl": [
+   85.0,
+   82.0
+  ],
+  "sz": [
+   186.0,
+   62.0
+  ]
+ },
+ "4147619665": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sf400_icon.webp",
+  "name": "T_UI_DPF_SF400_Icon",
+  "pl": [
+   243.0,
+   105.0
+  ],
+  "sz": [
+   65.0,
+   48.0
+  ]
+ },
+ "4152435209": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_cantedironsight_mp7a2_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MP7A2_Icon",
+  "pl": [
+   136.0,
+   112.0
+  ],
+  "sz": [
+   136.0,
+   43.0
+  ]
+ },
+ "4157408111": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_barrel305mm_icon.webp",
+  "name": "T_UI_DPF_UMP40_Barrel305mm_Icon",
+  "pl": [
+   199.0,
+   109.0
+  ],
+  "sz": [
+   145.0,
+   37.0
+  ]
+ },
+ "415836961": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ace32/t_ui_dpf_ace32_magazine_icon.webp",
+  "name": "T_UI_DPF_ACE32_Magazine_Icon",
+  "pl": [
+   214.0,
+   111.0
+  ],
+  "sz": [
+   80.0,
+   101.0
+  ]
+ },
+ "4167860604": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_suppressor_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_Suppressor_Icon",
+  "pl": [
+   186.0,
+   109.0
+  ],
+  "sz": [
+   83.0,
+   37.0
+  ]
+ },
+ "4171003983": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dsp_cqs_lowriser_icon.webp",
+  "name": "T_UI_DSP_CQS_LowRiser_Icon",
+  "pl": [
+   236.0,
+   103.0
+  ],
+  "sz": [
+   47.0,
+   43.0
+  ]
+ },
+ "4173329728": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_cantedironsight_ultimax_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_Ultimax_Icon",
+  "pl": [
+   114.0,
+   112.0
+  ],
+  "sz": [
+   158.0,
+   43.0
+  ]
+ },
+ "418223127": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_magazine15_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Magazine15_Icon",
+  "pl": [
+   238.0,
+   113.0
+  ],
+  "sz": [
+   55.0,
+   70.0
+  ]
+ },
+ "4187046696": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_dtk2l_icon.webp",
+  "name": "T_UI_DPF_DTK2L_Icon",
+  "pl": [
+   217.0,
+   107.0
+  ],
+  "sz": [
+   52.0,
+   42.0
+  ]
+ },
+ "4187339262": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_barrelextended_icon.webp",
+  "name": "T_UI_DPF_G3A4_BarrelExtended_Icon",
+  "pl": [
+   217.0,
+   110.0
+  ],
+  "sz": [
+   185.0,
+   36.0
+  ]
+ },
+ "4187991520": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sakoslim_icon.webp",
+  "name": "T_UI_DPF_SakoSlim_Icon",
+  "pl": [
+   219.0,
+   111.0
+  ],
+  "sz": [
+   50.0,
+   33.0
+  ]
+ },
+ "419201886": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ak205/t_ui_dpf_ak205_magazine_01_icon.webp",
+  "name": "T_UI_DPF_AK205_Magazine_01_Icon",
+  "pl": [
+   221.0,
+   110.0
+  ],
+  "sz": [
+   73.0,
+   97.0
+  ]
+ },
+ "419299923": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_magazine100rnd_icon.webp",
+  "name": "T_UI_DPF_Minimi_Magazine100rnd_Icon",
+  "pl": [
+   229.0,
+   86.0
+  ],
+  "sz": [
+   54.0,
+   101.0
+  ]
+ },
+ "4203911551": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_kacrailcovers_m16a3_icon.webp",
+  "name": "T_UI_DPF_KACRailCovers_M16A3_Icon",
+  "pl": [
+   82.0,
+   78.0
+  ],
+  "sz": [
+   119.0,
+   54.0
+  ]
+ },
+ "4210830026": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_magazine_icon.webp",
+  "name": "T_UI_DPF_M18_Magazine_Icon",
+  "pl": [
+   289.0,
+   128.0
+  ],
+  "sz": [
+   50.0,
+   70.0
+  ]
+ },
+ "4211390368": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_barrel202mm_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Barrel202mm_Icon",
+  "pl": [
+   261.0,
+   109.0
+  ],
+  "sz": [
+   107.0,
+   37.0
+  ]
+ },
+ "4212228947": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_magazine_icon.webp",
+  "name": "T_UI_DPF_SV98M_Magazine_Icon",
+  "pl": [
+   243.0,
+   110.0
+  ],
+  "sz": [
+   66.0,
+   66.0
+  ]
+ },
+ "4213237059": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_barrel267mm_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Barrel267mm_Icon",
+  "pl": [
+   212.0,
+   111.0
+  ],
+  "sz": [
+   64.0,
+   33.0
+  ]
+ },
+ "4216893215": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_scarsc_magwellflare_icon.webp",
+  "name": "T_UI_DPF_SCARSC_MagwellFlare_Icon",
+  "pl": [
+   180.0,
+   105.0
+  ],
+  "sz": [
+   58.0,
+   42.0
+  ]
+ },
+ "4227278371": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ksg/t_ui_dpf_ksg_base_icon.webp",
+  "name": "T_UI_DPF_KSG_Base_Icon",
+  "pl": [
+   52.0,
+   58.0
+  ],
+  "sz": [
+   365.0,
+   127.0
+  ]
+ },
+ "4244452625": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_ironsights_icon.webp",
+  "name": "T_UI_DPF_M39EMR_IronSights_Icon",
+  "pl": [
+   214.0,
+   73.0
+  ],
+  "sz": [
+   31.0,
+   33.0
+  ]
+ },
+ "4247730204": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tionmb58x24_icon.webp",
+  "name": "T_UI_DPF_TionMB58x24_Icon",
+  "pl": [
+   214.0,
+   109.0
+  ],
+  "sz": [
+   55.0,
+   37.0
+  ]
+ },
+ "4253698513": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_barrel_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Barrel_Icon",
+  "pl": [
+   260.0,
+   111.0
+  ],
+  "sz": [
+   38.0,
+   33.0
+  ]
+ },
+ "4253856793": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_perst4_icon.webp",
+  "name": "T_UI_DPF_PERST4_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   61.0,
+   39.0
+  ]
+ },
+ "4257479435": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_muzzle_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Muzzle_Icon",
+  "pl": [
+   218.0,
+   110.0
+  ],
+  "sz": [
+   51.0,
+   35.0
+  ]
+ },
+ "4260189519": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk433/t_ui_dpf_hk433_barrel420mm_icon.webp",
+  "name": "T_UI_DPF_HK433_Barrel420mm_Icon",
+  "pl": [
+   239.0,
+   103.0
+  ],
+  "sz": [
+   181.0,
+   46.0
+  ]
+ },
+ "4263008164": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_cantedironsight_minifix_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MiniFix_Icon",
+  "pl": [
+   156.0,
+   112.0
+  ],
+  "sz": [
+   116.0,
+   43.0
+  ]
+ },
+ "4267796366": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_barrel508mm_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Barrel508mm_Icon",
+  "pl": [
+   237.0,
+   102.0
+  ],
+  "sz": [
+   219.0,
+   47.0
+  ]
+ },
+ "4267832945": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_magazinemagpul_icon.webp",
+  "name": "T_UI_DPF_SV98M_MagazineMagpul_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   70.0,
+   76.0
+  ]
+ },
+ "4269349707": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svdm/t_ui_dpf_svdm_barrel550mm_icon.webp",
+  "name": "T_UI_DPF_SVDM_Barrel550mm_Icon",
+  "pl": [
+   236.0,
+   103.0
+  ],
+  "sz": [
+   236.0,
+   44.0
+  ]
+ },
+ "427050761": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_cantedironsight_p90_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_P90_Icon",
+  "pl": [
+   180.0,
+   112.0
+  ],
+  "sz": [
+   92.0,
+   43.0
+  ]
+ },
+ "4272749582": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scorpionevo3/t_ui_dpf_scorpionevo3_base_icon.webp",
+  "name": "T_UI_DPF_ScorpionEvo3_Base_Icon",
+  "pl": [
+   122.0,
+   73.0
+  ],
+  "sz": [
+   254.0,
+   101.0
+  ]
+ },
+ "4273461730": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_versax_icon.webp",
+  "name": "T_UI_DPF_Versax_Icon",
+  "pl": [
+   176.0,
+   107.0
+  ],
+  "sz": [
+   93.0,
+   41.0
+  ]
+ },
+ "4276018754": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sandmansmil_icon.webp",
+  "name": "T_UI_DPF_SandmanSMIL_Icon",
+  "pl": [
+   167.0,
+   107.0
+  ],
+  "sz": [
+   102.0,
+   42.0
+  ]
+ },
+ "4282075993": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_suppressor_strelaak74_icon.webp",
+  "name": "T_UI_DPF_Suppressor_StrelaAK74_Icon",
+  "pl": [
+   188.0,
+   105.0
+  ],
+  "sz": [
+   81.0,
+   45.0
+  ]
+ },
+ "4284058868": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_base_icon.webp",
+  "name": "T_UI_DPF_MiniFix_Base_Icon",
+  "pl": [
+   85.0,
+   80.0
+  ],
+  "sz": [
+   304.0,
+   93.0
+  ]
+ },
+ "4286551456": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_m4qd_icon.webp",
+  "name": "T_UI_DPF_M4QD_Icon",
+  "pl": [
+   214.0,
+   109.0
+  ],
+  "sz": [
+   55.0,
+   37.0
+  ]
+ },
+ "4287834284": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_tavor7_barrel432mm_icon.webp",
+  "name": "T_UI_DPF_Tavor7_Barrel432mm_Icon",
+  "pl": [
+   237.0,
+   99.0
+  ],
+  "sz": [
+   156.0,
+   46.0
+  ]
+ },
+ "4287901930": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_magazine_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_Magazine_Icon",
+  "pl": [
+   233.0,
+   104.0
+  ],
+  "sz": [
+   55.0,
+   74.0
+  ]
+ },
+ "4288373091": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_pufgun45rnd556_magpull_icon.webp",
+  "name": "T_UI_DPF_Pufgun45rnd556_Magpull_Icon",
+  "pl": [
+   224.0,
+   112.0
+  ],
+  "sz": [
+   70.0,
+   138.0
+  ]
+ },
+ "433827559": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_magpulmvg_icon.webp",
+  "name": "T_UI_DPF_MagpulMVG_Icon",
+  "pl": [
+   234.0,
+   112.0
+  ],
+  "sz": [
+   44.0,
+   63.0
+  ]
+ },
+ "435578526": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_magazine15rnd_icon.webp",
+  "name": "T_UI_DPF_G22_Magazine15rnd_Icon",
+  "pl": [
+   234.0,
+   104.0
+  ],
+  "sz": [
+   54.0,
+   73.0
+  ]
+ },
+ "443676395": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_7rdmag_icon.webp",
+  "name": "T_UI_DPF_L115A3_7RdMag_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   64.0,
+   73.0
+  ]
+ },
+ "451701707": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sig553r/t_ui_dpf_sig553r_muzzle_icon.webp",
+  "name": "T_UI_DPF_SIG553R_Muzzle_Icon",
+  "pl": [
+   225.0,
+   111.0
+  ],
+  "sz": [
+   43.0,
+   34.0
+  ]
+ },
+ "455335892": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_sv98m_base_icon.webp",
+  "name": "T_UI_DPF_SV98M_Base_Icon",
+  "pl": [
+   40.0,
+   76.0
+  ],
+  "sz": [
+   364.0,
+   104.0
+  ]
+ },
+ "456278991": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_schmeisser60rnd556_icon.webp",
+  "name": "T_UI_DPF_Schmeisser60rnd556_Icon",
+  "pl": [
+   224.0,
+   113.0
+  ],
+  "sz": [
+   69.0,
+   117.0
+  ]
+ },
+ "468032098": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_srd9_icon.webp",
+  "name": "T_UI_DPF_SRD9_Icon",
+  "pl": [
+   168.0,
+   107.0
+  ],
+  "sz": [
+   101.0,
+   41.0
+  ]
+ },
+ "470257511": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_barrel457mm_icon.webp",
+  "name": "T_UI_DPF_VHS2_Barrel457mm_Icon",
+  "pl": [
+   218.0,
+   112.0
+  ],
+  "sz": [
+   141.0,
+   32.0
+  ]
+ },
+ "470504899": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarsc/t_ui_dpf_scarsc_barrel223mm_icon.webp",
+  "name": "T_UI_DPF_SCARSC_Barrel223mm_Icon",
+  "pl": [
+   229.0,
+   111.0
+  ],
+  "sz": [
+   49.0,
+   33.0
+  ]
+ },
+ "477429428": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_suppressor_thiccboi_icon.webp",
+  "name": "T_UI_DPF_Suppressor_ThiccBoi_Icon",
+  "pl": [
+   150.0,
+   107.0
+  ],
+  "sz": [
+   119.0,
+   54.0
+  ]
+ },
+ "478542676": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_cantedironsight_rpkm_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_RPKM_Icon",
+  "pl": [
+   177.0,
+   112.0
+  ],
+  "sz": [
+   95.0,
+   43.0
+  ]
+ },
+ "484266302": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apdw/t_ui_dpf_apdw_mag60_icon.webp",
+  "name": "T_UI_DPF_APDW_Mag60_Icon",
+  "pl": [
+   137.0,
+   100.0
+  ],
+  "sz": [
+   124.0,
+   40.0
+  ]
+ },
+ "486525568": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_ironsights_icon.webp",
+  "name": "T_UI_DPF_M250_IronSights_Icon",
+  "pl": [
+   62.0,
+   40.0
+  ],
+  "sz": [
+   233.0,
+   42.0
+  ]
+ },
+ "486568818": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_mp5mli_barreldefault_icon.webp",
+  "name": "T_UI_DPF_MP5MLI_BarrelDefault_Icon",
+  "pl": [
+   229.0,
+   111.0
+  ],
+  "sz": [
+   105.0,
+   34.0
+  ]
+ },
+ "48821525": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_base_icon.webp",
+  "name": "T_UI_DPF_MG5_Base_Icon",
+  "pl": [
+   32.0,
+   60.0
+  ],
+  "sz": [
+   396.0,
+   118.0
+  ]
+ },
+ "48941285": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_obsidian45_fixedthread_icon.webp",
+  "name": "T_UI_DPF_Obsidian45_FixedThread_Icon",
+  "pl": [
+   169.0,
+   107.0
+  ],
+  "sz": [
+   100.0,
+   42.0
+  ]
+ },
+ "490355705": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "sv98m/t_ui_dpf_cantedironsight_sv98m_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_SV98M_Icon",
+  "pl": [
+   145.0,
+   112.0
+  ],
+  "sz": [
+   127.0,
+   43.0
+  ]
+ },
+ "495067988": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hxqd556mm_icon.webp",
+  "name": "T_UI_DPF_HXQD556mm_Icon",
+  "pl": [
+   174.0,
+   107.0
+  ],
+  "sz": [
+   95.0,
+   41.0
+  ]
+ },
+ "495387284": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m39emr/t_ui_dpf_m39emr_magazine25rnd_icon.webp",
+  "name": "T_UI_DPF_M39EMR_Magazine25rnd_Icon",
+  "pl": [
+   217.0,
+   113.0
+  ],
+  "sz": [
+   62.0,
+   96.0
+  ]
+ },
+ "497874653": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_base_icon.webp",
+  "name": "T_UI_DPF_M250_Base_Icon",
+  "pl": [
+   55.0,
+   53.0
+  ],
+  "sz": [
+   348.0,
+   118.0
+  ]
+ },
+ "512489419": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_nx8_4_icon.webp",
+  "name": "T_UI_DPF_NX8_4_Icon",
+  "pl": [
+   115.0,
+   85.0
+  ],
+  "sz": [
+   157.0,
+   58.0
+  ]
+ },
+ "514883919": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazinemagpull_icon.webp",
+  "name": "T_UI_DPF_PP19_MagazineMagpull_Icon",
+  "pl": [
+   223.0,
+   110.0
+  ],
+  "sz": [
+   72.0,
+   119.0
+  ]
+ },
+ "5205844": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_590a1_barrel_icon.webp",
+  "name": "T_UI_DPF_590A1_Barrel_Icon",
+  "pl": [
+   242.0,
+   101.0
+  ],
+  "sz": [
+   237.0,
+   61.0
+  ]
+ },
+ "521085038": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_acrop2_icon.webp",
+  "name": "T_UI_DPF_AcroP2_Icon",
+  "pl": [
+   243.0,
+   104.0
+  ],
+  "sz": [
+   44.0,
+   38.0
+  ]
+ },
+ "522868530": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_magazine20rndext_icon.webp",
+  "name": "T_UI_DPF_APC10_Magazine20rndExt_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   51.0,
+   95.0
+  ]
+ },
+ "529048712": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_dtk2_icon.webp",
+  "name": "T_UI_DPF_DTK2_Icon",
+  "pl": [
+   223.0,
+   108.0
+  ],
+  "sz": [
+   46.0,
+   39.0
+  ]
+ },
+ "536690322": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sfscout_base_icon.webp",
+  "name": "T_UI_DPF_SFScout_Base_Icon",
+  "pl": [
+   244.0,
+   108.0
+  ],
+  "sz": [
+   70.0,
+   43.0
+  ]
+ },
+ "541610628": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_magextended_icon.webp",
+  "name": "T_UI_DPF_M250_MagExtended_Icon",
+  "pl": [
+   211.0,
+   85.0
+  ],
+  "sz": [
+   77.0,
+   131.0
+  ]
+ },
+ "545032399": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ump40/t_ui_dpf_ump40_magazine25rd_fast_icon.webp",
+  "name": "T_UI_DPF_UMP40_Magazine25Rd_Fast_Icon",
+  "pl": [
+   218.0,
+   114.0
+  ],
+  "sz": [
+   60.0,
+   131.0
+  ]
+ },
+ "547139109": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_barrel480mm_icon.webp",
+  "name": "T_UI_DPF_G36_Barrel480mm_Icon",
+  "pl": [
+   251.0,
+   111.0
+  ],
+  "sz": [
+   171.0,
+   37.0
+  ]
+ },
+ "548627455": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "185ksk/t_ui_dpf_cantedironsight_185ksk_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_185KSK_Icon",
+  "pl": [
+   179.0,
+   112.0
+  ],
+  "sz": [
+   93.0,
+   43.0
+  ]
+ },
+ "560658151": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_saimg30fs_icon.webp",
+  "name": "T_UI_DPF_M240L_SAIMG30FS_Icon",
+  "pl": [
+   184.0,
+   108.0
+  ],
+  "sz": [
+   68.0,
+   38.0
+  ]
+ },
+ "56741773": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_barrel510mm_icon.webp",
+  "name": "T_UI_DPF_G36_Barrel510mm_Icon",
+  "pl": [
+   239.0,
+   111.0
+  ],
+  "sz": [
+   183.0,
+   37.0
+  ]
+ },
+ "569435918": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "vhs2/t_ui_dpf_vhs2_base_icon.webp",
+  "name": "T_UI_DPF_VHS2_Base_Icon",
+  "pl": [
+   135.0,
+   68.0
+  ],
+  "sz": [
+   278.0,
+   105.0
+  ]
+ },
+ "584941648": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp5mli/t_ui_dpf_cantedironsight_mp5mil_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MP5MIL_Icon",
+  "pl": [
+   193.0,
+   112.0
+  ],
+  "sz": [
+   79.0,
+   43.0
+  ]
+ },
+ "585434139": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_magazine20rnd_icon.webp",
+  "name": "T_UI_DPF_APC10_Magazine20rnd_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   50.0,
+   85.0
+  ]
+ },
+ "593680023": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_cantedironsight_minimi_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_Minimi_Icon",
+  "pl": [
+   169.0,
+   112.0
+  ],
+  "sz": [
+   103.0,
+   43.0
+  ]
+ },
+ "595674700": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_kacm4qd_icon.webp",
+  "name": "T_UI_DPF_KACM4QD_Icon",
+  "pl": [
+   225.0,
+   111.0
+  ],
+  "sz": [
+   44.0,
+   34.0
+  ]
+ },
+ "604842953": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_mag75_icon.webp",
+  "name": "T_UI_DPF_M240L_Mag75_Icon",
+  "pl": [
+   228.0,
+   76.0
+  ],
+  "sz": [
+   60.0,
+   99.0
+  ]
+ },
+ "60711508": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_barrel457mm_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Barrel457mm_Icon",
+  "pl": [
+   194.0,
+   111.0
+  ],
+  "sz": [
+   199.0,
+   34.0
+  ]
+ },
+ "608483220": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_457mmbarrel_icon.webp",
+  "name": "T_UI_DPF_M250_457mmBarrel_Icon",
+  "pl": [
+   236.0,
+   105.0
+  ],
+  "sz": [
+   276.0,
+   54.0
+  ]
+ },
+ "634922509": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rsmmtypemicro_icon.webp",
+  "name": "T_UI_DPF_RSMMTypeMicro_Icon",
+  "pl": [
+   229.0,
+   110.0
+  ],
+  "sz": [
+   40.0,
+   35.0
+  ]
+ },
+ "636546918": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_base_icon.webp",
+  "name": "T_UI_DPF_G3A4_Base_Icon",
+  "pl": [
+   33.0,
+   60.0
+  ],
+  "sz": [
+   359.0,
+   112.0
+  ]
+ },
+ "638653383": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel646mmfluted_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel646mmFluted_Icon",
+  "pl": [
+   189.0,
+   105.0
+  ],
+  "sz": [
+   192.0,
+   47.0
+  ]
+ },
+ "639678074": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m4a1/t_ui_dpf_m4a1_barrelfluted_icon.webp",
+  "name": "T_UI_DPF_M4A1_BarrelFluted_Icon",
+  "pl": [
+   228.0,
+   109.0
+  ],
+  "sz": [
+   152.0,
+   37.0
+  ]
+ },
+ "647101079": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_reflex_mro_icon.webp",
+  "name": "T_UI_DPF_Reflex_MRO_Icon",
+  "pl": [
+   228.0,
+   95.0
+  ],
+  "sz": [
+   51.0,
+   48.0
+  ]
+ },
+ "661109410": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_barrel_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Barrel_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   152.0,
+   34.0
+  ]
+ },
+ "662784232": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "tavor7/t_ui_dpf_pmag10rnd762n_ranger_icon.webp",
+  "name": "T_UI_DPF_PMAG10rnd762N_Ranger_Icon",
+  "pl": [
+   240.0,
+   112.0
+  ],
+  "sz": [
+   58.0,
+   71.0
+  ]
+ },
+ "666336800": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_suppressorms57_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_SuppressorMS57_Icon",
+  "pl": [
+   188.0,
+   108.0
+  ],
+  "sz": [
+   81.0,
+   39.0
+  ]
+ },
+ "668084143": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_anpeq16b_icon.webp",
+  "name": "T_UI_DPF_ANPEQ16B_Icon",
+  "pl": [
+   241.0,
+   107.0
+  ],
+  "sz": [
+   54.0,
+   38.0
+  ]
+ },
+ "672810153": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpkm/t_ui_dpf_rpkm_sight_icon.webp",
+  "name": "T_UI_DPF_RPKM_Sight_Icon",
+  "pl": [
+   157.0,
+   77.0
+  ],
+  "sz": [
+   48.0,
+   30.0
+  ]
+ },
+ "675125398": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_pufgun60rnd545_icon.webp",
+  "name": "T_UI_DPF_PUFGUN60rnd545_Icon",
+  "pl": [
+   214.0,
+   113.0
+  ],
+  "sz": [
+   79.0,
+   116.0
+  ]
+ },
+ "675202926": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_base_icon.webp",
+  "name": "T_UI_DPF_SCARL_Base_Icon",
+  "pl": [
+   91.0,
+   65.0
+  ],
+  "sz": [
+   300.0,
+   108.0
+  ]
+ },
+ "687174498": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_evohandstop_icon.webp",
+  "name": "T_UI_DPF_EvoHandstop_Icon",
+  "pl": [
+   234.0,
+   113.0
+  ],
+  "sz": [
+   44.0,
+   42.0
+  ]
+ },
+ "695361242": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_magazineext_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_MagazineExt_Icon",
+  "pl": [
+   234.0,
+   117.0
+  ],
+  "sz": [
+   62.0,
+   78.0
+  ]
+ },
+ "69964336": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "fiveseven/t_ui_dpf_fiveseven_ironsights_icon.webp",
+  "name": "T_UI_DPF_FiveSeven_IronSights_Icon",
+  "pl": [
+   186.0,
+   95.0
+  ],
+  "sz": [
+   99.0,
+   31.0
+  ]
+ },
+ "703069768": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_receiverburst_icon.webp",
+  "name": "T_UI_DPF_M16A3_ReceiverBurst_Icon",
+  "pl": [
+   51.0,
+   80.0
+  ],
+  "sz": [
+   339.0,
+   94.0
+  ]
+ },
+ "703427153": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_cantedreddot_mideyerelief_icon.webp",
+  "name": "T_UI_DPF_CantedRedDot_MidEyeRelief_Icon",
+  "pl": [
+   241.0,
+   109.0
+  ],
+  "sz": [
+   43.0,
+   41.0
+  ]
+ },
+ "707781789": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_flashhider_hkp4prong_icon.webp",
+  "name": "T_UI_DPF_FlashHider_HKP4Prong_Icon",
+  "pl": [
+   223.0,
+   111.0
+  ],
+  "sz": [
+   46.0,
+   34.0
+  ]
+ },
+ "719425103": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_magazinemagpull_icon.webp",
+  "name": "T_UI_DPF_G36_MagazineMagpull_Icon",
+  "pl": [
+   232.0,
+   112.0
+  ],
+  "sz": [
+   68.0,
+   104.0
+  ]
+ },
+ "724061606": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_barrel18inspr_icon.webp",
+  "name": "T_UI_DPF_M16A3_Barrel18inSPR_Icon",
+  "pl": [
+   213.0,
+   84.0
+  ],
+  "sz": [
+   204.0,
+   64.0
+  ]
+ },
+ "727409295": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "xm7/t_ui_dpf_xm7_base_icon.webp",
+  "name": "T_UI_DPF_XM7_Base_Icon",
+  "pl": [
+   61.0,
+   71.0
+  ],
+  "sz": [
+   309.0,
+   102.0
+  ]
+ },
+ "732938037": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_trijiconsro_mounted_icon.webp",
+  "name": "T_UI_DPF_TrijiconSRO_Mounted_Icon",
+  "pl": [
+   239.0,
+   102.0
+  ],
+  "sz": [
+   49.0,
+   44.0
+  ]
+ },
+ "733808672": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hkpmicrocomp_icon.webp",
+  "name": "T_UI_DPF_HKPMicroComp_Icon",
+  "pl": [
+   235.0,
+   110.0
+  ],
+  "sz": [
+   34.0,
+   35.0
+  ]
+ },
+ "741283242": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_cantedironsight_mrad_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_MRAD_Icon",
+  "pl": [
+   88.0,
+   112.0
+  ],
+  "sz": [
+   184.0,
+   43.0
+  ]
+ },
+ "742071797": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_dbala3_icon.webp",
+  "name": "T_UI_DPF_DBALA3_Icon",
+  "pl": [
+   243.0,
+   111.0
+  ],
+  "sz": [
+   56.0,
+   37.0
+  ]
+ },
+ "745823200": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_barrel203_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Barrel203_Icon",
+  "pl": [
+   252.0,
+   112.0
+  ],
+  "sz": [
+   43.0,
+   32.0
+  ]
+ },
+ "7467481": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_po4x17_icon.webp",
+  "name": "T_UI_DPF_PO4x17_Icon",
+  "pl": [
+   195.0,
+   95.0
+  ],
+  "sz": [
+   75.0,
+   48.0
+  ]
+ },
+ "748960473": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_flashhider_icon.webp",
+  "name": "T_UI_DPF_P90_FlashHider_Icon",
+  "pl": [
+   223.0,
+   110.0
+  ],
+  "sz": [
+   46.0,
+   34.0
+  ]
+ },
+ "761176954": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "scarl/t_ui_dpf_scarl_barrelheavy_icon.webp",
+  "name": "T_UI_DPF_SCARL_BarrelHeavy_Icon",
+  "pl": [
+   238.0,
+   111.0
+  ],
+  "sz": [
+   108.0,
+   34.0
+  ]
+ },
+ "766388402": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m18/t_ui_dpf_m18_barrel99mm_icon.webp",
+  "name": "T_UI_DPF_M18_Barrel99mm_Icon",
+  "pl": [
+   239.0,
+   110.0
+  ],
+  "sz": [
+   72.0,
+   38.0
+  ]
+ },
+ "766531564": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "msbsgrotcps/t_ui_dpf_msbsgrotcps_base_icon.webp",
+  "name": "T_UI_DPF_MSBSGROTCPS_Base_Icon",
+  "pl": [
+   62.0,
+   74.0
+  ],
+  "sz": [
+   331.0,
+   103.0
+  ]
+ },
+ "767464970": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_salvo12_icon.webp",
+  "name": "T_UI_DPF_Salvo12_Icon",
+  "pl": [
+   127.0,
+   107.0
+  ],
+  "sz": [
+   142.0,
+   54.0
+  ]
+ },
+ "77195942": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_magazine36nd_icon.webp",
+  "name": "T_UI_DPF_MPX_Magazine36nd_Icon",
+  "pl": [
+   219.0,
+   113.0
+  ],
+  "sz": [
+   59.0,
+   108.0
+  ]
+ },
+ "775516621": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel646mm_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel646mm_Icon",
+  "pl": [
+   189.0,
+   105.0
+  ],
+  "sz": [
+   192.0,
+   47.0
+  ]
+ },
+ "776068819": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minifix/t_ui_dpf_minifix_magazinefast_icon.webp",
+  "name": "T_UI_DPF_MiniFix_MagazineFast_Icon",
+  "pl": [
+   240.0,
+   113.0
+  ],
+  "sz": [
+   54.0,
+   73.0
+  ]
+ },
+ "781889362": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "apc10/t_ui_dpf_apc10_sight_icon.webp",
+  "name": "T_UI_DPF_APC10_Sight_Icon",
+  "pl": [
+   148.0,
+   58.0
+  ],
+  "sz": [
+   134.0,
+   44.0
+  ]
+ },
+ "79217550": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_tka_762mm_icon.webp",
+  "name": "T_UI_DPF_TKA_762mm_Icon",
+  "pl": [
+   172.0,
+   106.0
+  ],
+  "sz": [
+   97.0,
+   43.0
+  ]
+ },
+ "796280378": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g22/t_ui_dpf_g22_magazine22rnd_icon.webp",
+  "name": "T_UI_DPF_G22_Magazine22rnd_Icon",
+  "pl": [
+   234.0,
+   104.0
+  ],
+  "sz": [
+   59.0,
+   89.0
+  ]
+ },
+ "805242585": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "hk417a2/t_ui_dpf_hk417a2_magazine_magpull_icon.webp",
+  "name": "T_UI_DPF_HK417A2_Magazine_Magpull_Icon",
+  "pl": [
+   175.0,
+   92.0
+  ],
+  "sz": [
+   65.0,
+   95.0
+  ]
+ },
+ "812638099": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "ultimax/t_ui_dpf_ultimax_magazine100rnd_icon.webp",
+  "name": "T_UI_DPF_Ultimax_Magazine100rnd_Icon",
+  "pl": [
+   191.0,
+   102.0
+  ],
+  "sz": [
+   54.0,
+   93.0
+  ]
+ },
+ "827716839": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m1014/t_ui_dpf_m1014_muzzle_icon.webp",
+  "name": "T_UI_DPF_M1014_Muzzle_Icon",
+  "pl": [
+   211.0,
+   109.0
+  ],
+  "sz": [
+   58.0,
+   37.0
+  ]
+ },
+ "831465128": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m60e6/t_ui_dpf_cantedironsight_m60e6_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_M60E6_Icon",
+  "pl": [
+   179.0,
+   112.0
+  ],
+  "sz": [
+   93.0,
+   43.0
+  ]
+ },
+ "833344993": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g36/t_ui_dpf_g36_magazine_icon.webp",
+  "name": "T_UI_DPF_G36_Magazine_Icon",
+  "pl": [
+   232.0,
+   112.0
+  ],
+  "sz": [
+   68.0,
+   96.0
+  ]
+ },
+ "846435434": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m16a3/t_ui_dpf_m16a3_receiver_icon.webp",
+  "name": "T_UI_DPF_M16A3_Receiver_Icon",
+  "pl": [
+   184.0,
+   85.0
+  ],
+  "sz": [
+   112.0,
+   89.0
+  ]
+ },
+ "850001303": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_cantedironsight_6p67_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_6P67_Icon",
+  "pl": [
+   160.0,
+   112.0
+  ],
+  "sz": [
+   112.0,
+   43.0
+  ]
+ },
+ "851621773": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_barrel32in_icon.webp",
+  "name": "T_UI_DPF_L115A3_Barrel32in_Icon",
+  "pl": [
+   188.0,
+   109.0
+  ],
+  "sz": [
+   324.0,
+   38.0
+  ]
+ },
+ "856453224": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_msbs_base_icon.webp",
+  "name": "T_UI_DPF_MSBS_Base_Icon",
+  "pl": [
+   233.0,
+   113.0
+  ],
+  "sz": [
+   45.0,
+   62.0
+  ]
+ },
+ "861152668": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "590a1/t_ui_dpf_cantedironsight_590a1_icon.webp",
+  "name": "T_UI_DPF_CantedIronSight_590A1_Icon",
+  "pl": [
+   201.0,
+   112.0
+  ],
+  "sz": [
+   71.0,
+   43.0
+  ]
+ },
+ "865062573": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_wepatt_zoom_tango6t_icon.webp",
+  "name": "T_UI_DPF_WEPATT_Zoom_Tango6t_Icon",
+  "pl": [
+   200.0,
+   86.0
+  ],
+  "sz": [
+   120.0,
+   57.0
+  ]
+ },
+ "875193580": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "dp12/t_ui_dpf_dp12_sights_icon.webp",
+  "name": "T_UI_DPF_DP12_Sights_Icon",
+  "pl": [
+   97.0,
+   55.0
+  ],
+  "sz": [
+   157.0,
+   44.0
+  ]
+ },
+ "878885551": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l85a3/t_ui_dpf_l85a3_barrel518mmfluted_icon.webp",
+  "name": "T_UI_DPF_L85A3_Barrel518mmFluted_Icon",
+  "pl": [
+   237.0,
+   105.0
+  ],
+  "sz": [
+   144.0,
+   47.0
+  ]
+ },
+ "879719313": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_laser_meprosting_icon.webp",
+  "name": "T_UI_DPF_Laser_MeproSting_Icon",
+  "pl": [
+   240.0,
+   110.0
+  ],
+  "sz": [
+   58.0,
+   38.0
+  ]
+ },
+ "888545206": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minimi/t_ui_dpf_minimi_barrel349mmfluted_icon.webp",
+  "name": "T_UI_DPF_Minimi_Barrel349mmFluted_Icon",
+  "pl": [
+   239.0,
+   110.0
+  ],
+  "sz": [
+   143.0,
+   35.0
+  ]
+ },
+ "896660501": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_rmr_mounted_icon.webp",
+  "name": "T_UI_DPF_RMR_Mounted_Icon",
+  "pl": [
+   239.0,
+   105.0
+  ],
+  "sz": [
+   44.0,
+   40.0
+  ]
+ },
+ "899001518": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m240l/t_ui_dpf_m240l_rdm240fvs_icon.webp",
+  "name": "T_UI_DPF_M240L_RDM240FVS_Icon",
+  "pl": [
+   168.0,
+   105.0
+  ],
+  "sz": [
+   109.0,
+   46.0
+  ]
+ },
+ "899701376": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "minigun/t_ui_dpf_minigun_base_icon.webp",
+  "name": "T_UI_DPF_Minigun_Base_Icon",
+  "pl": [
+   0.0,
+   40.0
+  ],
+  "sz": [
+   401.0,
+   142.0
+  ]
+ },
+ "90432075": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "qbz192/t_ui_dpf_mantacover_small_icon.webp",
+  "name": "T_UI_DPF_MantaCover_Small_Icon",
+  "pl": [
+   237.0,
+   109.0
+  ],
+  "sz": [
+   38.0,
+   38.0
+  ]
+ },
+ "909851849": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "6p67/t_ui_dpf_6p67_barrel415mm_icon.webp",
+  "name": "T_UI_DPF_6P67_Barrel415mm_Icon",
+  "pl": [
+   235.0,
+   111.0
+  ],
+  "sz": [
+   112.0,
+   38.0
+  ]
+ },
+ "916712928": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_hkp3lug_icon.webp",
+  "name": "T_UI_DPF_HKP3Lug_Icon",
+  "pl": [
+   218.0,
+   109.0
+  ],
+  "sz": [
+   51.0,
+   37.0
+  ]
+ },
+ "919464793": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_barrel_icon.webp",
+  "name": "T_UI_DPF_G3A4_Barrel_Icon",
+  "pl": [
+   215.0,
+   111.0
+  ],
+  "sz": [
+   64.0,
+   34.0
+  ]
+ },
+ "920814094": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_magazine100rndbox_icon.webp",
+  "name": "T_UI_DPF_MG5_Magazine100rndBox_Icon",
+  "pl": [
+   226.0,
+   81.0
+  ],
+  "sz": [
+   60.0,
+   108.0
+  ]
+ },
+ "923416033": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "g3a4/t_ui_dpf_g3a4_magazine_icon.webp",
+  "name": "T_UI_DPF_G3A4_Magazine_Icon",
+  "pl": [
+   239.0,
+   112.0
+  ],
+  "sz": [
+   62.0,
+   85.0
+  ]
+ },
+ "925952839": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_magazinehelical_icon.webp",
+  "name": "T_UI_DPF_PP19_MagazineHelical_Icon",
+  "pl": [
+   159.0,
+   107.0
+  ],
+  "sz": [
+   131.0,
+   58.0
+  ]
+ },
+ "928571949": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mpx/t_ui_dpf_mpx_barrel114mm_icon.webp",
+  "name": "T_UI_DPF_MPX_Barrel114mm_Icon",
+  "pl": [
+   247.0,
+   110.0
+  ],
+  "sz": [
+   54.0,
+   35.0
+  ]
+ },
+ "931953377": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mg5/t_ui_dpf_mg5_magazine50rnddrum_icon.webp",
+  "name": "T_UI_DPF_MG5_Magazine50rndDrum_Icon",
+  "pl": [
+   223.0,
+   81.0
+  ],
+  "sz": [
+   63.0,
+   111.0
+  ]
+ },
+ "936196874": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_aactitanqd_icon.webp",
+  "name": "T_UI_DPF_AACTitanQD_Icon",
+  "pl": [
+   152.0,
+   105.0
+  ],
+  "sz": [
+   117.0,
+   45.0
+  ]
+ },
+ "938189548": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_wyssenmb_icon.webp",
+  "name": "T_UI_DPF_WyssenMB_Icon",
+  "pl": [
+   209.0,
+   109.0
+  ],
+  "sz": [
+   60.0,
+   38.0
+  ]
+ },
+ "938333910": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "rpk74m/t_ui_dpf_rpk74m_barrel521mmfluted_icon.webp",
+  "name": "T_UI_DPF_RPK74M_Barrel521mmFluted_Icon",
+  "pl": [
+   264.0,
+   96.0
+  ],
+  "sz": [
+   194.0,
+   52.0
+  ]
+ },
+ "942700486": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_kvpmach3_trilug_icon.webp",
+  "name": "T_UI_DPF_KVPMach3_TriLug_Icon",
+  "pl": [
+   225.0,
+   108.0
+  ],
+  "sz": [
+   44.0,
+   39.0
+  ]
+ },
+ "949047898": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_acrop2_lowriser_icon.webp",
+  "name": "T_UI_DPF_AcroP2_LowRiser_Icon",
+  "pl": [
+   243.0,
+   104.0
+  ],
+  "sz": [
+   44.0,
+   39.0
+  ]
+ },
+ "949415182": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mrad/t_ui_dpf_mrad_magazine_magpul_icon.webp",
+  "name": "T_UI_DPF_MRAD_Magazine_Magpul_Icon",
+  "pl": [
+   170.0,
+   105.0
+  ],
+  "sz": [
+   140.0,
+   68.0
+  ]
+ },
+ "95272607": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "svch/t_ui_dpf_svch_defaultmagmagpull_icon.webp",
+  "name": "T_UI_DPF_SVCh_DefaultMagMagpull_Icon",
+  "pl": [
+   241.0,
+   111.0
+  ],
+  "sz": [
+   71.0,
+   86.0
+  ]
+ },
+ "955370734": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "p90/t_ui_dpf_p90_base_icon.webp",
+  "name": "T_UI_DPF_P90_Base_Icon",
+  "pl": [
+   187.0,
+   65.0
+  ],
+  "sz": [
+   202.0,
+   98.0
+  ]
+ },
+ "957016916": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "shared/t_ui_dpf_sfscout_base_180_icon.webp",
+  "name": "T_UI_DPF_SFScout_Base_180_Icon",
+  "pl": [
+   244.0,
+   105.0
+  ],
+  "sz": [
+   70.0,
+   42.0
+  ]
+ },
+ "960536162": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "pp19/t_ui_dpf_pp19_muzzle_icon.webp",
+  "name": "T_UI_DPF_PP19_Muzzle_Icon",
+  "pl": [
+   227.0,
+   110.0
+  ],
+  "sz": [
+   42.0,
+   35.0
+  ]
+ },
+ "963786243": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "mp7a2/t_ui_dpf_mp7a2_barrel203heavy_icon.webp",
+  "name": "T_UI_DPF_MP7A2_Barrel203Heavy_Icon",
+  "pl": [
+   252.0,
+   111.0
+  ],
+  "sz": [
+   43.0,
+   33.0
+  ]
+ },
+ "971416947": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m2010esr/t_ui_dpf_m2010esr_magazine_icon.webp",
+  "name": "T_UI_DPF_M2010ESR_Magazine_Icon",
+  "pl": [
+   234.0,
+   117.0
+  ],
+  "sz": [
+   62.0,
+   62.0
+  ]
+ },
+ "973163401": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "l115a3/t_ui_dpf_l115a3_7rdmagmagpul_icon.webp",
+  "name": "T_UI_DPF_L115A3_7RdMagMagpul_Icon",
+  "pl": [
+   242.0,
+   111.0
+  ],
+  "sz": [
+   66.0,
+   85.0
+  ]
+ },
+ "994545072": {
+  "cv": [
+   512.0,
+   256.0
+  ],
+  "img": "m250/t_ui_dpf_m250_406mmbarrel_icon.webp",
+  "name": "T_UI_DPF_M250_406mmBarrel_Icon",
+  "pl": [
+   270.0,
+   105.0
+  ],
+  "sz": [
+   242.0,
+   54.0
+  ]
+ }
+}

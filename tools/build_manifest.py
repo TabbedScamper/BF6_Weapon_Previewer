@@ -82,6 +82,34 @@ def main():
         pn = json.load(open(pnp, encoding="utf-8"))
         print("using portal_names.json (%d weapons, %d gadgets)"
               % (len(pn["weapons"]), len(pn["gadgets"])))
+    sdk = pn.get("sdk", {"weapons": {}, "gadgets": {}, "attachments": {}})
+    catalog_mags = set(pn.get("catalog_mags", []))
+
+    # AUTHORED weapon-card layer offsets (hiao_<weapon>.ebx) + global sprite
+    # index over every layered icon atlas — see extract_hiao.py. Final card
+    # position = atlas sprite placement + hiao offset (already resolved into
+    # each layer's `pl` by card_join).
+    card_hiao, card_sprites = {}, {}
+    chp = os.path.join(HERE, "data", "card_hiao.json")
+    csp = os.path.join(HERE, "data", "card_sprites.json")
+    if os.path.exists(chp) and os.path.exists(csp):
+        card_hiao = json.load(open(chp, encoding="utf-8"))
+        card_sprites = json.load(open(csp, encoding="utf-8"))
+        print("using card_hiao.json (%d weapons) + card_sprites.json (%d sprites)"
+              % (len(card_hiao), len(card_sprites)))
+    import card_join
+    card_report = []
+
+    def mag_sdk(tok, mesh):
+        """Per-weapon magazine join: mag MESH names carry the capacity the
+        catalog names by ('magazine30rnd' -> Magazine_30rnd_Magazine).
+        Only exact catalog matches; belts/drums/tubes stay unjoined."""
+        mm = re.search(r"(\d+)rnd", (mesh or "") + tok)
+        if not mm:
+            return None
+        fast = "fast" in tok or "fast" in (mesh or "")
+        cand = "Magazine_%srnd_%s" % (mm.group(1), "Fast_Mag" if fast else "Magazine")
+        return cand if cand in catalog_mags else None
     bindings = {}
     if os.path.exists(BINDINGS):
         bindings = json.load(open(BINDINGS, encoding="utf-8")).get("weapons", {})
@@ -388,6 +416,33 @@ def main():
                 return [round(row[i] + sk[i] + bt[i], 4) for i in range(3)]
             return None
 
+        RAIL_ST = {"btm": "bottomrailattachment", "top": "toprailattachment"}
+        wsockg = {g["slot_type"]: g["socket"]
+                  for g in wb.get("slot_groups", []) if g.get("socket")}
+
+        def rail_trim(tok_code, tok, mesh):
+            """btm/top rail slot-group SOCKETS carry real per-weapon trims,
+            applied like the sight-group socket in optic_dt (raw-EBX verified:
+            g22 btm (0,-0.0066,0.0769); sv98m btm (0,0,0.1963) + top
+            (0.0065,0.1001,0.4845); m4a1 absent = identity -> no delta).
+            Null-bone bindings (sv98m own bipod, UGL mounts) are authored IN
+            PLACE and must stay untransformed — the @-node rule places them."""
+            sk = wsockg.get(RAIL_ST[tok_code])
+            if not sk:
+                return None                     # no socket -> identity
+            att0 = (wb.get("attachments") or {}).get("%s/%s" % (tok_code, tok))
+            rec = wrecs.get(att0 and att0.get("record_inst"))
+            if rec and rec.get("bindings"):
+                b0 = rec["bindings"][0]
+                if not b0.get("bone"):
+                    return None                 # null bone -> in place, dt = 0
+                if b0["bone"] != sk.get("bone"):
+                    return None                 # socket anchors another bone
+            elif not mesh.startswith("ob_wepatt_"):
+                return None                     # recordless own part: in place
+            t = [round(v, 4) for v in sk["transform"]["trans"]]
+            return t if any(abs(v) > 5e-4 for v in t) else None
+
         claimed_extras = set()
         slots = {}
         for code, toks in w["slots"].items():
@@ -441,10 +496,22 @@ def main():
                     join_miss += 1
                 e = {"t": t, "label": pn["attachments"].get(code, {}).get(t) or title(t),
                      "mesh": mesh, "src": src}
+                se = sdk["attachments"].get(code, {}).get(t)
+                if se:
+                    e["sdk"] = se["enum"]
+                elif code == "mag":
+                    ms = mag_sdk(t, mesh)
+                    if ms:
+                        e["sdk"] = ms
+                        e["label"] = ms[len("Magazine_"):].replace("_", " ")
                 if code in ("scp", "sca") and mesh:
                     odt = optic_dt(code, t)
                     if odt:
                         e["dt"] = odt
+                if code in ("btm", "top") and mesh:
+                    rdt = rail_trim(code, t, mesh)
+                    if rdt:
+                        e["dt"] = rdt
                 if extras:
                     e["x"] = extras
                     claimed_extras.update(extras)
@@ -466,6 +533,11 @@ def main():
         defaults = {}
         fixed = []
         irons = {}
+        # own parts that a rail slot swaps in (sniper/MG bipods...) render
+        # only when that attachment is equipped — never always-on duplicates
+        # (the s_btm copy gets the rail socket trim; a fixed copy would not)
+        rail_slot_meshes = {e["mesh"] for rc in ("btm", "top")
+                            for e in slots.get(rc, []) if e.get("mesh")}
         for fam, members in fams.items():
             slot = FAMILY_SLOT.get(fam)
             if fam in ("ironsights", "sight"):
@@ -488,7 +560,7 @@ def main():
                 continue
             if slot and slot in slots:
                 defaults[slot] = mesh  # shown until player picks a slot item
-            elif mesh not in claimed_extras:
+            elif mesh not in claimed_extras and mesh not in rail_slot_meshes:
                 fixed.append(mesh)   # attachment-companion parts render with
                                      # their attachment, never always-on
 
@@ -522,7 +594,11 @@ def main():
             for e in slots.get("brl", []):
                 brl_wz[e["t"]] = round(barrel_write_z(wid, e["t"]), 4)
         # slides etc. are skinned to non-ATT bones (Wep_Bolt1...) — the
-        # per-node bone rule places them once their GLBs carry @-part nodes
+        # per-node bone rule places them once their GLBs carry @-part nodes.
+        # Raw-EBX ground truth: base-group records (pistol slides, charm
+        # holders) bind with a NULL bone pointer = no record-level offset —
+        # so fixed parts get NO partDt/bdt here, ever. Their GLBs still bake
+        # the shared-skeleton bind pose, which boneDt corrects per node.
         fixed_dt = {}
 
         # skins: texture recolors + REPLACEMENT meshes (legendary wraps ship
@@ -550,9 +626,15 @@ def main():
                 if rep:
                     w_skins[sid]["mesh"] = rep
 
+        wsdk = sdk["weapons"].get(name)
+        card, crep = card_join.build_card(name, slots, factory,
+                                          card_hiao.get(name), card_sprites)
+        card_report.extend(crep)
         weapons.append({
+            **({"card": card} if card else {}),
             "id": wid, "cls": cls, "name": name,
             "display": (pn["weapons"].get(name) or name).upper(),
+            **({"sdk": wsdk["enum"], "sdkSrc": wsdk["src"]} if wsdk else {}),
             "base": base, "fixed": sorted(set(fixed)),
             "defaults": defaults, "factory": factory, "slots": slots,
             "partDt": dict(({"brl": bdt, "mzl": bdt} if bdt else {}),
@@ -586,8 +668,10 @@ def main():
                 break
         if not best:
             continue
+        gsdk = sdk["gadgets"].get(name)
         entry = {"id": gid, "cat": cat, "name": name,
-                 "display": pn["gadgets"].get(name) or title(name), "mesh": best}
+                 "display": pn["gadgets"].get(name) or title(name), "mesh": best,
+                 **({"sdk": gsdk["enum"]} if gsdk else {})}
         extras = [s[:-5] for s in pool if s[:-5] != best]
         if extras:
             entry["x"] = extras
@@ -622,9 +706,18 @@ def main():
     json.dump(manifest, open(OUT, "w", encoding="utf-8"), separators=(",", ":"))
     print("weapons=%d gadgets=%d  token joins: %d ok / %d missing  -> %s"
           % (len(weapons), len(gadgets), join_hit, join_miss, OUT))
+    if card_report:
+        open(os.path.join(HERE, "data", "card_join_report.txt"), "w",
+             encoding="utf-8").write("\n".join(card_report) + "\n")
+        print("card layers: %d unmatched (data/card_join_report.txt)"
+              % len(card_report))
 
     import export_compat
     export_compat.main()
+    import export_xlsx
+    export_xlsx.main()
+    import export_armory_html
+    export_armory_html.main()  # embeds the xlsx — keep last
 
 
 if __name__ == "__main__":

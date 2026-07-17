@@ -26,11 +26,38 @@ OUT = os.path.join(HERE, "data", "placements.json")
 MODELS = r"A:\bf6weapons\models"
 OWN_GATE = 0.03   # metres: own-part median |dt| must stay under this
 
-BONE_ORDER = [  # md transform-slot idx = 2 + position (doc 5.5; idx4=Barrel_ATT verified)
+BONE_ORDER = [  # legacy display order only — DO NOT use for md idx mapping
     "WeaponRoot", "WeaponAlign", "Barrel_ATT", "Muzzle_ATT", "MuzzleAdaptor_ATT",
     "Sight_ATT", "SecondarySight_ATT", "Magnifier_ATT", "Laser_ATT",
     "Flashlight_ATT", "Rangefinder_ATT", "UnderBarrel_ATT", "Magazine01",
 ]
+
+# md bone_defaults idx == skeleton bone index DIRECTLY (raw-EBX verified on
+# all weapons, 62 rows idx 2..63; the old "idx = 2 + BONE_ORDER position"
+# held only through idx 4 by coincidence). The shared gameplay-bone table
+# ships in data/skeleton_gameplay_bones.json (Wep_Barrel_ATT=4,
+# Wep_Muzzle_ATT=7, Wep_MGZ_ATT=22, Wep_Scope_ATT=51, ...).
+GPBONES = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       "data", "skeleton_gameplay_bones.json")
+SKE2GP = {  # skeleton bone name -> gameplay bone name (md/bindings side)
+    "Wep_Root": "WeaponRoot", "Wep_Align": "WeaponAlign",
+    "Wep_Barrel_ATT": "Barrel_ATT", "Wep_Muzzle_ATT": "Muzzle_ATT",
+    "Wep_MuzzleAdaptor_ATT": "MuzzleAdaptor_ATT", "Wep_Scope_ATT": "Sight_ATT",
+    "Wep_SecondarySight_ATT": "SecondarySight_ATT",
+    "Wep_Magnifier_ATT": "Magnifier_ATT", "Wep_Laser_ATT": "Laser_ATT",
+    "Wep_FlashLight_ATT": "Flashlight_ATT",
+    "Wep_RangeFinder_ATT": "Rangefinder_ATT",
+    "Wep_UnderBarrel_ATT": "UnderBarrel_ATT", "Wep_MGZ_ATT": "Magazine01",
+}
+
+
+def gp_idx2name():
+    """{md bone_defaults idx: gameplay bone name} from the verified table."""
+    out = {}
+    for k, v in json.load(open(GPBONES, encoding="utf-8")).items():
+        if not k.startswith("_") and v.get("boneName") in SKE2GP:
+            out[v["boneIndex"]] = SKE2GP[v["boneName"]]
+    return out
 
 
 def _glb_aabb(name):
@@ -75,6 +102,7 @@ def main():
     needed = sorted({m for sm in slot_mesh.values() for m, _ in sm.values()})
     aabbs = mesh_aabbs(needed)
 
+    idx2name = gp_idx2name()
     placements = {}
     own_err = []
     shared_rows = []
@@ -83,9 +111,9 @@ def main():
         groups = {g["inst"]: g for g in wb.get("slot_groups", [])}
         bones = {}
         for bd in wb.get("bone_defaults", []):
-            i = bd["idx"] - 2
-            if 0 <= i < len(BONE_ORDER):
-                bones[BONE_ORDER[i]] = bd["rot"][:3]   # label swap: 'rot' = translation
+            n = idx2name.get(bd["idx"])
+            if n:
+                bones[n] = bd["rot"][:3]   # label swap: 'rot' = translation
         for key, att in (wb.get("attachments") or {}).items():
             ri = att.get("record_inst")
             sm = slot_mesh.get(wid, {}).get(key)

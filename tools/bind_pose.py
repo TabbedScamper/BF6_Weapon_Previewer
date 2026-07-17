@@ -88,13 +88,15 @@ def main():
 
     d = json.load(open(bp.BINDINGS, encoding="utf-8"))
 
+    idx2name = bp.gp_idx2name()   # md idx == skeleton bone index (verified)
+
     def wbones(wid):
         wb = d["weapons"][wid]
         out = {}
         for bd in wb.get("bone_defaults", []):
-            i = bd["idx"] - 2
-            if 0 <= i < len(bp.BONE_ORDER):
-                out[bp.BONE_ORDER[i]] = bd["rot"][:3]   # label swap: rot=translation
+            n = idx2name.get(bd["idx"])
+            if n:
+                out[n] = bd["rot"][:3]   # label swap: rot=translation
         return out
 
     print("\n--- dt = weapon bone - bind pose (per weapon) ---")

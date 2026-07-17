@@ -1,0 +1,30 @@
+BF6 EBX field/type-name dictionary — build report
+====================================================
+
+Method: BF6 strips reflection names and uses a NON-STANDARD, so-far
+uncracked nameHash function (all djb2/fnv1/fnv1a/crc32/murmur/xxhash/
+city over basis x prime x case x utf8/utf16 x finalizer eliminated;
+the hash is case-insensitive and non-linear over GF(2)). Names are
+instead recovered hash-free by joining BF6's baked reflection
+(GUID->nameHash, field offset->hash) against community type dumps of
+older Frostbite titles (GUID->name, offset->fieldname). GUIDs are
+stable across Frostbite games.
+
+dict entries (unique hashes): 14291
+matched shared BF6 types: 5496
+dropped (ambiguous consensus): 1277
+field-nameHash coverage: 4654/26532 (17.5%)
+type-nameHash coverage:  5524/39724 (13.9%)
+
+sanity spot-checks (name -> nameHash):
+  x            -> 956422932
+  y            -> 1123815262
+  z            -> 849976220
+  w            -> 2088788722
+  Vec2         -> 967534913
+  Float32      -> 346075585
+  Int32        -> 880349490
+  Position     -> 2760256585
+  Name         -> 207223302
+  Identifier   -> 3731841971
+  Skeleton     -> 3287516531

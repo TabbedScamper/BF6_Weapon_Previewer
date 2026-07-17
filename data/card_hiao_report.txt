@@ -1,0 +1,454 @@
+sprite index: 849 sprites (0 cross-atlas dupes, 0 missing images)
+hiao minigun            entries=  5 resolved=  2
+hiao railgun            entries=  8 resolved=  2
+hiao ltlmii_artillery   entries=  1 resolved=  0
+hiao ltlmii_smokescreen entries=  1 resolved=  0
+hiao 6p67               entries=116 resolved= 96
+hiao ace32              entries=122 resolved=101
+hiao g36                entries=124 resolved= 98
+hiao g3a4               entries=130 resolved=102
+hiao hk433              entries=114 resolved= 93
+hiao l85a3              entries=116 resolved= 97
+hiao m16a3              entries=123 resolved= 96
+hiao scarl              entries=126 resolved=101
+hiao tavor7             entries=114 resolved= 91
+hiao vhs2: duplicate id 2376965642
+hiao vhs2               entries= 96 resolved= 86
+hiao l115a3             entries= 93 resolved= 79
+hiao m2010esr           entries=110 resolved= 85
+hiao minifix            entries=120 resolved= 95
+hiao mrad               entries=102 resolved= 83
+hiao sv98m              entries=101 resolved= 82
+hiao ak205              entries=121 resolved= 97
+hiao hk417a2            entries=112 resolved= 88
+hiao m4a1               entries=123 resolved= 99
+hiao msbsgrotb          entries=129 resolved= 97
+hiao qbz192             entries= 97 resolved= 77
+hiao scarsc             entries=116 resolved= 96
+hiao sig553r            entries=117 resolved= 97
+hiao xm7                entries=121 resolved= 90
+hiao aradmr             entries=139 resolved=109
+hiao m39emr             entries=135 resolved=111
+hiao msbsgrotcps        entries=105 resolved= 94
+hiao svch               entries=111 resolved= 92
+hiao svdm               entries=127 resolved=106
+hiao m240l              entries=105 resolved= 90
+hiao m250               entries=103 resolved= 86
+hiao m27iar             entries=146 resolved=112
+hiao m60e6              entries=104 resolved= 92
+hiao mg4k               entries=105 resolved= 91
+hiao mg5                entries= 84 resolved= 77
+hiao minimi             entries=109 resolved= 95
+hiao rpk74m             entries=102 resolved= 87
+hiao rpkm               entries=125 resolved= 99
+hiao ultimax            entries=120 resolved=100
+hiao fiveseven          entries= 33 resolved= 24
+hiao g22                entries= 65 resolved= 28
+hiao m18                entries= 35 resolved= 25
+hiao m45a1              entries= 40 resolved= 25
+hiao raginghunter       entries= 60 resolved= 48
+hiao skorpion           entries= 91 resolved= 48
+hiao trr8               entries= 46 resolved= 38
+hiao 185ksk             entries=100 resolved= 84
+hiao 590a1              entries= 95 resolved= 83
+hiao dp12               entries=101 resolved= 82
+hiao ksg                entries=  0 resolved=  0
+hiao m1014              entries=101 resolved= 82
+hiao apc10              entries=102 resolved= 80
+hiao apdw               entries=115 resolved= 88
+hiao mp5mli             entries=104 resolved= 89
+hiao mp7a2              entries= 99 resolved= 86
+hiao mpx                entries= 99 resolved= 78
+hiao p90                entries= 84 resolved= 73
+hiao pp19               entries= 85 resolved= 74
+hiao scorpionevo3       entries=125 resolved=109
+hiao ump40              entries=128 resolved=101
+hiao vector             entries=101 resolved= 80
+TOTAL: 64 weapons, 6187 entries, 4996 resolved to atlas sprites (80.7%)
+unresolved distinct ids: 385 (icon not packed in any layered atlas — the in-game card cannot composite these either)
+  unresolved   18054810  pp19/base                    
+  unresolved   42337916  aradmr/base, m2010esr/base, m27iar/base, m39emr/base 
+  unresolved   49373348  m45a1/base                   
+  unresolved   52529841  m2010esr/base                
+  unresolved   59211749  mpx/base                     
+  unresolved   64883954  sig553r/base                 
+  unresolved   69907543  svdm/muzzle                  
+  unresolved   72161207  svdm/base                    
+  unresolved   84168904  fiveseven/muzzle             
+  unresolved  110951795  ak205/muzzle                 
+  unresolved  112146796  dp12/base                    
+  unresolved  143589218  pp19/base                    
+  unresolved  164895625  vector/base                  
+  unresolved  187741382  fiveseven/muzzle, m18/muzzle, vector/muzzle 
+  unresolved  200626749  xm7/barrel                   = Common/UI/Assets/Images/Hardware/Generated/Weapons/Carbine/XM7/T_UI_DPF_XM7_Barrel13in_Icon
+  unresolved  206467913  minifix/base                 
+  unresolved  213721939  msbsgrotb/base               
+  unresolved  215010636  g3a4/muzzle                  
+  unresolved  216369840  scarsc/barrel                
+  unresolved  219314395  pp19/base                    
+  unresolved  220735789  apdw/base, m1014/base, ump40/base 
+  unresolved  233568025  m45a1/muzzle, ump40/muzzle   
+  unresolved  235638728  m39emr/muzzle                
+  unresolved  256569477  apc10/barrel                 
+  unresolved  261712178  m240l/base                   
+  unresolved  269718567  6p67/base, ace32/base, ak205/base, apdw/base 
+  unresolved  276020296  mp7a2/barrel                 
+  unresolved  285131169  svch/base                    
+  unresolved  286560689  m45a1/base                   
+  unresolved  306512467  185ksk/base                  
+  unresolved  310022825  6p67/base                    
+  unresolved  315926524  mg4k/barrel                  
+  unresolved  316016495  scorpionevo3/canted, vhs2/canted 
+  unresolved  342045371  6p67/base                    
+  unresolved  378149616  rpk74m/base                  
+  unresolved  395597632  minifix/base                 
+  unresolved  396221510  skorpion/base                
+  unresolved  407078170  m45a1/base                   
+  unresolved  451626648  raginghunter/base            
+  unresolved  484176742  185ksk/canted, 590a1/canted, 6p67/canted, ace32/canted = Common/UI/Assets/Images/Hardware/Generated/Attachments/MidZoom/PO4x17/Art/T_UI_DPF_PO4x17_Reflex_Icon
+  unresolved  501788081  aradmr/base                  
+  unresolved  509570778  m27iar/barrel                
+  unresolved  530525814  fiveseven/base, g22/base, m45a1/base, raginghunter/base 
+  unresolved  535736665  msbsgrotb/base               
+  unresolved  543930619  apc10/base                   
+  unresolved  551910661  aradmr/base                  
+  unresolved  566825189  590a1/base                   
+  unresolved  567168904  g3a4/base                    
+  unresolved  626334478  vector/base                  = Common/UI/Assets/Images/Hardware/Generated/Weapons/SMG/Vector/T_UI_DPF_Vector_Base_Icon
+  unresolved  630687560  m16a3/base                   
+  unresolved  631139283  mpx/base                     
+  unresolved  635396994  g22/base, skorpion/base      
+  unresolved  645672666  185ksk/base, 590a1/base, 6p67/base, ace32/base 
+  unresolved  662982009  g3a4/base                    
+  unresolved  665127916  6p67/base, ace32/base, ak205/base, apdw/base 
+  unresolved  674227265  apdw/base                    
+  unresolved  680251615  railgun/base                 
+  unresolved  686343200  ultimax/base                 
+  unresolved  697566513  aradmr/base                  
+  unresolved  728902592  m45a1/base                   
+  unresolved  756226147  sv98m/base                   
+  unresolved  763001512  svdm/base                    
+  unresolved  767045412  scorpionevo3/barrel          
+  unresolved  769312859  xm7/base                     
+  unresolved  828217119  590a1/base                   
+  unresolved  840016668  g22/base, skorpion/base      
+  unresolved  850910683  mp5mli/base                  
+  unresolved  857561154  6p67/base                    
+  unresolved  875561607  minifix/base                 
+  unresolved  886365095  msbsgrotb/base, qbz192/base, xm7/base 
+  unresolved  890990411  m4a1/muzzle                  
+  unresolved  893392744  msbsgrotcps/muzzle           
+  unresolved  905775020  m250/base                    
+  unresolved  915763362  mg4k/barrel                  
+  unresolved  923850171  xm7/barrel                   
+  unresolved  924425300  g22/base, skorpion/base      
+  unresolved  928248283  ump40/base                   
+  unresolved  932512817  rpkm/base                    
+  unresolved  935097222  m18/base                     
+  unresolved  941930707  g22/base, skorpion/base      
+  unresolved  944558983  6p67/base, ace32/base, ak205/base, apdw/base 
+  unresolved  954135588  m16a3/base                   
+  unresolved  963606830  xm7/barrel                   
+  unresolved  971165676  xm7/base                     
+  unresolved  979973143  g22/base, skorpion/base      
+  unresolved  996804021  aradmr/base, g3a4/base, rpkm/base 
+  unresolved 1010524787  m4a1/base                    
+  unresolved 1027138539  m16a3/base                   
+  unresolved 1078592585  m2010esr/base                
+  unresolved 1084502161  6p67/base, ace32/base, ak205/base, apdw/base 
+  unresolved 1089568121  apc10/barrel                 
+  unresolved 1092184305  m27iar/base, m4a1/base       
+  unresolved 1098348287  m16a3/base                   
+  unresolved 1119199010  ak205/base                   
+  unresolved 1119530739  vector/base                  
+  unresolved 1120461618  raginghunter/base            
+  unresolved 1138020603  ace32/base                   
+  unresolved 1140177489  msbsgrotcps/base             
+  unresolved 1150044507  railgun/base                 
+  unresolved 1158649138  hk417a2/base                 
+  unresolved 1168156495  scarl/muzzle                 
+  unresolved 1170318264  g22/base, skorpion/base      
+  unresolved 1175089529  skorpion/base                
+  unresolved 1176238456  sv98m/base                   
+  unresolved 1183053986  vector/muzzle                
+  unresolved 1202534200  scarl/barrel                 
+  unresolved 1204141736  tavor7/base                  
+  unresolved 1215594479  tavor7/base                  
+  unresolved 1226878724  rpkm/base                    = Common/UI/Assets/Images/Hardware/Generated/Weapons/MG/RPKM/T_UI_DPF_RPKM_Sight_Short_Icon
+  unresolved 1262032857  svdm/base                    
+  unresolved 1274635146  m16a3/base                   
+  unresolved 1275299027  xm7/barrel                   
+  unresolved 1293804354  m45a1/base                   
+  unresolved 1310131451  apdw/base, dp12/base, fiveseven/base, g22/base 
+  unresolved 1325687942  g22/base, skorpion/base      
+  unresolved 1331658662  m27iar/base                  
+  unresolved 1347182192  g22/base, skorpion/base      
+  unresolved 1351809307  svdm/base                    
+  unresolved 1363364435  g22/base, skorpion/base      
+  unresolved 1365762131  minifix/base                 
+  unresolved 1399612134  185ksk/canted, 590a1/canted, 6p67/canted, ace32/canted = Common/UI/Assets/Images/Hardware/Generated/Attachments/MidZoom/SteinerT536/Art/T_UI_DPF_SteinerT536_Reflex_Icon
+  unresolved 1425236380  g36/canted, g3a4/canted, hk417a2/canted, hk433/canted 
+  unresolved 1430221377  ltlmii_artillery/base        
+  unresolved 1446820555  m27iar/barrel                
+  unresolved 1456229167  185ksk/base, apc10/base, dp12/base, mp5mli/base 
+  unresolved 1470577352  sig553r/base                 
+  unresolved 1475270490  185ksk/base, apc10/base, dp12/base, mp5mli/base 
+  unresolved 1480344728  m16a3/base                   
+  unresolved 1498902443  m39emr/base                  
+  unresolved 1499722938  tavor7/base                  
+  unresolved 1506754974  m1014/base                   
+  unresolved 1541225823  tavor7/base                  
+  unresolved 1575751667  scorpionevo3/base            
+  unresolved 1612485192  g22/muzzle, skorpion/muzzle  
+  unresolved 1644012603  apdw/base, m1014/base, ump40/base 
+  unresolved 1649182272  ak205/barrel                 
+  unresolved 1651414535  m16a3/base                   
+  unresolved 1652885990  185ksk/canted, 590a1/canted, 6p67/canted, ace32/canted = Common/UI/Assets/Images/Hardware/Generated/Attachments/MidZoom/Spitfire5x/Art/T_UI_DPF_Spitfire5x_Reflex_Icon
+  unresolved 1663948211  msbsgrotcps/base             
+  unresolved 1670468744  m27iar/base                  
+  unresolved 1691756059  g22/base, m45a1/base, skorpion/base 
+  unresolved 1691926011  apc10/base                   
+  unresolved 1697411148  apc10/muzzle, g36/muzzle, hk433/muzzle, l85a3/muzzle 
+  unresolved 1701851603  590a1/base                   
+  unresolved 1704068241  railgun/base                 
+  unresolved 1757436467  xm7/base                     
+  unresolved 1757702117  rpk74m/base                  
+  unresolved 1762995510  mpx/base                     
+  unresolved 1771259895  g36/base, g3a4/base, hk433/base, l85a3/base 
+  unresolved 1787143854  scarsc/base                  
+  unresolved 1789301615  aradmr/base                  
+  unresolved 1789467255  hk417a2/barrel               
+  unresolved 1833392654  ak205/base                   
+  unresolved 1841598218  aradmr/base                  
+  unresolved 1860457688  6p67/base, ace32/base, ak205/base, apdw/base 
+  unresolved 1883030588  l115a3/base                  
+  unresolved 1890046090  vhs2/base                    
+  unresolved 1899588170  aradmr/base                  
+  unresolved 1924630769  6p67/base, ak205/base, dp12/base, m2010esr/base 
+  unresolved 1936521715  hk417a2/barrel               
+  unresolved 1946987379  fiveseven/base, g22/base, m18/base, m45a1/base 
+  unresolved 1948558189  ak205/base                   
+  unresolved 1952625073  aradmr/base                  
+  unresolved 1971800924  fiveseven/base               
+  unresolved 1979608104  m18/muzzle                   
+  unresolved 1981326906  m16a3/base                   
+  unresolved 1993152369  vector/barrel                
+  unresolved 2010820378  g3a4/base, hk433/base, m2010esr/canted, m240l/base 
+  unresolved 2013909408  xm7/base                     
+  unresolved 2023909249  apc10/base                   
+  unresolved 2031341164  apc10/muzzle, m16a3/muzzle, m27iar/muzzle, m4a1/muzzle 
+  unresolved 2031410803  g3a4/muzzle, hk417a2/muzzle, mg5/muzzle 
+  unresolved 2040205610  g36/muzzle, hk417a2/muzzle, m27iar/muzzle 
+  unresolved 2050226015  m27iar/base, m4a1/base       
+  unresolved 2050548869  scarl/base                   
+  unresolved 2052914696  rpk74m/base                  
+  unresolved 2057900035  raginghunter/base, trr8/base 
+  unresolved 2067696054  scorpionevo3/base, vhs2/base 
+  unresolved 2077176091  vector/base                  
+  unresolved 2128695600  m18/base                     
+  unresolved 2145632480  rpkm/base                    
+  unresolved 2158808383  l115a3/base                  
+  unresolved 2164154117  g22/base, skorpion/base      
+  unresolved 2167559679  m27iar/base                  
+  unresolved 2172255576  ak205/base                   
+  unresolved 2179150309  g22/base, skorpion/base      
+  unresolved 2194710195  hk417a2/base                 
+  unresolved 2200166487  scarsc/base                  
+  unresolved 2222996056  m1014/base                   
+  unresolved 2227959434  pp19/base                    
+  unresolved 2264684026  ak205/base                   
+  unresolved 2273317882  g22/base, skorpion/base      
+  unresolved 2297590639  m1014/base                   
+  unresolved 2311374983  minifix/base                 
+  unresolved 2315251563  ump40/barrel                 
+  unresolved 2316428113  scarl/barrel                 
+  unresolved 2326417564  msbsgrotb/base               
+  unresolved 2328557354  pp19/base                    
+  unresolved 2331224013  msbsgrotb/base               
+  unresolved 2340517027  mp7a2/muzzle                 
+  unresolved 2352129466  mg4k/base                    
+  unresolved 2356809755  g22/base, skorpion/base      
+  unresolved 2381716827  tavor7/base                  
+  unresolved 2408457367  dp12/base, m39emr/base       
+  unresolved 2424342907  sv98m/base                   
+  unresolved 2437706322  msbsgrotb/base               
+  unresolved 2443783984  skorpion/base                
+  unresolved 2445257457  m16a3/base                   
+  unresolved 2471561210  g22/base, skorpion/base      
+  unresolved 2480099536  g22/base, skorpion/base      
+  unresolved 2482929766  g22/base, skorpion/base      
+  unresolved 2498321835  g36/base, g3a4/base          
+  unresolved 2506718523  m60e6/base                   
+  unresolved 2511482885  rpk74m/base                  = Common/UI/Assets/Images/Hardware/Generated/Weapons/MG/RPK74M/Art/T_UI_DPF_RPK74M_IronSights_Short_Icon
+  unresolved 2511736404  ace32/base, sig553r/base     
+  unresolved 2513721883  ace32/base                   
+  unresolved 2536936800  minimi/base                  
+  unresolved 2538475579  sv98m/muzzle                 
+  unresolved 2560662843  m240l/base                   
+  unresolved 2570845977  m16a3/base                   
+  unresolved 2583962354  qbz192/base                  
+  unresolved 2585808366  minifix/base                 
+  unresolved 2588617052  g22/base, skorpion/base      
+  unresolved 2601206216  apc10/muzzle, mp5mli/muzzle, ump40/muzzle 
+  unresolved 2601906444  m1014/base                   
+  unresolved 2604909882  hk417a2/base                 
+  unresolved 2607113479  mpx/base                     
+  unresolved 2608896214  m39emr/base                  
+  unresolved 2625376509  g22/base, skorpion/base      
+  unresolved 2632470762  apdw/base, aradmr/base, m2010esr/base, m250/base 
+  unresolved 2649211116  railgun/base                 
+  unresolved 2657607843  xm7/muzzle                   
+  unresolved 2674206171  g36/base                     
+  unresolved 2677886385  6p67/barrel                  
+  unresolved 2689182168  g22/base, skorpion/base      
+  unresolved 2692176235  m18/base                     
+  unresolved 2704782949  vhs2/base                    
+  unresolved 2716269813  l115a3/canted                
+  unresolved 2738855769  apdw/barrel                  
+  unresolved 2758802434  apc10/muzzle                 
+  unresolved 2772958435  m16a3/base                   
+  unresolved 2773193493  minigun/base                 
+  unresolved 2778676632  mpx/canted                   = Common/UI/Assets/Images/Hardware/Generated/Attachments/IronSight/CantedIrons/T_UI_DPF_CantedIronSight_MPX_Short_Icon
+  unresolved 2781748404  g22/base, skorpion/base      
+  unresolved 2802963011  rpk74m/base, rpkm/base       
+  unresolved 2806276462  apdw/base, aradmr/base       
+  unresolved 2831084146  scarl/base                   
+  unresolved 2840031346  m4a1/base                    
+  unresolved 2857106506  185ksk/muzzle                
+  unresolved 2872654035  6p67/base, apdw/base, dp12/base, fiveseven/base 
+  unresolved 2881677431  m250/base, rpk74m/base, rpkm/base, xm7/base 
+  unresolved 2884237155  msbsgrotcps/base             
+  unresolved 2886985941  g36/base, g3a4/base          
+  unresolved 2887889378  mpx/muzzle                   
+  unresolved 2917236008  m45a1/muzzle                 
+  unresolved 2920931656  m1014/base                   
+  unresolved 2931378745  g36/base                     
+  unresolved 2935215465  l115a3/base                  
+  unresolved 2935691042  185ksk/base, 590a1/base, 6p67/base, ace32/base 
+  unresolved 2941936474  m60e6/base                   
+  unresolved 2949722633  skorpion/base                
+  unresolved 2962719579  mg5/base                     
+  unresolved 3002622977  g22/base, skorpion/base      
+  unresolved 3018204773  590a1/base                   
+  unresolved 3022213800  m18/base, raginghunter/base, trr8/base 
+  unresolved 3029864890  ace32/base                   
+  unresolved 3040937832  ump40/barrel                 
+  unresolved 3048154978  m4a1/muzzle                  
+  unresolved 3051763421  ak205/base                   
+  unresolved 3098427017  sv98m/base                   
+  unresolved 3099623884  rpk74m/base                  
+  unresolved 3103040814  m16a3/base                   
+  unresolved 3105532463  185ksk/muzzle                
+  unresolved 3120346954  raginghunter/base            
+  unresolved 3121985353  aradmr/base                  
+  unresolved 3144186611  vhs2/base                    
+  unresolved 3148764692  mrad/base                    
+  unresolved 3154331886  m2010esr/base                
+  unresolved 3164408866  g22/base, skorpion/base      
+  unresolved 3165834417  trr8/base                    
+  unresolved 3202068210  m2010esr/base, m250/base, mrad/base, rpk74m/base 
+  unresolved 3203512424  g3a4/barrel                  
+  unresolved 3209326480  fiveseven/base               
+  unresolved 3213755769  m45a1/base                   
+  unresolved 3221681627  185ksk/base, 590a1/base, 6p67/base, ace32/base 
+  unresolved 3222665755  l115a3/canted                
+  unresolved 3223222486  185ksk/base                  
+  unresolved 3235101820  minifix/canted               
+  unresolved 3241444315  m16a3/base                   
+  unresolved 3292524582  hk417a2/base                 
+  unresolved 3318555663  m45a1/base                   
+  unresolved 3342953349  apc10/base, apdw/base, m27iar/base, p90/base 
+  unresolved 3343889091  svch/base                    
+  unresolved 3363655009  tavor7/base                  
+  unresolved 3365846829  apdw/base, m1014/base, ump40/base 
+  unresolved 3383692453  m16a3/base                   
+  unresolved 3391494417  g3a4/barrel                  
+  unresolved 3398556967  minifix/base                 
+  unresolved 3424957213  fiveseven/base, raginghunter/base, trr8/base = Common/UI/Assets/Images/Hardware/Generated/Attachments/Reflex/EotechELFX/Art/T_UI_DPF_EotechEFLX_Plate_Icon
+  unresolved 3431451862  dp12/base                    
+  unresolved 3435795455  l115a3/base                  
+  unresolved 3438413190  scorpionevo3/barrel          
+  unresolved 3442526331  msbsgrotb/base               
+  unresolved 3446991656  apdw/base                    
+  unresolved 3460472736  apdw/muzzle, g36/muzzle, g3a4/muzzle, hk417a2/muzzle 
+  unresolved 3479420804  g22/base, skorpion/base      
+  unresolved 3482649927  m1014/base                   
+  unresolved 3488551113  mp7a2/base                   
+  unresolved 3498805654  msbsgrotb/base               
+  unresolved 3502411622  g36/base                     
+  unresolved 3504641552  rpkm/base                    
+  unresolved 3515873092  ump40/base                   
+  unresolved 3516188709  g22/base, skorpion/base      
+  unresolved 3529510074  m27iar/base                  
+  unresolved 3559729601  l85a3/base                   
+  unresolved 3561718791  minigun/base                 
+  unresolved 3594869028  l115a3/base                  
+  unresolved 3598012850  scarsc/base                  
+  unresolved 3625962242  m4a1/base                    
+  unresolved 3644373949  g22/base, skorpion/base      
+  unresolved 3653762669  apdw/base, m1014/base, ump40/base 
+  unresolved 3722052959  g22/base, skorpion/base      
+  unresolved 3733018610  m27iar/base                  
+  unresolved 3734417254  ace32/base, sig553r/base     
+  unresolved 3738399419  hk433/base                   
+  unresolved 3744111124  aradmr/base, m2010esr/base, m27iar/base, m39emr/base 
+  unresolved 3779922961  rpkm/base                    
+  unresolved 3784016553  sv98m/base                   
+  unresolved 3790168740  185ksk/base, ace32/base, apc10/base, aradmr/base 
+  unresolved 3792006685  mpx/base                     
+  unresolved 3806227414  m1014/base                   
+  unresolved 3810567366  trr8/base                    
+  unresolved 3821057831  ak205/base                   
+  unresolved 3822076546  m2010esr/base                
+  unresolved 3839051709  m18/base                     
+  unresolved 3844001177  m27iar/barrel                
+  unresolved 3844967523  xm7/base                     
+  unresolved 3850737554  minigun/base                 
+  unresolved 3855373181  mpx/base                     
+  unresolved 3869479520  m250/base                    
+  unresolved 3870819354  mp7a2/base                   
+  unresolved 3885179721  mrad/base                    
+  unresolved 3906331949  skorpion/base                
+  unresolved 3916336266  6p67/base, ace32/base, ak205/base, aradmr/base 
+  unresolved 3916553032  msbsgrotb/base               
+  unresolved 3955117604  dp12/base, minifix/base      
+  unresolved 3955328151  185ksk/base, 590a1/base, 6p67/base, ace32/base 
+  unresolved 3956459815  xm7/base                     = Common/UI/Assets/Images/Hardware/Generated/Weapons/Carbine/XM7/T_UI_DPF_XM7_Base_Icon
+  unresolved 3959700458  minifix/base                 
+  unresolved 3965956494  aradmr/muzzle, g36/muzzle, hk433/muzzle, l85a3/muzzle 
+  unresolved 3971147947  sv98m/barrel                 
+  unresolved 3974019368  mpx/base                     
+  unresolved 3984796819  xm7/base                     = Common/UI/Assets/Images/Hardware/Generated/Weapons/Carbine/XM7/T_UI_DPF_XM7_Sight_Icon
+  unresolved 3994181047  m39emr/base                  
+  unresolved 3994414986  m16a3/base                   
+  unresolved 4001351482  l115a3/base                  
+  unresolved 4018940763  g36/base                     
+  unresolved 4019648395  minifix/base                 
+  unresolved 4029195078  xm7/barrel                   
+  unresolved 4032177320  l85a3/base                   
+  unresolved 4034207518  ltlmii_smokescreen/base      
+  unresolved 4052256272  g22/base, skorpion/base      
+  unresolved 4060494741  railgun/base                 
+  unresolved 4076900278  l115a3/base                  
+  unresolved 4081343361  m240l/muzzle                 
+  unresolved 4089024177  g22/base, skorpion/base      
+  unresolved 4094100495  185ksk/base, ace32/base, apc10/base, aradmr/base 
+  unresolved 4141451160  minifix/base                 
+  unresolved 4154862669  g22/base, skorpion/base      
+  unresolved 4155873534  g22/muzzle, skorpion/muzzle  
+  unresolved 4156479859  185ksk/base, 590a1/base, 6p67/base, ace32/base 
+  unresolved 4156960873  g22/base, skorpion/base      
+  unresolved 4160536767  g3a4/base                    
+  unresolved 4176604285  apdw/base                    
+  unresolved 4184365523  scarl/base                   
+  unresolved 4186826947  msbsgrotcps/base             
+  unresolved 4190693843  rpk74m/base, rpkm/base       
+  unresolved 4194028581  mpx/base, rpkm/base          
+  unresolved 4219331834  m250/base                    
+  unresolved 4227346916  railgun/base                 
+  unresolved 4239357036  m4a1/base                    
+  unresolved 4258865458  m60e6/base                   
+  unresolved 4286042403  xm7/base                     
+  unresolved 4289639835  mpx/base                     
+  unresolved 4293877206  m45a1/base                   
+de-hashed 11 / 385 unresolved ids

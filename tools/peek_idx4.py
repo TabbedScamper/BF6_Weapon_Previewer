@@ -1,5 +1,7 @@
-"""Barrel_ATT (idx4) + Magazine01 (idx14) md defaults across weapons —
-the per-weapon TRUE positions for bind-authored barrel/mag parts."""
+"""Barrel_ATT (idx4) + Wep_MGZ_ATT (idx22) md defaults across weapons —
+the per-weapon TRUE positions for bind-authored barrel/mag parts.
+(md idx == skeleton bone index directly; the old idx14 magazine read was
+the disproven "idx = 2 + BONE_ORDER position" mapping.)"""
 import json
 import os
 import sys
@@ -14,10 +16,10 @@ for wid in ("carbine/m4a1", "secondary/g22", "smg/p90", "assaultrifle/l85a3",
     wb = d["weapons"][wid]
     row = {}
     for bd in wb.get("bone_defaults", []):
-        if bd["idx"] in (4, 14):
+        if bd["idx"] in (4, 22):
             row[bd["idx"]] = bd["rot"][:3]
     b = row.get(4)
-    print("%-22s idx4(Barrel)=%s  dtBrl_z=%s   idx14(Mag)=%s" % (
+    print("%-22s idx4(Barrel)=%s  dtBrl_z=%s   idx22(Mag)=%s" % (
         wid, b and [round(v, 3) for v in b],
         b and round(b[2] - BIND_BRL[2], 3),
-        row.get(14) and [round(v, 3) for v in row[14]]))
+        row.get(22) and [round(v, 3) for v in row[22]]))

@@ -14,7 +14,8 @@ import re
 import sys
 import traceback
 
-PIPE = r"C:\Users\mwalt\Dropbox\Personal-Files\Portal\bf6-highpoly-pipeline\tools"
+PIPE = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                     "..", "..", "bf6-highpoly-pipeline", "tools"))
 sys.path.insert(0, PIPE)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np

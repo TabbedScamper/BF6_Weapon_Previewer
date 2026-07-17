@@ -1,0 +1,79 @@
+{
+ "_meta": {
+  "source": "A:\\bf6dump\\bundles\\common\\characters\\_soldier\\_weaponskeleton.ebx",
+  "instance": 0,
+  "field_hash": 95025932,
+  "pair_type_guid_prefix": "6710b31f",
+  "pair_fields": {
+   "gameplayBoneHash": 3452368547,
+   "boneIndex": 728705334
+  },
+  "hash_fn": "djb2-xor (h=5381; h=(h*33)^c) over LOWERCASED skeleton bone name, as i32",
+  "verified": "all 16 hashes reproduce from lowercase bone names; bone indices index SkeletonAsset BoneNames (field 94280276)",
+  "note": "weapon-independent: every non-melee weapon md references this shared skeleton; md bone_defaults idx = this skeleton's bone index (rows 2..63)"
+ },
+ "-154030345": {
+  "boneIndex": 7,
+  "boneName": "Wep_Muzzle_ATT"
+ },
+ "1677560012": {
+  "boneIndex": 51,
+  "boneName": "Wep_Scope_ATT"
+ },
+ "1600848751": {
+  "boneIndex": 21,
+  "boneName": "Wep_Laser_ATT"
+ },
+ "776235272": {
+  "boneIndex": 8,
+  "boneName": "Wep_Muzzle_FX"
+ },
+ "200767578": {
+  "boneIndex": 56,
+  "boneName": "Wep_ShellEject_FX"
+ },
+ "-13439146": {
+  "boneIndex": 22,
+  "boneName": "Wep_MGZ_ATT"
+ },
+ "-284289912": {
+  "boneIndex": 18,
+  "boneName": "Wep_FlashLight_ATT"
+ },
+ "2073351819": {
+  "boneIndex": 50,
+  "boneName": "Wep_RangeFinder_ATT"
+ },
+ "-910697564": {
+  "boneIndex": 58,
+  "boneName": "Wep_UnderBarrel_ATT"
+ },
+ "1136479980": {
+  "boneIndex": 4,
+  "boneName": "Wep_Barrel_ATT"
+ },
+ "-2059008398": {
+  "boneIndex": 48,
+  "boneName": "Wep_Magnifier_ATT"
+ },
+ "831738323": {
+  "boneIndex": 52,
+  "boneName": "Wep_Scope_FX"
+ },
+ "-363533558": {
+  "boneIndex": 6,
+  "boneName": "Wep_MuzzleAdaptor_ATT"
+ },
+ "-1458297475": {
+  "boneIndex": 54,
+  "boneName": "Wep_SecondarySight_ATT"
+ },
+ "-140054914": {
+  "boneIndex": 2,
+  "boneName": "Wep_Root"
+ },
+ "-306790443": {
+  "boneIndex": 3,
+  "boneName": "Wep_Align"
+ }
+}

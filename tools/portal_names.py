@@ -53,7 +53,7 @@ GENERIC = {
     "mag": {"regular": "Standard Magazine", "fast": "Fast Mag",
             "magazinefast": "Fast Mag"},
     "mzl": {"muzzlebrake": "Muzzle Brake", "nomuzzle": "None"},
-    "amo": {"ballistictip": "Ballistic Tip", "no00buckshot": "No.00 Buckshot"},
+    "amo": {"no00buckshot": "No.00 Buckshot"},
     "erg": {"fullauto": "Full Auto Receiver", "burstfireenable": "Burst Fire",
             "pistolquickdraw": "Quickdraw", "revolverquickdraw": "Quickdraw",
             "recoilbuffer": "Recoil Buffer", "ergonomic": "Ergonomic Grip"},
@@ -156,6 +156,7 @@ def main():
 
     # ---- weapons, class-scoped, with overrides + 1v1 elimination
     weapons = {}
+    sdk = {"weapons": {}, "gadgets": {}, "attachments": {}}
     db = json.load(open(os.path.join(HERE, "data", "armory_db.json"), encoding="utf-8"))
     by_cls = {}
     for wid in db["weapons"]:
@@ -182,6 +183,8 @@ def main():
             rep.append("   [by-elimination] %s -> %s" % (li[0], le[0]))
         disp, _, _ = finish_bucket("weapons", c, pool, sorted(names), bucket, got)
         weapons.update(disp)
+        for i, e in got.items():
+            sdk["weapons"][i] = {"enum": e, "src": top}
 
     # ---- gadgets, dump-category scoped
     gadgets = {}
@@ -212,6 +215,8 @@ def main():
                     got[i] = e
         disp = {i: pretty(e, gpref.get(e, e.split("_", 1)[0])) for i, e in got.items()}
         gadgets.update(disp)
+        for i, e in got.items():
+            sdk["gadgets"][i] = {"enum": e, "src": "Gadgets"}
         finish_bucket("gadgets", gc, pool, sorted(names),
                       buckets[0] if buckets else "", got, disp)
 
@@ -232,13 +237,20 @@ def main():
                 else:
                     got[i] = e
         disp, _, _ = finish_bucket("attachments", code, pool, rest, bucket, got)
+        if got:
+            sdk["attachments"][code] = {i: {"enum": e, "src": "WeaponAttachments"}
+                                        for i, e in got.items()}
         disp.update(gen_hit)
         for t, d in sorted(gen_hit.items()):
             rep.append("   [generic] %-21s -> %s" % (t, d))
         if disp:
             attachments[code] = disp
 
-    out = {"weapons": weapons, "gadgets": gadgets, "attachments": attachments}
+    out = {"weapons": weapons, "gadgets": gadgets, "attachments": attachments,
+           "sdk": sdk,
+           # per-weapon capacity-based joins happen in build_manifest (mag
+           # meshes carry rnd counts); it needs the catalog name pool
+           "catalog_mags": cat["WeaponAttachments"].get("Magazine", [])}
     json.dump(out, open(os.path.join(HERE, "data", "portal_names.json"), "w",
                         encoding="utf-8"), indent=1, sort_keys=True)
     open(os.path.join(HERE, "data", "name_report.txt"), "w",

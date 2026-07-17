@@ -25,7 +25,7 @@
     <div class="count" id="count"></div>
     <button class="mbtn" id="btn-arsenal">Arsenal</button>
     <button class="mbtn" id="btn-build">Build</button>
-    <a class="themebtn dlbtn" href="data/compatibility.csv" download="bf6-attachment-compatibility.csv" title="Download the master compatibility list — every weapon, slot, and available attachment (CSV)">⤓</a>
+    <a class="themebtn dlbtn" href="data/armory-list.html" download="bf6-armory-list.html" title="Download the master armory list — every weapon, slot, and available attachment with in-game renders (offline HTML, CSV export inside)">⤓</a>
     <button class="themebtn" id="btn-ref" title="Show the game's own armory render for comparison">▣</button>
     <button class="themebtn" id="btn-tune" title="Tune mode: double-click a part, drag the X/Y/Z arrows to reposition it, then copy the report">✛</button>
     <button class="themebtn" id="themebtn" title="Toggle theme">◐</button>
@@ -45,8 +45,22 @@
 
 <aside class="panel right" id="buildpanel" hidden>
   <div class="panel-title">BUILD</div>
+  <div class="wcard" id="wcard" title="Live weapon card — composited from the game's own layered card icons" hidden></div>
+  <button class="exportbtn" id="btn-export" title="Generate Portal SDK code for this exact build">&lt;/&gt; PORTAL CODE</button>
   <div class="slots" id="slots"></div>
 </aside>
+
+<div class="exportovl" id="exportovl" hidden>
+  <div class="exportbox">
+    <div class="ex-head">
+      <div class="ex-tabs" id="ex-tabs"></div>
+      <button class="ex-btn" id="ex-copy">Copy</button>
+      <button class="ex-btn" id="ex-close">✕</button>
+    </div>
+    <pre id="ex-code"></pre>
+    <div class="ex-note">Verified pattern: CreateNewWeaponPackage → AddAttachmentToWeaponPackage → AddEquipment. Generated code contains ONLY SDK enums — the in-game card positions attachments automatically (this site's preview offsets are never exported). Skins, camos and charms have no Portal API — cosmetic preview only.</div>
+  </div>
+</div>
 
 <div class="drawer" id="drawer" hidden>
   <div class="drawer-head">

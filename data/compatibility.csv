@@ -244,7 +244,7 @@ B36A4,Assault Rifle,Magazine,Extended Magazine III,,,g36,extended3
 B36A4,Assault Rifle,Magazine,Extended Fast Mag III,,,g36,extended3fast
 B36A4,Assault Rifle,Magazine,Fast Mag,,,g36,fast
 B36A4,Assault Rifle,Magazine,Standard Magazine,yes,yes,g36,regular
-B36A4,Assault Rifle,Ammo,Ballistic Tip,,,g36,ballistictip
+B36A4,Assault Rifle,Ammo,Synthetic Tip,,,g36,ballistictip
 B36A4,Assault Rifle,Ammo,FMJ,yes,,g36,fmj
 B36A4,Assault Rifle,Ammo,Frangible,,,g36,frangible
 B36A4,Assault Rifle,Ammo,Hollow Point,,,g36,hollowpoint
@@ -520,7 +520,7 @@ L85A3,Assault Rifle,Magazine,Extended Magazine III,,,l85a3,extended3
 L85A3,Assault Rifle,Magazine,Extended Fast Mag III,,,l85a3,extended3fast
 L85A3,Assault Rifle,Magazine,Fast Mag,,,l85a3,fast
 L85A3,Assault Rifle,Magazine,Standard Magazine,yes,yes,l85a3,regular
-L85A3,Assault Rifle,Ammo,Ballistic Tip,,,l85a3,ballistictip
+L85A3,Assault Rifle,Ammo,Synthetic Tip,,,l85a3,ballistictip
 L85A3,Assault Rifle,Ammo,FMJ,yes,,l85a3,fmj
 L85A3,Assault Rifle,Ammo,Frangible,,,l85a3,frangible
 L85A3,Assault Rifle,Ammo,Hollow Point,,,l85a3,hollowpoint
@@ -711,7 +711,7 @@ SOR 556 MK2,Assault Rifle,Magazine,Extended Magazine III,,,scarl,extended3
 SOR 556 MK2,Assault Rifle,Magazine,Extended Fast Mag III,,,scarl,extended3fast
 SOR 556 MK2,Assault Rifle,Magazine,Fast Mag,,,scarl,fast
 SOR 556 MK2,Assault Rifle,Magazine,Standard Magazine,yes,yes,scarl,regular
-SOR 556 MK2,Assault Rifle,Ammo,Ballistic Tip,,,scarl,ballistictip
+SOR 556 MK2,Assault Rifle,Ammo,Synthetic Tip,,,scarl,ballistictip
 SOR 556 MK2,Assault Rifle,Ammo,FMJ,yes,,scarl,fmj
 SOR 556 MK2,Assault Rifle,Ammo,Frangible,,,scarl,frangible
 SOR 556 MK2,Assault Rifle,Ammo,Hollow Point,,,scarl,hollowpoint
@@ -799,9 +799,9 @@ TR-7,Assault Rifle,Muzzle,Tavor7 Brake,yes,yes,tavor7,tavor7brake
 TR-7,Assault Rifle,Muzzle,Vortex1001va3,,yes,tavor7,vortex1001va3
 TR-7,Assault Rifle,Magazine,Compact Magazine I,,,tavor7,compact1
 TR-7,Assault Rifle,Magazine,Compact Magazine II,,,tavor7,compact2
-TR-7,Assault Rifle,Magazine,Extended Magazine I,,yes,tavor7,extended1
-TR-7,Assault Rifle,Magazine,Extended Fast Mag I,,yes,tavor7,extended1fast
-TR-7,Assault Rifle,Magazine,Extended Magazine II,,yes,tavor7,extended2
+TR-7,Assault Rifle,Magazine,10rnd Magazine,,yes,tavor7,extended1
+TR-7,Assault Rifle,Magazine,10rnd Fast Mag,,yes,tavor7,extended1fast
+TR-7,Assault Rifle,Magazine,10rnd Magazine,,yes,tavor7,extended2
 TR-7,Assault Rifle,Magazine,Fast Mag,,,tavor7,fast
 TR-7,Assault Rifle,Magazine,Standard Magazine,yes,,tavor7,regular
 TR-7,Assault Rifle,Ammo,FMJ,yes,,tavor7,fmj
@@ -888,7 +888,7 @@ VCR-2,Assault Rifle,Magazine,Extended Magazine I,,,vhs2,extended1
 VCR-2,Assault Rifle,Magazine,Extended Magazine II,,,vhs2,extended2
 VCR-2,Assault Rifle,Magazine,Extended Fast Mag II,,,vhs2,extended2fast
 VCR-2,Assault Rifle,Magazine,Fast Mag,,,vhs2,fast
-VCR-2,Assault Rifle,Magazine,Standard Magazine,yes,yes,vhs2,regular
+VCR-2,Assault Rifle,Magazine,30rnd Magazine,yes,yes,vhs2,regular
 VCR-2,Assault Rifle,Ammo,FMJ,yes,,vhs2,fmj
 VCR-2,Assault Rifle,Ammo,Frangible,,,vhs2,frangible
 VCR-2,Assault Rifle,Ammo,Hollow Point,,,vhs2,hollowpoint
@@ -1064,7 +1064,7 @@ M2010 ESR,Sniper,Muzzle,Sigtaperedmb,,yes,m2010esr,sigtaperedmb
 M2010 ESR,Sniper,Muzzle,Vortex1001va3,,yes,m2010esr,vortex1001va3
 M2010 ESR,Sniper,Magazine,Extended Magazine I,,,m2010esr,extended1
 M2010 ESR,Sniper,Magazine,Fast Mag,,,m2010esr,fast
-M2010 ESR,Sniper,Magazine,Standard Magazine,yes,yes,m2010esr,regular
+M2010 ESR,Sniper,Magazine,5rnd Magazine,yes,yes,m2010esr,regular
 M2010 ESR,Sniper,Ammo,FMJ,yes,,m2010esr,fmj
 M2010 ESR,Sniper,Ammo,Frangible,,,m2010esr,frangible
 M2010 ESR,Sniper,Ammo,Match Grade,,,m2010esr,match
@@ -1384,7 +1384,7 @@ AK 205,Carbine,Magazine,Extended Fast Mag III,,,ak205,extended3fast
 AK 205,Carbine,Magazine,Extended Magazine IV,,,ak205,extended4
 AK 205,Carbine,Magazine,Fast Mag,,,ak205,fast
 AK 205,Carbine,Magazine,Standard Magazine,yes,,ak205,regular
-AK 205,Carbine,Ammo,Ballistic Tip,,,ak205,ballistictip
+AK 205,Carbine,Ammo,Synthetic Tip,,,ak205,ballistictip
 AK 205,Carbine,Ammo,FMJ,yes,,ak205,fmj
 AK 205,Carbine,Ammo,Frangible,,,ak205,frangible
 AK 205,Carbine,Ammo,Hollow Point,,,ak205,hollowpoint
@@ -1725,7 +1725,7 @@ QBZ 192,Carbine,Magazine,Extended Magazine I,,,qbz192,extended1
 QBZ 192,Carbine,Magazine,Extended Magazine II,,,qbz192,extended2
 QBZ 192,Carbine,Magazine,Fast Mag,,,qbz192,fast
 QBZ 192,Carbine,Magazine,Standard Magazine,yes,yes,qbz192,regular
-QBZ 192,Carbine,Ammo,Ballistic Tip,,,qbz192,ballistictip
+QBZ 192,Carbine,Ammo,Synthetic Tip,,,qbz192,ballistictip
 QBZ 192,Carbine,Ammo,FMJ,yes,,qbz192,fmj
 QBZ 192,Carbine,Ammo,Frangible,,,qbz192,frangible
 QBZ 192,Carbine,Ammo,Hollow Point,,,qbz192,hollowpoint
@@ -1986,9 +1986,9 @@ M277,Carbine,Muzzle,Sfwar Comp,,yes,xm7,sfwarcomp
 M277,Carbine,Muzzle,Sigslx QD 68 Suppressor,yes,yes,xm7,sigslxqd68suppressor
 M277,Carbine,Muzzle,Sigtaperedmb,,,xm7,sigtaperedmb
 M277,Carbine,Magazine,Compact Magazine I,,,xm7,compact1
-M277,Carbine,Magazine,Extended Magazine I,,yes,xm7,extended1
-M277,Carbine,Magazine,Extended Fast Mag I,,yes,xm7,extended1fast
-M277,Carbine,Magazine,Extended Magazine II,,yes,xm7,extended2
+M277,Carbine,Magazine,10rnd Magazine,,yes,xm7,extended1
+M277,Carbine,Magazine,10rnd Fast Mag,,yes,xm7,extended1fast
+M277,Carbine,Magazine,10rnd Magazine,,yes,xm7,extended2
 M277,Carbine,Magazine,Fast Mag,,,xm7,fast
 M277,Carbine,Magazine,Standard Magazine,yes,,xm7,regular
 M277,Carbine,Ammo,FMJ,yes,,xm7,fmj
@@ -2091,9 +2091,9 @@ LMR27,DMR,Magazine,Extended Magazine I,,,aradmr,extended1
 LMR27,DMR,Magazine,Extended Fast Mag I,,,aradmr,extended1fast
 LMR27,DMR,Magazine,Extended Magazine II,,,aradmr,extended2
 LMR27,DMR,Magazine,Extended Fast Mag II,,,aradmr,extended2fast
-LMR27,DMR,Magazine,Fast Mag,,yes,aradmr,fast
-LMR27,DMR,Magazine,Standard Magazine,yes,yes,aradmr,regular
-LMR27,DMR,Ammo,Ballistic Tip,,,aradmr,ballistictip
+LMR27,DMR,Magazine,10rnd Fast Mag,,yes,aradmr,fast
+LMR27,DMR,Magazine,15rnd Magazine,yes,yes,aradmr,regular
+LMR27,DMR,Ammo,Synthetic Tip,,,aradmr,ballistictip
 LMR27,DMR,Ammo,FMJ,yes,,aradmr,fmj
 LMR27,DMR,Ammo,Frangible,,,aradmr,frangible
 LMR27,DMR,Ammo,Hollow Point,,,aradmr,hollowpoint
@@ -2188,9 +2188,9 @@ M39 EMR,DMR,Muzzle,Sfwar Comp,,yes,m39emr,sfwarcomp
 M39 EMR,DMR,Muzzle,Sigtaperedmb,,yes,m39emr,sigtaperedmb
 M39 EMR,DMR,Magazine,Compact Magazine I,,,m39emr,compact1
 M39 EMR,DMR,Magazine,Compact Magazine II,,,m39emr,compact2
-M39 EMR,DMR,Magazine,Extended Magazine I,,yes,m39emr,extended1
+M39 EMR,DMR,Magazine,25rnd Magazine,,yes,m39emr,extended1
 M39 EMR,DMR,Magazine,Fast Mag,,,m39emr,fast
-M39 EMR,DMR,Magazine,Standard Magazine,yes,yes,m39emr,regular
+M39 EMR,DMR,Magazine,20rnd Magazine,yes,yes,m39emr,regular
 M39 EMR,DMR,Ammo,FMJ,yes,,m39emr,fmj
 M39 EMR,DMR,Ammo,Frangible,,,m39emr,frangible
 M39 EMR,DMR,Ammo,Hollow Point,,,m39emr,hollowpoint
@@ -2292,7 +2292,7 @@ GRT CPS,DMR,Magazine,Compact Magazine I,,,msbsgrotcps,compact1
 GRT CPS,DMR,Magazine,Extended Magazine I,,,msbsgrotcps,extended1
 GRT CPS,DMR,Magazine,Fast Mag,,,msbsgrotcps,fast
 GRT CPS,DMR,Magazine,Standard Magazine,yes,,msbsgrotcps,regular
-GRT CPS,DMR,Ammo,Ballistic Tip,,,msbsgrotcps,ballistictip
+GRT CPS,DMR,Ammo,Synthetic Tip,,,msbsgrotcps,ballistictip
 GRT CPS,DMR,Ammo,FMJ,,,msbsgrotcps,fmj
 GRT CPS,DMR,Ammo,Frangible,,,msbsgrotcps,frangible
 GRT CPS,DMR,Ammo,Hollow Point,yes,,msbsgrotcps,hollowpoint
@@ -2745,7 +2745,7 @@ DRS IAR,LMG,Magazine,Extended Magazine IV,,,m27iar,extended4
 DRS IAR,LMG,Magazine,Extended Magazine V,,,m27iar,extended5
 DRS IAR,LMG,Magazine,Fast Mag,,,m27iar,fast
 DRS IAR,LMG,Magazine,Standard Magazine,yes,,m27iar,regular
-DRS IAR,LMG,Ammo,Ballistic Tip,,,m27iar,ballistictip
+DRS IAR,LMG,Ammo,Synthetic Tip,,,m27iar,ballistictip
 DRS IAR,LMG,Ammo,FMJ,yes,,m27iar,fmj
 DRS IAR,LMG,Ammo,Frangible,,,m27iar,frangible
 DRS IAR,LMG,Ammo,Hollow Point,,,m27iar,hollowpoint
@@ -3160,7 +3160,7 @@ RPK74M,LMG,Magazine,Extended Magazine II,,,rpk74m,extended2
 RPK74M,LMG,Magazine,Extended Magazine III,,,rpk74m,extended3
 RPK74M,LMG,Magazine,Fast Mag,,,rpk74m,fast
 RPK74M,LMG,Magazine,Standard Magazine,yes,,rpk74m,regular
-RPK74M,LMG,Ammo,Ballistic Tip,,,rpk74m,ballistictip
+RPK74M,LMG,Ammo,Synthetic Tip,,,rpk74m,ballistictip
 RPK74M,LMG,Ammo,FMJ,yes,,rpk74m,fmj
 RPK74M,LMG,Ammo,Frangible,,,rpk74m,frangible
 RPK74M,LMG,Ammo,Hollow Point,,,rpk74m,hollowpoint
@@ -3252,7 +3252,7 @@ RPKM,LMG,Magazine,Extended Magazine I,,,rpkm,extended1
 RPKM,LMG,Magazine,Extended Magazine II,,,rpkm,extended2
 RPKM,LMG,Magazine,Fast Mag,,,rpkm,fast
 RPKM,LMG,Magazine,Standard Magazine,yes,,rpkm,regular
-RPKM,LMG,Ammo,Ballistic Tip,,,rpkm,ballistictip
+RPKM,LMG,Ammo,Synthetic Tip,,,rpkm,ballistictip
 RPKM,LMG,Ammo,FMJ,yes,,rpkm,fmj
 RPKM,LMG,Ammo,Frangible,,,rpkm,frangible
 RPKM,LMG,Ammo,Hollow Point,,,rpkm,hollowpoint
@@ -3344,7 +3344,7 @@ KTS100 MK8,LMG,Magazine,Compact Magazine III,,,ultimax,compact3
 KTS100 MK8,LMG,Magazine,Extended Magazine I,,,ultimax,extended1
 KTS100 MK8,LMG,Magazine,Fast Mag,,,ultimax,fast
 KTS100 MK8,LMG,Magazine,Standard Magazine,yes,yes,ultimax,regular
-KTS100 MK8,LMG,Ammo,Ballistic Tip,,,ultimax,ballistictip
+KTS100 MK8,LMG,Ammo,Synthetic Tip,,,ultimax,ballistictip
 KTS100 MK8,LMG,Ammo,FMJ,yes,,ultimax,fmj
 KTS100 MK8,LMG,Ammo,Frangible,,,ultimax,frangible
 KTS100 MK8,LMG,Ammo,Hollow Point,,,ultimax,hollowpoint
@@ -3425,9 +3425,9 @@ GGH 22,Sidearm,Muzzle,Flash Hider Hkp4prong,,yes,g22,flashhiderhkp4prong
 GGH 22,Sidearm,Muzzle,Hkpmicro Comp,,yes,g22,hkpmicrocomp
 GGH 22,Sidearm,Muzzle,Obsidian45directthread Suppressor,,yes,g22,obsidian45directthreadsuppressor
 GGH 22,Sidearm,Muzzle,Rsmicrotactical,,yes,g22,rsmicrotactical
-GGH 22,Sidearm,Magazine,Extended Magazine I,,yes,g22,extended1
-GGH 22,Sidearm,Magazine,Extended Magazine II,,yes,g22,extended2
-GGH 22,Sidearm,Magazine,Standard Magazine,yes,yes,g22,regular
+GGH 22,Sidearm,Magazine,15rnd Magazine,,yes,g22,extended1
+GGH 22,Sidearm,Magazine,15rnd Magazine,,yes,g22,extended2
+GGH 22,Sidearm,Magazine,15rnd Magazine,yes,yes,g22,regular
 GGH 22,Sidearm,Ammo,FMJ,yes,,g22,fmj
 GGH 22,Sidearm,Ammo,Frangible,,,g22,frangible
 GGH 22,Sidearm,Ammo,Hollow Point,,,g22,hollowpoint
@@ -3485,7 +3485,7 @@ M45A1,Sidearm,Muzzle,Hkpmicro Comp,,yes,m45a1,hkpmicrocomp
 M45A1,Sidearm,Muzzle,Obsidian45directthread Suppressor,,yes,m45a1,obsidian45directthreadsuppressor
 M45A1,Sidearm,Muzzle,Rsmicrotactical,,yes,m45a1,rsmicrotactical
 M45A1,Sidearm,Magazine,Extended Magazine I,,,m45a1,extended1
-M45A1,Sidearm,Magazine,Standard Magazine,yes,yes,m45a1,regular
+M45A1,Sidearm,Magazine,11rnd Magazine,yes,yes,m45a1,regular
 M45A1,Sidearm,Ammo,FMJ,yes,,m45a1,fmj
 M45A1,Sidearm,Ammo,Frangible,,,m45a1,frangible
 M45A1,Sidearm,Ammo,Hollow Point,,,m45a1,hollowpoint
@@ -3526,7 +3526,7 @@ M44,Sidearm,Barrel,Short Barrel,,yes,raginghunter,shortbarrel
 M44,Sidearm,Barrel,Standard Barrel,yes,yes,raginghunter,standardbarrel
 M44,Sidearm,Muzzle,None,,,raginghunter,nomuzzle
 M44,Sidearm,Magazine,Standard Magazine,yes,yes,raginghunter,regular
-M44,Sidearm,Ammo,Ballistic Tip,,,raginghunter,ballistictip
+M44,Sidearm,Ammo,Synthetic Tip,,,raginghunter,ballistictip
 M44,Sidearm,Ammo,FMJ,yes,,raginghunter,fmj
 M44,Sidearm,Ammo,Frangible,,,raginghunter,frangible
 M44,Sidearm,Ammo,Hollow Point,,,raginghunter,hollowpoint
@@ -3549,7 +3549,7 @@ VZ 61,Sidearm,Muzzle,Rsmicrotactical,,yes,skorpion,rsmicrotactical
 VZ 61,Sidearm,Muzzle,SRD9 Suppressor,,yes,skorpion,srd9suppressor
 VZ 61,Sidearm,Magazine,Extended Magazine I,,,skorpion,extended1
 VZ 61,Sidearm,Magazine,Standard Magazine,yes,yes,skorpion,regular
-VZ 61,Sidearm,Ammo,Ballistic Tip,,,skorpion,ballistictip
+VZ 61,Sidearm,Ammo,Synthetic Tip,,,skorpion,ballistictip
 VZ 61,Sidearm,Ammo,FMJ,yes,,skorpion,fmj
 VZ 61,Sidearm,Ammo,Frangible,,,skorpion,frangible
 VZ 61,Sidearm,Ammo,Hollow Point,,,skorpion,hollowpoint
@@ -3845,7 +3845,7 @@ M1014,Shotgun,Muzzle,Jk195versax Suppressor,,yes,m1014,jk195versaxsuppressor
 M1014,Shotgun,Muzzle,Salvo12 Suppressor,,yes,m1014,salvo12suppressor
 M1014,Shotgun,Magazine,Compact Magazine I,,,m1014,compact1
 M1014,Shotgun,Magazine,Compact Magazine II,,,m1014,compact2
-M1014,Shotgun,Magazine,Standard Magazine,yes,yes,m1014,regular
+M1014,Shotgun,Magazine,7rnd Magazine,yes,yes,m1014,regular
 M1014,Shotgun,Ammo,Buckshot,yes,,m1014,buckshot
 M1014,Shotgun,Ammo,Flechette,,,m1014,flechette
 M1014,Shotgun,Ammo,No.00 Buckshot,,,m1014,no00buckshot
@@ -3922,7 +3922,7 @@ SCW 10,SMG,Muzzle,Wyssen,,yes,apc10,wyssen
 SCW 10,SMG,Magazine,Extended Magazine I,,,apc10,extended1
 SCW 10,SMG,Magazine,Extended Magazine II,,,apc10,extended2
 SCW 10,SMG,Magazine,Fast Mag,,,apc10,fast
-SCW 10,SMG,Magazine,Standard Magazine,yes,yes,apc10,regular
+SCW 10,SMG,Magazine,20rnd Magazine,yes,yes,apc10,regular
 SCW 10,SMG,Ammo,FMJ,yes,,apc10,fmj
 SCW 10,SMG,Ammo,Frangible,,,apc10,frangible
 SCW 10,SMG,Ammo,Hollow Point,,,apc10,hollowpoint
@@ -4002,7 +4002,7 @@ APDW,SMG,Muzzle,Silentsteelmb,,yes,apdw,silentsteelmb
 APDW,SMG,Muzzle,SRD9 Suppressor,,yes,apdw,srd9suppressor
 APDW,SMG,Magazine,Extended Magazine I,,,apdw,extended1
 APDW,SMG,Magazine,Standard Magazine,yes,,apdw,regular
-APDW,SMG,Ammo,Ballistic Tip,,,apdw,ballistictip
+APDW,SMG,Ammo,Synthetic Tip,,,apdw,ballistictip
 APDW,SMG,Ammo,FMJ,yes,,apdw,fmj
 APDW,SMG,Ammo,Frangible,,,apdw,frangible
 APDW,SMG,Ammo,Hollow Point,,,apdw,hollowpoint
@@ -4078,9 +4078,9 @@ PW5A3,SMG,Muzzle,Saimp5 Suppressor,,,mp5mli,saimp5suppressor
 PW5A3,SMG,Muzzle,Wyssen,,yes,mp5mli,wyssen
 PW5A3,SMG,Magazine,Compact Magazine I,,,mp5mli,compact1
 PW5A3,SMG,Magazine,Extended Magazine I,,,mp5mli,extended1
-PW5A3,SMG,Magazine,Fast Mag,,yes,mp5mli,fast
-PW5A3,SMG,Magazine,Standard Magazine,yes,yes,mp5mli,regular
-PW5A3,SMG,Ammo,Ballistic Tip,,,mp5mli,ballistictip
+PW5A3,SMG,Magazine,30rnd Fast Mag,,yes,mp5mli,fast
+PW5A3,SMG,Magazine,20rnd Magazine,yes,yes,mp5mli,regular
+PW5A3,SMG,Ammo,Synthetic Tip,,,mp5mli,ballistictip
 PW5A3,SMG,Ammo,FMJ,yes,,mp5mli,fmj
 PW5A3,SMG,Ammo,Frangible,,,mp5mli,frangible
 PW5A3,SMG,Ammo,Hollow Point,,,mp5mli,hollowpoint
@@ -4161,7 +4161,7 @@ PW7A2,SMG,Magazine,Compact Magazine I,,,mp7a2,compact1
 PW7A2,SMG,Magazine,Extended Magazine I,,,mp7a2,extended1
 PW7A2,SMG,Magazine,Fast Mag,,yes,mp7a2,fast
 PW7A2,SMG,Magazine,Standard Magazine,yes,,mp7a2,regular
-PW7A2,SMG,Ammo,Ballistic Tip,,,mp7a2,ballistictip
+PW7A2,SMG,Ammo,Synthetic Tip,,,mp7a2,ballistictip
 PW7A2,SMG,Ammo,FMJ,yes,,mp7a2,fmj
 PW7A2,SMG,Ammo,Frangible,,,mp7a2,frangible
 PW7A2,SMG,Ammo,Hollow Point,,,mp7a2,hollowpoint
@@ -4381,7 +4381,7 @@ KV9,SMG,Magazine,Extended Magazine I,,yes,pp19,extended1
 KV9,SMG,Magazine,Extended Magazine IV,,yes,pp19,extended4
 KV9,SMG,Magazine,Fast Mag,,,pp19,fast
 KV9,SMG,Magazine,Standard Magazine,yes,yes,pp19,regular
-KV9,SMG,Ammo,Ballistic Tip,,,pp19,ballistictip
+KV9,SMG,Ammo,Synthetic Tip,,,pp19,ballistictip
 KV9,SMG,Ammo,FMJ,yes,,pp19,fmj
 KV9,SMG,Ammo,Frangible,,,pp19,frangible
 KV9,SMG,Ammo,Hollow Point,,,pp19,hollowpoint
@@ -4456,8 +4456,8 @@ CZ3A1,SMG,Muzzle,SRD9 Suppressor,,yes,scorpionevo3,srd9suppressor
 CZ3A1,SMG,Magazine,Compact Magazine I,,,scorpionevo3,compact1
 CZ3A1,SMG,Magazine,Extended Magazine I,,,scorpionevo3,extended1
 CZ3A1,SMG,Magazine,Extended Fast Mag I,,,scorpionevo3,extended1fast
-CZ3A1,SMG,Magazine,Fast Mag,,yes,scorpionevo3,fast
-CZ3A1,SMG,Magazine,Standard Magazine,yes,yes,scorpionevo3,regular
+CZ3A1,SMG,Magazine,20rnd Fast Mag,,yes,scorpionevo3,fast
+CZ3A1,SMG,Magazine,20rnd Magazine,yes,yes,scorpionevo3,regular
 CZ3A1,SMG,Ammo,FMJ,yes,,scorpionevo3,fmj
 CZ3A1,SMG,Ammo,Frangible,,,scorpionevo3,frangible
 CZ3A1,SMG,Ammo,Hollow Point,,,scorpionevo3,hollowpoint
@@ -4539,7 +4539,7 @@ UMG 40,SMG,Magazine,Compact Magazine II,,,ump40,compact2
 UMG 40,SMG,Magazine,Extended Magazine I,,,ump40,extended1
 UMG 40,SMG,Magazine,Fast Mag,,,ump40,fast
 UMG 40,SMG,Magazine,Standard Magazine,yes,yes,ump40,regular
-UMG 40,SMG,Ammo,Ballistic Tip,,,ump40,ballistictip
+UMG 40,SMG,Ammo,Synthetic Tip,,,ump40,ballistictip
 UMG 40,SMG,Ammo,FMJ,yes,,ump40,fmj
 UMG 40,SMG,Ammo,Frangible,,,ump40,frangible
 UMG 40,SMG,Ammo,Hollow Point,,,ump40,hollowpoint
@@ -4615,7 +4615,7 @@ VECTOR,SMG,Muzzle,SRD9 Suppressor,,yes,vector,srd9suppressor
 VECTOR,SMG,Magazine,Extended Magazine I,,,vector,extended1
 VECTOR,SMG,Magazine,Extended Magazine II,,,vector,extended2
 VECTOR,SMG,Magazine,Fast Mag,,,vector,fast
-VECTOR,SMG,Magazine,Standard Magazine,yes,yes,vector,regular
+VECTOR,SMG,Magazine,23rnd Magazine,yes,yes,vector,regular
 VECTOR,SMG,Ammo,FMJ,yes,,vector,fmj
 VECTOR,SMG,Ammo,Frangible,,,vector,frangible
 VECTOR,SMG,Ammo,Hollow Point,,,vector,hollowpoint

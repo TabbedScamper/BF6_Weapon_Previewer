@@ -163,6 +163,8 @@ function select(it) {
     skin = null;
     charm = null;
     camo = null;
+    cardMoves = {};
+    cardTune = false;
     stage.applyCamo(null);
     // factory/stock loadout equipped out of the box (EBX equipment grants)
     for (const code of Object.keys(it.slots || {})) build[code] = (it.factory || {})[code] || null;
@@ -296,6 +298,130 @@ function renderSlots() {
     d.onclick = () => openDrawer(code);
     el.appendChild(d);
   }
+  renderCard();
+}
+
+// live weapon card: the game's own layered card icons (receiver + one layer
+// per attachment). Placements are AUTHORED: atlas sprite placement + the
+// weapon's hiao_<w>.ebx offset, resolved at build time into each layer's pl
+// (see tools/extract_hiao.py) — the client just draws them.
+// NOTE: all placement math here is SITE PREVIEW ONLY — the exported Portal
+// code carries no offsets; the in-game card positions attachments itself.
+let cardTune = false;
+let cardMoves = {};            // key -> [dx, dy] card px, current weapon only
+
+function cardEntries() {
+  const c = cur.card;
+  const out = [];
+  const put = (key, d, x, y) =>
+    out.push({ key, img: d.img, x: Math.round(x), y: Math.round(y),
+               w: d.sz[0], h: d.sz[1] });
+  put('base', c.base, c.base.pl[0], c.base.pl[1]);
+  // the equipped barrel re-anchors every muzzle layer: its authored off2
+  // (c.mza[brl]) REPLACES the layer's default muzzle anchor (l.mo)
+  const effBrl = build.brl || (cur.factory || {}).brl;
+  const mza = (c.mza || {})[effBrl];
+  for (const code of Object.keys(c.lay)) {
+    const lay = c.lay[code];
+    const tok = build[code];
+    // fall back to the factory part's layer so the silhouette stays whole
+    // when a variant has no dedicated card layer (dpf art-collapse gap)
+    let l = (tok && lay[tok]) || null;
+    let key = 'lay:' + code + ':' + tok;
+    if (!l && code !== 'sca' && code !== 'scp') {
+      l = lay[(cur.factory || {})[code]] || null;
+      key = 'lay:' + code + ':' + (cur.factory || {})[code];
+    }
+    if (!l) continue;
+    let dx = 0, dy = 0;
+    if (code === 'mzl' && mza && l.mo) {
+      dx = mza[0] - l.mo[0];
+      dy = mza[1] - l.mo[1];
+    }
+    put(key, l, l.pl[0] + dx, l.pl[1] + dy);
+  }
+  const optic = build.scp && !/iron|cqb/i.test(build.scp);
+  if (c.sight && !optic) put('sight', c.sight, c.sight.pl[0], c.sight.pl[1]);
+  // a secondary-sight reflex without its own layer rides the equipped
+  // mid-zoom scope (per-scope "<Scope>_Reflex" art)
+  if (build.sca && !(c.lay.sca || {})[build.sca] && optic) {
+    const rx = (c.scaRx || {})[build.scp];
+    if (rx) put('scaRx:' + build.scp, rx, rx.pl[0], rx.pl[1]);
+  }
+  return out;
+}
+
+function renderCard() {
+  const el = $('#wcard');
+  const c = cur && cur.card;
+  if (!c) { el.hidden = true; return; }
+  el.hidden = false;
+  const [CW, CH] = c.cv;
+  const ents = cardEntries();
+  // auto-frame like the in-game card: center the composed content and
+  // shrink it if a long barrel/suppressor would run off the edge
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  for (const e of ents) {
+    x0 = Math.min(x0, e.x); y0 = Math.min(y0, e.y);
+    x1 = Math.max(x1, e.x + e.w); y1 = Math.max(y1, e.y + e.h);
+  }
+  const fit = Math.min(1, (CW - 36) / (x1 - x0), (CH - 20) / (y1 - y0));
+  const tx = CW / 2 - fit * (x0 + x1) / 2;
+  const ty = CH / 2 - fit * (y0 + y1) / 2;
+  let h = `<div class="wc-in" style="transform:translate(${(tx / CW * 100).toFixed(2)}%,${(ty / CH * 100).toFixed(2)}%) scale(${fit.toFixed(4)});transform-origin:0 0">`;
+  for (const e of ents) {
+    const mv = cardMoves[e.key] || [0, 0];
+    h += `<img data-key="${e.key}" data-x="${e.x}" data-y="${e.y}" src="${CONFIG.skinsBase}_icons/${e.img}"
+      style="left:${((e.x + mv[0]) / CW * 100).toFixed(2)}%;top:${((e.y + mv[1]) / CH * 100).toFixed(2)}%;width:${(e.w / CW * 100).toFixed(2)}%">`;
+  }
+  h += '</div>';
+  h += `<button class="wc-btn" id="wc-tune" title="Card tune: drag parts, then copy a placement report to share">${cardTune ? '✓' : '✎'}</button>`;
+  if (cardTune) h += `<button class="wc-btn wc-copy" id="wc-copy" title="Copy placement report">⧉</button>`;
+  el.innerHTML = h;
+  el.classList.toggle('tuning', cardTune);
+  $('#wc-tune').onclick = e => { e.stopPropagation(); cardTune = !cardTune; renderCard(); };
+  if (cardTune) {
+    $('#wc-copy').onclick = async e => {
+      e.stopPropagation();
+      const moves = {};
+      for (const en of ents) {
+        const mv = cardMoves[en.key];
+        if (mv && (mv[0] || mv[1]))
+          moves[en.key] = { d: mv, from: [en.x, en.y], to: [en.x + mv[0], en.y + mv[1]] };
+      }
+      const rep = JSON.stringify({ cardTune: cur.name, canvas: c.cv,
+                                   build: { ...build }, moves }, null, 1);
+      try { await navigator.clipboard.writeText(rep); } catch {}
+      $('#wc-copy').textContent = '✓';
+      setTimeout(() => { const b = $('#wc-copy'); if (b) b.textContent = '⧉'; }, 1000);
+    };
+    wireCardDrag(el, CW, CH, fit);
+  }
+}
+
+// drag-to-tune: adjustments are DETECTOR data to report better anchors —
+// they never ship anywhere (and never enter the exported Portal code)
+function wireCardDrag(el, CW, CH, fit) {
+  let drag = null;
+  el.querySelectorAll('.wc-in img').forEach(im => {
+    im.onpointerdown = e => {
+      e.preventDefault();
+      const key = im.dataset.key;
+      drag = { key, sx: e.clientX, sy: e.clientY,
+               base: cardMoves[key] ? [...cardMoves[key]] : [0, 0] };
+      im.setPointerCapture(e.pointerId);
+    };
+    im.onpointermove = e => {
+      if (!drag || drag.key !== im.dataset.key) return;
+      const pxPerCard = el.clientWidth / CW * fit;
+      const mv = [Math.round(drag.base[0] + (e.clientX - drag.sx) / pxPerCard),
+                  Math.round(drag.base[1] + (e.clientY - drag.sy) / pxPerCard)];
+      cardMoves[drag.key] = mv;
+      im.style.left = ((+im.dataset.x + mv[0]) / CW * 100).toFixed(2) + '%';
+      im.style.top = ((+im.dataset.y + mv[1]) / CH * 100).toFixed(2) + '%';
+    };
+    im.onpointerup = () => { drag = null; };
+  });
 }
 
 function openDrawer(code) {
@@ -440,3 +566,185 @@ $('#drawer-close').onclick = () => { openSlot = null; $('#drawer').hidden = true
 addEventListener('keydown', e => {
   if (e.key === 'Escape' && !$('#drawer').hidden) $('#drawer-close').onclick();
 });
+
+// ---------- Portal SDK code export ----------
+// Verified pattern (SDK index.d.ts + VIP-Escort / bf6-Deadlock / NotU usage):
+// CreateNewWeaponPackage -> AddAttachmentToWeaponPackage(each) -> AddEquipment.
+// Package apply order per Ground-Zero weapons.ts: scope BEFORE optic accessory.
+const EXPORT_ORDER = ['mzl', 'brl', 'btm', 'mag', 'amo', 'erg', 'scp', 'sca', 'top', 'lft', 'rgt'];
+let exTab = 'give';
+
+function tsName() {
+  return (cur.display || 'Weapon').replace(/[^A-Za-z0-9]+/g, ' ').trim().split(' ')
+    .map(w => /\d/.test(w) || w.length <= 3 ? w.toUpperCase()
+                                            : w[0].toUpperCase() + w.slice(1).toLowerCase())
+    .join('');
+}
+
+function buildAttachments() {
+  const joined = [], todo = [];
+  for (const code of EXPORT_ORDER) {
+    const opts = (cur.slots || {})[code];
+    const tok = build[code];
+    if (!opts || !tok) continue;
+    const e = opts.find(x => x.t === tok);
+    if (!e) continue;
+    const label = `${M.slotLabel[code] || code} — ${e.label}`;
+    if (e.sdk) joined.push({ sdk: e.sdk, label });
+    else todo.push(label);
+  }
+  return { joined, todo };
+}
+
+function portalGiveCode() {
+  const head = [
+    `// ${cur.display} — generated by BF6 Weapon Previewer`,
+    `// https://tabbedscamper.github.io/BF6_Weapon_Previewer/#${encodeURIComponent(cur.id)}`,
+    '',
+  ];
+  if (!cur.sdk) {
+    return head.concat(
+      `// ${cur.display} has no Portal SDK id (cut or newer-season content),`,
+      '// so it cannot be granted by script.').join('\n');
+  }
+  if (cur.sdkSrc === 'Gadgets') {          // melee lives in the Gadgets enum
+    return head.concat(
+      `export function give${tsName()}(player: mod.Player): void {`,
+      `    mod.AddEquipment(player, mod.Gadgets.${cur.sdk}, mod.InventorySlots.MeleeWeapon);`,
+      `}`).join('\n');
+  }
+  const slot = cur.cls === 'secondary' ? 'SecondaryWeapon' : 'PrimaryWeapon';
+  const { joined, todo } = buildAttachments();
+  const out = head;
+  out.push(`export function give${tsName()}(player: mod.Player): void {`);
+  if (joined.length) {
+    out.push(`    const pkg = mod.CreateNewWeaponPackage();`);
+    for (const a of joined)
+      out.push(`    mod.AddAttachmentToWeaponPackage(mod.WeaponAttachments.${a.sdk}, pkg); // ${a.label}`);
+  }
+  out.push(`    mod.RemoveEquipment(player, mod.InventorySlots.${slot});`);
+  out.push(joined.length
+    ? `    mod.AddEquipment(player, mod.Weapons.${cur.sdk}, pkg, mod.InventorySlots.${slot});`
+    : `    mod.AddEquipment(player, mod.Weapons.${cur.sdk}, mod.InventorySlots.${slot});`);
+  out.push(`    mod.ForceSwitchInventory(player, mod.InventorySlots.${slot});`);
+  out.push(`}`);
+  if (cur.cls === 'battlepickup')
+    out.push('', '// NOTE: granting battle pickups via AddEquipment is untested in the community corpus — verify in-game.');
+  if (todo.length) {
+    out.push('', '// Not yet joined to an SDK enum — add the matching mod.WeaponAttachments.* by hand:');
+    for (const t of todo) out.push(`//   ${t}`);
+  }
+  out.push('', '// Tip: to set ammo, let the equip settle first (pattern from Night of the Undead):',
+    '//   await mod.Wait(0.3);',
+    `//   mod.SetInventoryMagazineAmmo(player, mod.InventorySlots.${slot}, magSize);`);
+  return out.join('\n');
+}
+
+// Weapon card = UIContainer + UIText + AddUIWeaponImage(..., pkg) — the SAME
+// WeaponPackage renders the attachments onto the card image. No card widget
+// exists; composition verified from VIP-Escort / bf6-Deadlock / NotU.
+function portalCardCode() {
+  const head = [
+    `// ${cur.display} weapon card — generated by BF6 Weapon Previewer`,
+    `// https://tabbedscamper.github.io/BF6_Weapon_Previewer/#${encodeURIComponent(cur.id)}`,
+    '',
+  ];
+  if (!cur.sdk) {
+    return head.concat(
+      `// ${cur.display} has no Portal SDK id (cut or newer-season content).`).join('\n');
+  }
+  const id = tsName().toLowerCase() + '_card';
+  const out = head;
+  out.push(`export function show${tsName()}Card(player: mod.Player, parent: mod.UIWidget): void {`);
+  if (cur.sdkSrc === 'Gadgets') {          // melee: gadget image, and a known engine bug
+    out.push(
+      `    mod.AddUIContainer('${id}', mod.CreateVector(0, 0, 0), mod.CreateVector(280, 130, 0),`,
+      `        mod.UIAnchor.Center, parent, true, 0,`,
+      `        mod.CreateVector(0, 0, 0), 0.5, mod.UIBgFill.Solid, mod.UIDepth.AboveGameUI, player);`,
+      `    const card = mod.FindUIWidgetWithName('${id}');`,
+      `    mod.AddUIText('${id}_name', mod.CreateVector(0, 8, 0), mod.CreateVector(260, 22, 0),`,
+      `        mod.UIAnchor.TopCenter, card, true, 0,`,
+      `        mod.CreateVector(0, 0, 0), 0, mod.UIBgFill.None,`,
+      `        mod.Message('${cur.display}'), 14, mod.CreateVector(1, 1, 1), 1, mod.UIAnchor.Center,`,
+      `        mod.UIDepth.AboveGameUI, player);`,
+      `    mod.AddUIGadgetImage('${id}_img', mod.CreateVector(0, -8, 0), mod.CreateVector(120, 80, 1),`,
+      `        mod.UIAnchor.Center, mod.Gadgets.${cur.sdk}, card);`,
+      `}`,
+      '',
+      `// WARNING: melee images via AddUIGadgetImage currently render NOTHING — DICE-`,
+      `// confirmed engine bug (Discord bug-reports). The card will show name only.`);
+    return out.join('\n');
+  }
+  const { joined, todo } = buildAttachments();
+  if (joined.length) {
+    out.push(`    const pkg = mod.CreateNewWeaponPackage();`);
+    for (const a of joined)
+      out.push(`    mod.AddAttachmentToWeaponPackage(mod.WeaponAttachments.${a.sdk}, pkg); // ${a.label}`);
+  }
+  out.push(
+    `    mod.AddUIContainer('${id}', mod.CreateVector(0, 0, 0), mod.CreateVector(280, 130, 0),`,
+    `        mod.UIAnchor.Center, parent, true, 0,`,
+    `        mod.CreateVector(0, 0, 0), 0.5, mod.UIBgFill.Solid, mod.UIDepth.AboveGameUI, player);`,
+    `    const card = mod.FindUIWidgetWithName('${id}');`,
+    `    mod.AddUIText('${id}_name', mod.CreateVector(0, 8, 0), mod.CreateVector(260, 22, 0),`,
+    `        mod.UIAnchor.TopCenter, card, true, 0,`,
+    `        mod.CreateVector(0, 0, 0), 0, mod.UIBgFill.None,`,
+    `        mod.Message('${cur.display}'), 14, mod.CreateVector(1, 1, 1), 1, mod.UIAnchor.Center,`,
+    `        mod.UIDepth.AboveGameUI, player);`,
+    `    mod.AddUIWeaponImage('${id}_img', mod.CreateVector(0, -8, 0), mod.CreateVector(200, 80, 1),`,
+    joined.length
+      ? `        mod.UIAnchor.Center, mod.Weapons.${cur.sdk}, card, pkg, player);`
+      : `        mod.UIAnchor.Center, mod.Weapons.${cur.sdk}, card, player);`,
+    `}`);
+  if (todo.length) {
+    out.push('', '// Not yet joined to an SDK enum — add the matching mod.WeaponAttachments.* by hand:');
+    for (const t of todo) out.push(`//   ${t}`);
+  }
+  out.push('',
+    '// Notes (from the reference mods):',
+    '// - The in-game card positions attachment art AUTOMATICALLY from the',
+    '//   WeaponPackage — no offsets are needed (and none are included here;',
+    '//   this site\'s card preview placement never enters exported code).',
+    '// - Widget names must be UNIQUE (retrieve via FindUIWidgetWithName); for per-player',
+    '//   cards, suffix the names with the player id.',
+    '// - The weapon/package on a card is IMMUTABLE — to change the build, DeleteUIWidget',
+    '//   and re-create. Prefer create-once + toggle visibility: AddUIWeaponImage is the',
+    '//   most expensive widget to recreate (Night of the Undead profiling).',
+    '// - Attachments the weapon cannot take are silently dropped from the card render;',
+    '//   this build only uses combos validated against the game files.');
+  return out.join('\n');
+}
+
+const EX_TABS = { give: ['Give weapon', portalGiveCode], card: ['Weapon card', portalCardCode] };
+
+function renderExport() {
+  const tabs = $('#ex-tabs');
+  tabs.innerHTML = '';
+  for (const [id, [label]] of Object.entries(EX_TABS)) {
+    const b = document.createElement('button');
+    b.textContent = label;
+    b.className = exTab === id ? 'on' : '';
+    b.onclick = () => { exTab = id; renderExport(); };
+    tabs.appendChild(b);
+  }
+  $('#ex-code').textContent = EX_TABS[exTab][1]();
+}
+
+$('#btn-export').onclick = () => { $('#exportovl').hidden = false; renderExport(); };
+$('#ex-close').onclick = () => { $('#exportovl').hidden = true; };
+addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !$('#exportovl').hidden) $('#exportovl').hidden = true;
+});
+$('#exportovl').onclick = e => { if (e.target.id === 'exportovl') $('#exportovl').hidden = true; };
+$('#ex-copy').onclick = async () => {
+  try { await navigator.clipboard.writeText($('#ex-code').textContent); } catch {
+    const ta = document.createElement('textarea');
+    ta.value = $('#ex-code').textContent;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+  }
+  $('#ex-copy').textContent = 'Copied!';
+  setTimeout(() => { $('#ex-copy').textContent = 'Copy'; }, 1200);
+};

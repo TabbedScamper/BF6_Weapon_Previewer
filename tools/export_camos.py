@@ -12,7 +12,8 @@ OUT = r"A:\bf6weapons\skins\_camo"
 
 def main():
     import sys
-    sys.path.insert(0, r"C:\Users\mwalt\Dropbox\Personal-Files\Portal\bf6-highpoly-pipeline\tools")
+    sys.path.insert(0, os.path.normpath(os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", "..", "bf6-highpoly-pipeline", "tools")))
     from PIL import Image
     import rebuild_one_noshadow as rb
 
