@@ -703,6 +703,13 @@ def main():
         "weapons": weapons, "gadgets": gadgets, "charms": charms,
         "camos": camos,
     }
+    # camo paint masks (per part section, _wo alpha — build_womasks.py) and
+    # per-optic reticle/lens data (build_optics.py)
+    for mkey, fn in (("womask", "womasks.json"), ("optics", "optics.json")):
+        p = os.path.join(HERE, "data", fn)
+        if os.path.exists(p):
+            manifest[mkey] = json.load(open(p, encoding="utf-8"))
+            print("embedding %s: %d entries" % (fn, len(manifest[mkey])))
     json.dump(manifest, open(OUT, "w", encoding="utf-8"), separators=(",", ":"))
     print("weapons=%d gadgets=%d  token joins: %d ok / %d missing  -> %s"
           % (len(weapons), len(gadgets), join_hit, join_miss, OUT))

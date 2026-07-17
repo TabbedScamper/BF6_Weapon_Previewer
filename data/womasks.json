@@ -1,0 +1,3285 @@
+{
+"ob_gad_battlepickup_minigun_base_1p": {
+"0": "t_gad_battlepickup_minigun_barrel_wo",
+"1": "t_gad_battlepickup_minigun_base1_wo"
+},
+"ob_gad_battlepickup_minigun_magazine_1p": {
+"0": "t_gad_battlepickup_minigun_base2_wo"
+},
+"ob_gad_battlepickup_railgun_base2_1p": {
+"0": "t_gad_battlepickup_railgun_base2_wo"
+},
+"ob_gad_battlepickup_railgun_base_1p": {
+"0": "t_gad_battlepickup_railgun_base_wo"
+},
+"ob_gad_battlepickup_railgun_reflex_1p": {
+"0": "t_gad_battlepickup_railgun_scope_wo"
+},
+"ob_gad_battlepickup_railgun_scope_1p": {
+"0": "t_gad_battlepickup_railgun_scope_wo"
+},
+"ob_wep_assaultrifle_6p67_barrel415mm_1p": {
+"0": "t_wep_assaultrifle_6p67_barrel_wo"
+},
+"ob_wep_assaultrifle_6p67_barrel415mmflutted_1p": {
+"0": "t_wep_assaultrifle_6p67_barrel_wo"
+},
+"ob_wep_assaultrifle_6p67_barrel415mmheavy_1p": {
+"0": "t_wep_assaultrifle_6p67_barrel_wo"
+},
+"ob_wep_assaultrifle_6p67_barrel475mm_1p": {
+"0": "t_wep_assaultrifle_6p67_barrel_wo"
+},
+"ob_wep_assaultrifle_6p67_base_1p": {
+"0": "t_wep_assaultrifle_6p67_base_wo"
+},
+"ob_wep_assaultrifle_6p67_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_6p67_magazine30rd_1p": {
+"0": "t_wep_assaultrifle_6p67_magazine_wo"
+},
+"ob_wep_assaultrifle_6p67_muzzle_1p": {
+"0": "t_wep_assaultrifle_6p67_muzzle_wo"
+},
+"ob_wep_assaultrifle_6p67_sights_1p": {
+"0": "t_wep_assaultrifle_6p67_sights_wo"
+},
+"ob_wep_assaultrifle_6p67_sightsfolded_1p": {
+"0": "t_wep_assaultrifle_6p67_sights_wo"
+},
+"ob_wep_assaultrifle_6p67_wsl0028_base_1p": {
+"0": "t_wep_assaultrifle_6p67_wsl0028_base_wo"
+},
+"ob_wep_assaultrifle_6p67_wsl0078_base_1p": {
+"0": "t_wep_assaultrifle_6p67_wsl0078_base_wo"
+},
+"ob_wep_assaultrifle_ace32_barrel369mm_1p": {
+"0": "t_m_wep_assaultrifle_ace32_barrel_01_wo"
+},
+"ob_wep_assaultrifle_ace32_barrel409flutedmm_1p": {
+"0": "t_m_wep_assaultrifle_ace32_barrel_01_wo"
+},
+"ob_wep_assaultrifle_ace32_barrel409mm_1p": {
+"0": "t_m_wep_assaultrifle_ace32_barrel_01_wo"
+},
+"ob_wep_assaultrifle_ace32_barrel458mm_1p": {
+"0": "t_m_wep_assaultrifle_ace32_barrel_01_wo"
+},
+"ob_wep_assaultrifle_ace32_base_1p": {
+"0": "t_m_wep_assaultrifle_ace32_receiver_01_wo",
+"1": "t_m_wep_assaultrifle_ace32_barrel_01_wo"
+},
+"ob_wep_assaultrifle_ace32_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_ace32_foldedironsights_1p": {
+"0": "t_m_wep_assaultrifle_ace32_sights_01_wo"
+},
+"ob_wep_assaultrifle_ace32_magazine_1p": {
+"0": "t_m_wep_assaultrifle_ace32_magazine_01_wo"
+},
+"ob_wep_assaultrifle_ace32_muzzle_1p": {
+"0": "t_m_wep_assaultrifle_ace32_muzzle_01_wo"
+},
+"ob_wep_assaultrifle_ace32_railcovers_1p": {
+"0": "t_m_wep_assaultrifle_ace32_railcovers_01_wo"
+},
+"ob_wep_assaultrifle_ace32_sights_1p": {
+"0": "t_m_wep_assaultrifle_ace32_sights_01_wo"
+},
+"ob_wep_assaultrifle_ace32_wsl0038_base_1p": {
+"0": "t_m_wep_assaultrifle_ace32_barrel_01_wo",
+"1": "t_wep_assaultrifle_ace32_wsl0038_base_wo"
+},
+"ob_wep_assaultrifle_g36_barrel391mm_1p": {
+"0": "t_wep_assaultrifle_g36_barrel390mm_wo"
+},
+"ob_wep_assaultrifle_g36_barrel480mm_1p": {
+"0": "t_wep_assaultrifle_g36_barrel480mm_wo",
+"1": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_barrel480mmfluted_1p": {
+"0": "t_wep_assaultrifle_g36_barrel480mmfluted_wo",
+"1": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_barrel510mm_1p": {
+"0": "t_wep_assaultrifle_g36_barrel510mmheavy_wo",
+"1": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_barrel510mmfluted_1p": {
+"0": "t_wep_assaultrifle_g36_barrel510mmfluted_wo",
+"1": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_base_1p": {
+"0": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_basemagadapter_1p": {
+"0": "t_wep_assaultrifle_g36_magazine_wo"
+},
+"ob_wep_assaultrifle_g36_charmholder01_1p": {
+"0": "t_wepchrm_charmholder01_wo"
+},
+"ob_wep_assaultrifle_g36_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_g36_flashhider_1p": {
+"0": "t_wep_assaultrifle_g36_flashhider_wo"
+},
+"ob_wep_assaultrifle_g36_foldedironsights_1p": {
+"0": "t_wep_assaultrifle_g36_sight_wo"
+},
+"ob_wep_assaultrifle_g36_handguard_1p": {
+"0": "t_wep_assaultrifle_g36_handguard_wo"
+},
+"ob_wep_assaultrifle_g36_handguarext_1p": {
+"0": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_magazine_1p": {
+"1": "t_wep_assaultrifle_g36_magazine_wo"
+},
+"ob_wep_assaultrifle_g36_magazineadapter_1p": {
+"0": "t_wep_assaultrifle_g36_base_wo"
+},
+"ob_wep_assaultrifle_g36_magazinemagpull_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_assaultrifle_g36_sight_1p": {
+"0": "t_wep_assaultrifle_g36_sight_wo"
+},
+"ob_wep_assaultrifle_g36_wsl0022_base_1p": {
+"0": "t_wep_assault_rifle_g36_wsl0022_base_wo",
+"1": "t_wep_assault_rifle_g36_wsl0022_magazine_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrel409mm_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrel_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrel450mm_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrel_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrel525mm_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrel_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrel600mm_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrel_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrel600mmflutted_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrelflutted_wo"
+},
+"ob_wep_assaultrifle_g3a4_barrelextended_1p": {
+"0": "t_wep_assaultrifle_g3a4_barrel_wo"
+},
+"ob_wep_assaultrifle_g3a4_base_1p": {
+"0": "t_wep_assaultrifle_g3a4_base_wo"
+},
+"ob_wep_assaultrifle_g3a4_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_g3a4_magazine_1p": {
+"0": "t_wep_assaultrifle_g3a4_magazine20rnd_wo"
+},
+"ob_wep_assaultrifle_g3a4_magazinecompact_1p": {
+"0": "t_wep_assaultrifle_g3a4_magazine15rnd_wo"
+},
+"ob_wep_assaultrifle_g3a4_magazineextended_1p": {
+"0": "t_wep_assaultrifle_g3a4_magazine30rnd_wo"
+},
+"ob_wep_assaultrifle_g3a4_magpul15rnd_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_assaultrifle_g3a4_magpul20rnd_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_assaultrifle_g3a4_muzzle_1p": {
+"0": "t_wep_assaultrifle_g3a4_muzzle_wo"
+},
+"ob_wep_assaultrifle_g3a4_sight_1p": {
+"0": "t_wep_assaultrifle_g3a4_base_wo",
+"1": "t_wep_assaultrifle_g3a4_sights_wo"
+},
+"ob_wep_assaultrifle_g3a4_wsl0036_base_1p": {
+"0": "t_wep_assaultrifle_g3a4_wsl0036_base_wo",
+"1": "t_wep_assaultrifle_g3a4_wsl0036_meshaddition_wo"
+},
+"ob_wep_assaultrifle_hk433_barrel368mm_1p": {
+"0": "t_wep_assaultrifle_hk433_barrel_wo"
+},
+"ob_wep_assaultrifle_hk433_barrel420mm_1p": {
+"0": "t_wep_assaultrifle_hk433_barrel_wo"
+},
+"ob_wep_assaultrifle_hk433_barrel420mmflutted_1p": {
+"0": "t_wep_assaultrifle_hk433_barrel_wo"
+},
+"ob_wep_assaultrifle_hk433_barrel480mm_1p": {
+"0": "t_wep_assaultrifle_hk433_barrelext_wo"
+},
+"ob_wep_assaultrifle_hk433_base_1p": {
+"0": "t_wep_assaultrifle_hk433_base_wo"
+},
+"ob_wep_assaultrifle_hk433_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_hk433_foldedironsights_1p": {
+"0": "t_wep_assaultrifle_hk433_sights_wo"
+},
+"ob_wep_assaultrifle_hk433_magazine_1p": {
+"0": "t_wep_assaultrifle_hk433_magazine_wo"
+},
+"ob_wep_assaultrifle_hk433_magwellflare_1p": {
+"0": "t_wep_carbine_m4a1_magflare_wo"
+},
+"ob_wep_assaultrifle_hk433_sight_1p": {
+"0": "t_wep_assaultrifle_hk433_sights_wo"
+},
+"ob_wep_assaultrifle_hk433_wsl0006_base_1p": {
+"0": "t_wep_assaultrifle_hk433_base_wsl0006_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel457mm_1p": {
+"0": "t_wep_rifle_l85a3_barrel_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel518mm_1p": {
+"0": "t_wep_rifle_l85a3_barrel_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel518mmfluted_1p": {
+"0": "t_wep_rifle_l85a3_barrelfluted_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel582mm_1p": {
+"0": "t_wep_rifle_l85a3_barrel_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel646mm_1p": {
+"0": "t_wep_rifle_l85a3_barrel_wo"
+},
+"ob_wep_assaultrifle_l85a3_barrel646mmfluted_1p": {
+"0": "t_wep_rifle_l85a3_barrelfluted_wo"
+},
+"ob_wep_assaultrifle_l85a3_base_1p": {
+"0": "t_wep_rifle_l85a3_base_wo"
+},
+"ob_wep_assaultrifle_l85a3_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_l85a3_flashhider_1p": {
+"0": "t_wep_rifle_l85a3_flashhider_wo"
+},
+"ob_wep_assaultrifle_l85a3_foldedironsights_1p": {
+"0": "t_wep_assaultrifle_hk433_sights_wo"
+},
+"ob_wep_assaultrifle_l85a3_magazine_1p": {
+"0": "t_wep_rifle_l85a3_magazine_wo"
+},
+"ob_wep_assaultrifle_l85a3_sight_1p": {
+"0": "t_wep_assaultrifle_hk433_sights_wo"
+},
+"ob_wep_assaultrifle_l85a3_wsl0018_base_1p": {
+"0": "t_wep_rifle_l85a3_wsl0018_base_wo"
+},
+"ob_wep_assaultrifle_l85a3_wsl0056_base_1p": {
+"0": "t_wep_rifle_l85a3_wsl0056_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel16indpms_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel16indpms_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel18infactory_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel18infactory_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel18infaxon_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel18infaxon_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel18inspr_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel18inspr_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel20infactory_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel20infactory_wo"
+},
+"ob_wep_assaultrifle_m16a3_barrel20inhbar_1p": {
+"0": "t_wep_assaultrifle_m16a3_barrel20inhbar_wo"
+},
+"ob_wep_assaultrifle_m16a3_base_1p": {
+"0": "t_wep_assaultrifle_m16a3_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_carryhandle_1p": {
+"0": "t_wep_assaultrifle_m16a3_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsightfoldedfront_1p": {
+"0": "t_wep_assaultrifle_m16a3_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsightfront_1p": {
+"0": "t_wep_assaultrifle_m16a3_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsightfrontlow_1p": {
+"0": "t_wep_assaultrifle_m16a3_base_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsightfrontspr_1p": {
+"0": "t_wep_assaultrifle_m16a3_ironsightspr_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsightfrontsprfolded_1p": {
+"0": "t_wep_assaultrifle_m16a3_ironsightspr_wo"
+},
+"ob_wep_assaultrifle_m16a3_ironsights_1p": {
+"0": "t_wep_carbine_m4a1_ironsights_wo"
+},
+"ob_wep_assaultrifle_m16a3_receiverauto_1p": {
+"0": "t_wep_assaultrifle_m16a3_receiverauto_wo"
+},
+"ob_wep_assaultrifle_scarl_barrel145_1p": {
+"0": "t_wep_assaultrifle_scarl_barrel145_wo"
+},
+"ob_wep_assaultrifle_scarl_barrel16_1p": {
+"0": "t_wep_assaultrifle_scarl_barrel16_wo"
+},
+"ob_wep_assaultrifle_scarl_barrel18_1p": {
+"0": "t_wep_assaultrifle_scarl_barrel_18_wo"
+},
+"ob_wep_assaultrifle_scarl_barrelhamr_1p": {
+"0": "t_wep_assaultrifle_scarl_barrelheavy_wo"
+},
+"ob_wep_assaultrifle_scarl_barrelheavy_1p": {
+"0": "t_wep_assaultrifle_scarl_barrelheavy_wo"
+},
+"ob_wep_assaultrifle_scarl_base_1p": {
+"0": "t_wep_assaultrifle_scarl_base_wo"
+},
+"ob_wep_assaultrifle_scarl_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_scarl_flairedmagwell_1p": {
+"0": "t_wep_assaultrifle_scarl_magwell_wo"
+},
+"ob_wep_assaultrifle_scarl_frontsightfolded_1p": {
+"0": "t_wep_assaultrifle_scarl_sight_wo"
+},
+"ob_wep_assaultrifle_scarl_magazine_1p": {
+"0": "t_wep_assaultrifle_scarl_mag_wo"
+},
+"ob_wep_assaultrifle_scarl_muzzle_1p": {
+"0": "t_wep_assaultrifle_scarl_muzzle_wo"
+},
+"ob_wep_assaultrifle_scarl_muzzlecover_1p": {
+"0": "t_wep_assaultrifle_scarl_cover_wo"
+},
+"ob_wep_assaultrifle_scarl_sight_1p": {
+"0": "t_wep_assaultrifle_scarl_sight_wo"
+},
+"ob_wep_assaultrifle_scarl_sightfolded_1p": {
+"0": "t_wep_assaultrifle_scarl_sight_wo"
+},
+"ob_wep_assaultrifle_scarl_wsl0024_base_1p": {
+"0": "t_wep_assaultrifle_scarl_wsl0024_base_wo"
+},
+"ob_wep_assaultrifle_scarl_wsl0043_base_1p": {
+"0": "t_wep_assaultrifle_scarl_wsl0043_base_wo"
+},
+"ob_wep_assaultrifle_tavor7_barrel394mm_1p": {
+"0": "t_wep_assaultrifle_tavor7_barrel_wo"
+},
+"ob_wep_assaultrifle_tavor7_barrel432mm_1p": {
+"0": "t_wep_assaultrifle_tavor7_barrel_wo"
+},
+"ob_wep_assaultrifle_tavor7_barrel432mmflutted_1p": {
+"0": "t_wep_assaultrifle_tavor7_barrelfluted_wo"
+},
+"ob_wep_assaultrifle_tavor7_barrel580mm_1p": {
+"0": "t_wep_assaultrifle_tavor7_barrel_wo"
+},
+"ob_wep_assaultrifle_tavor7_base_1p": {
+"0": "t_wep_assaultrifle_tavor7_base_wo"
+},
+"ob_wep_assaultrifle_tavor7_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_tavor7_foldedironsights_1p": {
+"0": "t_wep_assaultrifle_tavor7_sight_wo"
+},
+"ob_wep_assaultrifle_tavor7_handguard_1p": {
+"0": "t_wep_assaultrifle_tavor7_base_wo"
+},
+"ob_wep_assaultrifle_tavor7_handguardext_1p": {
+"0": "t_wep_assaultrifle_tavor7_handguardext_wo"
+},
+"ob_wep_assaultrifle_tavor7_handguardgrip_1p": {
+"0": "t_wep_assaultrifle_tavor7_base_wo"
+},
+"ob_wep_assaultrifle_tavor7_muzzle_1p": {
+"0": "t_wep_assaultrifle_tavor7_muzzle_wo"
+},
+"ob_wep_assaultrifle_tavor7_sight_1p": {
+"0": "t_wep_assaultrifle_tavor7_sight_wo"
+},
+"ob_wep_assaultrifle_tavor7_wsl0053_base_1p": {
+"0": "t_wep_assaultrifle_tavor7_wsl0053_base_wo"
+},
+"ob_wep_assaultrifle_vhs2_barrel410mm_1p": {
+"0": "t_wep_assaultrifle_vhs2_barrel_wo"
+},
+"ob_wep_assaultrifle_vhs2_barrel457mm_1p": {
+"0": "t_wep_assaultrifle_vhs2_barrel_wo"
+},
+"ob_wep_assaultrifle_vhs2_barrel457mmflutted_1p": {
+"0": "t_wep_assaultrifle_vhs2_barrelfluted_wo"
+},
+"ob_wep_assaultrifle_vhs2_barrel500mm_1p": {
+"0": "t_wep_assaultrifle_vhs2_barrel_wo"
+},
+"ob_wep_assaultrifle_vhs2_base_1p": {
+"0": "t_wep_assaultrifle_vhs2_base_wo"
+},
+"ob_wep_assaultrifle_vhs2_basemagadapter_1p": {
+"0": "t_wep_assaultrifle_vhs2_base_wo"
+},
+"ob_wep_assaultrifle_vhs2_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_assaultrifle_vhs2_foldedironsights_1p": {
+"0": "t_wep_assaultrifle_vhs2_sights_wo"
+},
+"ob_wep_assaultrifle_vhs2_magazine30rnd_1p": {
+"0": "t_wep_assaultrifle_vhs2_magazine_wo"
+},
+"ob_wep_assaultrifle_vhs2_magazineadapter_1p": {
+"0": "t_wep_assaultrifle_vhs2_magazineadapter_wo"
+},
+"ob_wep_assaultrifle_vhs2_muzzle_1p": {
+"0": "t_wep_assaultrifle_vhs2_muzzle_3p_wo"
+},
+"ob_wep_assaultrifle_vhs2_picatinnyrailbottom_1p": {
+"0": "t_m_railpicatinnyadapter_bolted_wo"
+},
+"ob_wep_assaultrifle_vhs2_picatinnyrailright_1p": {
+"0": "t_m_railpicatinnyadapter_bolted_wo"
+},
+"ob_wep_assaultrifle_vhs2_sights_1p": {
+"0": "t_wep_assaultrifle_vhs2_sights_wo"
+},
+"ob_wep_assaultrifle_vhs2_wsl0076_base_1p": {
+"0": "t_wep_assaultrifle_vhs2_wsl0076_base_wo"
+},
+"ob_wep_boltaction_l115a3_5rdmag_1p": {
+"0": "t_wep_boltaction_l115a3_magazine5_wo"
+},
+"ob_wep_boltaction_l115a3_7rdmag_1p": {
+"0": "t_wep_boltaction_l115a3_magazine7_wo"
+},
+"ob_wep_boltaction_l115a3_7rdmagmagpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_boltaction_l115a3_anschsutzadapter_1p": {
+"0": "t_wep_boltaction_l115a3_base_wo"
+},
+"ob_wep_boltaction_l115a3_badgerimuns_1p": {
+"0": "t_wep_boltaction_l115a3_imuns_wo"
+},
+"ob_wep_boltaction_l115a3_barrel20in_1p": {
+"0": "t_wep_boltaction_l115a3_barrel20in_wo"
+},
+"ob_wep_boltaction_l115a3_barrel27in_1p": {
+"0": "t_wep_boltaction_l115a3_barrel27in_wo"
+},
+"ob_wep_boltaction_l115a3_barrel27influted_1p": {
+"0": "t_wep_boltaction_l115a3_barrel27influted_wo"
+},
+"ob_wep_boltaction_l115a3_barrel32in_1p": {
+"0": "t_wep_boltaction_l115a3_barrel32in_wo"
+},
+"ob_wep_boltaction_l115a3_base_1p": {
+"0": "t_wep_boltaction_l115a3_base_wo"
+},
+"ob_wep_boltaction_l115a3_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_boltaction_l115a3_foldedsightclamp20in_1p": {
+"0": "t_wep_boltaction_l115a3_muzzle_wo"
+},
+"ob_wep_boltaction_l115a3_foldedsightclamp27in_1p": {
+"0": "t_wep_boltaction_l115a3_muzzle_wo"
+},
+"ob_wep_boltaction_l115a3_foldedsightclamp32in_1p": {
+"0": "t_wep_boltaction_l115a3_muzzle_wo"
+},
+"ob_wep_boltaction_l115a3_ironsight20in_1p": {
+"0": "t_wep_boltaction_l115a3_sights_wo"
+},
+"ob_wep_boltaction_l115a3_ironsight27in_1p": {
+"0": "t_wep_boltaction_l115a3_sights_wo"
+},
+"ob_wep_boltaction_l115a3_ironsight32in_1p": {
+"0": "t_wep_boltaction_l115a3_sights_wo"
+},
+"ob_wep_boltaction_l115a3_siderailsleft_1p": {
+"0": "t_wep_boltaction_l115a3_base_wo"
+},
+"ob_wep_boltaction_l115a3_siderailsright_1p": {
+"0": "t_wep_boltaction_l115a3_base_wo"
+},
+"ob_wep_boltaction_m2010esr_barrel26in_1p": {
+"0": "t_wep_boltaction_m2010esr_barrel26in_wo"
+},
+"ob_wep_boltaction_m2010esr_barrel_1p": {
+"0": "t_wep_boltaction_m2010esr_barrel24in_wo"
+},
+"ob_wep_boltaction_m2010esr_barrelfluted_1p": {
+"0": "t_wep_boltaction_m2010esr_barrel24influted_wo"
+},
+"ob_wep_boltaction_m2010esr_base_1p": {
+"0": "t_wep_boltaction_m2010esr_base_wo"
+},
+"ob_wep_boltaction_m2010esr_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_boltaction_m2010esr_foldedironsights_1p": {
+"0": "t_wep_boltaction_m2010esr_sight_wo"
+},
+"ob_wep_boltaction_m2010esr_magazine5rnd_1p": {
+"0": "t_wep_boltaction_m2010esr_magazine_wo"
+},
+"ob_wep_boltaction_m2010esr_magazine5rndmagpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_boltaction_m2010esr_magazine8rnd_1p": {
+"0": "t_wep_boltaction_m2010esr_magazine_wo"
+},
+"ob_wep_boltaction_m2010esr_sight_1p": {
+"0": "t_wep_boltaction_m2010esr_sight_wo"
+},
+"ob_wep_boltaction_m2010esr_wse0010_base_1p": {
+"0": "t_wep_boltaction_m2010esr_cloth_wse0010_wo"
+},
+"ob_wep_boltaction_m2010esr_wsl0016_base_1p": {
+"0": "t_wep_boltaction_m2010esr_base_wsl0016_wo"
+},
+"ob_wep_boltaction_minifix_barrel12in_1p": {
+"0": "t_wep_boltaction_minifix_handguard11in_wo"
+},
+"ob_wep_boltaction_minifix_barrel16in_1p": {
+"0": "t_wep_boltaction_minifix_barrel16in_wo"
+},
+"ob_wep_boltaction_minifix_barrel16inpencil_1p": {
+"0": "t_wep_boltaction_minifix_barrel16inpencil_wo"
+},
+"ob_wep_boltaction_minifix_barrel18in_1p": {
+"0": "t_wep_boltaction_minifix_barrel18in_wo"
+},
+"ob_wep_boltaction_minifix_base_1p": {
+"0": "t_wep_boltaction_minifix_base_wo"
+},
+"ob_wep_boltaction_minifix_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_boltaction_minifix_handguard11in_1p": {
+"0": "t_wep_boltaction_minifix_handguard11in_wo"
+},
+"ob_wep_boltaction_minifix_handguard15in_1p": {
+"0": "t_wep_boltaction_minifix_handguard15in_wo"
+},
+"ob_wep_boltaction_minifix_ironsights_1p": {
+"0": "t_wep_boltaction_minifix_ironsights_wo"
+},
+"ob_wep_boltaction_minifix_ironsightsextended_1p": {
+"0": "t_wep_boltaction_minifix_ironsights_wo"
+},
+"ob_wep_boltaction_minifix_ironsightsfolded_1p": {
+"0": "t_wep_boltaction_minifix_ironsights_wo"
+},
+"ob_wep_boltaction_minifix_ironsightsfoldedextended_1p": {
+"0": "t_wep_boltaction_minifix_ironsights_wo"
+},
+"ob_wep_boltaction_minifix_magazine15_1p": {
+"0": "t_wepatt_magazine_l5awm10rnd_wo",
+"1": "t_wepatt_magazine_lancermagextension_wo"
+},
+"ob_wep_boltaction_minifix_magazine_1p": {
+"0": "t_wepatt_magazine_l5awm10rnd_wo"
+},
+"ob_wep_boltaction_minifix_magpul15rnd_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_boltaction_minifix_magpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_boltaction_minifix_wsl0017_base_1p": {
+"0": "t_wep_boltaction_minifix_wsl0017_base_wo"
+},
+"ob_wep_boltaction_minifix_wsl0032_base_1p": {
+"0": "t_wep_boltaction_minifix_wsl0032_base_wo"
+},
+"ob_wep_boltaction_mrad_barrel26in_1p": {
+"0": "t_wep_boltaction_mrad_barrel_wo"
+},
+"ob_wep_boltaction_mrad_barrel27in_1p": {
+"0": "t_wep_boltaction_mrad_barrel_wo"
+},
+"ob_wep_boltaction_mrad_base_1p": {
+"0": "t_wep_boltaction_mrad_base_wo",
+"1": "t_wep_boltaction_mrad_stock_wo"
+},
+"ob_wep_boltaction_mrad_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_boltaction_mrad_flashhider_1p": {
+"0": "t_wep_boltaction_mrad_flashhider_wo"
+},
+"ob_wep_boltaction_mrad_foldedironsights_1p": {
+"0": "t_wep_boltaction_m2010esr_sight_wo"
+},
+"ob_wep_boltaction_mrad_magazine_1p": {
+"0": "t_wep_boltaction_mrad_magazine_wo"
+},
+"ob_wep_boltaction_mrad_magazineext_1p": {
+"0": "t_wep_boltaction_mrad_magazineextended_wo"
+},
+"ob_wep_boltaction_mrad_magazineextmagpul_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_boltaction_mrad_magazinemagpul_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_boltaction_mrad_muzzle_1p": {
+"0": "t_wep_boltaction_mrad_muzzle_wo"
+},
+"ob_wep_boltaction_mrad_sight_1p": {
+"0": "t_wep_boltaction_m2010esr_sight_wo"
+},
+"ob_wep_boltaction_sv98m_barrel514mm_1p": {
+"0": "t_wep_boltaction_sv98m_barrel_wo"
+},
+"ob_wep_boltaction_sv98m_barrel650mm_1p": {
+"0": "t_wep_boltaction_sv98m_barrel_wo"
+},
+"ob_wep_boltaction_sv98m_barrel750mm_1p": {
+"0": "t_wep_boltaction_sv98m_barrel_wo"
+},
+"ob_wep_boltaction_sv98m_barrelflutted_1p": {
+"0": "t_wep_boltaction_sv98m_barrelflutted_wo"
+},
+"ob_wep_boltaction_sv98m_base_1p": {
+"0": "t_wep_boltaction_sv98m_base_wo"
+},
+"ob_wep_boltaction_sv98m_bipod_1p": {
+"0": "t_wep_boltaction_sv98m_base_wo"
+},
+"ob_wep_boltaction_sv98m_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_boltaction_sv98m_flashhider_1p": {
+"0": "t_wep_boltaction_sv98m_flashhider_wo"
+},
+"ob_wep_boltaction_sv98m_magazine_1p": {
+"0": "t_wep_boltaction_sv98m_magazine_wo"
+},
+"ob_wep_boltaction_sv98m_magazinemagpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_boltaction_sv98m_muzzle_1p": {
+"0": "t_wep_boltaction_sv98m_muzzle_wo"
+},
+"ob_wep_boltaction_sv98m_sight514mm_1p": {
+"0": "t_wep_boltaction_sv98m_base_wo"
+},
+"ob_wep_boltaction_sv98m_sight650mm_1p": {
+"0": "t_wep_boltaction_sv98m_base_wo"
+},
+"ob_wep_boltaction_sv98m_sight730mm_1p": {
+"0": "t_wep_boltaction_sv98m_base_wo"
+},
+"ob_wep_boltaction_sv98m_suppressor_1p": {
+"0": "t_wep_boltaction_sv98m_suppressor_wo"
+},
+"ob_wep_carbine_ak205_barrel207mm_1p": {
+"0": "t_wep_carbine_ak205_barrel_wo"
+},
+"ob_wep_carbine_ak205_barrel314mm_1p": {
+"0": "t_wep_carbine_ak205_barrel_wo"
+},
+"ob_wep_carbine_ak205_barrel365mm_1p": {
+"0": "t_wep_carbine_ak205_barrel_wo"
+},
+"ob_wep_carbine_ak205_barrel415mm_1p": {
+"0": "t_wep_carbine_ak205_extbarrel_wo"
+},
+"ob_wep_carbine_ak205_barrelfluted314mm_1p": {
+"0": "t_wep_carbine_ak205_barrelfluted_wo"
+},
+"ob_wep_carbine_ak205_barrelheavy314mm_1p": {
+"0": "t_wep_carbine_ak205_barrel_wo"
+},
+"ob_wep_carbine_ak205_barrelheavy415mm_1p": {
+"0": "t_wep_carbine_ak205_extbarrel_wo"
+},
+"ob_wep_carbine_ak205_base_1p": {
+"0": "t_wep_carbine_ak205_base_wo"
+},
+"ob_wep_carbine_ak205_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_ak205_handguard_1p": {
+"0": "t_wep_carbine_ak205_handguard_wo"
+},
+"ob_wep_carbine_ak205_magazine_1p": {
+"0": "t_wep_carbine_ak205_plasticmag_wo"
+},
+"ob_wep_carbine_ak205_sights207mm_1p": {
+"0": "t_wep_carbine_ak205_sights_wo"
+},
+"ob_wep_carbine_ak205_sights314mm_1p": {
+"0": "t_wep_carbine_ak205_sights_wo"
+},
+"ob_wep_carbine_ak205_sights415mm_1p": {
+"0": "t_wep_carbine_ak205_sights_wo"
+},
+"ob_wep_carbine_ak205_stock_1p": {
+"0": "t_wep_carbine_ak205_base_wo"
+},
+"ob_wep_carbine_ak205_wsl0008_base_1p": {
+"0": "t_wep_carbine_ak205_wsl0008_base_wo"
+},
+"ob_wep_carbine_ak205_wsl0051_base_1p": {
+"0": "t_wep_carbine_ak205_wsl0051_base_wo"
+},
+"ob_wep_carbine_akmagwell_base_1p": {
+"0": "t_wepatt_magazine_akmagwell_wo"
+},
+"ob_wep_carbine_hk417a2_barrel12_1p": {
+"0": "t_wep_carbine_hk417a2_barrel12_wo"
+},
+"ob_wep_carbine_hk417a2_barrel16_1p": {
+"0": "t_wep_carbine_hk417a2_barrel16_wo"
+},
+"ob_wep_carbine_hk417a2_barrel_1p": {
+"0": "t_wep_carbine_hk417a2_barrel_wo"
+},
+"ob_wep_carbine_hk417a2_base_1p": {
+"0": "t_wep_carbine_hk417a2_body_wo"
+},
+"ob_wep_carbine_hk417a2_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_hk417a2_foldedironsights_1p": {
+"0": "t_wep_carbine_hk417a2_sights_wo"
+},
+"ob_wep_carbine_hk417a2_magazine10_1p": {
+"0": "t_wep_carbine_hk417a2_magazine10_wo"
+},
+"ob_wep_carbine_hk417a2_magazine25_1p": {
+"0": "t_wep_carbine_hk417a2_magazine25_wo"
+},
+"ob_wep_carbine_hk417a2_magazine_1p": {
+"0": "t_wep_carbine_hk417a2_magazine_wo"
+},
+"ob_wep_carbine_hk417a2_magazinemagpull_1p": {
+"1": "t_wep_carbine_hk417a2_magazine_wo",
+"2": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_carbine_hk417a2_magwellflare_1p": {
+"0": "t_wep_carbine_hk417a2_magwellflare_wo"
+},
+"ob_wep_carbine_hk417a2_muzzle_1p": {
+"0": "t_wep_carbine_hk417a2_muzzle_wo"
+},
+"ob_wep_carbine_hk417a2_sight_1p": {
+"0": "t_wep_carbine_hk417a2_sights_wo"
+},
+"ob_wep_carbine_m4a1_barrel12inch_1p": {
+"0": "t_wep_carbine_m4a1_barrel12inch_wo"
+},
+"ob_wep_carbine_m4a1_barrelextended_1p": {
+"0": "t_wep_carbine_m4a1_barrelextended_wo"
+},
+"ob_wep_carbine_m4a1_barrelshort_1p": {
+"0": "t_wep_carbine_m4a1_barrelshort_wo"
+},
+"ob_wep_carbine_m4a1_base_1p": {
+"0": "t_wep_carbine_m4a1_base_wo"
+},
+"ob_wep_carbine_m4a1_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_m4a1_defaultmagmapull_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_carbine_m4a1_ironsights_1p": {
+"0": "t_wep_carbine_m4a1_ironsights_wo"
+},
+"ob_wep_carbine_m4a1_ironsightsfolded_1p": {
+"0": "t_wep_carbine_m4a1_ironsights_wo"
+},
+"ob_wep_carbine_m4a1_ironsightsfrontfolded_1p": {
+"0": "t_wep_carbine_m4a1_ironsights_wo"
+},
+"ob_wep_carbine_m4a1_magazine45rnd_1p": {
+"0": "t_wepatt_magazine_pufgun45_base_wo"
+},
+"ob_wep_carbine_m4a1_magazine_1p": {
+"1": "t_wep_carbine_m4a1_magazine_wo"
+},
+"ob_wep_carbine_m4a1_magwellflare_1p": {
+"0": "t_wep_carbine_m4a1_magflare_wo"
+},
+"ob_wep_carbine_m4a1_muzzle_1p": {
+"0": "t_wep_carbine_m4a1_muzzledefault_wo"
+},
+"ob_wep_carbine_m4a1_panelleft_1p": {
+"0": "t_wep_carbine_m4a1_base_wo"
+},
+"ob_wep_carbine_m4a1_panelright_1p": {
+"0": "t_wep_carbine_m4a1_base_wo"
+},
+"ob_wep_carbine_msbsgrotb_barrel254mm_1p": {
+"0": "t_wep_carbine_msbsgrotb_barrelfluted_wo"
+},
+"ob_wep_carbine_msbsgrotb_barrel254mmnoflute_1p": {
+"0": "t_wep_carbine_msbsgrotb_barrel_wo"
+},
+"ob_wep_carbine_msbsgrotb_barrel368mm_1p": {
+"0": "t_wep_carbine_msbsgrotb_barrelfluted_wo"
+},
+"ob_wep_carbine_msbsgrotb_base_1p": {
+"0": "t_wep_carbine_msbsgrotb_base_wo"
+},
+"ob_wep_carbine_msbsgrotb_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_msbsgrotb_flashhider_1p": {
+"0": "t_wep_carbine_msbsgrotb_flashhider_wo"
+},
+"ob_wep_carbine_msbsgrotb_grota2covers_1p": {
+"0": "t_wep_carbine_msbsgrotb_grota2covers_wo"
+},
+"ob_wep_carbine_msbsgrotb_handguardextended_1p": {
+"0": "t_wep_carbine_msbsgrotb_handguardextended_wo"
+},
+"ob_wep_carbine_msbsgrotb_handguardshort_1p": {
+"0": "t_wep_carbine_msbsgrotb_handguard_wo"
+},
+"ob_wep_carbine_msbsgrotb_magazine_1p": {
+"0": "t_wep_carbine_msbsgrotb_magazine_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightfront_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightfrontext_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightfrontfolded_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightfrontfoldedext_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightrear_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_msbsgrotb_sightrearfolded_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_carbine_qbz192_barrel10in_1p": {
+"0": "t_wep_carbine_qbz192_barrel_wo"
+},
+"ob_wep_carbine_qbz192_barrel14in_1p": {
+"0": "t_wep_carbine_qbz192_barrel_wo"
+},
+"ob_wep_carbine_qbz192_base_1p": {
+"0": "t_wep_carbine_qbz192_base_wo"
+},
+"ob_wep_carbine_qbz192_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_qbz192_handguard_1p": {
+"0": "t_wep_carbine_qbz192_base_wo"
+},
+"ob_wep_carbine_qbz192_ironsightsfolded_1p": {
+"0": "t_wep_carbine_qbz192_sights_wo"
+},
+"ob_wep_carbine_qbz192_magazine_1p": {
+"0": "t_wep_carbine_qbz192_magazine_wo"
+},
+"ob_wep_carbine_qbz192_magazineext10_1p": {
+"0": "t_wep_carbine_qbz192_magazine_wo"
+},
+"ob_wep_carbine_qbz192_magazineext6_1p": {
+"0": "t_wep_carbine_qbz192_magazine_wo"
+},
+"ob_wep_carbine_qbz192_magazinemagpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wep_carbine_qbz192_muzzle_1p": {
+"0": "t_wep_carbine_qbz192_muzzle_wo"
+},
+"ob_wep_carbine_qbz192_sights_1p": {
+"0": "t_wep_carbine_qbz192_sights_wo"
+},
+"ob_wep_carbine_qbz192_wsl0048_base_1p": {
+"0": "t_wep_carbine_qbz192_wsl0048_base_wo"
+},
+"ob_wep_carbine_scarsc_barrel190mm_1p": {
+"0": "t_wep_carbine_scarsc_barrel_wo"
+},
+"ob_wep_carbine_scarsc_barrel229mm_1p": {
+"0": "t_wep_carbine_scarsc_barrel_229mm_wo"
+},
+"ob_wep_carbine_scarsc_barrel267mm_1p": {
+"0": "t_wep_carbine_scarsc_barrel_267mm_wo"
+},
+"ob_wep_carbine_scarsc_barrelfluted_1p": {
+"0": "t_wep_carbine_scarsc_barrel_fluted_wo"
+},
+"ob_wep_carbine_scarsc_base_1p": {
+"0": "t_wep_carbine_scarsc_base_wo"
+},
+"ob_wep_carbine_scarsc_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_scarsc_coverrailbottom_1p": {
+"0": "t_wep_carbine_scarsc_coverrail_wo"
+},
+"ob_wep_carbine_scarsc_frontgrip_1p": {
+"0": "t_wep_carbine_scarsc_coverrail_wo"
+},
+"ob_wep_carbine_scarsc_ironsightfolded_1p": {
+"0": "t_wep_carbine_scarsc_sight_wo"
+},
+"ob_wep_carbine_scarsc_magazine_1p": {
+"0": "t_wep_carbine_scarsc_magazine_wo"
+},
+"ob_wep_carbine_scarsc_muzzleblackout_1p": {
+"0": "t_wep_carbine_scarsc_muzzle_blackout_wo"
+},
+"ob_wep_carbine_scarsc_sight_1p": {
+"0": "t_wep_carbine_scarsc_sight_wo"
+},
+"ob_wep_carbine_scarsc_wsl0031_base_1p": {
+"0": "t_wep_carbine_scarsc_wsl0031_base_wo"
+},
+"ob_wep_carbine_scarsc_wsl0035_base_1p": {
+"0": "t_wep_carbine_scarsc_wsl0035_base01_wo",
+"1": "t_wep_carbine_scarsc_wsl0035_base02_wo"
+},
+"ob_wep_carbine_scarsc_wsl0071_base_1p": {
+"0": "t_wep_carbine_scarsc_wsl0071_base_wo"
+},
+"ob_wep_carbine_sig553r_barrel240mm_1p": {
+"0": "t_wep_carbine_sg553r_barrel_240_wo"
+},
+"ob_wep_carbine_sig553r_barrel303mm_1p": {
+"0": "t_wep_carbine_sg553r_barrel_303_wo"
+},
+"ob_wep_carbine_sig553r_barrelfluted_1p": {
+"0": "t_wep_carbine_sg553r_barrelfluted_wo"
+},
+"ob_wep_carbine_sig553r_base_1p": {
+"0": "t_wep_carbine_sg553r_body_wo"
+},
+"ob_wep_carbine_sig553r_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_sig553r_foldedsights_1p": {
+"0": "t_wep_carbine_sg553r_sights_wo"
+},
+"ob_wep_carbine_sig553r_muzzle_1p": {
+"0": "t_wep_carbine_sg553r_muzzle_wo"
+},
+"ob_wep_carbine_sig553r_sights_1p": {
+"0": "t_wep_carbine_sg553r_sights_wo"
+},
+"ob_wep_carbine_xm7_barrel13inch_1p": {
+"0": "t_wep_carbine_xm7_barrelheavy_wo"
+},
+"ob_wep_carbine_xm7_barrel13inchheavy_1p": {
+"0": "t_wep_carbine_xm7_barrelheavy_wo"
+},
+"ob_wep_carbine_xm7_barrel16inch_1p": {
+"0": "t_wep_carbine_xm7_barrelheavy_wo"
+},
+"ob_wep_carbine_xm7_barrel16inchheavy_1p": {
+"0": "t_wep_carbine_xm7_barrelheavy_wo"
+},
+"ob_wep_carbine_xm7_barrelflutted_1p": {
+"0": "t_wep_carbine_xm7_barrelflutted_wo"
+},
+"ob_wep_carbine_xm7_barrelheavy_1p": {
+"0": "t_wep_carbine_xm7_barrelheavy_wo"
+},
+"ob_wep_carbine_xm7_base_1p": {
+"0": "t_wep_carbine_xm7_base_wo"
+},
+"ob_wep_carbine_xm7_charmholder01_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_carbine_xm7_magwellflare_1p": {
+"0": "t_wep_carbine_m4a1_magflare_wo"
+},
+"ob_wep_carbine_xm7_railbottom_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wep_carbine_xm7_railright_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wep_carbine_xm7_sight_1p": {
+"0": "t_wep_mg_m250_ironsights_01_wo"
+},
+"ob_wep_carbine_xm7_sightfolded_1p": {
+"0": "t_wep_mg_m250_ironsights_01_wo"
+},
+"ob_wep_carbine_xm7_wsl0005_base_1p": {
+"0": "t_wep_carbine_xm7_wsl0005_base_wo"
+},
+"ob_wep_dmr_aradmr_barrel_1p": {
+"0": "t_wep_dmr_aradmr_barreldefault_wo"
+},
+"ob_wep_dmr_aradmr_barrelext_1p": {
+"0": "t_wep_dmr_aradmr_barreldefault_wo"
+},
+"ob_wep_dmr_aradmr_barrelfluted_1p": {
+"0": "t_wep_dmr_aradmr_barrelfluted_wo"
+},
+"ob_wep_dmr_aradmr_base_1p": {
+"0": "t_wep_dmr_aradmr_base_wo"
+},
+"ob_wep_dmr_aradmr_bipod_1p": {
+"0": "t_wep_dmr_aradmr_base_wo"
+},
+"ob_wep_dmr_aradmr_bottomrailcover_1p": {
+"0": "t_wep_dmr_aradmr_base_wo"
+},
+"ob_wep_dmr_aradmr_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_dmr_aradmr_leftrailcover_1p": {
+"0": "t_wep_dmr_aradmr_base_wo"
+},
+"ob_wep_dmr_aradmr_magazine10rnd_1p": {
+"0": "t_wep_dmr_aradmr_magazine10_wo",
+"1": "t_base_wo"
+},
+"ob_wep_dmr_aradmr_magazine10rndfast_1p": {
+"0": "t_wep_dmr_aradmr_magazine10_wo"
+},
+"ob_wep_dmr_aradmr_magazine15rnd_1p": {
+"0": "t_wep_dmr_aradmr_magazine15_wo",
+"1": "t_base_wo"
+},
+"ob_wep_dmr_aradmr_magazine15rndfast_1p": {
+"0": "t_wep_dmr_aradmr_magazine15_wo"
+},
+"ob_wep_dmr_aradmr_magazine20rnd_1p": {
+"0": "t_wep_dmr_aradmr_magazine20_wo",
+"1": "t_base_wo"
+},
+"ob_wep_dmr_aradmr_magazine20rndfast_1p": {
+"0": "t_wep_dmr_aradmr_magazine20_wo"
+},
+"ob_wep_dmr_aradmr_muzzle_1p": {
+"0": "t_wep_dmr_aradmr_muzzle_wo"
+},
+"ob_wep_dmr_aradmr_rightrailcover_1p": {
+"0": "t_wep_dmr_aradmr_base_wo"
+},
+"ob_wep_dmr_aradmr_sight_1p": {
+"0": "t_wep_dmr_aradmr_ironsight_wo"
+},
+"ob_wep_dmr_aradmr_sightsfolded_1p": {
+"0": "t_wep_dmr_aradmr_ironsight_wo"
+},
+"ob_wep_dmr_aradmr_wsl0020_base_1p": {
+"0": "t_wep_dmr_aradmr_wsl0020_base_wo"
+},
+"ob_wep_dmr_m39emr_barrel406_1p": {
+"0": "t_wep_dmr_m39emr_barrel_wo"
+},
+"ob_wep_dmr_m39emr_barrel457_1p": {
+"0": "t_wep_dmr_m39emr_barrel_wo"
+},
+"ob_wep_dmr_m39emr_barrel559_1p": {
+"0": "t_wep_dmr_m39emr_barrel_wo"
+},
+"ob_wep_dmr_m39emr_base_1p": {
+"0": "t_wep_dmr_m39emr_base_wo",
+"1": "t_wep_dmr_m39emr_stock_wo"
+},
+"ob_wep_dmr_m39emr_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_dmr_m39emr_handguard_1p": {
+"0": "t_wep_dmr_m39emr_base_wo"
+},
+"ob_wep_dmr_m39emr_mag15rndmagpull_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_dmr_m39emr_mag20rndmagpull_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_dmr_m39emr_magazine15rnd_1p": {
+"0": "t_wep_dmr_m39emr_magazine15rnd_wo"
+},
+"ob_wep_dmr_m39emr_magazine20rnd_1p": {
+"0": "t_wep_dmr_m39emr_magazine20rnd_wo"
+},
+"ob_wep_dmr_m39emr_magazine25rnd_1p": {
+"0": "t_wep_dmr_m39emr_magazine25rnd_wo"
+},
+"ob_wep_dmr_m39emr_scopemount_1p": {
+"0": "t_wep_dmr_m39emr_base_wo"
+},
+"ob_wep_dmr_m39emr_sights_1p": {
+"0": "t_wep_dmr_m39emr_base_wo"
+},
+"ob_wep_dmr_m39emr_sightsfolded_1p": {
+"0": "t_wep_dmr_m39emr_base_wo"
+},
+"ob_wep_dmr_m39emr_wsl0011_base_1p": {
+"0": "t_wep_dmr_m39emr_wsl0011_base_wo",
+"1": "t_wep_dmr_m39emr_wsl0011_stock_wo"
+},
+"ob_wep_dmr_msbsgrotcps_barrel368mm_1p": {
+"0": "t_wep_dmr_msbsgrotcps_barrel_wo"
+},
+"ob_wep_dmr_msbsgrotcps_barrel406mm_1p": {
+"0": "t_wep_dmr_msbsgrotcps_barrel_wo"
+},
+"ob_wep_dmr_msbsgrotcps_barrel406mmflutted_1p": {
+"0": "t_wep_dmr_msbsgrotcps_barrelfluted_wo"
+},
+"ob_wep_dmr_msbsgrotcps_barrel508mm_1p": {
+"0": "t_wep_dmr_msbsgrotcps_barrel_wo"
+},
+"ob_wep_dmr_msbsgrotcps_base_1p": {
+"0": "t_wep_dmr_msbsgrotcps_base_wo"
+},
+"ob_wep_dmr_msbsgrotcps_charmholder01_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_dmr_msbsgrotcps_foldedironsights_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_dmr_msbsgrotcps_magazine30rnd_1p": {
+"0": "t_wep_carbine_msbsgrotb_magazine_wo"
+},
+"ob_wep_dmr_msbsgrotcps_muzzle_1p": {
+"0": "t_wep_dmr_msbsgrotcps_muzzle_wo"
+},
+"ob_wep_dmr_msbsgrotcps_picatinnyrailback_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wep_dmr_msbsgrotcps_picatinnyrailforward_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wep_dmr_msbsgrotcps_picatinnyrailleft_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wep_dmr_msbsgrotcps_sights_1p": {
+"0": "t_wep_carbine_msbsgrotb_sights_wo"
+},
+"ob_wep_dmr_svch_barrel457mm_1p": {
+"0": "t_wep_dmr_svch_svch_barrel_wo"
+},
+"ob_wep_dmr_svch_barrel509mm_1p": {
+"0": "t_wep_dmr_svch_svch_barrel_wo"
+},
+"ob_wep_dmr_svch_barrel560mm_1p": {
+"0": "t_wep_dmr_svch_svch_barrel_wo"
+},
+"ob_wep_dmr_svch_base_1p": {
+"0": "t_wep_dmr_svch_svch_base_wo"
+},
+"ob_wep_dmr_svch_bipod_1p": {
+"0": "t_wep_dmr_svch_svch_bipod_wo"
+},
+"ob_wep_dmr_svch_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_dmr_svch_magazine_1p": {
+"0": "t_wep_dmr_svch_svch_magazine_wo"
+},
+"ob_wep_dmr_svch_magazinemagpull_1p": {
+"0": "t_wep_dmr_svch_magpul_wo"
+},
+"ob_wep_dmr_svch_muzzle_1p": {
+"0": "t_wep_dmr_svch_svch_muzzle_wo"
+},
+"ob_wep_dmr_svch_sights_1p": {
+"0": "t_wep_dmr_svch_svch_sights_wo"
+},
+"ob_wep_dmr_svch_sightsfolded_1p": {
+"0": "t_wep_dmr_svch_svch_sights_wo"
+},
+"ob_wep_dmr_svdm_barrel550mm_1p": {
+"0": "t_wep_dmr_svdm_barrel_wo"
+},
+"ob_wep_dmr_svdm_barrel565mm_1p": {
+"0": "t_wep_dmr_svdm_barrel_wo"
+},
+"ob_wep_dmr_svdm_barrel565mmfluted_1p": {
+"0": "t_wep_dmr_svdm_barrel_wo"
+},
+"ob_wep_dmr_svdm_barrel620mm_1p": {
+"0": "t_wep_dmr_svdm_barrelext_wo"
+},
+"ob_wep_dmr_svdm_base_1p": {
+"0": "t_wep_dmr_svdm_base_wo"
+},
+"ob_wep_dmr_svdm_bipod_1p": {
+"0": "t_wep_dmr_svdm_bipod_wo"
+},
+"ob_wep_dmr_svdm_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_dmr_svdm_exthandguard_1p": {
+"0": "t_wep_dmr_svdm_exthandguard_wo"
+},
+"ob_wep_dmr_svdm_flashhider_1p": {
+"0": "t_wep_dmr_svdm_muzzle_wo"
+},
+"ob_wep_dmr_svdm_handguard_1p": {
+"0": "t_wep_dmr_svdm_handguard_wo"
+},
+"ob_wep_dmr_svdm_magazine10rd_1p": {
+"0": "t_wep_dmr_svdm_magazines10rnd_wo"
+},
+"ob_wep_dmr_svdm_magazine20rd_1p": {
+"0": "t_wep_dmr_svdm_magazines20rnd_wo"
+},
+"ob_wep_dmr_svdm_magazine5rd_1p": {
+"0": "t_wep_dmr_svdm_magazines5rnd_wo"
+},
+"ob_wep_dmr_svdm_magpul10rd_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_dmr_svdm_muzzleadapter_1p": {
+"0": "t_wep_dmr_svdm_muzzleadapter_wo"
+},
+"ob_wep_dmr_svdm_sights_1p": {
+"0": "t_wep_dmr_svdm_sights_wo"
+},
+"ob_wep_dmr_svdm_wsl0046_base_1p": {
+"0": "t_wep_dmr_svdm_wsl0046_base_wo"
+},
+"ob_wep_launcher_panzerfaust3_base_1p": {
+"0": "t_base_wo",
+"1": "t_base_wo",
+"2": "t_base_wo",
+"3": "t_base_wo"
+},
+"ob_wep_launcher_panzerfaust3_rocket_01_1p": {
+"0": "t_base_wo"
+},
+"ob_wep_launcher_panzerfaust3_rocket_02_1p": {
+"0": "t_base_wo"
+},
+"ob_wep_launcher_panzerfaust3_sights_01_1p": {
+"0": "t_base_wo"
+},
+"ob_wep_launcher_panzerfaust3_sights_02_1p": {
+"0": "t_base_wo"
+},
+"ob_wep_melee_combatknife_base_1p": {
+"0": "t_wep_melee_combatknife_wo"
+},
+"ob_wep_melee_combatknife_msl0001_base_1p": {
+"0": "t_wep_melee_combatknife_msl0001_wo"
+},
+"ob_wep_melee_dinomachete_base_1p": {
+"0": "t_wep_melee_dinomachete_wo"
+},
+"ob_wep_melee_dinomachete_msl0007_base_1p": {
+"0": "t_wep_melee_dinomachete_msl0007_wo"
+},
+"ob_wep_melee_gekoknife_base_1p": {
+"0": "t_wep_melee_gekoknife_wo"
+},
+"ob_wep_melee_iceclimbingaxe_base_1p": {
+"0": "t_wep_melee_iceclimbingaxe_wo"
+},
+"ob_wep_melee_iceclimbingaxe_msl0003_base_1p": {
+"0": "t_wep_melee_iceclimbingaxe_msl0003_wo"
+},
+"ob_wep_melee_iceclimbingaxe_msl0004_base_1p": {
+"0": "t_wep_melee_iceclimbingaxe_msl0004_wo"
+},
+"ob_wep_melee_iceclimbingaxe_msl0008_base_1p": {
+"0": "t_wep_melee_iceclimbingaxe_msl0008_base_wo"
+},
+"ob_wep_melee_sledgehammer_base_1p": {
+"0": "t_wep_melee_sledgehammer_wo"
+},
+"ob_wep_melee_sledgehammer_msl0002_base_1p": {
+"0": "t_wep_melee_sledgehammer_msl0002_wo"
+},
+"ob_wep_melee_sledgehammer_msl0005_base_1p": {
+"0": "t_wep_melee_sledgehammer_msl0005_wo",
+"1": "t_wep_melee_sledgehammer_msl0005_cloth_wo"
+},
+"ob_wep_mg_m240l_barrel449mm_1p": {
+"0": "t_wep_mg_m240l_barrel449mm_wo",
+"1": "t_wep_mg_m240l_ironsights_wo"
+},
+"ob_wep_mg_m240l_barrel449mmoowp_1p": {
+"0": "t_wep_mg_m240l_barrel449oowp_wo",
+"1": "t_wep_mg_m240l_ironsights_wo"
+},
+"ob_wep_mg_m240l_barrel551mm_1p": {
+"0": "t_wep_mg_m240l_barrel551mm_wo",
+"1": "t_wep_mg_m240l_ironsights_wo"
+},
+"ob_wep_mg_m240l_base_1p": {
+"0": "t_wep_mg_m240l_base_wo",
+"1": "t_wep_mg_m240l_front_wo"
+},
+"ob_wep_mg_m240l_bipod_1p": {
+"0": "t_wep_mg_m240l_bipod_wo"
+},
+"ob_wep_mg_m240l_box100rnd_1p": {
+"0": "t_wep_mg_m240l_box100rnd_wo"
+},
+"ob_wep_mg_m240l_box75rnd_1p": {
+"1": "t_wep_mg_m240l_box75rnd_wo"
+},
+"ob_wep_mg_m240l_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_m240l_gripadapter_1p": {
+"0": "t_wep_mg_m240l_gripadapter_wo"
+},
+"ob_wep_mg_m240l_msx240_1p": {
+"0": "t_wep_mg_m240l_msx240_wo"
+},
+"ob_wep_mg_m240l_muzzle_1p": {
+"0": "t_wep_mg_m240l_muzzledefault_wo"
+},
+"ob_wep_mg_m240l_rdm240fvs_1p": {
+"0": "t_wep_mg_m240l_rdm240fvs_wo"
+},
+"ob_wep_mg_m240l_rearsight_1p": {
+"0": "t_wep_mg_m240l_ironsights_wo"
+},
+"ob_wep_mg_m240l_rsm2brake_1p": {
+"0": "t_wep_mg_m240l_rsm2brake_wo"
+},
+"ob_wep_mg_m240l_saimg30fs_1p": {
+"0": "t_wep_mg_m240l_saimg30fs_wo"
+},
+"ob_wep_mg_m240l_saimg30lt_1p": {
+"0": "t_wep_mg_m240l_supressor_saimg30lt_wo"
+},
+"ob_wep_mg_m240l_wsl0027_base_1p": {
+"0": "t_wep_mg_m240l_wsl0027_base_wo",
+"1": "t_wep_mg_m240l_wsl0027_front_wo"
+},
+"ob_wep_mg_m240l_wsl0077_base_1p": {
+"0": "t_wep_mg_m240l_wsl0077_base_wo"
+},
+"ob_wep_mg_m250_406mmbarrel_1p": {
+"0": "t_wep_mg_m250_barrel_01_wo"
+},
+"ob_wep_mg_m250_406mmbarrelfluted_1p": {
+"0": "t_wep_mg_m250_barrel_01_wo",
+"1": "t_wep_mg_406mmbarrelfluted_wo"
+},
+"ob_wep_mg_m250_457mmbarrel_1p": {
+"0": "t_wep_mg_m250_barrel_01_wo"
+},
+"ob_wep_mg_m250_base_1p": {
+"0": "t_wep_mg_m250_base_01_wo",
+"1": "t_wep_mg_m250_stock_01_wo"
+},
+"ob_wep_mg_m250_bipod_1p": {
+"0": "t_wep_mg_m250_bipod_01_wo"
+},
+"ob_wep_mg_m250_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_m250_magazine_1p": {
+"0": "t_wep_mg_m250_magazine_01_wo",
+"2": "t_wep_mg_m250_pulltab_01_wo"
+},
+"ob_wep_mg_m250_magextended_1p": {
+"0": "t_wep_mg_m250_magextended_01_wo",
+"2": "t_wep_mg_m250_pulltab_01_wo"
+},
+"ob_wep_mg_m250_opticsrail_1p": {
+"0": "t_wep_mg_m250_opticrail_wo"
+},
+"ob_wep_mg_m250_sight_1p": {
+"0": "t_wep_mg_m250_ironsights_01_wo"
+},
+"ob_wep_mg_m250_sightsfolded_1p": {
+"0": "t_wep_mg_m250_ironsights_01_wo"
+},
+"ob_wep_mg_m250_wsl0010_base_1p": {
+"0": "t_wep_mg_m250_wsl0010_base_wo",
+"1": "t_wep_mg_m250_wsl0010_stock_wo"
+},
+"ob_wep_mg_m27iar_barrel368mm_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_barrel419mm_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_barrel419mmflutted_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_barrel508mm_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_base_1p": {
+"0": "t_wep_mg_m27iar_base_wo"
+},
+"ob_wep_mg_m27iar_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_m27iar_foldedironsights_1p": {
+"0": "t_wep_mg_m27iar_sights_wo"
+},
+"ob_wep_mg_m27iar_heavybarrel419mm_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_heavybarrel508mm_1p": {
+"0": "t_wep_mg_m27iar_barrel_wo"
+},
+"ob_wep_mg_m27iar_magazine_1p": {
+"0": "t_wepatt_magazine_pmag30rnd556_wo"
+},
+"ob_wep_mg_m27iar_magwellflare_1p": {
+"0": "t_wep_carbine_m4a1_magflare_wo"
+},
+"ob_wep_mg_m27iar_mantacover_1p": {
+"0": "t_wep_mg_m27iar_mantacovers_wo"
+},
+"ob_wep_mg_m27iar_sight_1p": {
+"0": "t_wep_mg_m27iar_sights_wo"
+},
+"ob_wep_mg_m27iar_wsl0049_base_1p": {
+"0": "t_wep_mg_m27iar_wsl0049_base_wo"
+},
+"ob_wep_mg_m38_cantedsights_1p": {
+"0": "t_base_wo"
+},
+"ob_wep_mg_m60e6_barrel433fluted_1p": {
+"0": "t_wep_mg_m60e6_barrelfluted_wo"
+},
+"ob_wep_mg_m60e6_barrel433mm_1p": {
+"0": "t_wep_mg_m60e6_barrel_wo"
+},
+"ob_wep_mg_m60e6_barrel560mm_1p": {
+"0": "t_wep_mg_m60e6_barrel_wo"
+},
+"ob_wep_mg_m60e6_base_1p": {
+"0": "t_wep_mg_m60e6_base_wo"
+},
+"ob_wep_mg_m60e6_bipod_1p": {
+"0": "t_wep_mg_m60e6_bipod_wo"
+},
+"ob_wep_mg_m60e6_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_m60e6_foldedironsights_1p": {
+"0": "t_wep_mg_m60e6_sights_wo"
+},
+"ob_wep_mg_m60e6_ironsightsfrontfolded_1p": {
+"0": "t_wep_mg_m60e6_sights_wo"
+},
+"ob_wep_mg_m60e6_magazineext_1p": {
+"0": "t_wep_mg_m60e6_magazines_wo"
+},
+"ob_wep_mg_m60e6_muzzle_1p": {
+"0": "t_wep_mg_m60e6_muzzle_wo"
+},
+"ob_wep_mg_m60e6_sights_1p": {
+"0": "t_wep_mg_m60e6_sights_wo"
+},
+"ob_wep_mg_m60e6_wsl0023_base_1p": {
+"0": "t_wep_mg_m60e6_wsl0023_base_wo",
+"1": "t_wep_mg_m60e6_wsl0023_details_wo"
+},
+"ob_wep_mg_mg4k_barrel370mmflutted_1p": {
+"0": "t_wep_mg_mg4k_barrelflutted_wo"
+},
+"ob_wep_mg_mg4k_barrel450mm_1p": {
+"0": "t_wep_mg_mg4k_barrel_wo"
+},
+"ob_wep_mg_mg4k_barrel612mm_1p": {
+"0": "t_wep_mg_mg4k_barrel_wo"
+},
+"ob_wep_mg_mg4k_base_1p": {
+"0": "t_wep_mg_mg4k_base_wo"
+},
+"ob_wep_mg_mg4k_bipod_1p": {
+"0": "t_wep_mg_mg4k_bipod_wo"
+},
+"ob_wep_mg_mg4k_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_mg4k_magazine_1p": {
+"0": "t_wep_mg_mg4k_magazine_wo"
+},
+"ob_wep_mg_mg4k_magazineext_1p": {
+"0": "t_wep_mg_mg4k_magazineext_wo"
+},
+"ob_wep_mg_mg4k_muzzle_1p": {
+"0": "t_wep_mg_mg4k_muzzle_wo"
+},
+"ob_wep_mg_mg4k_sights_1p": {
+"0": "t_wep_mg_mg4k_sights_wo"
+},
+"ob_wep_mg_mg4k_sightsfolded_1p": {
+"0": "t_wep_mg_mg4k_sights_wo"
+},
+"ob_wep_mg_mg4k_wsl0013_base_1p": {
+"0": "t_wep_mg_mg4k_wsl0013_base_wo"
+},
+"ob_wep_mg_mg4k_wsl0070_base_1p": {
+"0": "t_wep_mg_mg4k_wsl0070_base_wo",
+"1": "t_wep_mg_mg4k_wsl0070_basecosmetic_wo"
+},
+"ob_wep_mg_mg5_barrel460mmflutted_1p": {
+"0": "t_wep_mg_mg5_barrelflutted_wo"
+},
+"ob_wep_mg_mg5_barrel550mmheavy_1p": {
+"0": "t_wep_mg_mg5_barrel_wo"
+},
+"ob_wep_mg_mg5_barrel663mmheavy_1p": {
+"0": "t_wep_mg_mg5_barrel_wo"
+},
+"ob_wep_mg_mg5_base_1p": {
+"0": "t_wep_mg_mg5_base_wo",
+"1": "t_wep_mg_mg5_bipod_wo"
+},
+"ob_wep_mg_mg5_bipod_1p": {
+"0": "t_wep_mg_mg5_bipod_wo"
+},
+"ob_wep_mg_mg5_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_mg5_ironsightsfolded_1p": {
+"0": "t_wep_mg_mg5_sights_wo"
+},
+"ob_wep_mg_mg5_magazine100rnd_1p": {
+"0": "t_wep_mg_mg5_magazinegraft100rnddrum_wo"
+},
+"ob_wep_mg_mg5_magazine50rnddrum_1p": {
+"0": "t_wep_mg_mg5_magazine50rnddrum_wo"
+},
+"ob_wep_mg_mg5_magzine50rndpouch_1p": {
+"0": "t_wep_mg_mg5_magazine50rndpouch_wo"
+},
+"ob_wep_mg_mg5_muzzlebrake_1p": {
+"0": "t_wep_mg_mg4k_muzzle_wo"
+},
+"ob_wep_mg_mg5_sights_1p": {
+"0": "t_wep_mg_mg5_sights_wo"
+},
+"ob_wep_mg_mg5_wsl0055_base_1p": {
+"0": "t_wep_mg_mg5_wsl0055_base_wo",
+"1": "t_wep_mg_mg5_wsl0055_bipod_wo"
+},
+"ob_wep_mg_minimi_barrel349mm_1p": {
+"0": "t_wep_mg_minimi_barrel_wo",
+"1": "t_wep_mg_minimi_receiver_wo"
+},
+"ob_wep_mg_minimi_barrel349mmfluted_1p": {
+"0": "t_wep_mg_minimi_barrel_wo"
+},
+"ob_wep_mg_minimi_barrel465mm_1p": {
+"0": "t_wep_mg_minimi_barrel_wo",
+"1": "t_wep_mg_minimi_receiver_wo"
+},
+"ob_wep_mg_minimi_base_1p": {
+"0": "t_wep_mg_minimi_receiver_wo"
+},
+"ob_wep_mg_minimi_bipod_1p": {
+"0": "t_wep_mg_minimi_bipod_wo"
+},
+"ob_wep_mg_minimi_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_minimi_foldedironsights_1p": {
+"0": "t_wep_mg_minimi_sights_wo"
+},
+"ob_wep_mg_minimi_handguard_1p": {
+"0": "t_wep_mg_minimi_handguard_wo"
+},
+"ob_wep_mg_minimi_magazine200rd_1p": {
+"0": "t_wep_mg_minimi_200rdmagpouch_wo"
+},
+"ob_wep_mg_minimi_magazine_1p": {
+"0": "t_wep_mg_minimi_100rdmagpouch_wo"
+},
+"ob_wep_mg_minimi_muzzle_1p": {
+"0": "t_wep_mg_minimi_muzzle_wo"
+},
+"ob_wep_mg_minimi_sight_1p": {
+"0": "t_wep_mg_minimi_sights_wo"
+},
+"ob_wep_mg_minimi_stock_1p": {
+"0": "t_wep_mg_minimi_stock_wo"
+},
+"ob_wep_mg_minimi_wse0011_base_1p": {
+"0": "t_wep_mg_minimi_base_wse0011_wo"
+},
+"ob_wep_mg_minimi_wsl0003_base_1p": {
+"0": "t_wep_mg_minimi_wsl0003_base_wo"
+},
+"ob_wep_mg_rpk74m_60rdmag_1p": {
+"0": "t_wep_mg_rpk74m_magazine60rounds_wo"
+},
+"ob_wep_mg_rpk74m_90rdmag_1p": {
+"0": "t_wep_mg_rpk74m_drum_wo"
+},
+"ob_wep_mg_rpk74m_barrel419mmfluted_1p": {
+"0": "t_wep_mg_rpk74m_barrel_wo",
+"1": "t_wep_mg_rpk74m_sights_wo"
+},
+"ob_wep_mg_rpk74m_barrel521mm_1p": {
+"0": "t_wep_mg_rpk74m_barrel_wo",
+"1": "t_wep_mg_rpk74m_sights_wo"
+},
+"ob_wep_mg_rpk74m_barrel521mmfluted_1p": {
+"0": "t_wep_mg_rpk74m_barrel_wo",
+"1": "t_wep_mg_rpk74m_sights_wo"
+},
+"ob_wep_mg_rpk74m_barrel590mm_1p": {
+"0": "t_wep_mg_rpk74m_barrel_wo",
+"1": "t_wep_mg_rpk74m_sights_wo"
+},
+"ob_wep_mg_rpk74m_base_1p": {
+"0": "t_wep_mg_rpk74m_receiver_wo"
+},
+"ob_wep_mg_rpk74m_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_rpk74m_handguard_1p": {
+"0": "t_wep_mg_rpk74m_handguard_wo"
+},
+"ob_wep_mg_rpk74m_opticmount_1p": {
+"0": "t_wep_mg_rpk74m_opticmount_wo"
+},
+"ob_wep_mg_rpk74m_sights_1p": {
+"0": "t_wep_mg_rpk74m_sights_wo"
+},
+"ob_wep_mg_rpkm_barrel419mmfluted_1p": {
+"0": "t_m_wep_mg_rpkm_barrel_wo",
+"1": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_barrel521mm_1p": {
+"0": "t_m_wep_mg_rpkm_barrel_wo",
+"1": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_barrel521mmfluted_1p": {
+"0": "t_m_wep_mg_rpkm_barrel_wo",
+"1": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_barrel590mm_1p": {
+"0": "t_m_wep_mg_rpkm_barrel_wo",
+"1": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_barrel600mm_1p": {
+"0": "t_m_wep_mg_rpkm_barrel_wo",
+"1": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_base_1p": {
+"0": "t_m_wep_mg_rpkm_receiver_wo"
+},
+"ob_wep_mg_rpkm_bipod_1p": {
+"0": "t_m_wep_mg_rpkm_bipod_wo"
+},
+"ob_wep_mg_rpkm_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_rpkm_handguard_1p": {
+"0": "t_m_wep_mg_rpkm_handguard_wo"
+},
+"ob_wep_mg_rpkm_muzzle_1p": {
+"0": "t_m_wep_mg_rpkm_muzzle_wo"
+},
+"ob_wep_mg_rpkm_sights_1p": {
+"0": "t_m_wep_mg_rpkm_sights_wo"
+},
+"ob_wep_mg_rpkm_wsl0014_base_1p": {
+"0": "t_wep_mg_rpkm_wsl0014_base_wo"
+},
+"ob_wep_mg_ultimax_adapter_1p": {
+"0": "t_wep_mg_ultimax_base_wo"
+},
+"ob_wep_mg_ultimax_barrel457mm_1p": {
+"0": "t_wep_mg_ultimax_barrel_wo"
+},
+"ob_wep_mg_ultimax_barrel_1p": {
+"0": "t_wep_mg_ultimax_barrel_wo"
+},
+"ob_wep_mg_ultimax_barrellong_1p": {
+"0": "t_wep_mg_ultimax_barrel_wo"
+},
+"ob_wep_mg_ultimax_base_1p": {
+"0": "t_wep_mg_ultimax_base_wo"
+},
+"ob_wep_mg_ultimax_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_mg_ultimax_ironsightsfolded_1p": {
+"0": "t_wep_mg_ultimax_sights_wo"
+},
+"ob_wep_mg_ultimax_magazine100rnd_1p": {
+"0": "t_wep_mg_ultimax_magazine_wo"
+},
+"ob_wep_mg_ultimax_magazine60rnd_1p": {
+"0": "t_wepatt_magazine_pmag60drum_wo"
+},
+"ob_wep_mg_ultimax_muzzle_1p": {
+"0": "t_wep_mg_ultimax_muzzle_wo"
+},
+"ob_wep_mg_ultimax_sights_1p": {
+"0": "t_wep_mg_ultimax_sights_wo"
+},
+"ob_wep_mg_ultimax_wsl0057_base_1p": {
+"0": "t_wep_mg_ultimax_wsl0057_base_wo",
+"1": "t_wep_mg_ultimax_wsl0057_cloth_wo",
+"2": "t_wep_mg_ultimax_wsl0057_mesh_changes_wo"
+},
+"ob_wep_secondary_fiveseven_barrel_1p": {
+"0": "t_wep_secondary_fiveseven_base_wo"
+},
+"ob_wep_secondary_fiveseven_barrelextended_1p": {
+"0": "t_wep_secondary_fiveseven_extendedbarrel_wo"
+},
+"ob_wep_secondary_fiveseven_base_1p": {
+"0": "t_wep_secondary_fiveseven_base_wo"
+},
+"ob_wep_secondary_fiveseven_ironsights_1p": {
+"0": "t_wep_secondary_fiveseven_base_wo"
+},
+"ob_wep_secondary_fiveseven_magazine30rnd_1p": {
+"0": "t_wep_secondary_fiveseven_magazine30rnd_wo"
+},
+"ob_wep_secondary_fiveseven_magazine_1p": {
+"0": "t_wep_secondary_fiveseven_magazine_wo"
+},
+"ob_wep_secondary_fiveseven_sightcover_1p": {
+"0": "t_wep_secondary_fiveseven_base_wo"
+},
+"ob_wep_secondary_fiveseven_suppressor_1p": {
+"0": "t_wep_secondary_fiveseven_suppressor_wo"
+},
+"ob_wep_secondary_fiveseven_suppressorms57_1p": {
+"0": "t_wep_secondary_fiveseven_suppressorms57_wo"
+},
+"ob_wep_secondary_fiveseven_threadprotector_1p": {
+"0": "t_wep_secondary_fiveseven_base_wo"
+},
+"ob_wep_secondary_fiveseven_wsl0058_base_1p": {
+"0": "t_wep_secondary_fiveseven_wsl0058_base_wo"
+},
+"ob_wep_secondary_g22_barrel102mm_1p": {
+"0": "t_wep_secondary_g22_barrel23_wo"
+},
+"ob_wep_secondary_g22_barrel114mm_1p": {
+"0": "t_wep_secondary_g22_barrel22_wo"
+},
+"ob_wep_secondary_g22_barrel135mm_1p": {
+"0": "t_wep_secondary_g22_barrel35_wo"
+},
+"ob_wep_secondary_g22_base_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_baseextension102mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_baseextension114mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_baseextension135mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_magazine15rnd_1p": {
+"0": "t_wep_secondary_g22_magazine15rnd_wo"
+},
+"ob_wep_secondary_g22_magazine15rndextended_1p": {
+"0": "t_wep_secondary_g22_magazine15rnd_wo"
+},
+"ob_wep_secondary_g22_magazine15rndpad_1p": {
+"0": "t_wep_secondary_g22_magazine15rnd_wo"
+},
+"ob_wep_secondary_g22_magazine22rnd_1p": {
+"0": "t_wep_secondary_g22_magazine22rnd_wo"
+},
+"ob_wep_secondary_g22_sight102mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_sight114mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_sight135mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_sightplate_1p": {
+"0": "t_wep_secondary_g22_barrel35_wo"
+},
+"ob_wep_secondary_g22_sighttall102mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_sighttall114mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_sighttall135mm_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_slide102mm_1p": {
+"0": "t_wep_secondary_g22_barrel23_wo"
+},
+"ob_wep_secondary_g22_slide114mm_1p": {
+"0": "t_wep_secondary_g22_barrel22_wo"
+},
+"ob_wep_secondary_g22_slide135mm_1p": {
+"0": "t_wep_secondary_g22_barrel35_wo"
+},
+"ob_wep_secondary_g22_threadprotector_1p": {
+"0": "t_wep_secondary_g22_base_wo"
+},
+"ob_wep_secondary_g22_wsl0045_base_1p": {
+"0": "t_wep_secondary_g22_wsl0045_base_wo"
+},
+"ob_wep_secondary_m18_barrel120mm_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_barrel99mm_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_base_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_extmagazine_1p": {
+"1": "t_wep_secondary_m18_extmagazine_wo"
+},
+"ob_wep_secondary_m18_magazine_1p": {
+"1": "t_wep_secondary_m18_magazine_wo"
+},
+"ob_wep_secondary_m18_sight_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_sightadapter_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_sightfront_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_slideplate_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_suppressorsight_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m18_threadprotector_1p": {
+"0": "t_wep_secondary_m18_base_wo"
+},
+"ob_wep_secondary_m45a1_barrel_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_barrelcommander_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_barrellongslide_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_base_1p": {
+"0": "t_wep_secondary_m45a1_base_wo",
+"1": "t_wep_secondary_m45a1_magazine7rnd_wo"
+},
+"ob_wep_secondary_m45a1_magazine11rnd_1p": {
+"0": "t_wep_secondary_m45a1_magazine11rnd_wo",
+"1": "t_wep_secondary_m45a1_ammo_45_acp_wo"
+},
+"ob_wep_secondary_m45a1_magazine15rnd_1p": {
+"0": "t_wep_secondary_m45a1_magazine11rnd_wo",
+"1": "t_wep_secondary_m45a1_ammo_45_acp_wo"
+},
+"ob_wep_secondary_m45a1_magazine7rnd_1p": {
+"0": "t_wep_secondary_m45a1_magazine7rnd_wo",
+"1": "t_wep_secondary_m45a1_ammo_45_acp_wo"
+},
+"ob_wep_secondary_m45a1_mountplate_1p": {
+"0": "t_wep_secondary_m45a1_base_wo"
+},
+"ob_wep_secondary_m45a1_sight_1p": {
+"0": "t_wep_secondary_m45a1_base_wo"
+},
+"ob_wep_secondary_m45a1_sighttall_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_slide_1p": {
+"0": "t_wep_secondary_m45a1_base_wo",
+"1": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_slidecommander_1p": {
+"0": "t_wep_secondary_m45a1_base_wo",
+"1": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_slidelongslide_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_m45a1_threadprotector_1p": {
+"0": "t_wep_secondary_m45a1_barrel_wo"
+},
+"ob_wep_secondary_raginghunter_barrellong_1p": {
+"0": "t_wep_secondary_raginghunter_barrellong_wo"
+},
+"ob_wep_secondary_raginghunter_barrelsmall_1p": {
+"0": "t_wep_secondary_raginghunter_barrelsmall_wo"
+},
+"ob_wep_secondary_raginghunter_barrelstandard_1p": {
+"0": "t_wep_secondary_raginghunter_barrelstandard_wo"
+},
+"ob_wep_secondary_raginghunter_base_1p": {
+"0": "t_wep_secondary_raginghunter_base_wo"
+},
+"ob_wep_secondary_raginghunter_magazine_1p": {
+"0": "t_wep_secondary_raginghunter_base_wo"
+},
+"ob_wep_secondary_raginghunter_sight_1p": {
+"0": "t_wep_secondary_raginghunter_base_wo"
+},
+"ob_wep_secondary_raginghunter_wsl0007_base_1p": {
+"0": "t_wep_secondary_raginghunter_wsl0007_base_wo"
+},
+"ob_wep_secondary_skorpion_barrel_1p": {
+"0": "t_wep_secondary_skorpion_base_wo"
+},
+"ob_wep_secondary_skorpion_base_1p": {
+"0": "t_wep_secondary_skorpion_base_wo"
+},
+"ob_wep_secondary_skorpion_bottomrail_1p": {
+"0": "t_wep_secondary_skorpion_rail_wo"
+},
+"ob_wep_secondary_skorpion_ironsights_1p": {
+"0": "t_wep_secondary_skorpion_base_wo"
+},
+"ob_wep_secondary_skorpion_magazine10rnd_1p": {
+"0": "t_wep_secondary_skorpion_magazine10rmd_wo"
+},
+"ob_wep_secondary_skorpion_magazine_1p": {
+"0": "t_wep_secondary_skorpion_magazine_wo"
+},
+"ob_wep_secondary_skorpion_railcenter_1p": {
+"0": "t_wep_secondary_skorpion_rail_wo"
+},
+"ob_wep_secondary_skorpion_toprail_1p": {
+"0": "t_wep_secondary_skorpion_rail_wo"
+},
+"ob_wep_secondary_skorpion_wsl0041_base_1p": {
+"0": "t_wep_secondary_skorpion_wsl0041_base_wo",
+"1": "t_wep_secondary_skorpion_wsl0041_wo"
+},
+"ob_wep_secondary_skorpion_wsl0064_base_1p": {
+"0": "t_wep_secondary_skorpion_wsl0064_base_wo"
+},
+"ob_wep_secondary_trr8_barrel_1p": {
+"0": "t_wep_secondary_trr8_base_wo"
+},
+"ob_wep_secondary_trr8_base_1p": {
+"0": "t_wep_secondary_trr8_base_wo"
+},
+"ob_wep_secondary_trr8_magazine_1p": {
+"0": "t_wep_secondary_trr8_magazine_wo"
+},
+"ob_wep_secondary_trr8_moonclip_1p": {
+"0": "t_wep_secondary_trr8_magazine_wo"
+},
+"ob_wep_secondary_trr8_rail_1p": {
+"0": "t_wep_secondary_trr8_base_wo"
+},
+"ob_wep_secondary_trr8_wsl0029_base_1p": {
+"0": "t_wep_secondary_trr8_wsl0029_base_wo"
+},
+"ob_wep_shotgun_185ksk_barrel_1p": {
+"0": "t_wep_shotgun_185ksk_barrel_wo"
+},
+"ob_wep_shotgun_185ksk_barrelext_1p": {
+"0": "t_wep_shotgun_185ksk_barrel_wo"
+},
+"ob_wep_shotgun_185ksk_base_1p": {
+"0": "t_wep_shotgun_185ksk_base_wo"
+},
+"ob_wep_shotgun_185ksk_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_shotgun_185ksk_flashhider_1p": {
+"0": "t_wep_shotgun_185ksk_flashhider_wo"
+},
+"ob_wep_shotgun_185ksk_magazine_1p": {
+"0": "t_wep_shotgun_185ksk_shortmag_wo"
+},
+"ob_wep_shotgun_185ksk_magazineext_1p": {
+"0": "t_wep_shotgun_185ksk_longmag_wo"
+},
+"ob_wep_shotgun_185ksk_magazineextfast_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_shotgun_185ksk_magazinefast_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wep_shotgun_185ksk_muzzlebrake_1p": {
+"0": "t_wep_shotgun_185ksk_muzzlebrake_wo"
+},
+"ob_wep_shotgun_185ksk_sights_1p": {
+"0": "t_wep_shotgun_185ksk_base_wo"
+},
+"ob_wep_shotgun_185ksk_wsl0050_base_1p": {
+"0": "t_wep_shotgun_185ksk_wsl0050_base_wo"
+},
+"ob_wep_shotgun_590a1_barrel_1p": {
+"0": "t_wep_590a1_base_wo"
+},
+"ob_wep_shotgun_590a1_base_1p": {
+"0": "t_wep_590a1_base_wo"
+},
+"ob_wep_shotgun_590a1_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_shotgun_590a1_magazine_1p": {
+"1": "t_wep_590a1_base_wo",
+"2": "t_wep_590a1_magazines_wo"
+},
+"ob_wep_shotgun_590a1_magazineextended_1p": {
+"1": "t_wep_590a1_base_wo",
+"2": "t_wep_590a1_magazines_wo"
+},
+"ob_wep_shotgun_590a1_magazinesmall_1p": {
+"1": "t_wep_590a1_magazines_wo"
+},
+"ob_wep_shotgun_590a1_magazinesmallextended_1p": {
+"1": "t_wep_590a1_magazines_wo"
+},
+"ob_wep_shotgun_590a1_sight_1p": {
+"0": "t_wep_590a1_base_wo"
+},
+"ob_wep_shotgun_dp12_barrel_1p": {
+"0": "t_wep_shotgun_dp12_barrel_wo"
+},
+"ob_wep_shotgun_dp12_base_1p": {
+"0": "t_wep_shotgun_dp12_base_wo"
+},
+"ob_wep_shotgun_dp12_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_shotgun_dp12_ironsightsfolded_1p": {
+"0": "t_wep_shotgun_dp12_sight_wo"
+},
+"ob_wep_shotgun_dp12_magazine_1p": {
+"0": "t_wep_shotgun_dp12_magazine_wo"
+},
+"ob_wep_shotgun_dp12_muzzle_1p": {
+"0": "t_wep_shotgun_dp12_muzzlebrake_wo"
+},
+"ob_wep_shotgun_dp12_sight_1p": {
+"0": "t_wep_shotgun_dp12_sight_wo"
+},
+"ob_wep_shotgun_dp12_suppressor_1p": {
+"0": "t_wep_shotgun_dp12_supressor_wo"
+},
+"ob_wep_shotgun_dp12_wsl0012_base_1p": {
+"0": "t_wep_shotgun_dp12_wsl0012_base_wo",
+"1": "t_wep_shotgun_dp12_wsl0012_basecosmetics_wo"
+},
+"ob_wep_shotgun_m1014_barrel_1p": {
+"0": "t_wep_shotgun_m1014_base_wo"
+},
+"ob_wep_shotgun_m1014_base_1p": {
+"0": "t_wep_shotgun_m1014_base_wo"
+},
+"ob_wep_shotgun_m1014_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_shotgun_m1014_magazine5rnds_1p": {
+"0": "t_wep_shotgun_m1014_magazine_wo"
+},
+"ob_wep_shotgun_m1014_magazine7rnds_1p": {
+"0": "t_wep_shotgun_m1014_magazine_wo"
+},
+"ob_wep_shotgun_m1014_magazinecap_1p": {
+"0": "t_wep_shotgun_m1014_magazine_wo"
+},
+"ob_wep_shotgun_m1014_magazineextension_1p": {
+"0": "t_wep_shotgun_m1014_magazine_wo"
+},
+"ob_wep_shotgun_m1014_muzzle_1p": {
+"0": "t_wep_shotgun_m1014_muzzlebrake_wo"
+},
+"ob_wep_shotgun_m1014_sight_1p": {
+"0": "t_wep_shotgun_m1014_base_wo"
+},
+"ob_wep_shotgun_m1014_wsl0060_base_1p": {
+"0": "t_wep_shotgun_m1014_wsl0060_base_wo"
+},
+"ob_wep_smg_apc10_15rndmagpul_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_apc10_barrel170mm_1p": {
+"0": "t_wep_smg_apc10_barrel_wo"
+},
+"ob_wep_smg_apc10_barrel185mm_1p": {
+"0": "t_wep_smg_apc10_barrel_wo"
+},
+"ob_wep_smg_apc10_barrel200mm_1p": {
+"0": "t_wep_smg_apc10_barrel_wo"
+},
+"ob_wep_smg_apc10_base_1p": {
+"0": "t_wep_smg_apc10_base_wo"
+},
+"ob_wep_smg_apc10_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_apc10_ironsights_1p": {
+"0": "t_wep_smg_apc10_ironsights_wo"
+},
+"ob_wep_smg_apc10_ironsightsfolded_1p": {
+"0": "t_wep_smg_apc10_ironsights_wo"
+},
+"ob_wep_smg_apc10_magazine15rnd_1p": {
+"0": "t_wep_smg_apc10_magazine15rnd_wo"
+},
+"ob_wep_smg_apc10_magazine20rnd_1p": {
+"0": "t_wep_smg_apc10_magazine20rnd_wo"
+},
+"ob_wep_smg_apc10_magazine20rndext_1p": {
+"0": "t_wep_smg_apc10_magazine20rnd_wo"
+},
+"ob_wep_smg_apc10_wsl0009_base_1p": {
+"0": "t_wep_smg_apc10_wsl0009_base_wo"
+},
+"ob_wep_smg_apdw_barrel11in_1p": {
+"0": "t_wep_smg_apdw30_barrel_wo"
+},
+"ob_wep_smg_apdw_barrel11inheavy_1p": {
+"0": "t_wep_smg_apdw30_barrel_wo"
+},
+"ob_wep_smg_apdw_barrel9in_1p": {
+"0": "t_wep_smg_apdw30_barrel_wo"
+},
+"ob_wep_smg_apdw_barrel9influted_1p": {
+"0": "t_wep_smg_apdw30_barrel_wo"
+},
+"ob_wep_smg_apdw_barrel9inheavy_1p": {
+"0": "t_wep_smg_apdw30_barrel_wo"
+},
+"ob_wep_smg_apdw_base_1p": {
+"0": "t_wep_smg_apdw30_base_wo"
+},
+"ob_wep_smg_apdw_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_apdw_grip_1p": {
+"0": "t_wep_smg_apdw30_base_wo"
+},
+"ob_wep_smg_apdw_mag30_1p": {
+"0": "t_wep_smg_apdw30_magazine30rd_wo"
+},
+"ob_wep_smg_apdw_mag60_1p": {
+"0": "t_wep_smg_apdw30_magazine60rd_wo"
+},
+"ob_wep_smg_apdw_muzzle_1p": {
+"0": "t_wep_smg_apdw30_muzzle_wo"
+},
+"ob_wep_smg_apdw_railcover_1p": {
+"0": "t_wep_smg_apdw30_base_wo"
+},
+"ob_wep_smg_apdw_sights_1p": {
+"0": "t_wep_smg_apdw30_sights_wo"
+},
+"ob_wep_smg_apdw_sightsfolded_1p": {
+"0": "t_wep_smg_apdw30_sights_wo"
+},
+"ob_wep_smg_apdw_wsl0019_base_1p": {
+"0": "t_wep_smg_apdw30_wsl0019_base_wo"
+},
+"ob_wep_smg_apdw_wsl0025_base_1p": {
+"0": "t_wep_smg_apdw_wsl0025_base_wo"
+},
+"ob_wep_smg_mp5mli_barreldefault_1p": {
+"0": "t_wep_smg_mp5mli_barreldefault_wo"
+},
+"ob_wep_smg_mp5mli_barrellong_1p": {
+"0": "t_wep_smg_mp5mli_barrellong_wo"
+},
+"ob_wep_smg_mp5mli_base_1p": {
+"0": "t_wep_smg_mp5mli_base_wo"
+},
+"ob_wep_smg_mp5mli_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_mp5mli_ironsight_1p": {
+"0": "t_wep_smg_mp5mli_base_wo"
+},
+"ob_wep_smg_mp5mli_magazine20rnd_1p": {
+"0": "t_wep_smg_mp5mli_magazine20rnd_wo"
+},
+"ob_wep_smg_mp5mli_magazine30rnd_1p": {
+"0": "t_wep_smg_mp5mli_magazine30rnd_wo"
+},
+"ob_wep_smg_mp5mli_magazine30rndfast_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_mp5mli_magazine40rnd_1p": {
+"0": "t_wep_smg_mp5mli_magazine40rnd_wo"
+},
+"ob_wep_smg_mp5mli_mp5flashhider_1p": {
+"0": "t_wep_smg_mp5mli_mp5flashhider_wo"
+},
+"ob_wep_smg_mp5mli_mp5muzzlebrake_1p": {
+"0": "t_wep_smg_mp5mli_mp5muzzlebrake_wo"
+},
+"ob_wep_smg_mp5mli_wsl0004_base_1p": {
+"0": "t_wep_smg_mp5mli_wsl0004_base_wo"
+},
+"ob_wep_smg_mp7a2_barrel203_1p": {
+"0": "t_wep_smg_mp7a2_barrel_wo"
+},
+"ob_wep_smg_mp7a2_barrel203heavy_1p": {
+"0": "t_wep_smg_mp7a2_barrel_wo"
+},
+"ob_wep_smg_mp7a2_barrel_1p": {
+"0": "t_wep_smg_mp7a2_barrel_wo"
+},
+"ob_wep_smg_mp7a2_base_1p": {
+"0": "t_wep_smg_mp7a2_base_wo"
+},
+"ob_wep_smg_mp7a2_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_mp7a2_mag_1p": {
+"0": "t_wep_smg_mp7a2_mag_wo"
+},
+"ob_wep_smg_mp7a2_magextended30_1p": {
+"1": "t_wep_smg_mp7a2_magext_wo"
+},
+"ob_wep_smg_mp7a2_magextended30fast_1p": {
+"1": "t_wepatt_magazine_rangerplate556_wo",
+"2": "t_wep_smg_mp7a2_magext_wo"
+},
+"ob_wep_smg_mp7a2_magextended40_1p": {
+"1": "t_wep_smg_mp7a2_magext_wo"
+},
+"ob_wep_smg_mp7a2_muzzle_1p": {
+"0": "t_wep_smg_mp7a2_muzzle_wo"
+},
+"ob_wep_smg_mp7a2_sightfront_1p": {
+"0": "t_wep_smg_mp7a2_sights_wo"
+},
+"ob_wep_smg_mp7a2_sightfrontfolded_1p": {
+"0": "t_wep_smg_mp7a2_sights_wo"
+},
+"ob_wep_smg_mp7a2_sightrear_1p": {
+"0": "t_wep_smg_mp7a2_sights_wo"
+},
+"ob_wep_smg_mp7a2_sightrearfolded_1p": {
+"0": "t_wep_smg_mp7a2_sights_wo"
+},
+"ob_wep_smg_mpx_barrel114mm_1p": {
+"0": "t_wep_smg_mpx_barrel_wo"
+},
+"ob_wep_smg_mpx_barrel152mm_1p": {
+"0": "t_wep_smg_mpx_barrel_wo"
+},
+"ob_wep_smg_mpx_barrel203mm_1p": {
+"0": "t_wep_smg_mpx_barrel_wo"
+},
+"ob_wep_smg_mpx_barrelfluted152mm_1p": {
+"0": "t_wep_smg_mpx_barrel_wo"
+},
+"ob_wep_smg_mpx_base_1p": {
+"0": "t_wep_smg_mpx_receiver_wo"
+},
+"ob_wep_smg_mpx_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_mpx_extbarrel_1p": {
+"0": "t_wep_smg_mpx_extbarrel_wo"
+},
+"ob_wep_smg_mpx_extendedhandguard_1p": {
+"0": "t_wep_smg_mpx_exthandguard_wo"
+},
+"ob_wep_smg_mpx_extendedmagazine_1p": {
+"0": "t_wep_smg_mpx_extmag_wo"
+},
+"ob_wep_smg_mpx_foldedsights_1p": {
+"0": "t_wep_smg_mpx_sights_wo"
+},
+"ob_wep_smg_mpx_handguard_1p": {
+"0": "t_wep_smg_mpx_receiver_wo"
+},
+"ob_wep_smg_mpx_handguardshort_1p": {
+"0": "t_wep_smg_mpx_shorthandguard_wo",
+"1": "t_wep_smg_mpx_receiver_wo"
+},
+"ob_wep_smg_mpx_magazine36rds_1p": {
+"0": "t_wep_smg_mpx_magazine_wo"
+},
+"ob_wep_smg_mpx_magazine_1p": {
+"0": "t_wep_smg_mpx_magazine_wo"
+},
+"ob_wep_smg_mpx_magazinemagpull_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_mpx_sights_1p": {
+"0": "t_wep_smg_mpx_sights_wo"
+},
+"ob_wep_smg_mpx_stock_1p": {
+"0": "t_wep_smg_mpx_receiver_wo"
+},
+"ob_wep_smg_mpx_wsl0059_base_1p": {
+"0": "t_wep_smg_mpx_wsl0059_receiver_wo"
+},
+"ob_wep_smg_p90_barrel264mm_1p": {
+"0": "t_m_wep_smg_p90_barrel264mm_wo"
+},
+"ob_wep_smg_p90_barrel406mmcut_1p": {
+"0": "t_m_wep_smg_p90_barrel406mm_wo"
+},
+"ob_wep_smg_p90_base_1p": {
+"0": "t_wep_smg_p90_base_wo"
+},
+"ob_wep_smg_p90_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_p90_flashhider_1p": {
+"0": "t_wep_smg_p90_flashhider_wo"
+},
+"ob_wep_smg_p90_magazine_1p": {
+"0": "t_wep_smg_p90_magazine_wo"
+},
+"ob_wep_smg_p90_sights_1p": {
+"0": "t_wep_boltaction_minifix_ironsights_wo"
+},
+"ob_wep_smg_p90_wsl0042_base_1p": {
+"0": "t_wep_smg_p90_wsl0042_base_wo"
+},
+"ob_wep_smg_pp19_barrel237_1p": {
+"0": "t_wep_smg_pp19_barrel237_wo"
+},
+"ob_wep_smg_pp19_barrel367_1p": {
+"0": "t_wep_smg_pp19_barrel367_wo"
+},
+"ob_wep_smg_pp19_base_1p": {
+"0": "t_wep_smg_pp19_base_wo"
+},
+"ob_wep_smg_pp19_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_pp19_foldedsight_1p": {
+"0": "t_wep_smg_pp19_sights_wo"
+},
+"ob_wep_smg_pp19_gripbase_1p": {
+"0": "t_wep_smg_pp19_handguards_wo"
+},
+"ob_wep_smg_pp19_gripmlok_1p": {
+"0": "t_wep_smg_pp19_handguards_wo"
+},
+"ob_wep_smg_pp19_magazine20_1p": {
+"0": "t_wep_smg_pp19_mag20rnd_wo"
+},
+"ob_wep_smg_pp19_magazine20magpull_1p": {
+"0": "t_wep_smg_pp19_mag20rnd_wo",
+"2": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_pp19_magazine30_1p": {
+"0": "t_wep_smg_pp19_mag30rnd_wo"
+},
+"ob_wep_smg_pp19_magazine_1p": {
+"0": "t_wep_smg_pp19_magstandard_wo"
+},
+"ob_wep_smg_pp19_magazineextended_1p": {
+"0": "t_wep_smg_pp19_magstandard_wo",
+"2": "t_wep_smg_pp19_baseplate_wo"
+},
+"ob_wep_smg_pp19_magazinehelical_1p": {
+"0": "t_wep_smg_pp19_maghelical_wo"
+},
+"ob_wep_smg_pp19_magazinemagpull_1p": {
+"0": "t_wep_smg_pp19_magstandard_wo",
+"2": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_pp19_magwell_1p": {
+"0": "t_wep_smg_pp19_magwell_wo"
+},
+"ob_wep_smg_pp19_muzzle_1p": {
+"0": "t_wep_smg_pp19_muzzle_wo"
+},
+"ob_wep_smg_pp19_sight_1p": {
+"0": "t_wep_smg_pp19_sights_wo"
+},
+"ob_wep_smg_scorpionevo3_barrel196mm_1p": {
+"0": "t_wep_smg_scorpionevo3_barrel_wo"
+},
+"ob_wep_smg_scorpionevo3_barrel265mm_1p": {
+"0": "t_wep_smg_scorpionevo3_barrel_wo"
+},
+"ob_wep_smg_scorpionevo3_base_1p": {
+"0": "t_wep_smg_scorpionevo3_base_wo"
+},
+"ob_wep_smg_scorpionevo3_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_scorpionevo3_foldedironsights_1p": {
+"0": "t_wep_smg_scorpionevo3_sights_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine20rnd_1p": {
+"0": "t_wep_smg_scorpionevo3_magazine20rnd_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine20rndfast_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine30rnd_1p": {
+"0": "t_wep_smg_scorpionevo3_magazine30rnd_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine30rndfast_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine35rnd_1p": {
+"0": "t_wep_smg_scorpionevo3_magazine35rnd_wo"
+},
+"ob_wep_smg_scorpionevo3_magazine35rndfast_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_scorpionevo3_muzzle_1p": {
+"0": "t_wep_smg_scorpionevo3_flashhider_wo"
+},
+"ob_wep_smg_scorpionevo3_sights_1p": {
+"0": "t_wep_smg_scorpionevo3_sights_wo"
+},
+"ob_wep_smg_scorpionevo3_wsl0040_base_1p": {
+"0": "t_wep_smg_scorpionevo3_wsl0040_base_wo",
+"1": "t_wep_smg_scorpionevo3_wsl0040_additionmesh_wo"
+},
+"ob_wep_smg_ump40_barrel200mm_1p": {
+"0": "t_wep_smg_ump40_barrel_wo"
+},
+"ob_wep_smg_ump40_barrel200mmheavy_1p": {
+"0": "t_wep_smg_ump40_barrel_wo"
+},
+"ob_wep_smg_ump40_barrel_1p": {
+"0": "t_wep_smg_ump40_barrel_wo"
+},
+"ob_wep_smg_ump40_barrelheavy_1p": {
+"0": "t_wep_smg_ump40_barrel_wo"
+},
+"ob_wep_smg_ump40_base_1p": {
+"0": "t_wep_smg_ump40_base_wo"
+},
+"ob_wep_smg_ump40_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_ump40_foldedironsights_1p": {
+"0": "t_wep_smg_ump40_base_wo"
+},
+"ob_wep_smg_ump40_magazine25rd_1p": {
+"0": "t_wep_smg_ump40_magazine25rd_wo"
+},
+"ob_wep_smg_ump40_magazine30rd_1p": {
+"0": "t_wep_smg_ump40_magazine30rd_wo"
+},
+"ob_wep_smg_ump40_magazine40rd_1p": {
+"0": "t_wep_smg_ump40_magazine40rd_wo"
+},
+"ob_wep_smg_ump40_magpul25rd_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_ump40_magpul30rd_1p": {
+"0": "t_wepatt_magazine_magpull9mm_wo"
+},
+"ob_wep_smg_ump40_sight_1p": {
+"0": "t_wep_smg_ump40_base_wo"
+},
+"ob_wep_smg_ump40_wsl0047_base_1p": {
+"0": "t_wep_smg_ump40_wsl0047_base_wo"
+},
+"ob_wep_smg_vector_barrel140mm_1p": {
+"0": "t_wep_smg_vector_barrel_wo"
+},
+"ob_wep_smg_vector_barrel170mm_1p": {
+"0": "t_wep_smg_vector_barrel_wo"
+},
+"ob_wep_smg_vector_barrelfluted140mm_1p": {
+"0": "t_wep_smg_vector_barrel_wo"
+},
+"ob_wep_smg_vector_base_1p": {
+"0": "t_wep_smg_vector_base_wo"
+},
+"ob_wep_smg_vector_charmholder02_1p": {
+"0": "t_wepchrm_charmholder02_wo"
+},
+"ob_wep_smg_vector_magazine17rnd_1p": {
+"0": "t_wep_smg_vector_magazine_wo"
+},
+"ob_wep_smg_vector_magazine23rnd_1p": {
+"0": "t_wep_smg_vector_magazine_wo"
+},
+"ob_wep_smg_vector_magazine27rnd_1p": {
+"0": "t_wep_smg_vector_magazineextended_wo"
+},
+"ob_wep_smg_vector_muzzle_1p": {
+"0": "t_wep_smg_vector_muzzle_wo"
+},
+"ob_wep_smg_vector_rangerplate17rnd_1p": {
+"0": "t_wepatt_magazine_rangerplate556_wo"
+},
+"ob_wep_smg_vector_sight_1p": {
+"0": "t_wep_smg_vector_sights_wo"
+},
+"ob_wep_smg_vector_sightfolded_1p": {
+"0": "t_wep_smg_vector_sights_wo"
+},
+"ob_wep_smg_vector_wsl0037_base_1p": {
+"0": "t_wep_smg_vector_wsl0037_base_wo"
+},
+"ob_wepatt_angledgrip_hfga_base_1p": {
+"0": "t_wepatt_angledgrip_hfga_wo"
+},
+"ob_wepatt_angledgrip_magpulafg2_base_1p": {
+"0": "t_wepatt_angledgrip_magpulafg2_wo"
+},
+"ob_wepatt_angledgrip_magpulafg_base_1p": {
+"0": "t_wepatt_angledgrip_magpulafg_wo",
+"1": "t_wepatt_rail_picatinnymlockadapter_wo"
+},
+"ob_wepatt_angledgrip_magpulmvg_base_1p": {
+"0": "t_wepatt_angledgrip_magpulmvg_wo",
+"1": "t_wepatt_rail_picatinnymlockadapter_wo"
+},
+"ob_wepatt_angledgrip_troy_base_1p": {
+"0": "t_wepatt_angledgrip_troy_wo",
+"1": "t_wepatt_rail_picatinnymlockadapter_wo"
+},
+"ob_wepatt_bipod_atlasv8_base_1p": {
+"0": "t_wepatt_bipod_atlasv8_wo"
+},
+"ob_wepatt_bipod_lt706harris_base_1p": {
+"0": "t_wepatt_bipod_lt706harris_wo"
+},
+"ob_wepatt_canted_reddot_base_1p": {
+"0": "t_wepatt_reflex_eotechelfx_wo",
+"3": "t_wepatt_canted_reddot_wo"
+},
+"ob_wepatt_canted_reddot_slanted_1p": {
+"0": "t_wepatt_reflex_eotechelfx_3p_wo",
+"3": "t_wepatt_canted_reddot_wo"
+},
+"ob_wepatt_flashhider_a2birdcage_base_1p": {
+"0": "t_wepatt_flashhider_mr556_wo"
+},
+"ob_wepatt_flashhider_aacblackout_base_1p": {
+"0": "t_wepatt_flashhider_aacblackout_wo"
+},
+"ob_wepatt_flashhider_ak205_base_1p": {
+"0": "t_wep_carbine_ak205_muzzle_wo"
+},
+"ob_wepatt_flashhider_bt_base_1p": {
+"0": "t_wepatt_flashhider_bt_wo"
+},
+"ob_wepatt_flashhider_hk4010_base_1p": {
+"0": "t_wep_smg_ump40_muzzle_wo"
+},
+"ob_wepatt_flashhider_hk433_base_1p": {
+"0": "t_wepatt_flashhider_hk433_wo"
+},
+"ob_wepatt_flashhider_kacm4qd_base_1p": {
+"0": "t_wepatt_flashhider_kacm4qd_wo"
+},
+"ob_wepatt_flashhider_keymo_base_1p": {
+"0": "t_wepatt_flashhider_keymo_wo"
+},
+"ob_wepatt_flashhider_mpx_base_1p": {
+"0": "t_wepatt_flashhider_mpx_wo"
+},
+"ob_wepatt_flashhider_mr556_base_1p": {
+"0": "t_wepatt_flashhider_mr556_wo"
+},
+"ob_wepatt_flashhider_q86blk_base_1p": {
+"0": "t_wepatt_flashhider_q86blk_wo"
+},
+"ob_wepatt_flashhider_sigtaperedqd_base_1p": {
+"0": "t_wep_flashhider_sigtaperedqd_wo"
+},
+"ob_wepatt_flashhider_silentsteel_base_1p": {
+"0": "t_wepatt_flashhider_silentsteel_wo"
+},
+"ob_wepatt_flashhider_srvv_fhmb545_1p": {
+"0": "t_wepatt_flashhider_srvv_fhmb545_wo"
+},
+"ob_wepatt_flashhider_srvv_fhmbsv98_1p": {
+"0": "t_wepatt_flashhider_srvv_fhmbsv98_wo"
+},
+"ob_wepatt_flashhider_strela545_base_1p": {
+"0": "t_wepatt_flashhider_strela545_wo"
+},
+"ob_wepatt_flashhider_vortex1001va3_base_1p": {
+"0": "t_wepatt_flashhider_vortex1001va3_wo"
+},
+"ob_wepatt_flashhider_warcomp556_base_1p": {
+"0": "t_base_wo"
+},
+"ob_wepatt_flashhider_wyssenmb_base_1p": {
+"0": "t_wepatt_flashhider_wyssenmb_wo"
+},
+"ob_wepatt_grip_dp12foregrip_base_1p": {
+"0": "t_wepatt_grip_dp12foregrip_base_wo"
+},
+"ob_wepatt_grip_evohandstop_base_1p": {
+"0": "t_wepatt_grip_evohandstop_wo"
+},
+"ob_wepatt_grip_msbs_base_1p": {
+"0": "t_wepatt_grip_msbs_wo"
+},
+"ob_wepatt_grippod_bt_base_1p": {
+"0": "t_wepatt_grippod_bt_wo"
+},
+"ob_wepatt_grippod_l85_base_1p": {
+"0": "t_wepatt_grippod_l85_wo"
+},
+"ob_wepatt_grippod_qbztype7_base_1p": {
+"0": "t_wepatt_grippod_qbztype7_wo"
+},
+"ob_wepatt_holo_pg350_base_1p": {
+"0": "t_wepatt_holo_pg350_wo"
+},
+"ob_wepatt_holo_vzor3_base_1p": {
+"2": "t_wepatt_holo_vzor3_wo"
+},
+"ob_wepatt_holo_vzor3_short_1p": {
+"2": "t_wepatt_holo_vzor3_wo"
+},
+"ob_wepatt_ironsight_cantedirons_front_1p": {
+"0": "t_wepatt_ironsight_cantedirons_base_wo"
+},
+"ob_wepatt_ironsight_cantedirons_rear_1p": {
+"0": "t_wepatt_ironsight_cantedirons_base_wo"
+},
+"ob_wepatt_laser_anpeq16b_1p": {
+"0": "t_wepatt_laser_anpeq16b_wo"
+},
+"ob_wepatt_laser_ballisticcalculator_base_1p": {
+"0": "t_wepatt_laser_ballisticcalculator_wo"
+},
+"ob_wepatt_laser_cmr201_base_1p": {
+"0": "t_wepatt_laser_cmr201_wo"
+},
+"ob_wepatt_laser_dbal_base_1p": {
+"0": "t_wepatt_laser_dbal_wo"
+},
+"ob_wepatt_laser_holosunrml_base_1p": {
+"0": "t_wepatt_laser_holosunrml_wo"
+},
+"ob_wepatt_laser_la23_base_1p": {
+"0": "t_wepatt_laser_la23_wo"
+},
+"ob_wepatt_laser_la23_basenopad_1p": {
+"0": "t_wepatt_laser_la23_wo"
+},
+"ob_wepatt_laser_lmdpeir1_base_1p": {
+"0": "t_wepatt_laser_lmdpeir1_wo"
+},
+"ob_wepatt_laser_meprosting_base_1p": {
+"0": "t_wepatt_laser_meprosting_base_wo"
+},
+"ob_wepatt_laser_perst1_base_1p": {
+"0": "t_wepatt_laser_perst1_wo"
+},
+"ob_wepatt_laserlight_modulemk3_mlockadapter_1p": {
+"0": "t_wepatt_laserlight_modulemk3_wo"
+},
+"ob_wepatt_laserlight_perst4_base_1p": {
+"0": "t_wepatt_laserlight_perst4_wo"
+},
+"ob_wepatt_laserlight_raidxe_base_1p": {
+"0": "t_wepatt_laserlight_raidxe_wo"
+},
+"ob_wepatt_laserlight_sf400_base_1p": {
+"0": "t_wepatt_laserlight_sf400_wo"
+},
+"ob_wepatt_laserlight_x5lg3_base_1p": {
+"0": "t_wepatt_laserlight_x5lg3_wo"
+},
+"ob_wepatt_light_modulemk3_base_1p": {
+"0": "t_wepatt_laserlight_modulemk3_wo"
+},
+"ob_wepatt_light_sfscout_base_1p": {
+"0": "t_wepatt_light_sfscout_wo"
+},
+"ob_wepatt_light_sfx300_base_1p": {
+"0": "t_wepatt_laserlight_sf400_wo"
+},
+"ob_wepatt_light_tlmissionlight_base_1p": {
+"0": "t_wepatt_light_tlmissionlight_wo"
+},
+"ob_wepatt_magazine_l5awm20rnd_base_1p": {
+"0": "t_wepatt_magazine_l5awm20_wo"
+},
+"ob_wepatt_magazine_l5awm20rnd_magpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wepatt_magazine_l5awm30rnd_base_1p": {
+"0": "t_wepatt_magazine_l5awm30_wo"
+},
+"ob_wepatt_magazine_l5awm36rnd_base_1p": {
+"0": "t_wepatt_magazine_l5awm30_wo"
+},
+"ob_wepatt_magazine_l7awm20rnd_base_1p": {
+"0": "t_wepatt_magazine_l7awm20rnd_wo"
+},
+"ob_wepatt_magazine_l7awm20rnd_magpul_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wepatt_magazine_l7awm25rnd_base_1p": {
+"0": "t_wepatt_magazine_l7awm25rnd_wo"
+},
+"ob_wepatt_magazine_l7awm25rnd_magpul_1p": {
+"0": "t_wepatt_magazine_magpull762_wo"
+},
+"ob_wepatt_magazine_pmag10rnd_base_1p": {
+"0": "t_wepatt_magazine_pmag10rnd_wo"
+},
+"ob_wepatt_magazine_pmag10rnd_extended5_1p": {
+"0": "t_wepatt_magazine_extended5_wo"
+},
+"ob_wepatt_magazine_pmag10rnd_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate762_wo"
+},
+"ob_wepatt_magazine_pmag20rnd556_base_1p": {
+"0": "t_wepatt_magazine_pmag20rnd556_wo"
+},
+"ob_wepatt_magazine_pmag20rnd556_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate556_wo"
+},
+"ob_wepatt_magazine_pmag20rndakm_base_1p": {
+"0": "t_wepatt_magazine_pmag20rndakm_wo"
+},
+"ob_wepatt_magazine_pmag20rndakm_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate762_wo"
+},
+"ob_wepatt_magazine_pmag30rnd556_base_1p": {
+"0": "t_wepatt_magazine_pmag30rnd556_wo"
+},
+"ob_wepatt_magazine_pmag30rnd556_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate556_wo"
+},
+"ob_wepatt_magazine_pmag30rndakm_base_1p": {
+"0": "t_wepatt_magazine_pmagak47gen3_wo"
+},
+"ob_wepatt_magazine_pmag30rndakm_extender_1p": {
+"0": "t_wepatt_545x39extension_wo"
+},
+"ob_wepatt_magazine_pmag30rndakm_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate762_wo"
+},
+"ob_wepatt_magazine_pmag40rnd556_base_1p": {
+"0": "t_wepatt_magazine_pmag40rnd556_wo"
+},
+"ob_wepatt_magazine_pmag40rnd556_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate556_wo"
+},
+"ob_wepatt_magazine_pmagak74gen3_base_1p": {
+"0": "t_wepatt_magazine_pmagak74gen3_wo"
+},
+"ob_wepatt_magazine_pmagak74gen3_ext_1p": {
+"0": "t_wepatt_545x39extension_wo"
+},
+"ob_wepatt_magazine_pmagak74gen3_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate762_wo"
+},
+"ob_wepatt_magazine_promag30rnd_base_1p": {
+"0": "t_wepatt_magazine_promag30_wo"
+},
+"ob_wepatt_magazine_promag40_base_1p": {
+"0": "t_wepatt_magazine_promag40rnd_wo"
+},
+"ob_wepatt_magazine_promag40_magpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wepatt_magazine_puffgun60_base_1p": {
+"0": "t_wepatt_magazine_puffgun60_wo"
+},
+"ob_wepatt_magazine_pufgun45_base_1p": {
+"0": "t_wepatt_magazine_pufgun45_base_wo"
+},
+"ob_wepatt_magazine_pufgun45_magpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wepatt_magazine_rpk40_base_1p": {
+"0": "t_m_wepatt_magazine_rpk40_wo"
+},
+"ob_wepatt_magazine_rpk40_magpul_1p": {
+"0": "t_wepatt_magazine_magpull556_wo"
+},
+"ob_wepatt_magazine_rpk45_base_1p": {
+"0": "t_m_wepatt_magazine_rpk45rnd_wo"
+},
+"ob_wepatt_magazine_rpk45_ranger_1p": {
+"0": "t_wepatt_magazine_rangerplate762_wo"
+},
+"ob_wepatt_magazine_rpk75drum_base_1p": {
+"0": "t_m_wepatt_magazine_rpk75drum_wo"
+},
+"ob_wepatt_magazine_schmeisser60rnd_base_1p": {
+"0": "t_wepatt_magazine_schmeisser60ar_wo"
+},
+"ob_wepatt_magazine_schmeisserakm_base_1p": {
+"0": "t_m_wepatt_magazine_schmeisserakm_wo"
+},
+"ob_wepatt_magazine_surefire60_base_1p": {
+"0": "t_wepatt_magazine_surefire60_wo"
+},
+"ob_wepatt_magazine_syringe12g3in_4shells_1p": {
+"0": "t_wepatt_magazine_syringe12g_wo"
+},
+"ob_wepatt_magazine_syringe12g3in_5shells_1p": {
+"0": "t_wepatt_magazine_syringe12g_wo"
+},
+"ob_wepatt_magnifier_eotechg43_base_1p": {
+"0": "t_wepatt_magnifier_eotechg43_wo"
+},
+"ob_wepatt_magnifier_eotechg45_1p": {
+"0": "t_base_wo"
+},
+"ob_wepatt_magnifier_zt410_base_1p": {
+"0": "t_wepatt_magnifier_zt410_wo"
+},
+"ob_wepatt_midzoom_bravo3x_base_1p": {
+"0": "t_wepatt_midzoom_bravo3x_wo"
+},
+"ob_wepatt_midzoom_elcan4x_base_1p": {
+"0": "t_wepatt_zoom_elcan4x_wo"
+},
+"ob_wepatt_midzoom_elcandr_base_1p": {
+"0": "t_wepatt_midzoom_elcandr_base_wo"
+},
+"ob_wepatt_midzoom_nx81_base_1p": {
+"0": "t_wepatt_midzoom_nx81_wo"
+},
+"ob_wepatt_midzoom_po4x17_base_1p": {
+"0": "t_wepatt_midzoom_po4x17_wo"
+},
+"ob_wepatt_midzoom_po4x17_reflex_1p": {
+"0": "t_wepatt_midzoom_po4x17_wo"
+},
+"ob_wepatt_midzoom_spitfire5x_base_1p": {
+"0": "t_wepatt_midzoom_spitfire5x_wo"
+},
+"ob_wepatt_midzoom_spitfire5x_topcover_1p": {
+"0": "t_wepatt_midzoom_spitfire5x_wo"
+},
+"ob_wepatt_midzoom_steinert536_base_1p": {
+"0": "t_wepatt_midzoom_steinert536_wo"
+},
+"ob_wepatt_midzoom_tango6t_base_1p": {
+"0": "t_wepatt_midzoom_tango6t_wo"
+},
+"ob_wepatt_midzoom_trijiconm150_base_1p": {
+"0": "t_wepatt_midzoom_trijiconm150_wo"
+},
+"ob_wepatt_midzoom_trijiconsdo_base_1p": {
+"0": "t_wepatt_midzoom_trijiconsdo_wo"
+},
+"ob_wepatt_midzoom_trijiconvcog_base_1p": {
+"0": "t_wepatt_midzoom_trijiconvcog_wo"
+},
+"ob_wepatt_midzoom_trijiconvcog_nocap_1p": {
+"0": "t_wepatt_midzoom_trijiconvcog_wo"
+},
+"ob_wepatt_muzzlebrake_aactitanqd_base_1p": {
+"0": "t_wepatt_muzzlebrake_aactitanqd_base_wo"
+},
+"ob_wepatt_muzzlebrake_akmslantbrake_base_1p": {
+"0": "t_wepatt_muzzlebrake_akmslantbrake_01_wo"
+},
+"ob_wepatt_muzzlebrake_awmdoubleport_base_1p": {
+"0": "t_wep_boltaction_l115a3_muzzle_wo"
+},
+"ob_wepatt_muzzlebrake_awmsingleport_base_1p": {
+"0": "t_wep_boltaction_l115a3_muzzle_wo"
+},
+"ob_wepatt_muzzlebrake_cherrybomb_base_1p": {
+"0": "t_wepatt_muzzlebrake_cherrybomb_wo"
+},
+"ob_wepatt_muzzlebrake_dtk1_base_1p": {
+"0": "t_wepatt_muzzlebrake_dtk1_wo"
+},
+"ob_wepatt_muzzlebrake_dtk1l_base_1p": {
+"0": "t_wepatt_muzzlebrake_dtk1l_wo"
+},
+"ob_wepatt_muzzlebrake_dtk2_base_1p": {
+"0": "t_wepatt_muzzlebrake_dtk2_wo"
+},
+"ob_wepatt_muzzlebrake_dtk2l_base_1p": {
+"0": "t_wepatt_muzzlebrake_dtk2l_wo"
+},
+"ob_wepatt_muzzlebrake_gamicrocomp_base_1p": {
+"0": "t_wepatt_muzzlebrake_gamicrocomp_wo"
+},
+"ob_wepatt_muzzlebrake_garev_base_1p": {
+"0": "t_wepatt_muzzlebrake_garev_wo"
+},
+"ob_wepatt_muzzlebrake_hkp3lug_base_1p": {
+"0": "t_muzzlebrake_hkp3lug_wo"
+},
+"ob_wepatt_muzzlebrake_hkp4prong_base_1p": {
+"0": "t_wepatt_muzzlebreak_hkp4prong_wo"
+},
+"ob_wepatt_muzzlebrake_hkpmicrocomp_base_1p": {
+"0": "t_wepatt_muzzlebrake_hkpmicrocomp_wo"
+},
+"ob_wepatt_muzzlebrake_jk195lt_base_1p": {
+"0": "t_wepatt_muzzlebrake_jk195lt_wo"
+},
+"ob_wepatt_muzzlebrake_kvpmach3_directthreadshort_1p": {
+"0": "t_wepatt_muzzlebrake_kvpmach3_wo"
+},
+"ob_wepatt_muzzlebrake_kvpmach3_trilugshort_1p": {
+"0": "t_wepatt_muzzlebrake_kvpmach3_wo"
+},
+"ob_wepatt_muzzlebrake_lantacdragon762_base_1p": {
+"0": "t_wepatt_muzzlebrake_lantacdragon762_wo"
+},
+"ob_wepatt_muzzlebrake_m4qd_base_1p": {
+"0": "t_wepatt_muzzlebrake_m4qd_wo"
+},
+"ob_wepatt_muzzlebrake_mb58x24_base_1p": {
+"0": "t_wepatt_muzzlebrake_mb58x24_wo"
+},
+"ob_wepatt_muzzlebrake_mbqd_base_1p": {
+"0": "t_wepatt_muzzlebrake_mbqd_wo"
+},
+"ob_wepatt_muzzlebrake_qbz191comp_base_1p": {
+"0": "t_wepatt_muzzlebrake_qbz191comp_wo"
+},
+"ob_wepatt_muzzlebrake_rsmtypemicro_base_1p": {
+"0": "t_wepatt_muzzlebrake_rsmtypemicro_wo"
+},
+"ob_wepatt_muzzlebrake_sigtaperedqd_base_1p": {
+"0": "t_wepatt_muzzlebrake_sigtaperedqdb_wo"
+},
+"ob_wepatt_muzzlebrake_socommb_base_1p": {
+"0": "t_wepatt_muzzlebrake_socommb_wo"
+},
+"ob_wepatt_muzzlebrake_srvvmk2_base_1p": {
+"0": "t_wepatt_muzzlebrake_srvvmk2_wo"
+},
+"ob_wepatt_muzzlebrake_ssqd_base_1p": {
+"0": "t_wepatt_muzzlebrake_ssqd_wo"
+},
+"ob_wepatt_rail_mlockadapter_slot03_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wepatt_rail_mlockadapter_slot05_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wepatt_rail_mlockadapter_slot07_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wepatt_rail_mlockadapter_slot09_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wepatt_rail_mlockadapter_slot11_1p": {
+"0": "t_wepatt_railadapter_picatinny_wo"
+},
+"ob_wepatt_reflex_acrop2_base_1p": {
+"0": "t_wepatt_reflex_acrop2_wo"
+},
+"ob_wepatt_reflex_acrop2_mount_1p": {
+"0": "t_wepatt_reflex_acrop2_wo"
+},
+"ob_wepatt_reflex_compm5b_base_1p": {
+"0": "t_wepatt_reflex_compm5b_wo"
+},
+"ob_wepatt_reflex_compm5b_nocaps_1p": {
+"0": "t_wepatt_reflex_compm5b_wo"
+},
+"ob_wepatt_reflex_cqs_base_1p": {
+"0": "t_wepatt_reflex_cqs_wo"
+},
+"ob_wepatt_reflex_cqs_extendedriser_1p": {
+"0": "t_wepatt_reflex_cqs_wo"
+},
+"ob_wepatt_reflex_cqs_shortriser_1p": {
+"0": "t_wepatt_reflex_cqs_wo"
+},
+"ob_wepatt_reflex_eotechelfx_base_1p": {
+"0": "t_wepatt_reflex_eotechelfx_wo"
+},
+"ob_wepatt_reflex_eotechelfx_mount_1p": {
+"0": "t_wepatt_reflex_eotechelfx_wo"
+},
+"ob_wepatt_reflex_eotechelfx_riser_1p": {
+"0": "t_wepatt_reflex_eotechelfx_riser_wo"
+},
+"ob_wepatt_reflex_eotechelfx_topmounted_1p": {
+"0": "t_wepatt_reflex_eotechelfx_wo"
+},
+"ob_wepatt_reflex_eotechxps3_base_1p": {
+"0": "t_wepatt_reflex_eotechxps3_wo"
+},
+"ob_wepatt_reflex_mepro22_base_1p": {
+"0": "t_wepatt_reflex_mepro22_wo"
+},
+"ob_wepatt_reflex_opk7_1p": {
+"0": "t_wepatt_reflex_opk7_extended_wo"
+},
+"ob_wepatt_reflex_opk7_extended_1p": {
+"0": "t_wepatt_reflex_opk7_extended_wo"
+},
+"ob_wepatt_reflex_rmr_base_1p": {
+"0": "t_wepatt_reflex_rmr_wo"
+},
+"ob_wepatt_reflex_rmr_mounted_1p": {
+"0": "t_wepatt_reflex_rmr_wo"
+},
+"ob_wepatt_reflex_rmr_top_1p": {
+"0": "t_wepatt_reflex_rmr_wo"
+},
+"ob_wepatt_reflex_rmr_topmounted_1p": {
+"0": "t_wepatt_reflex_rmr_wo"
+},
+"ob_wepatt_reflex_romeo4t_base_1p": {
+"0": "t_wepatt_reflex_romeo4t_wo"
+},
+"ob_wepatt_reflex_romeo4t_nocap_1p": {
+"0": "t_wepatt_reflex_romeo4t_wo"
+},
+"ob_wepatt_reflex_romeox_base_1p": {
+"0": "t_wepatt_reflex_romeox_wo"
+},
+"ob_wepatt_reflex_steinercqt_1p": {
+"0": "t_base_wo"
+},
+"ob_wepatt_reflex_trijiconmro_short_1p": {
+"0": "t_wepatt_reflex_trijiconmro_wo"
+},
+"ob_wepatt_reflex_trijiconmro_tall_1p": {
+"0": "t_wepatt_reflex_trijiconmro_wo"
+},
+"ob_wepatt_reflex_trijiconsro_base_1p": {
+"0": "t_wepatt_reflex_trijiconsro_wo"
+},
+"ob_wepatt_reflex_trijiconsro_mount_1p": {
+"0": "t_wepatt_reflex_trijiconsro_wo"
+},
+"ob_wepatt_sniperoptic_1p885_base_1p": {
+"0": "t_wepatt_sniperoptic_1p885_wo"
+},
+"ob_wepatt_sniperoptic_marchffpshorty_base_1p": {
+"0": "t_wepatt_sniperoptic_marchffpshorty_wo"
+},
+"ob_wepatt_sniperoptic_mark4m5a2_base_1p": {
+"0": "t_wepatt_sniperoptic_mark5a2m2_wo"
+},
+"ob_wepatt_sniperoptic_nfatacr_base_1p": {
+"0": "t_wepatt_sniperoptic_nfatacr_wo"
+},
+"ob_wepatt_sniperoptic_nx84_base_1p": {
+"0": "t_wepatt_sniperoptic_nx84_wo"
+},
+"ob_wepatt_sniperoptic_sbpmii_base_1p": {
+"0": "t_wepatt_sniperoptic_sbpmii_wo",
+"3": "t_wepatt_sniperoptic_qdmount_wo"
+},
+"ob_wepatt_sniperoptic_steinerm7xi_base_1p": {
+"0": "t_wepatt_sniperoptic_steinerm7xi_wo",
+"3": "t_wepatt_sniperoptic_qdmount_wo"
+},
+"ob_wepatt_sniperoptic_vortexm157_base_1p": {
+"0": "t_wepatt_sniperoptic_vortexm157_wo"
+},
+"ob_wepatt_stubbygrip_bcm_base_1p": {
+"0": "t_wepatt_stubbygrip_bcm_wo"
+},
+"ob_wepatt_stubbygrip_lwrci_base_1p": {
+"0": "t_wepatt_stubbygrip_lwrci_wo"
+},
+"ob_wepatt_stubbygrip_rk1_base_1p": {
+"0": "t_wepatt_stubbygrip_rk1_base_wo"
+},
+"ob_wepatt_stubbygrip_rk1_basecosmetics_1p": {
+"0": "t_wep_dmr_m39emr_wse0054_basecosmetics_wo"
+},
+"ob_wepatt_stubbygrip_tango_base_1p": {
+"0": "t_wepatt_stubbygrip_tango_wo"
+},
+"ob_wepatt_stubbygrip_tfs_base_1p": {
+"0": "t_wepatt_stubbygrip_tfs_wo"
+},
+"ob_wepatt_suppressor_aactitanqd_base_1p": {
+"0": "t_wepatt_supressor_titanqd_wo"
+},
+"ob_wepatt_suppressor_aitacticalshortsuppressor_base_1p": {
+"0": "t_wep_boltaction_l115a3_aitacticalshort_wo"
+},
+"ob_wepatt_suppressor_ak545mm_base_1p": {
+"0": "t_wepatt_suppressor_ak762mm_wo"
+},
+"ob_wepatt_suppressor_ak762mm_base_1p": {
+"0": "t_wepatt_suppressor_ak545mm_wo"
+},
+"ob_wepatt_suppressor_akmgen3_base_1p": {
+"0": "t_wepatt_suppressor_strellaakmgen3_wo"
+},
+"ob_wepatt_suppressor_alaskan360_base_1p": {
+"0": "t_wepatt_suppressor_alaskan360_wo"
+},
+"ob_wepatt_suppressor_arasupressor_base_1p": {
+"0": "t_wepatt_suppressor_arasupressor_wo"
+},
+"ob_wepatt_suppressor_atecshort_base_1p": {
+"0": "t_wepatt_suppressor_atecshort_wo"
+},
+"ob_wepatt_suppressor_barret338mm_base_1p": {
+"0": "t_wepatt_suppressor_barrett338mm_wo"
+},
+"ob_wepatt_suppressor_btrqd9mm_base_1p": {
+"0": "t_wepatt_suppressor_btrqd9mm_wo"
+},
+"ob_wepatt_suppressor_btrv_base_1p": {
+"0": "t_wepatt_suppressor_btrv_wo"
+},
+"ob_wepatt_suppressor_btsqd10mm_base_1p": {
+"0": "t_wepatt_suppressor_btsqd10mm_wo"
+},
+"ob_wepatt_suppressor_bushwacker_base_1p": {
+"0": "t_wepatt_suppressor_bushwacker_wo"
+},
+"ob_wepatt_suppressor_bushwacker_trilug_1p": {
+"0": "t_wepatt_suppressor_bushwacker_wo"
+},
+"ob_wepatt_suppressor_chimera_base_1p": {
+"0": "t_wepatt_suppressor_chimera_wo"
+},
+"ob_wepatt_suppressor_compactstreamer_base_1p": {
+"0": "t_wepatt_suppressor_compactstreamer_base_wo"
+},
+"ob_wepatt_suppressor_enticerlti_base_1p": {
+"0": "t_wepatt_suppressor_enticerlti_wo"
+},
+"ob_wepatt_suppressor_fstitan545_base_1p": {
+"0": "t_wepatt_suppressor_fstitan545_wo"
+},
+"ob_wepatt_suppressor_fstitanakm_base_1p": {
+"0": "t_wepatt_suppressor_fstitanakm_wo"
+},
+"ob_wepatt_suppressor_hxqd_556mm_1p": {
+"0": "t_wepatt_suppressor_hxqd_wo"
+},
+"ob_wepatt_suppressor_hxqd_762mm_1p": {
+"0": "t_wepatt_suppressor_hxqd_wo"
+},
+"ob_wepatt_suppressor_hxqd_magnumti_1p": {
+"0": "t_wepatt_suppressor_hxqd_wo"
+},
+"ob_wepatt_suppressor_lunar45_base_1p": {
+"0": "t_wepatt_suppressor_lunar45_wo"
+},
+"ob_wepatt_suppressor_nt4_base_1p": {
+"0": "t_wepatt_suppressor_nt4_wo"
+},
+"ob_wepatt_suppressor_obsidian45_45acpadapter_1p": {
+"0": "t_wepatt_suppressor_obsidian45_wo"
+},
+"ob_wepatt_suppressor_obsidian45_9mmadapter_1p": {
+"0": "t_wepatt_suppressor_obsidian45_wo"
+},
+"ob_wepatt_suppressor_obsidian45_fixedthread_1p": {
+"0": "t_wepatt_suppressor_obsidian45_wo"
+},
+"ob_wepatt_suppressor_osprey2_base_1p": {
+"0": "t_wepatt_suppressor_osprey2_wo"
+},
+"ob_wepatt_suppressor_qbz192suppressor_base_1p": {
+"0": "t_wep_carbine_qbz192_supressor191_wo"
+},
+"ob_wepatt_suppressor_qd_762mm_1p": {
+"0": "t_wepatt_suppressor_qd_wo"
+},
+"ob_wepatt_suppressor_r43osiris_base_1p": {
+"0": "t_wepatt_suppressor_r43osiris_wo"
+},
+"ob_wepatt_suppressor_rc3556mm_base_1p": {
+"0": "t_wepatt_suppressor_rc3556mm_wo"
+},
+"ob_wepatt_suppressor_rotex2a556mm_base_1p": {
+"0": "t_wepatt_suppressor_rotex2a556mm_wo"
+},
+"ob_wepatt_suppressor_rotex2a762mm_base_1p": {
+"0": "t_wepatt_suppressor_rotex2a762mm_wo"
+},
+"ob_wepatt_suppressor_rotexii_base_1p": {
+"0": "t_wepatt_suppressor_rotexii_wo"
+},
+"ob_wepatt_suppressor_rsrazor762_base_1p": {
+"0": "t_wep_mg_m60e6_suppressor_wo"
+},
+"ob_wepatt_suppressor_sai9mm_base_1p": {
+"0": "t_wepatt_suppressor_sai9mm_wo"
+},
+"ob_wepatt_suppressor_saicobra_base_1p": {
+"0": "t_wepatt_suppressor_saicobra_wo"
+},
+"ob_wepatt_suppressor_salvo12_base_1p": {
+"0": "t_wepatt_suppressor_salvo12_wo"
+},
+"ob_wepatt_suppressor_sandmansmil_base_1p": {
+"0": "t_wepatt_supressor_sandmansmil_wo"
+},
+"ob_wepatt_suppressor_sdn6_base_1p": {
+"0": "t_wepatt_suppressor_sdn6_wo"
+},
+"ob_wepatt_suppressor_short45_base_1p": {
+"0": "t_wepatt_suppressor_short45_wo"
+},
+"ob_wepatt_suppressor_sigslxqd_base_1p": {
+"0": "t_wepatt_suppressor_sigslxqd_wo"
+},
+"ob_wepatt_suppressor_srd9_base_1p": {
+"0": "t_wepatt_suppressor_srd9_wo"
+},
+"ob_wepatt_suppressor_strelaak74_base_1p": {
+"0": "t_wepatt_suppressor_strelaak74_wo"
+},
+"ob_wepatt_suppressor_tka_545mm_1p": {
+"0": "t_wepatt_suppressor_tka_wo"
+},
+"ob_wepatt_suppressor_tka_762mm_1p": {
+"0": "t_wepatt_suppressor_tka_wo"
+},
+"ob_wepatt_suppressor_versax_base_1p": {
+"0": "t_wepatt_suppressor_versax_wo"
+},
+"ob_wepatt_thermal_anpas35_eyepiece_1p": {
+"0": "t_wepatt_thermal_anpas35_wo"
+},
+"ob_wepatt_thermal_anpas35launcher_base_1p": {
+"0": "t_wepatt_thermal_anpas35_wo"
+},
+"ob_wepatt_thermal_anpas35nopad_base_1p": {
+"0": "t_wepatt_thermal_anpas35_wo"
+},
+"ob_wepatt_thermal_hisshd_base_1p": {
+"0": "t_wepatt_thermal_hisshd_wo",
+"2": "t_wepatt_thermal_hisshd_lens_wo"
+},
+"ob_wepatt_thermal_holosundrs_base_1p": {
+"0": "t_wepatt_thermal_holosundrs_wo"
+},
+"ob_wepatt_thermal_trijiconreap_base_1p": {
+"0": "t_wepatt_thermal_trijiconreapir_wo"
+},
+"ob_wepatt_ublauncher_m320_base_1p": {
+"0": "t_gad_launcher_m320_base_wo",
+"1": "t_gad_launcher_m320_base_wo"
+},
+"ob_wepatt_ubshotgun_m26mass_base_1p": {
+"0": "t_gad_shotgun_m26buck_base_wo",
+"1": "t_wepatt_ubshotgun_m26mass_railadapter_wo"
+},
+"ob_wepatt_vertgrip_ak126h64_base_1p": {
+"0": "t_wepatt_vertgrip_ak126h64_wo"
+},
+"ob_wepatt_vertgrip_kabroomstick_base_1p": {
+"0": "t_wepatt_vertgrip_kabroomstick_wo"
+},
+"ob_wepatt_vertgrip_tango_base_1p": {
+"0": "t_wepatt_vertgrip_tango_wo"
+}
+}

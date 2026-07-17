@@ -1,0 +1,1372 @@
+{
+"ob_gad_battlepickup_railgun_scope_1p": {
+"ret": "t_ret_trijiconsdo",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_gad_launcher_airburst_sight_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_mepro",
+"reticle": [
+1
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_gad_launcher_igla_sight_1p": {
+"lens": {
+"1": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_igla",
+"reticle": [
+2
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_gad_launcher_javelin_optic_1p": {
+"lens": {
+"3": [
+218,
+175,
+173
+]
+}
+},
+"ob_gad_launcher_m320_sights_1p": {
+"ret": "t_ret_holostandard",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_gad_launcher_mbtlaw_sights_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_nlaw",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_gad_launcher_rpg7_loot": {
+"lens": {
+"3": [
+218,
+175,
+173
+],
+"4": [
+218,
+175,
+173
+]
+}
+},
+"ob_gad_launcher_rpg7_sight_1p": {
+"lens": {
+"1": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_rpg",
+"reticle": [
+2
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_gad_launcher_stinger_loot": {
+"lens": {
+"4": [
+218,
+175,
+173
+],
+"5": [
+218,
+175,
+173
+]
+}
+},
+"ob_wepatt_canted_reddot_base_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_canted_reddot_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_canted_reddot_slanted_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_canted_reddot_slantedlens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_holo_pg350_base_1p": {
+"lens": {
+"1": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_pg350",
+"reticle": [
+2
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_holo_pg350_lens_1p": {
+"ret": "t_ret_pg350",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_holo_vzor3_base_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_holo_vzor3_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_holo_vzor3_lensshort_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_holo_vzor3_short_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_magnifier_eotechg43_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+}
+},
+"ob_wepatt_midzoom_bravo3x_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_bravo3",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_bravo3x_lens_1p": {
+"ret": "t_ret_bravo3",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_elcan4x_base_1p": {
+"lens": {
+"2": [
+0,
+67,
+63
+]
+},
+"ret": "t_ret_elcan",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_elcan4x_lens_1p": {
+"ret": "t_ret_elcan",
+"reticle": [
+0
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_elcandr_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_elcan",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_elcandr_lens_1p": {
+"ret": "t_ret_elcan",
+"reticle": [
+0
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_nx81_base_1p": {
+"lens": {
+"2": [
+0,
+67,
+63
+]
+},
+"ret": "t_ret_nx81",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_nx81_lens_1p": {
+"ret": "t_ret_nx81",
+"reticle": [
+0
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_po4x17_base_1p": {
+"lens": {
+"2": [
+150,
+4,
+0
+]
+},
+"ret": "t_ret_codm2",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_po4x17_lens_1p": {
+"ret": "t_ret_codm2",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_po4x17_reflex_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+1,
+2
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_midzoom_po4x17_reflexlens_1p": {
+"ret": "t_ret_codm2",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_spitfire5x_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_spitfire",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_midzoom_spitfire5x_lens_1p": {
+"ret": "t_ret_spitfire",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_midzoom_steinert536_base_1p": {
+"lens": {
+"2": [
+9,
+8,
+21
+]
+},
+"ret": "t_ret_steinert536",
+"reticle": [
+1
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_midzoom_steinert536_lens_1p": {
+"ret": "t_ret_steinert536",
+"reticle": [
+0
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_midzoom_tango6t_base_1p": {
+"lens": {
+"2": [
+0,
+67,
+63
+]
+},
+"ret": "t_ret_tango6t",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_tango6t_lens_1p": {
+"ret": "t_ret_tango6t",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_trijiconm150_base_1p": {
+"lens": {
+"2": [
+150,
+4,
+0
+]
+},
+"ret": "t_ret_rco",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_midzoom_trijiconsdo_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_trijiconsdo",
+"reticle": [
+1
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_midzoom_trijiconsdo_lens_1p": {
+"ret": "t_ret_trijiconsdo",
+"reticle": [
+0
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_midzoom_trijiconvcog_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_vcog",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_trijiconvcog_lens_1p": {
+"ret": "t_ret_vcog",
+"reticle": [
+0
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_midzoom_trijiconvcog_nocap_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_vcog",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_reflex_acrop2_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_reflex_acrop2_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_reflex_compm5b_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+184,
+1
+]
+},
+"ob_wepatt_reflex_compm5b_nocaps_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+184,
+1
+]
+},
+"ob_wepatt_reflex_cqs_base_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_cqs_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_eotechelfx_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_eotechelfx_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_eotechelfx_topmounted_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+7,
+0
+]
+},
+"ob_wepatt_reflex_eotechelfx_topmountedlens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_eotechxps3_base_1p": {
+"ret": "t_ret_exps3",
+"reticle": [
+2
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_mepro22_base_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_mepro",
+"reticle": [
+1
+],
+"tint": [
+255,
+184,
+1
+]
+},
+"ob_wepatt_reflex_opk7_1p": {
+"ret": "t_ret_0015_opk_sdf",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_opk7_extended_1p": {
+"ret": "t_ret_0015_opk_sdf",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_base_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_mounted_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_top_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_toplens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_topmounted_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_rmr_topmountedlens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_romeo4t_base_1p": {
+"lens": {
+"3": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_romeo4t",
+"reticle": [
+2
+],
+"tint": [
+255,
+23,
+23
+]
+},
+"ob_wepatt_reflex_romeo4t_lens_1p": {
+"ret": "t_ret_romeo4t",
+"reticle": [
+0
+],
+"tint": [
+255,
+23,
+23
+]
+},
+"ob_wepatt_reflex_romeo4t_nocap_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_romeo4t",
+"reticle": [
+1
+],
+"tint": [
+255,
+23,
+23
+]
+},
+"ob_wepatt_reflex_romeox_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_romeox_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_reflex_trijiconmro_short_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+184,
+1
+]
+},
+"ob_wepatt_reflex_trijiconmro_tall_1p": {
+"lens": {
+"2": [
+189,
+137,
+0
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+255,
+184,
+1
+]
+},
+"ob_wepatt_reflex_trijiconsro_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_reddot",
+"reticle": [
+1
+],
+"tint": [
+0,
+105,
+255
+]
+},
+"ob_wepatt_reflex_trijiconsro_lens_1p": {
+"ret": "t_ret_reddot",
+"reticle": [
+0
+],
+"tint": [
+0,
+105,
+255
+]
+},
+"ob_wepatt_sniperoptic_1p885_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_re_1p885",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_sniperoptic_1p885_lens_1p": {
+"ret": "t_re_1p885",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_sniperoptic_marchffpshorty_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_shorty",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_sniperoptic_marchffpshorty_lens_1p": {
+"lens": {
+"0": [
+218,
+175,
+173
+]
+}
+},
+"ob_wepatt_sniperoptic_mark4m2_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "ret_tango6t",
+"reticle": [
+1
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_mark4m2_lens_1p": {
+"ret": "ret_tango6t",
+"reticle": [
+0
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_mark4m5a2_base_1p": {
+"lens": {
+"2": [
+0,
+67,
+63
+]
+},
+"ret": "t_ret_m5a2",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_sniperoptic_nfatacr_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_nightforce",
+"reticle": [
+1
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_nfatacr_lens_1p": {
+"ret": "t_ret_nightforce",
+"reticle": [
+0
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_nx84_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_nx84",
+"reticle": [
+1
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_nx84_lens_1p": {
+"ret": "t_ret_nx84",
+"reticle": [
+0
+],
+"tint": [
+228,
+253,
+255
+]
+},
+"ob_wepatt_sniperoptic_sbpmii_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_sb25",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_sniperoptic_steinerm7xi_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_m7xi",
+"reticle": [
+1
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_sniperoptic_steinerm7xi_lens_1p": {
+"ret": "t_ret_m7xi",
+"reticle": [
+0
+],
+"tint": [
+0,
+255,
+240
+]
+},
+"ob_wepatt_sniperoptic_vortexm157_base_1p": {
+"lens": {
+"2": [
+200,
+205,
+215
+]
+},
+"ret": "t_ret_vortexm157",
+"reticle": [
+1
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_sniperoptic_vortexm157_lens_1p": {
+"ret": "t_ret_vortexm157",
+"reticle": [
+0
+],
+"tint": [
+103,
+99,
+255
+]
+},
+"ob_wepatt_thermal_anpas35launcher_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_anpas",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_thermal_anpas35nopad_base_1p": {
+"lens": {
+"2": [
+218,
+175,
+173
+]
+},
+"ret": "t_ret_anpas",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_thermal_hisshd_base_1p": {
+"lens": {
+"1": [
+218,
+175,
+173
+]
+}
+},
+"ob_wepatt_thermal_holosundrs_base_1p": {
+"lens": {
+"2": [
+150,
+4,
+0
+]
+},
+"ret": "t_ret_drs",
+"reticle": [
+1
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_thermal_holosundrs_lens_1p": {
+"ret": "t_ret_drs",
+"reticle": [
+0
+],
+"tint": [
+255,
+204,
+202
+]
+},
+"ob_wepatt_thermal_trijiconreap_base_1p": {
+"ret": "t_ret_reapir",
+"reticle": [
+2
+],
+"tint": [
+255,
+204,
+202
+]
+}
+}

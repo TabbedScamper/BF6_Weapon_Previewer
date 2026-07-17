@@ -116,7 +116,8 @@ export function initStage(view, status) {
         if (q && !(own && sawAt)) g.scene.quaternion.set(q[0], q[1], q[2], q[3]);
         root.add(g.scene);
         if (curSkin) skinRec(rec);
-        if (curCamoUrl) g.scene.traverse(camoMesh);
+        opticize(rec);
+        if (curCamoUrl) camoGroup(rec);
         if (--pending === 0 && refit) frame();
         status('');
       }, undefined, () => {
@@ -193,7 +194,7 @@ export function initStage(view, status) {
       }
     }
     rec.group.traverse(o => {
-      if (!o.isMesh || !o.material) return;
+      if (!o.isMesh || !o.material || o.userData.opticized) return;
       if (!o.userData._orig)
         o.userData._orig = { map: o.material.map, normalMap: o.material.normalMap };
       if (entry) {
@@ -211,45 +212,127 @@ export function initStage(view, status) {
     for (const rec of parts.values()) skinRec(rec);
   }
 
-  // ---------- camo: tiling pattern blended over body materials ----------
-  // Game recipe (shaderblock decode): color = mix(base, camo.rgb, camo.a),
-  // camo UV = mesh UV0 x 1.0 (universal constant). Applied only to materials
-  // that carry a real texture atlas (skips detail-flats, glass, reticles).
+  // ---------- camo: the game's own masked recipe ----------
+  // From the weapon shader depot decode: the camo PATTERN samples the mesh's
+  // dedicated camo UV set (TexCoord1, carried in the GLBs as TEXCOORD_1 ->
+  // geometry attribute uv1, uniform world density, tiling 1:1); paint
+  // COVERAGE is the part's _wo sheet ALPHA on UV0 (skins/_womask/, per
+  // section) times the pattern's own alpha:
+  //   final.rgb = mix(base.rgb, camo.rgb(UV1), wo.A(UV0) * camo.a(UV1))
+  // Smoothness stays the base cs alpha. Parts without camo data (glass,
+  // reticles, bullets, rubber/grip detail flats) keep their base look —
+  // exactly the game's exclusion set.
   let curCamoUrl = null;
-  function camoMesh(o) {
+  let womasks = {};        // part stem -> { sectionOrdinal: mask url }
+  function stemOf(url) {
+    const m = /([a-z0-9_]+)\.glb/i.exec(url.split('?')[0]);
+    return m ? m[1] : '';
+  }
+  function camoMesh(o, stem) {
     if (!o.isMesh || !o.material || !o.material.map) return;
-    const mat = o.material;
-    if (mat.transparent || (mat.emissive && (mat.emissive.r || mat.emissive.g))) return;
-    const img = mat.map.image;
-    if (img && Math.max(img.width || 0, img.height || 0) < 512) return;
-    if (curCamoUrl) {
-      const tex = skinTex(curCamoUrl, true);
-      mat.userData.camoTex = { value: tex };
+    const sm = /_s(\d+)/.exec(o.name || '');
+    const wm = sm && womasks[stem] ? womasks[stem][sm[1]] : null;
+    const uv1 = o.geometry && o.geometry.attributes && o.geometry.attributes.uv1;
+    let mat = o.material;
+    if (curCamoUrl && wm && uv1) {
+      if (mat.userData.camoWired && mat.userData.camoMaskUrl !== wm) {
+        mat = o.material = mat.clone();      // shared material, different mask
+        mat.userData.camoWired = false;
+      }
+      if (!mat.userData.camoTex) {
+        mat.userData.camoTex = { value: null };
+        mat.userData.camoMask = { value: null };
+      }
+      mat.userData.camoTex.value = skinTex(curCamoUrl, true);
+      mat.userData.camoMask.value = skinTex(wm, false);
+      mat.userData.camoMaskUrl = wm;
       if (!mat.userData.camoWired) {
         mat.userData.camoWired = true;
         mat.onBeforeCompile = sh => {
           sh.uniforms.camoMap = mat.userData.camoTex;
+          sh.uniforms.camoMask = mat.userData.camoMask;
+          sh.vertexShader = sh.vertexShader
+            .replace('#include <uv_pars_vertex>',
+              '#include <uv_pars_vertex>\n' +
+              '#ifndef USE_UV1\nattribute vec2 uv1;\n#endif\n' +
+              'varying vec2 vCamoUv;')
+            .replace('#include <uv_vertex>',
+              '#include <uv_vertex>\nvCamoUv = uv1;');
           sh.fragmentShader = sh.fragmentShader
             .replace('#include <map_pars_fragment>',
-              '#include <map_pars_fragment>\nuniform sampler2D camoMap;')
+              '#include <map_pars_fragment>\n' +
+              'uniform sampler2D camoMap;\nuniform sampler2D camoMask;\n' +
+              'varying vec2 vCamoUv;')
             .replace('#include <map_fragment>',
               '#include <map_fragment>\n' +
-              'vec4 camoTexel = texture2D(camoMap, vMapUv);\n' +
-              'diffuseColor.rgb = mix(diffuseColor.rgb, camoTexel.rgb, camoTexel.a);');
+              'vec4 camoTexel = texture2D(camoMap, vCamoUv);\n' +
+              'float camoM = texture2D(camoMask, vMapUv).r * camoTexel.a;\n' +
+              'diffuseColor.rgb = mix(diffuseColor.rgb, camoTexel.rgb, camoM);');
         };
-        mat.customProgramCacheKey = () => 'camo';
+        mat.customProgramCacheKey = () => 'camo2';
+        mat.needsUpdate = true;
       }
     } else if (mat.userData.camoWired) {
       mat.userData.camoWired = false;
       mat.onBeforeCompile = () => {};
       mat.customProgramCacheKey = () => 'plain';
+      mat.needsUpdate = true;
     }
-    mat.needsUpdate = true;
+  }
+  function camoGroup(rec) {
+    if (!rec.group) return;
+    const stem = stemOf(rec.url);
+    rec.group.traverse(o => camoMesh(o, stem));
   }
   function applyCamo(url) {
     curCamoUrl = url || null;
-    for (const rec of parts.values())
-      if (rec.group) rec.group.traverse(camoMesh);
+    for (const rec of parts.values()) camoGroup(rec);
+  }
+  function setWomasks(map) { womasks = map || {}; }
+
+  // ---------- optics: real per-optic reticle + coated lens ----------
+  // From each optic's own shader depot records (manifest optics, see
+  // tools/build_optics.py): reticle art rides the t_ret_* sheet's G channel
+  // (exported as white RGB + G alpha), tinted by the record's lens-coating
+  // color (t_mc_lens_red / _teal / ...); glass sections take a subtle tint
+  // from their own coating. AG-coating attachments are gameplay stubs.
+  let optics = {};   // stem -> {ret: url, tint: [r,g,b], reticle: [si], lens: {si: [r,g,b]}}
+  function setOptics(map) {
+    optics = map || {};
+    for (const rec of parts.values()) if (rec.group) opticize(rec);
+  }
+  function opticize(rec) {
+    const spec = optics[stemOf(rec.url)];
+    if (!spec) return;
+    rec.group.traverse(o => {
+      if (!o.isMesh || o.userData.opticized) return;
+      const m = /_s(\d+)/.exec(o.name || '');
+      if (!m) return;
+      const si = +m[1];
+      if (spec.ret && spec.reticle && spec.reticle.includes(si)) {
+        const t = spec.tint || [255, 255, 255];
+        const mat = new THREE.MeshBasicMaterial({
+          map: skinTex(spec.ret, false),
+          transparent: true, depthWrite: false,
+          side: THREE.DoubleSide, toneMapped: false,
+        });
+        mat.color.setRGB(t[0] / 255, t[1] / 255, t[2] / 255, THREE.SRGBColorSpace);
+        o.material = mat;
+        o.renderOrder = 3;                     // draws over the glass
+        o.userData.opticized = true;
+      } else if (spec.lens && spec.lens[si]) {
+        const c = spec.lens[si];
+        const mat = new THREE.MeshStandardMaterial({
+          transparent: true, opacity: 0.30, metalness: 1.0, roughness: 0.06,
+          depthWrite: false, side: THREE.DoubleSide, envMapIntensity: 1.4,
+        });
+        mat.color.setRGB(c[0] / 255 * 0.55, c[1] / 255 * 0.55, c[2] / 255 * 0.55,
+                         THREE.SRGBColorSpace);
+        o.material = mat;
+        o.renderOrder = 2;
+        o.userData.opticized = true;
+      }
+    });
   }
 
   // ---------- camera rig: freelook + dolly (Model Library scheme) ----------
@@ -546,13 +629,24 @@ export function initStage(view, status) {
         if (o.isMesh) {
           const p = new THREE.Vector3();
           o.getWorldPosition(p);
+          const m = o.material || {};
           out.push({ id, node: o.name || o.parent.name, vis: o.visible,
-                     at: [p.x, p.y, p.z].map(v => +v.toFixed(3)) });
+                     at: [p.x, p.y, p.z].map(v => +v.toFixed(3)),
+                     mat: [m.type, m.color && '#' + m.color.getHexString(),
+                           m.map ? 'map' : '-', m.transparent ? 'T' : 'O',
+                           m.opacity, o.renderOrder].join(' ') });
         }
       });
     }
     return out;
   }
   const busy = () => inFlight;
-  return { setParts, frame, applySkin, applyCamo, setTune, tuneAll, setBoneDt, listParts, selectPart, nodesInfo, busy };
+  function setCam(pos, tgt) {        // dev/test hook: exact camera placement
+    cam.position.set(pos[0], pos[1], pos[2]);
+    controls.target.set(tgt[0], tgt[1], tgt[2]);
+    controls.update();
+  }
+  return { setParts, frame, applySkin, applyCamo, setWomasks, setOptics,
+           setTune, tuneAll, setBoneDt, listParts, selectPart, nodesInfo, busy,
+           setCam };
 }

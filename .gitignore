@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 data/attachment_bindings.json
 data/mesh_aabbs.json
+data/depot_key_weapons.json
+data/guid_index_weapons.tsv
+data/inject_uv_report.tsv

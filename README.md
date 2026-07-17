@@ -18,7 +18,13 @@ combinations the game actually allows are offered.
 - Format research notes for modders: `docs/BF6-FORMATS.md` (EBX, textures,
   weapon assembly, the layered card-icon system) and
   `docs/EBX-ATTACHMENT-FORMAT.md`
-- Weapon skins, 157 tiling camo patterns, and 226 weapon charms
+- Weapon skins, 157 tiling camo patterns, and 226 weapon charms — camos use
+  the game's own recipe: the pattern tiles on the mesh's dedicated camo UV
+  set and paint coverage is masked per part by the `_wo` sheet alpha, so
+  rubber, grips and internals stay unpainted exactly like in-game
+- Real scope reticles: every optic renders its own `t_ret_*` reticle art
+  tinted by its lens-coating color (red dots, LPVO rings, sniper mildots),
+  decoded from each optic's shader depot records
 - Gadgets & throwables browser
 - Portal creator tools: `</> PORTAL CODE` generates verified Portal SDK
   TypeScript for the current build (give-weapon-with-attachments and
@@ -51,6 +57,9 @@ Everything under `tools/` rebuilds the data from a local BF6 installation dump:
 | `scrape_armory.py` | build `data/armory_db.json` (weapons, parts, slots, compatibility, skins, gadgets) |
 | `build_manifest.py` | produce `site/data/manifest.json` for the site |
 | `convert_all_weapons.py` | batch-convert every weapon part / attachment / gadget mesh to textured GLB |
+| `inject_uv.py` | patch the game's camo UV set (TexCoord1/2) into the converted GLBs |
+| `build_womasks.py` | export per-part camo paint masks (`_wo` sheet alpha) |
+| `build_optics.py` | per-optic reticle + lens-coating data from the weapon shader depots |
 | `probe_weapon.py`, `check_tex_res.py`, `verify_hres.py`, `find_mip0.py`, `tex_res_sweep.py` | one-off verification utilities |
 
 Mesh/texture conversion reuses the

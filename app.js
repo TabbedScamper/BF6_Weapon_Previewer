@@ -80,6 +80,23 @@ $('#btn-build').onclick = () =>
 // ---------- data ----------
 fetch(CONFIG.manifest).then(r => r.json()).then(m => {
   M = m;
+  // camo paint masks (per part section, _wo sheet alpha) + per-optic
+  // reticle/lens data — resolved to URLs once, the stage does the rest
+  if (m.womask) {
+    const wm = {};
+    for (const [stem, secs] of Object.entries(m.womask)) {
+      wm[stem] = {};
+      for (const [si, sheet] of Object.entries(secs))
+        wm[stem][si] = CONFIG.skinsBase + '_womask/' + sheet + '.webp';
+    }
+    stage.setWomasks(wm);
+  }
+  if (m.optics) {
+    const op = {};
+    for (const [stem, e] of Object.entries(m.optics))
+      op[stem] = { ...e, ret: e.ret ? CONFIG.skinsBase + '_reticles/' + e.ret + '.webp' : null };
+    stage.setOptics(op);
+  }
   renderChips();
   renderList();
   const h = decodeURIComponent(location.hash.slice(1));
@@ -229,6 +246,10 @@ function currentParts() {
     // risers are authored BELOW the sight plane, so the record's riser lift
     // positions the whole assembly (riser base lands on the rail)
     if (mesh && extra) extra.forEach((m2, i) => {
+      // an optic whose base mesh already ships its own lens/reticle sections
+      // (manifest optics data on BOTH stems) renders the companion lens twice
+      // a fraction of a mm apart — skip the redundant copy
+      if (M.optics && M.optics[m2] && M.optics[mesh]) return;
       const u2 = url(skinMesh(m2));
       parts.set('s_' + code + '_x' + i, dt ? { url: u2, dt } : u2);
     });
@@ -251,6 +272,7 @@ window.__app = {
   loaded: () => stage.listParts().length,
   busy: () => stage.busy(),
   nodes: () => stage.nodesInfo(),
+  cam: (pos, tgt) => stage.setCam(pos, tgt),
 };
 
 // ---------- build panel ----------
